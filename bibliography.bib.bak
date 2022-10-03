@@ -1,0 +1,81 @@
+@InProceedings{Azam2000,
+  author = {Farooq Azam},
+  title  = {Biologically Inspired Modular Neural Networks},
+  year   = {2000},
+}
+
+@Conference{Bullinaria2009,
+  author   = {John Bullinaria},
+  title    = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning},
+  year     = {2009},
+  month    = nov,
+  note     = {Proceedings of the International Joint Conference on Computational Intelligence (IJCCI 2009) ; Conference date: 01-11-2009},
+  pages    = {427--434},
+  day      = {1},
+  language = {English},
+}
+
+@Article{Elwell2011,
+  author  = {Elwell, Ryan and Polikar, Robi},
+  journal = {IEEE Transactions on Neural Networks},
+  title   = {Incremental Learning of Concept Drift in Nonstationary Environments},
+  year    = {2011},
+  number  = {10},
+  pages   = {1517-1531},
+  volume  = {22},
+  doi     = {10.1109/TNN.2011.2160459},
+}
+
+@Article{GiraudCarrier2000,
+  author  = {Christophe G. Giraud-Carrier},
+  journal = {AI Commun.},
+  title   = {A Note on the Utility of Incremental Learning},
+  year    = {2000},
+  pages   = {215-224},
+  volume  = {13},
+}
+
+@InProceedings{landassuri2009,
+  author    = {Landassuri-Moreno, Victor M and Bullinaria, John A},
+  booktitle = {Proceedings of the 11th Annual conference on Genetic and evolutionary computation},
+  title     = {Neural network ensembles for time series forecasting},
+  year      = {2009},
+  pages     = {1235--1242},
+}
+
+@InProceedings{landassuri2011,
+  author       = {Landassuri-Moreno, V and Bullinaria, John A},
+  booktitle    = {2011 IEEE Congress of Evolutionary Computation (CEC)},
+  title        = {Biasing the evolution of modular neural networks},
+  year         = {2011},
+  organization = {IEEE},
+  pages        = {1958--1965},
+}
+
+@InProceedings{landassuri2013,
+  author    = {Landassuri-Moreno, V{\'i}ctor Manuel and Bustillo-Hern{\'a}ndez, Carmen L. and Carbajal-Hern{\'a}ndez, Jos{\'e} Juan and Fern{\'a}ndez, Luis P. S{\'a}nchez},
+  booktitle = {Progress in Pattern Recognition, Image Analysis, Computer Vision, and Applications},
+  title     = {Single-Step-Ahead and Multi-Step-Ahead Prediction with Evolutionary Artificial Neural Networks},
+  year      = {2013},
+  address   = {Berlin, Heidelberg},
+  editor    = {Ruiz-Shulcloper, Jos{\'e} and Sanniti di Baja, Gabriella},
+  pages     = {65--72},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {In recent years, Evolutionary Algorithms (EAs) have been remarkably useful to improve the robustness of Artificial Neural Networks (ANNs). This study introduces an experimental analysis using an EAs aimed to evolve ANNs architectures (the FS-EPNet algorithm) to understand how neural networks are evolved with a steady-state algorithm and compare the Single-step-ahead (SSP) and Multiple-step-ahead (MSP) methods for prediction tasks over two test sets. It was decided to test an inside-set during evolution and an outside-set after the whole evolutionary process has been completed to validate the generalization performance with the same method (SSP or MSP). Thus, the networks may not be correctly evaluated (misleading fitness) if the single SSP is used during evolution (inside-set) and then the MSP at the end of it (outside-set). The results show that the same prediction method should be used in both evaluation sets providing smaller errors on average.},
+  isbn      = {978-3-642-41822-8},
+}
+
+@MastersThesis{liu2015,
+  author = {Liu, Yuan},
+  title  = {Incremental learning in deep neural networks},
+  year   = {2015},
+}
+
+@PhdThesis{landassuri2012,
+  author = {Landassuri Moreno, Victor Manuel},
+  school = {University of Birmingham},
+  title  = {Evolution of modular neural networks},
+  year   = {2012},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
