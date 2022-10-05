@@ -16,5 +16,117 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}\enddatalist
+\datalist[entry]{nty/global//global/global}
+  \entry{GiraudCarrier2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GCCG}{%
+         family={Giraud-Carrier},
+         familyi={G\bibinithyphendelim C\bibinitperiod},
+         given={Christophe\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCCG1}
+    \strng{fullhash}{GCCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{215\bibrangedash 224}
+    \field{title}{A Note on the Utility of Incremental Learning}
+    \field{volume}{13}
+    \field{journaltitle}{AI Commun.}
+    \field{year}{2000}
+  \endentry
+
+  \entry{liu2015}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY1}
+    \strng{fullhash}{LY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Incremental learning in deep neural networks}
+    \field{type}{mathesis}
+    \field{year}{2015}
+  \endentry
+
+  \entry{TRAMONINEGRE2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TNE}{%
+         family={Tramoni-Negre},
+         familyi={T\bibinithyphendelim N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LI}{%
+         family={Lambert},
+         familyi={L\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bartolomei},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FO}{%
+         family={Felician},
+         familyi={F\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \keyw{Temporal lobe epilepsy, Episodic memory, Autobiographical memory,
+  Amnesia, Consolidation, Hippocampus}
+    \strng{namehash}{TNE+1}
+    \strng{fullhash}{TNELIBFFO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Memory complaints and deficits are common in patients with epilepsy,
+  especially temporal lobe epilepsy (TLE), where memory-related brain
+  structures are directly involved in the epileptic process. In recent years,
+  substantial progress has been made in delineating memory impairment in TLE,
+  challenging the traditional neuropsychological approach of the disorder. In
+  particular, several lines of evidence have suggested that, beyond the
+  apparent deficit demonstrable by standardized neuropsychological evaluations,
+  TLE may also negatively interact with long-term memory, producing
+  considerable loss of information of the patient's autobiographical history
+  and an inability to maintain newly acquired information over a period of
+  time. These observations have led to the development of innovative assessment
+  techniques, and prompted a new domain of investigation focused on the
+  relationships between interictal epileptiform activities and the integrity of
+  anatomo-functional systems. The present paper reviews the available evidence
+  for long-term memory deficits in TLE with respect to remote and very
+  long-term memory, and discusses their putative pathophysiological mechanisms
+  and the developing potential strategies to improve memory functioning.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neurol.2017.06.011
+    \endverb
+    \field{issn}{0035-3787}
+    \field{note}{Neuropsychology: from pathology to cognitive functioning}
+    \field{number}{7}
+    \field{pages}{490\bibrangedash 497}
+    \field{title}{Long-term memory deficits in temporal lobe epilepsy}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0035378717305192
+    \endverb
+    \field{volume}{173}
+    \field{journaltitle}{Revue Neurologique}
+    \field{year}{2017}
+  \endentry
+\enddatalist
 \endinput

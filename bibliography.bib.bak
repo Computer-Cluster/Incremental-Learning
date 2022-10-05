@@ -78,4 +78,23 @@
   year   = {2012},
 }
 
+@Article{TRAMONINEGRE2017,
+  author   = {E. Tramoni-Negre and I. Lambert and F. Bartolomei and O. Felician},
+  journal  = {Revue Neurologique},
+  title    = {Long-term memory deficits in temporal lobe epilepsy},
+  year     = {2017},
+  issn     = {0035-3787},
+  note     = {Neuropsychology: from pathology to cognitive functioning},
+  number   = {7},
+  pages    = {490-497},
+  volume   = {173},
+  abstract = {Memory complaints and deficits are common in patients with epilepsy, especially temporal lobe epilepsy (TLE), where memory-related brain structures are directly involved in the epileptic process. In recent years, substantial progress has been made in delineating memory impairment in TLE, challenging the traditional neuropsychological approach of the disorder. In particular, several lines of evidence have suggested that, beyond the apparent deficit demonstrable by standardized neuropsychological evaluations, TLE may also negatively interact with long-term memory, producing considerable loss of information of the patient's autobiographical history and an inability to maintain newly acquired information over a period of time. These observations have led to the development of innovative assessment techniques, and prompted a new domain of investigation focused on the relationships between interictal epileptiform activities and the integrity of anatomo-functional systems. The present paper reviews the available evidence for long-term memory deficits in TLE with respect to remote and very long-term memory, and discusses their putative pathophysiological mechanisms and the developing potential strategies to improve memory functioning.},
+  doi      = {https://doi.org/10.1016/j.neurol.2017.06.011},
+  keywords = {Temporal lobe epilepsy, Episodic memory, Autobiographical memory, Amnesia, Consolidation, Hippocampus},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0035378717305192},
+}
+
+@Article{,
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
