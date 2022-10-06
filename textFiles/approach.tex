@@ -1,2 +1,18 @@
 \section{Objetivos}
+    Diseñar una red neuronal para aprendizaje incremental basada en el principio de la memoria a corto y largo plazo, buscando usar más de dos categorías para el reconocimiento de dígitos.
+    \subsection{Objetivos Particulares}
+        \begin{enumerate}
+            \item Implementar el algoritmo de John A. Bullinaria para el reconocimiento de dígitos con aprendizaje a corto y largo plazo con los parámetros que él indica.
+            \item Obtener el conjunto de datos de Optical Digits y analizar que esté conforme al artículo de John A. Bullinaria.
+            \item Separar el conjunto de entrenamiento y de prueba de acuerdo a lo que se explica en el artículo base y hacer los experimentos para que se obtengan los mismo resultados.
+            \item Programar y modificar el algoritmo base, hacer que sean más de dos nodos, y repartir las tazas de aprendizaje proporcionalmente.
+            \item Probar la nueva implementación con el mismo conjunto de datos y ver si hay una diferencia significativa.
+        \end{enumerate}
 \section{Justificaci\'on}
+
+    Las redes neuronales apoyan a la resoluci\'on de distintos problemas, pero el Maching Learning tiene una deficiencia que es al momento de auemntar los datos, la deficiencia que se obtiene es enorme que causa que los proyectos sean obsoleto \cite{Bullinaria2009}. Los resultados que se han obtenido no funcionan a la perfección, la memoria a corto plazo olvida poco pero va olvidando,
+    y lo ideal sería que no olvidara, biológicamente nosotros no podemos hacer muchas modificaciones \cite{TRAMONINEGRE2017} por lo mismo que implica, pero computacionalmente nada puede impedir que se pruebe con más configuraciones y llegar al punto en donde toda la información que llega se acumule y si no hay problema de almacenamiento que se siga acumulando y que no olvide, eso podría ser bueno en algunas situaciones.
+    Hacer este trabajo puede hacer que funcionen mejor las técnicas, pues ahorraría más energía en lugar de hacer entrenamientos muy grandes cada determinado tiempo e incluir todos los datos pasados de forma paulatina. Así como el ahorro de tiempo, de procesamiento, los tiempos de entrenamientos se reducirían y se reduciría la pérdida de información.
+    Python, una herramienta de software libre que no requiere licencia, es relativamente fácil poder depurar un código y permite acelerar más el desarrollo de aplicaciones,  a diferencia de otros lenguajes más estructurados como c o java.
+    TensorFlow te permite construir y entrenar redes neuronales para detectar patrones y razonamientos usados por los humanos.
+    Keras es un framework de alto nivel para el aprendizaje, escrito en Python y capaz de correr sobre los frameworks TensorFlow. Fue desarrollado con el objeto de facilitar un proceso de experimentación rápida. Diseñado para construir por bloques la arquitectura de cada red neuronal, incluyendo redes convolucionales y modelos recurrentes, que son las que permiten, junto a los bloques “más tradicionales”, entrenar aprendizaje profundo.
