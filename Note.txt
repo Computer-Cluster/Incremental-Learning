@@ -4,3 +4,5 @@ redes neuronales ML cuello de botella benefios de aprwendizaje incremental en la
 redes neuronalñes y ejemplos
 
 no uso de algortimos geneticos porque no se optimizara, porque eso sale fuera del alacance dle trabajo
+
+memoria a corto plazo articulos de neurociencia
