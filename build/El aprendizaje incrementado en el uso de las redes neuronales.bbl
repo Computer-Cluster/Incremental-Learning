@@ -66,6 +66,35 @@
     \field{year}{2000}
   \endentry
 
+  \entry{royo2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=gifg}{%
+         prefix={given},
+         prefixi={g\bibinitperiod},
+         family={i=P.},
+         familyi={i\bibinitperiod},
+         suffix={given=Paloma},
+         suffixi={g\bibinitperiod},
+         given={family=Royo},
+         giveni={f\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{igfg1}
+    \strng{fullhash}{igfg1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{{Qué son las redes neuronales y cuál es su aplicación en
+  el marketing}}
+    \verb{url}
+    \verb https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicaci
+    \verb on-en-el-marketing/
+    \endverb
+    \field{month}{09}
+    \field{year}{2021}
+  \endentry
+
   \entry{liu2015}{thesis}{}
     \name{author}{1}{}{%
       {{hash=LY}{%
@@ -83,6 +112,28 @@
     \field{sortinithash}{L}
     \field{title}{Incremental learning in deep neural networks}
     \field{type}{mathesis}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Nrby2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NS}{%
+         family={N{\o}rby},
+         familyi={N\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NS1}
+    \strng{fullhash}{NS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{pages}{551 \bibrangedash  578}
+    \field{title}{Why Forget? On the Adaptive Value of Memory Loss}
+    \field{volume}{10}
+    \field{journaltitle}{Perspectives on Psychological Science}
     \field{year}{2015}
   \endentry
 
