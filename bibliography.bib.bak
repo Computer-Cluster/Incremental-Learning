@@ -94,5 +94,21 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0035378717305192},
 }
 
+@Article{Nrby2015,
+  author  = {Simon N{\o}rby},
+  journal = {Perspectives on Psychological Science},
+  title   = {Why Forget? On the Adaptive Value of Memory Loss},
+  year    = {2015},
+  pages   = {551 - 578},
+  volume  = {10},
+}
+
+@Misc{royo2021,
+  author = {given-i=P., given=Paloma, family=Royo},
+  month  = {9},
+  title  = {{Qué son las redes neuronales y cuál es su aplicación en el marketing}},
+  year   = {2021},
+  url    = {https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicacion-en-el-marketing/},
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}

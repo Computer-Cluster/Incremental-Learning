@@ -17,22 +17,24 @@
 \usepackage{wrapfig}\definecolor{shadecolor}{RGB}{224,238,238}
 \usepackage{listings}
 \usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
+
 
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{bibliography.bib}
 
-\title{El Aprendizaje Incrementado en el Uso de Las Redes Neuronales}
-\author{Fragoso García Sandra \\ González Hernández Luis Ángel}
 
 
 \makeindex
 
 \begin{document}
-    \maketitle 
-   
+    
+    \includepdf{textFiles/portada.pdf}
+    \tableofcontents
+    \newpage
     \input{textFiles/introduction}
-    \input{textFiles/approach.tex}
-    \input{textFiles/theoretical marco.tex}
+    \input{textFiles/approach}
+    \input{textFiles/theoretical marco}
 
     \printbibliography
 

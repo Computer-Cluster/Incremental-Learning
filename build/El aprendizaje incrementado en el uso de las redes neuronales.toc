@@ -1,0 +1,12 @@
+\babel@toc {USenglish}{}\relax 
+\contentsline {section}{\numberline {1}Introduccion}{3}{section.1}%
+\contentsline {section}{\numberline {2}Planeamiento}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Objetivos}{3}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Objetivos Particulares}{4}{subsubsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.2}Justificaci\'on}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Delimitación}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Consecuencias}{5}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Marco Teorico}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Revisión de la literatura}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Aprendizaje Humano}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Aprendizaje Incremental}{6}{subsection.3.3}%
