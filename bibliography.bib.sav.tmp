@@ -1,0 +1,146 @@
+@InProceedings{Azam2000,
+  author = {Farooq Azam},
+  title  = {Biologically Inspired Modular Neural Networks},
+  year   = {2000},
+}
+
+@Conference{Bullinaria2009,
+  author   = {John Bullinaria},
+  title    = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning},
+  year     = {2009},
+  month    = nov,
+  note     = {Proceedings of the International Joint Conference on Computational Intelligence (IJCCI 2009) ; Conference date: 01-11-2009},
+  pages    = {427--434},
+  day      = {1},
+  language = {English},
+}
+
+@Article{Elwell2011,
+  author  = {Elwell, Ryan and Polikar, Robi},
+  journal = {IEEE Transactions on Neural Networks},
+  title   = {Incremental Learning of Concept Drift in Nonstationary Environments},
+  year    = {2011},
+  number  = {10},
+  pages   = {1517-1531},
+  volume  = {22},
+  doi     = {10.1109/TNN.2011.2160459},
+}
+
+@Article{GiraudCarrier2000,
+  author  = {Christophe G. Giraud-Carrier},
+  journal = {AI Commun.},
+  title   = {A Note on the Utility of Incremental Learning},
+  year    = {2000},
+  pages   = {215-224},
+  volume  = {13},
+}
+
+@InProceedings{landassuri2009,
+  author    = {Landassuri-Moreno, Victor M and Bullinaria, John A},
+  booktitle = {Proceedings of the 11th Annual conference on Genetic and evolutionary computation},
+  title     = {Neural network ensembles for time series forecasting},
+  year      = {2009},
+  pages     = {1235--1242},
+}
+
+@InProceedings{landassuri2011,
+  author       = {Landassuri-Moreno, V and Bullinaria, John A},
+  booktitle    = {2011 IEEE Congress of Evolutionary Computation (CEC)},
+  title        = {Biasing the evolution of modular neural networks},
+  year         = {2011},
+  organization = {IEEE},
+  pages        = {1958--1965},
+}
+
+@InProceedings{landassuri2013,
+  author    = {Landassuri-Moreno, V{\'i}ctor Manuel and Bustillo-Hern{\'a}ndez, Carmen L. and Carbajal-Hern{\'a}ndez, Jos{\'e} Juan and Fern{\'a}ndez, Luis P. S{\'a}nchez},
+  booktitle = {Progress in Pattern Recognition, Image Analysis, Computer Vision, and Applications},
+  title     = {Single-Step-Ahead and Multi-Step-Ahead Prediction with Evolutionary Artificial Neural Networks},
+  year      = {2013},
+  address   = {Berlin, Heidelberg},
+  editor    = {Ruiz-Shulcloper, Jos{\'e} and Sanniti di Baja, Gabriella},
+  pages     = {65--72},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {In recent years, Evolutionary Algorithms (EAs) have been remarkably useful to improve the robustness of Artificial Neural Networks (ANNs). This study introduces an experimental analysis using an EAs aimed to evolve ANNs architectures (the FS-EPNet algorithm) to understand how neural networks are evolved with a steady-state algorithm and compare the Single-step-ahead (SSP) and Multiple-step-ahead (MSP) methods for prediction tasks over two test sets. It was decided to test an inside-set during evolution and an outside-set after the whole evolutionary process has been completed to validate the generalization performance with the same method (SSP or MSP). Thus, the networks may not be correctly evaluated (misleading fitness) if the single SSP is used during evolution (inside-set) and then the MSP at the end of it (outside-set). The results show that the same prediction method should be used in both evaluation sets providing smaller errors on average.},
+  isbn      = {978-3-642-41822-8},
+}
+
+@MastersThesis{liu2015,
+  author = {Liu, Yuan},
+  title  = {Incremental learning in deep neural networks},
+  year   = {2015},
+}
+
+@PhdThesis{landassuri2012,
+  author = {Landassuri Moreno, Victor Manuel},
+  school = {University of Birmingham},
+  title  = {Evolution of modular neural networks},
+  year   = {2012},
+}
+
+@Article{TRAMONINEGRE2017,
+  author   = {E. Tramoni-Negre and I. Lambert and F. Bartolomei and O. Felician},
+  journal  = {Revue Neurologique},
+  title    = {Long-term memory deficits in temporal lobe epilepsy},
+  year     = {2017},
+  issn     = {0035-3787},
+  note     = {Neuropsychology: from pathology to cognitive functioning},
+  number   = {7},
+  pages    = {490-497},
+  volume   = {173},
+  abstract = {Memory complaints and deficits are common in patients with epilepsy, especially temporal lobe epilepsy (TLE), where memory-related brain structures are directly involved in the epileptic process. In recent years, substantial progress has been made in delineating memory impairment in TLE, challenging the traditional neuropsychological approach of the disorder. In particular, several lines of evidence have suggested that, beyond the apparent deficit demonstrable by standardized neuropsychological evaluations, TLE may also negatively interact with long-term memory, producing considerable loss of information of the patient's autobiographical history and an inability to maintain newly acquired information over a period of time. These observations have led to the development of innovative assessment techniques, and prompted a new domain of investigation focused on the relationships between interictal epileptiform activities and the integrity of anatomo-functional systems. The present paper reviews the available evidence for long-term memory deficits in TLE with respect to remote and very long-term memory, and discusses their putative pathophysiological mechanisms and the developing potential strategies to improve memory functioning.},
+  doi      = {https://doi.org/10.1016/j.neurol.2017.06.011},
+  keywords = {Temporal lobe epilepsy, Episodic memory, Autobiographical memory, Amnesia, Consolidation, Hippocampus},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0035378717305192},
+}
+
+@Article{Nrby2015,
+  author  = {Simon N{\o}rby},
+  journal = {Perspectives on Psychological Science},
+  title   = {Why Forget? On the Adaptive Value of Memory Loss},
+  year    = {2015},
+  pages   = {551 - 578},
+  volume  = {10},
+}
+
+@Misc{royo2021,
+  author = {given-i=P., given=Paloma, family=Royo},
+  month  = {9},
+  title  = {{Qué son las redes neuronales y cuál es su aplicación en el marketing}},
+  year   = {2021},
+  url    = {https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicacion-en-el-marketing/},
+}
+
+@Article{bransford2000,
+  author  = {Bransford, J and Brown, A and Cocking, R},
+  journal = {Revista del Instituto de Matem{\'a}tica y F{\'\i}sica},
+  title   = {C{\'o}mo aprende la gente: cerebro, mente, experiencia, y escuela},
+  year    = {2000},
+  pages   = {44--64},
+}
+
+@InProceedings{landassuri2011,
+  author       = {Landassuri-Moreno, V and Bullinaria, John A},
+  booktitle    = {2011 IEEE Congress of Evolutionary Computation (CEC)},
+  title        = {Biasing the evolution of modular neural networks},
+  year         = {2011},
+  organization = {IEEE},
+  pages        = {1958--1965},
+}
+
+@Article{perez2014,
+  author    = {P{\'e}rez Ariza, Karel and Hern{\'a}ndez S{\'a}nchez, Jos{\'e} Emilio},
+  journal   = {Humanidades M{\'e}dicas},
+  title     = {Aprendizaje y comprensi{\'o}n. Una mirada desde las humanidades},
+  year      = {2014},
+  number    = {3},
+  pages     = {699--709},
+  volume    = {14},
+  publisher = {2001, Cendecsa},
+}
+
+@Article{Huber2008,
+  author    = {Huber, Günter L.},
+  title     = {Aprendizaje activo y metodologías educativas},
+  year      = {2008},
+  abstract  = {Se esbozan los enfoques de la construcción de la situación educativa y de lo socio-cultural como fondos teóricos para el desarrollo de métodos que se pueden cumplir con las metas del EEES (Espacio Europeo de Educación Superior). Cuatros métodos seleccionados muestran unas posibilidades y también las condiciones previas para lograr las metas del EEES. (1) Cada método tiene que animar procesos de reflexión, que incluyen tanto las experimentaciones como la incertidumbre en el espacio nuevo de enseñanza. (2) El método de proyectos de aprendizaje es apto a vincular el aprendizaje teórico y práctico,además de incluir elementos de la vida fuera de las instituciones de educación. (3) El enfoque de aprendizaje basado en problemas es más concentrado a objetos determinados del currículo, pero no menos adecuado para motivar a los estudiantes de integrar su conocimiento y generar sentido en lugar de acumular hechos y teoremas. (4) Para superar el d

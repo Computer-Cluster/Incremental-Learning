@@ -1,20 +1,20 @@
 # Fdb version 3
-["bibtex build/El aprendizaje incrementado en el uso de las redes neuronales"] 1666062475 "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" "build/El aprendizaje incrementado en el uso de las redes neuronales.bbl" "build/El aprendizaje incrementado en el uso de las redes neuronales" 1666062521
+["bibtex build/El aprendizaje incrementado en el uso de las redes neuronales"] 1666148704 "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" "build/El aprendizaje incrementado en el uso de las redes neuronales.bbl" "build/El aprendizaje incrementado en el uso de las redes neuronales" 1666148707
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1643926307 65483 fc69f364ef63c07bf68a2ab4b323f197 ""
-  "bibliography.bib" 1666061232 6443 7d626f60b7adfb5ca1b0c6ddb5b810eb ""
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" 1666062520 3762 da1f05f4b00253e8d487426ebbb41cea "pdflatex"
-  "build/El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib" 1666062520 340 9808bdce1baf21af67814872548f430c "pdflatex"
+  "bibliography.bib" 1666148687 8817 ee340b42bdd6d565784c870acd64021c ""
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" 1666148706 4638 ba1d8f9e97ab30d4ccec0689e9c21d4f "pdflatex"
+  "build/El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib" 1666148706 340 9808bdce1baf21af67814872548f430c "pdflatex"
   (generated)
   "build/El aprendizaje incrementado en el uso de las redes neuronales.bbl"
   "build/El aprendizaje incrementado en el uso de las redes neuronales.blg"
-["makeindex build/El aprendizaje incrementado en el uso de las redes neuronales.idx"] 1666062472 "build/El aprendizaje incrementado en el uso de las redes neuronales.idx" "build/El aprendizaje incrementado en el uso de las redes neuronales.ind" "build/El aprendizaje incrementado en el uso de las redes neuronales" 1666062521
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.idx" 1666062520 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex build/El aprendizaje incrementado en el uso de las redes neuronales.idx"] 1666148309 "build/El aprendizaje incrementado en el uso de las redes neuronales.idx" "build/El aprendizaje incrementado en el uso de las redes neuronales.ind" "build/El aprendizaje incrementado en el uso de las redes neuronales" 1666148707
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.idx" 1666148706 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/El aprendizaje incrementado en el uso de las redes neuronales.ilg"
   "build/El aprendizaje incrementado en el uso de las redes neuronales.ind"
-["pdflatex"] 1666062519 "/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex" "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" "El aprendizaje incrementado en el uso de las redes neuronales" 1666062521
+["pdflatex"] 1666148705 "/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex" "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" "El aprendizaje incrementado en el uso de las redes neuronales" 1666148707
   "/etc/texmf/web2c/texmf.cnf" 1658705345 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex" 1666059434 870 aa82cbc16d8d866c9530f478ac244a63 ""
+  "/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex" 1666146457 873 2f6cc8b0fd803aad294cea65a3ba98f7 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -136,17 +136,17 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1658705930 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1658705982 2800432 254bd3bca8b16cff48139def5954d7e5 ""
-  "El aprendizaje incrementado en el uso de las redes neuronales.tex" 1666059434 870 aa82cbc16d8d866c9530f478ac244a63 ""
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" 1666062520 3762 da1f05f4b00253e8d487426ebbb41cea "pdflatex"
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.bbl" 1666062475 6763 27d156a6c1471b4cb27747c007737d8e "bibtex build/El aprendizaje incrementado en el uso de las redes neuronales"
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.ind" 1666062472 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/El aprendizaje incrementado en el uso de las redes neuronales.idx"
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.out" 1666062520 1487 e54a1ac5a924824e00aeea5cb1ccd55d "pdflatex"
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.run.xml" 1666062520 3147 deac408d4f63209a324dec9ee3ee5d0e "pdflatex"
-  "build/El aprendizaje incrementado en el uso de las redes neuronales.toc" 1666062520 914 884b8fd5f96415c7f3bd82b50d8b4e7c "pdflatex"
+  "El aprendizaje incrementado en el uso de las redes neuronales.tex" 1666146457 873 2f6cc8b0fd803aad294cea65a3ba98f7 ""
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.aux" 1666148706 4638 ba1d8f9e97ab30d4ccec0689e9c21d4f "pdflatex"
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.bbl" 1666148704 10857 5db615fa48c7e3008fa7560a5c5f604d "bibtex build/El aprendizaje incrementado en el uso de las redes neuronales"
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.ind" 1666148309 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/El aprendizaje incrementado en el uso de las redes neuronales.idx"
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.out" 1666148706 1855 1d49579ff9241e4c257505edb5da439c "pdflatex"
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.run.xml" 1666148706 3147 deac408d4f63209a324dec9ee3ee5d0e "pdflatex"
+  "build/El aprendizaje incrementado en el uso de las redes neuronales.toc" 1666148706 1112 8bb11e38bbc5fa68efedeebb8b079486 "pdflatex"
   "textFiles/approach.tex" 1666062169 4858 4b54dfde5889043fa3e18c5a751894a6 ""
   "textFiles/introduction.tex" 1666059434 2923 3d764e57638fd6acdaf13e839ee77696 ""
   "textFiles/portada.pdf" 1666059434 70425 a13cb61a47b87b2fd871deae02adffa3 ""
-  "textFiles/theoretical marco.tex" 1666062519 1918 6a2091c3a53b9e53066e0b195eb4b3c0 ""
+  "textFiles/theoretical marco.tex" 1666148701 3473 206281b139043ea291d395de7cc9bdd9 ""
   (generated)
   "build/El aprendizaje incrementado en el uso de las redes neuronales.aux"
   "build/El aprendizaje incrementado en el uso de las redes neuronales.idx"

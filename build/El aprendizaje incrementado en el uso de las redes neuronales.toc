@@ -9,4 +9,6 @@
 \contentsline {section}{\numberline {3}Marco Teorico}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Revisión de la literatura}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Aprendizaje Humano}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Aprendizaje con Compresi\'on}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Aprendizaje Activo}{6}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Aprendizaje Incremental}{6}{subsection.3.3}%

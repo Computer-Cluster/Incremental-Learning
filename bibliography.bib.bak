@@ -111,4 +111,32 @@
   url    = {https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicacion-en-el-marketing/},
 }
 
+@Article{bransford2000,
+  author  = {Bransford, J and Brown, A and Cocking, R},
+  journal = {Revista del Instituto de Matem{\'a}tica y F{\'\i}sica},
+  title   = {C{\'o}mo aprende la gente: cerebro, mente, experiencia, y escuela},
+  year    = {2000},
+  pages   = {44--64},
+}
+
+@InProceedings{landassuri2011,
+  author       = {Landassuri-Moreno, V and Bullinaria, John A},
+  booktitle    = {2011 IEEE Congress of Evolutionary Computation (CEC)},
+  title        = {Biasing the evolution of modular neural networks},
+  year         = {2011},
+  organization = {IEEE},
+  pages        = {1958--1965},
+}
+
+@Article{perez2014,
+  author    = {P{\'e}rez Ariza, Karel and Hern{\'a}ndez S{\'a}nchez, Jos{\'e} Emilio},
+  journal   = {Humanidades M{\'e}dicas},
+  title     = {Aprendizaje y comprensi{\'o}n. Una mirada desde las humanidades},
+  year      = {2014},
+  number    = {3},
+  pages     = {699--709},
+  volume    = {14},
+  publisher = {2001, Cendecsa},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
