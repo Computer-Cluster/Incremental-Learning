@@ -139,4 +139,25 @@
   publisher = {2001, Cendecsa},
 }
 
+@Article{Huber2008,
+  author    = {Huber, Günter L.},
+  title     = {Aprendizaje activo y metodologías educativas},
+  year      = {2008},
+  abstract  = {Se esbozan los enfoques de la construcción de la situación educativa y de lo socio-cultural como fondos teóricos para el desarrollo de métodos que se pueden cumplir con las metas del EEES (Espacio Europeo de Educación Superior). Cuatros métodos seleccionados muestran unas posibilidades y también las condiciones previas para lograr las metas del EEES. (1) Cada método tiene que animar procesos de reflexión, que incluyen tanto las experimentaciones como la incertidumbre en el espacio nuevo de enseñanza. (2) El método de proyectos de aprendizaje es apto a vincular el aprendizaje teórico y práctico,además de incluir elementos de la vida fuera de las instituciones de educación. (3) El enfoque de aprendizaje basado en problemas es más concentrado a objetos determinados del currículo, pero no menos adecuado para motivar a los estudiantes de integrar su conocimiento y generar sentido en lugar de acumular hechos y teoremas. (4) Para superar el dilema, que las metas prometidas de métodos avanzados de enseñanza y aprendizaje determinan al mismo tiempo en su mayor parte condiciones previas de su éxito, se han desarrollado enfoques más estructurados bajo la marca 'WELL' significando 'Wechselseitiges Lehren und Lernen' (enseñanza y aprendizaje mutual).},
+  booktitle = {Revista de educación. 2008, número extraordinario; p. 59-81},
+  keywords  = {método de enseñanza, sistema educativo, teoría de la educación, pedagogía por objetivos},
+  url       = {http://www.revistaeducacion.mec.es/re2008/re2008_04.pdf},
+}
+
+@Article{fisher1987,
+  author    = {Fisher, Douglas H},
+  journal   = {Machine learning},
+  title     = {Knowledge acquisition via incremental conceptual clustering},
+  year      = {1987},
+  number    = {2},
+  pages     = {139--172},
+  volume    = {2},
+  publisher = {Springer},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

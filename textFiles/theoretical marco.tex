@@ -60,6 +60,87 @@
 
         \subsubsection{Algoritmos de Aprendizaje Incremental}
             \textit{"Un algoritmo de aprendizaje es incremental si,
-            para cualquier muestra de entrenamiento dada: e_{1} , .... , e_{s}, produce un
-            secuencia de hipótesis h_{0} , h_{1}, . . . , h_{n} , tal que hi+1
-            depende solo de hola y del ejemplo actual e"} \cite{GiraudCarrier2000}
+            para cualquier muestra de entrenamiento dada:
+            \begin{equation}
+                e_{1} , .... , e_{s}
+			\end{equation}
+            , produce un secuencia de hipótesis 
+            \begin{equation}
+                h_{0} , h_{1}, . . . , h_{n} 
+            \end{equation}
+            , tal que hi+1 depende solo de hola y del ejemplo actual e"} \cite{GiraudCarrier2000}, como 
+            observamos estos son algoritmos que permiten a la inteligencia artificial poder realizar actividades de predicci\'on 
+            de una manera m\'as eficaz.\\
+            Un ejemplo del uso de esta rama esta el proyecto \textit{COBWEB} donde se trata de categorizar el n\'umero de cluster y la pertenencia 
+            de dichas categor\'ias por medio de una m\'etrica probabil\'istica global, esto lo realiza por medio de que se agrega 
+            una nueva categor\'ia, este proceso lo que realizara es actualizar todas las probabilisticas con los nuevos datos recabados \cite{fisher1987}.
+    
+    \subsection{Redes Neuronales Artificiales}
+        
+        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples unidades de procesamientos. \\
+        Como podemos darnos cuenta, al mencionar RNA lo primero que se nos viene a la mente es el procesamiento biol\'ogico por el que transita el 
+        cerebro humano. El m\'etodo principal de las redes neuronales es sacarle el maximo poder a los algoritmos de aprendizaje maquina, ya que las redes neuronales 
+        tiene un antecedente biol\'ogico.
+
+        Tiene demasiadas utilidades las cuales ayudan a distintas problematicas, algunas de las funciones que tiene son \cite{liu2015}:
+
+        \begin{enumerate}
+            \item No linealidad.
+            \item Mapeo entrada-salida.
+            \item Aprendizaje robusto a errores en los datos de entrenamiento. 
+            \item Entre otros.
+        \end{enumerate}
+
+        Existen varios tipos de Redes Neuronales tales como: 
+        \begin{itemize}
+            \item Redes Neuronales de Perceptr\'on Multicapa.
+            \item Redes Neuronales Convolucionales.
+            \item Entre otras.
+        \end{itemize}
+    
+        \subsubsection{Redes Neuronales de Perceptr\'on Multicapa}
+
+            Al momento de mapear el progreso de una red nos sirve para conocer buscar un camino adecuado entre la capa de entrada y salida, esto se puede hacer 
+            con problemas de una sola neurona, pero no se puede n resolver problemas no lineales, es aqu\'i donde entran los perceptrones
+            multicapas, los cuales rompen con esta limitaci\'on.
+
+            Estas neuronas est\'an compuestas de 3 capas:
+            \begin{enumerate}
+                \item Capas de entrada.
+                \item Capas ocultas.
+                \item Capas de salida.
+            \end{enumerate}
+
+            Los datos de entrada se van a ir propagando capa por capa, hasta llegar a la capa final, donde ya paso
+            por una funci\'on de activaci\'on donde se rompio la no linealinidad, para poder llegar a un resultado \cite{liu2015}.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\columnwidth]{MLP.png}
+                \caption{Red Neuronal de Perceptr\'on Multicapa \cite{liu2015}}
+                \label{fig:fig2}
+            \end{figure}
+
+        \subsubsection{Redes Neuronales Convolucionales}
+
+            Este tipo de red trabaja con el uso de imagenes, por lo general se suele trabajar con imagenes de alta calidad, el \'unico poroblema que se tiene 
+            al momento de que sean de alta resoluciones son:
+            \begin{itemize}
+                \item El tiempo de entrenamiento sea enorme.
+                \item El tiempo de testo sea muy tardio.
+            \end{itemize}
+
+            Consta de diversas multicapas alternadas, al final tiene una red perceptron multicapa.
+            La entrada de una red convolucional, con diferentes medidas en altura y ancuhura de imagen, para el uso 
+            de los proyectos se trabajan en escalas de grises, las cuales contienen filtros y cada filtro tiene distintos 
+            rasgos y caracteristicas de tamaño. Cada capa es submustreo de m\'inimo a m\'aximo muestre, donde se toman valores 
+            desde 2 im\'agenes pequeñas hasta no mas de 5 im\'agenes grandes.
+
+            Antes o despu\'es del submuestreo se aplica la activaci\'on sigmoidal para cada mapeo de rasgos \cite{duran2017}.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\columnwidth]{esquemaRedConvolucional.png}
+                \caption{Esquema de una Red Convolucional \cite{duran2017}}
+                \label{fig:fig2}
+            \end{figure}
