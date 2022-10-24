@@ -1,9 +1,9 @@
-PWD /home/luisg/Documents/Incremental-Learning
+PWD /home/luisg/Documentos/Incremental-Learning
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex
+INPUT /home/luisg/Documentos/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex
 OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -603,6 +603,30 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -783,29 +807,6 @@ INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.out
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.out
 OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
@@ -936,6 +937,18 @@ INPUT textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT textFiles/hypothesis.tex
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT textFiles/methodology.tex
+INPUT ./images//diagramaGantt.png
+INPUT ./images//diagramaGantt.png
+INPUT images//diagramaGantt.png
+INPUT ./images//diagramaGantt.png
+INPUT ./images//diagramaGantt.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.aux

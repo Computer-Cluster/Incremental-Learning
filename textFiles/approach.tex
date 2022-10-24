@@ -1,56 +1,62 @@
-\subsection{Objetivos}
-Diseñar una red neuronal para aprendizaje incremental basada en el principio de la memoria a corto y largo plazo, buscando usar más de dos categorías para el reconocimiento de dígitos.
-\subsubsection{Objetivos Particulares}
-    \begin{enumerate}
-        \item Implementar el algoritmo de John A. Bullinaria para el reconocimiento de dígitos con aprendizaje a corto y largo plazo con los parámetros que él indica.
-        \item Obtener el conjunto de datos de Optical Digits y analizar que esté conforme al artículo de John A. Bullinaria.
-        \item Separar el conjunto de entrenamiento y de prueba de acuerdo a lo que se explica en el artículo base y hacer los experimentos para que se obtengan los mismo resultados.
-        \item Programar y modificar el algoritmo base, hacer que sean más de dos nodos, y repartir las tazas de aprendizaje proporcionalmente.
-        \item Probar la nueva implementación con el mismo conjunto de datos y ver si hay una diferencia significativa.
-    \end{enumerate}
-\subsection{Justificaci\'on}
+\section{Planeamiento}
 
-Las redes neuronales apoyan a la resoluci\'on de distintos problemas, pero el Maching Learning 
-tiene una deficiencia que es al momento de aumentar los datos a dichos modelos, la deficiencia 
-que se obtiene es enorme que causa que los proyectos sean obsoleto \cite{Bullinaria2009}. Los 
-resultados que se han obtenido no funcionan a la perfección, la memoria a corto plazo olvida poco 
-pero va olvidando, y lo ideal sería que no olvidara, biológicamente nosotros no podemos 
-hacer muchas modificaciones por lo mismo que implica, pero computacionalmente nada puede 
-impedir que se pruebe con más configuraciones y llegar al punto en donde toda la información 
-que llega se acumule y si no hay problema de almacenamiento que se siga acumulando y que no olvide, 
-eso podría ser bueno en algunas situaciones.
-
-Hacer este trabajo puede hacer que funcionen mejor las técnicas, pues ahorraría más energía 
-en lugar de hacer entrenamientos muy grandes cada determinado tiempo e incluir todos los datos 
-pasados de forma paulatina. Así como el ahorro de tiempo, de procesamiento, los tiempos de 
-entrenamientos se reducirían y se reduciría la pérdida de información.
-
-Existe una gran variedad de herramientas las cuales nos permiten codificar una red neuronal, existen 2 empresas 
-importantes las cuales nos prestan sus servicios, las cuales son:
-\begin{enumerate}
-    \item Microsoft.
-    \item Google.
-\end{enumerate}
-Por el lado de Microsoft tenemos lo que es la plataforma de Azure que nos renta una maquina virtual donde podemos 
-pogramar en python.
-
-Del lado de google tenemos lo que es google Colab que igual nos brinda una maquina virtual para realizar experimentos de Maching
-Learning, la \'unica diferencia a Azure es que es gratuito, aqu\'i también se puede programar en Python.
-
-Como se observa en los dos se puede programar en pyhton y es porque este lenguaje es una herramienta de 
-software libre que no requiere licencia, es relativamente fácil poder depurar un código y permite acelerar 
-más el desarrollo de aplicaciones,  a diferencia de otros lenguajes más estructurados 
-como c o java, adem\'as tiene m\'as librerias para el desarrollo de Maching Learning. \\
-
-TensorFlow es una libreria de python que te permite construir y entrenar redes neuronales para detectar patrones y
-razonamientos usados por los humanos. \\
-
-Keras es un framework de alto nivel para el aprendizaje, escrito en Python y capaz de correr sobre los 
-frameworks TensorFlow. Fue desarrollado con el objeto de facilitar un proceso de experimentación rápida. Diseñado para construir por bloques la arquitectura de cada red neuronal, incluyendo redes convolucionales y modelos recurrentes, que son las que permiten, junto a los bloques “más tradicionales”, entrenar aprendizaje profundo.
-
-
-\subsection{Delimitación}
+    Indicar de forma general como es el funcionamiento de las redes neuronales en el uso general, como es que se produce la falta de memoria en 
+    estos modelos de predicciones. Poner en pr\'actica los modelos de experimentación de John Bullinaria para comprobarlos con
+    problematicas m\'as robustas y optimizarlo para que sea un m\'etodo eficiente.
     
+\section{Objetivos}
+    Diseñar una red neuronal para aprendizaje incremental basada en el principio de la memoria a corto y largo plazo, buscando usar más de dos categorías para el reconocimiento de dígitos.
+    \subsection{Objetivos Particulares}
+        \begin{enumerate}
+            \item Implementar el algoritmo de John A. Bullinaria para el reconocimiento de dígitos con aprendizaje a corto y largo plazo con los parámetros que él indica.
+            \item Obtener el conjunto de datos de Optical Digits y analizar que esté conforme al artículo de John A. Bullinaria.
+            \item Separar el conjunto de entrenamiento y de prueba de acuerdo a lo que se explica en el artículo base y hacer los experimentos para que se obtengan los mismo resultados.
+            \item Programar y modificar el algoritmo base, hacer que sean más de dos nodos, y repartir las tazas de aprendizaje proporcionalmente.
+            \item Probar la nueva implementación con el mismo conjunto de datos y ver si hay una diferencia significativa.
+        \end{enumerate}
+\section{Justificaci\'on}
+
+        Las redes neuronales apoyan a la resoluci\'on de distintos problemas, pero el Maching Learning 
+        tiene una deficiencia que es al momento de aumentar los datos a dichos modelos, la deficiencia 
+        que se obtiene es enorme que causa que los proyectos sean obsoleto \cite{Bullinaria2009}. Los 
+        resultados que se han obtenido no funcionan a la perfección, la memoria a corto plazo olvida poco 
+        pero va olvidando, y lo ideal sería que no olvidara, biológicamente nosotros no podemos 
+        hacer muchas modificaciones por lo mismo que implica, pero computacionalmente nada puede 
+        impedir que se pruebe con más configuraciones y llegar al punto en donde toda la información 
+        que llega se acumule y si no hay problema de almacenamiento que se siga acumulando y que no olvide, 
+        eso podría ser bueno en algunas situaciones.
+
+        Hacer este trabajo puede hacer que funcionen mejor las técnicas, pues ahorraría más energía 
+        en lugar de hacer entrenamientos muy grandes cada determinado tiempo e incluir todos los datos 
+        pasados de forma paulatina. Así como el ahorro de tiempo, de procesamiento, los tiempos de 
+        entrenamientos se reducirían y se reduciría la pérdida de información.
+
+        Existe una gran variedad de herramientas las cuales nos permiten codificar una red neuronal, existen 2 empresas 
+        importantes las cuales nos prestan sus servicios, las cuales son:
+        \begin{enumerate}
+            \item Microsoft.
+            \item Google.
+        \end{enumerate}
+        Por el lado de Microsoft tenemos lo que es la plataforma de Azure que nos renta una maquina virtual donde podemos 
+        pogramar en python.
+
+        Del lado de google tenemos lo que es google Colab que igual nos brinda una maquina virtual para realizar experimentos de Maching
+        Learning, la \'unica diferencia a Azure es que es gratuito, aqu\'i también se puede programar en Python.
+
+        Como se observa en los dos se puede programar en pyhton y es porque este lenguaje es una herramienta de 
+        software libre que no requiere licencia, es relativamente fácil poder depurar un código y permite acelerar 
+        más el desarrollo de aplicaciones,  a diferencia de otros lenguajes más estructurados 
+        como c o java, adem\'as tiene m\'as librerias para el desarrollo de Maching Learning. \\
+
+        TensorFlow es una libreria de python que te permite construir y entrenar redes neuronales para detectar patrones y
+        razonamientos usados por los humanos. \\
+
+        Keras es un framework de alto nivel para el aprendizaje, escrito en Python y capaz de correr sobre los 
+        frameworks TensorFlow. Fue desarrollado con el objeto de facilitar un proceso de experimentación rápida. Diseñado para construir por bloques la arquitectura de cada red neuronal, incluyendo redes convolucionales y modelos recurrentes, que son las que permiten, junto a los bloques “más tradicionales”, entrenar aprendizaje profundo.
+
+
+\section{Delimitación}
+            
     En la siguiente investigación solamente se van a utilizar redes neuronales artificiales, cabe mencionar que este no es el único tipo de red, porque también tenemos lo que es \cite{royo2021}:
     \begin{itemize}
         \item Redes Neuronales Monocapa.
@@ -62,7 +68,7 @@ frameworks TensorFlow. Fue desarrollado con el objeto de facilitar un proceso de
     Pero para este experimento vamos a utilizar ANN que es el algoritmo que por el momento nos beneficiaría, cabe mencionar que no usaremos algoritmos geneticos, ya que si se implenta, se estara
     optimizando y el objetivo principal es utilizar el aprendizaje incrementado para que acepte más datos de entrenamiento.
 
-\subsection{Consecuencias}
+\section{Consecuencias}
 
     Si el experimento funciona a la perfecci\'on ocurrir\'a lo siguiente:
     \begin{enumerate}
