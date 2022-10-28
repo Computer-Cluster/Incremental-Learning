@@ -1,29 +1,83 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper]{report}
+%\special{papersize=210mm,297mm}  % for a4 make smaller the page
+%\special{papersize=8.5in,11in} 	% for letter, change docClass to letter too
+
+\usepackage[spanish,mexico]{babel} 
+%\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,USenglish,es-tabla]{babel} 
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{lipsum}
-\usepackage{xcolor}
-\graphicspath{ {images/} }
-\usepackage[rightcaption]{sidecap}
-\usepackage{array}
-\usepackage{lipsum}
-\usepackage{framed}
-\usepackage{color}
-\usepackage{wrapfig}\definecolor{shadecolor}{RGB}{224,238,238}
-\usepackage{listings}
-\usepackage[hidelinks]{hyperref}
+
+% set double space, normal out a value = 1
+%\renewcommand{\baselinestretch}{1.66}
+\usepackage{setspace}
+
+% M a r g i n s 
+\usepackage[top=2.4cm, bottom=2.7cm, left=3.3cm, right=2.0cm]{geometry}   % with the script is lower the text, with kile it put +o- 1 cm above, check when pinted in the school
+
+% controlf the page number and others
+% \usepackage{fancyhdr}  % don't put this block before geometry pacage, the pag. num will be bad formatting
+% \pagestyle{fancy}
+% \fancyhead{}
+% \fancyfoot{}
+% \lhead{}
+% \rhead{\today}
+% \lfoot[\thepage]{}
+% \rfoot[]{\thepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[square, comma, sort&compress]{natbib}
+
+\usepackage{makeidx}
+
+% how many levels the table of contents will have 
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3} 		
+
+\usepackage{url}
+\usepackage{subfig}  % para usar la función subfigura
+\usepackage{epsfig}  % para trabajar con figs eps 
+
+% for tables
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{booktabs}
+\usepackage{rotating} 				% for vertical text in tables with  \begin{sideways}Paper\end{sideways} &\begin{sideways}Static\end{sideways} \\
+
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage{algpseudocode}
+
+%\usepackage[colorlinks]{hyperref}  % to put links to the document in colour
+\usepackage[printonlyused,withpage]{acronym}
+
+\usepackage{hyphenat} 			%hyphenation of compound words
+
+\usepackage{array} 			% to increse space between rows in tables using \setlength{\extrarowheight}{1.5pt}
+
+%\usepackage{multicol}
+
 \usepackage{pdfpages}
-\usepackage{pdflscape}
+\usepackage{pdflscape} 			% for landscape some pages
+% \begin{landscape}
+% \end{landscape}
 
+\usepackage{textcomp} 			% for the +- sign \textpm
 
-\usepackage[backend=bibtex]{biblatex}
-\addbibresource{bibliography.bib}
+% like verbatim but recognize commands
+%\usepackage{alltt}
 
+%textFiles/dataSets
+%  \includeonly{textFiles/acroList, textFiles/intro}
+% \includeonly{textFiles/acroList, textFiles/LiterReview}
+% \includeonly{textFiles/acroList, textFiles/dataSets}
+% \includeonly{textFiles/acroList, textFiles/epnetAlg, textFiles/AppA}
+% \includeonly{textFiles/acroList, textFiles/evoMNN}%, textFiles/AppB}
+% \includeonly{textFiles/acroList, textFiles/moduleReuse, textFiles/conc}
+
+%\includeonly{textFiles/acroList, textFiles/intro, textFiles/LiterReview, textFiles/moduleReuse}
+
+%\includeonly{textFiles/acroList, textFiles/conc}
+
+\graphicspath{ {images/} }
 
 
 \makeindex
@@ -32,14 +86,18 @@
     
     \includepdf{textFiles/portada.pdf}
     \tableofcontents
-    \newpage
+
     \listoffigures
-    \newpage 
-    \input{textFiles/introduction}
-    \input{textFiles/approach}
-    \input{textFiles/theoretical marco}
-    \input{textFiles/hypothesis}
-    \input{textFiles/methodology}
     
-    \printbibliography  
+    \include{textFiles/introduction}
+    \include{textFiles/approach}
+    \include{textFiles/theoretical marco}
+    \include{textFiles/hypothesis}
+    \include{textFiles/methodology}
+    
+    %\printbibliography  
+    %\bibliographystyle{acm}
+    \bibliographystyle{ieeetr}%plain}
+    \bibliography{bibliography}
+    %\bibliography{BaseDatos2}
 \end{document}

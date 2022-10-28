@@ -4,15 +4,12 @@
   year   = {2000},
 }
 
-@Conference{Bullinaria2009,
-  author   = {John Bullinaria},
-  title    = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning},
-  year     = {2009},
-  month    = nov,
-  note     = {Proceedings of the International Joint Conference on Computational Intelligence (IJCCI 2009) ; Conference date: 01-11-2009},
-  pages    = {427--434},
-  day      = {1},
-  language = {English},
+@InProceedings{bullinaria2009,
+  author    = {Bullinaria, John A},
+  booktitle = {IJCCI},
+  title     = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning.},
+  year      = {2009},
+  pages     = {427--434},
 }
 
 @Article{Elwell2011,
@@ -158,6 +155,12 @@
   pages     = {139--172},
   volume    = {2},
   publisher = {Springer},
+}
+
+@Article{duran2017,
+  author = {Dur{\'a}n Su{\'a}rez, Jaime},
+  title  = {Redes neuronales convolucionales en R: Reconocimiento de caracteres escritos a mano},
+  year   = {2017},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
