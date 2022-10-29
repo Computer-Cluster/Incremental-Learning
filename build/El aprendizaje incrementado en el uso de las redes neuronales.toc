@@ -1,24 +1,24 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Introduccion}{3}{}%
-\contentsline {section}{\numberline {2}Planeamiento}{4}{}%
-\contentsline {section}{\numberline {3}Objetivos}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Objetivos Particulares}{5}{}%
-\contentsline {section}{\numberline {4}Justificaci\'on}{5}{}%
-\contentsline {section}{\numberline {5}Delimitación}{6}{}%
-\contentsline {section}{\numberline {6}Consecuencias}{6}{}%
-\contentsline {section}{\numberline {7}Marco Teórico}{7}{}%
-\contentsline {subsection}{\numberline {7.1}Redes Neuronales Artificiales}{7}{}%
-\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{7}{}%
-\contentsline {subsection}{\numberline {7.3}A}{8}{}%
-\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{8}{}%
-\contentsline {section}{\numberline {8}Aprendizaje}{9}{}%
-\contentsline {subsection}{\numberline {8.1}Aprendizaje en humanos}{9}{}%
-\contentsline {subsection}{\numberline {8.2}Aprendizaje Humano}{9}{}%
-\contentsline {subsubsection}{\numberline {8.2.1}Aprendizaje con Compresi\'on}{10}{}%
-\contentsline {subsubsection}{\numberline {8.2.2}Aprendizaje Activo}{10}{}%
-\contentsline {subsection}{\numberline {8.3}Aprendizaje Incremental}{10}{}%
-\contentsline {subsubsection}{\numberline {8.3.1}Algoritmos de Aprendizaje Incremental}{10}{}%
-\contentsline {section}{\numberline {9}Hipotesis}{11}{}%
-\contentsline {section}{\numberline {10}Metodología}{12}{}%
-\contentsline {section}{\numberline {11}Cronograma de Actividades}{12}{}%
-\contentsline {section}{\numberline {12}Organización del Capitulado}{12}{}%
+\babel@toc {USenglish}{}\relax 
+\contentsline {section}{\numberline {1}Introduccion}{3}{section.1}%
+\contentsline {section}{\numberline {2}Planeamiento}{4}{section.2}%
+\contentsline {section}{\numberline {3}Objetivos}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivos Particulares}{5}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Justificaci\'on}{5}{section.4}%
+\contentsline {section}{\numberline {5}Delimitación}{7}{section.5}%
+\contentsline {section}{\numberline {6}Consecuencias}{7}{section.6}%
+\contentsline {section}{\numberline {7}Marco Teórico}{8}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Redes Neuronales Artificiales}{8}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}A}{9}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{9}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Aprendizaje}{10}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Aprendizaje en humanos}{10}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Aprendizaje Humano}{11}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Aprendizaje con Compresi\'on}{11}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Aprendizaje Activo}{11}{subsubsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.3}Aprendizaje Incremental}{11}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Algoritmos de Aprendizaje Incremental}{12}{subsubsection.8.3.1}%
+\contentsline {section}{\numberline {9}Hipotesis}{13}{section.9}%
+\contentsline {section}{\numberline {10}Metodología}{14}{section.10}%
+\contentsline {section}{\numberline {11}Cronograma de Actividades}{14}{section.11}%
+\contentsline {section}{\numberline {12}Organización del Capitulado}{14}{section.12}%

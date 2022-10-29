@@ -1,40 +1,461 @@
-\begin{thebibliography}{1}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{zhao2022}
-B.~Zhao, T.~Wu, F.~Fang, L.~Wang, W.~Ren, X.~Yang, Z.~Ruan, and X.~Kou,
-  ``Prediction method of 5g high-load cellular based on bp neural network,'' in
-  {\em 2022 8th International Conference on Mechatronics and Robotics
-  Engineering (ICMRE)}, pp.~148--151, IEEE, 2022.
+\datalist[entry]{nty/global//global/global}
+  \entry{bransford2000}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Bransford},
+         familyi={B\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=BA}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=CR}{%
+         family={Cocking},
+         familyi={C\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{BJBACR1}
+    \strng{fullhash}{BJBACR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{44\bibrangedash 64}
+    \field{title}{C{\'o}mo aprende la gente: cerebro, mente, experiencia, y
+  escuela}
+    \field{journaltitle}{Revista del Instituto de Matem{\'a}tica y F{\'\i}sica}
+    \field{year}{2000}
+  \endentry
 
-\bibitem{salazar2013}
-L.~A.~C. Salazar, D.~J.~M. Aldana, and J.~A.~C. Montes, ``Implementaci{\'o}n de
-  redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones
-  obtenidos por un s{\'o}nar,'' in {\em 2013 II International Congress of
-  Engineering Mechatronics and Automation (CIIMA)}, pp.~1--6, IEEE, 2013.
+  \entry{bullinaria2009}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BJA}{%
+         family={Bullinaria},
+         familyi={B\bibinitperiod},
+         given={John\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJA1}
+    \strng{fullhash}{BJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{IJCCI}
+    \field{pages}{427\bibrangedash 434}
+    \field{title}{Evolved Dual Weight Neural Architectures to Facilitate
+  Incremental Learning.}
+    \field{year}{2009}
+  \endentry
 
-\bibitem{liu2015}
-Y.~Liu, ``Yuan liu incremental learning in deep neural networks,'' 2015.
+  \entry{duran2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DSJ}{%
+         family={Dur{\'a}n\bibnamedelima Su{\'a}rez},
+         familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Jaime},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DSJ1}
+    \strng{fullhash}{DSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Redes neuronales convolucionales en R: Reconocimiento de
+  caracteres escritos a mano}
+    \field{year}{2017}
+  \endentry
 
-\bibitem{GiraudCarrier2000}
-C.~G. Giraud-Carrier, ``A note on the utility of incremental learning,'' {\em
-  AI Commun.}, vol.~13, pp.~215--224, 2000.
+  \entry{Elwell2011}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ER}{%
+         family={Elwell},
+         familyi={E\bibinitperiod},
+         given={Ryan},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={Polikar},
+         familyi={P\bibinitperiod},
+         given={Robi},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ERPR1}
+    \strng{fullhash}{ERPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{doi}
+    \verb 10.1109/TNN.2011.2160459
+    \endverb
+    \field{number}{10}
+    \field{pages}{1517\bibrangedash 1531}
+    \field{title}{Incremental Learning of Concept Drift in Nonstationary
+  Environments}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE Transactions on Neural Networks}
+    \field{year}{2011}
+  \endentry
 
-\bibitem{Bullinaria2009}
-J.~A. Bullinaria, ``Evolved dual weight neural architectures to facilitate
-  incremental learning.,'' in {\em IJCCI}, pp.~427--434, 2009.
+  \entry{fisher1987}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FDH}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={Douglas\bibnamedelima H},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FDH1}
+    \strng{fullhash}{FDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{2}
+    \field{pages}{139\bibrangedash 172}
+    \field{title}{Knowledge acquisition via incremental conceptual clustering}
+    \field{volume}{2}
+    \field{journaltitle}{Machine learning}
+    \field{year}{1987}
+  \endentry
 
-\bibitem{li2008}
-A.-J. Li, ``An improved algorithm for incremental learning learn++,'' in {\em
-  2008 International Conference on Wavelet Analysis and Pattern Recognition},
-  vol.~1, pp.~310--315, IEEE, 2008.
+  \entry{GiraudCarrier2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GCCG}{%
+         family={Giraud-Carrier},
+         familyi={G\bibinithyphendelim C\bibinitperiod},
+         given={Christophe\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCCG1}
+    \strng{fullhash}{GCCG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{pages}{215\bibrangedash 224}
+    \field{title}{A Note on the Utility of Incremental Learning}
+    \field{volume}{13}
+    \field{journaltitle}{AI Commun.}
+    \field{year}{2000}
+  \endentry
 
-\bibitem{Elwell2011}
-R.~Elwell and R.~Polikar, ``Incremental learning of concept drift in
-  nonstationary environments,'' {\em IEEE Transactions on Neural Networks},
-  vol.~22, no.~10, pp.~1517--1531, 2011.
+  \entry{Huber2008}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HGL}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={Günter\bibnamedelima L.},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \keyw{método de enseñanza, sistema educativo, teoría de la educación,
+  pedagogía por objetivos}
+    \strng{namehash}{HGL1}
+    \strng{fullhash}{HGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Se esbozan los enfoques de la construcción de la situación educativa y de
+  lo socio-cultural como fondos teóricos para el desarrollo de métodos que se
+  pueden cumplir con las metas del EEES (Espacio Europeo de Educación
+  Superior). Cuatros métodos seleccionados muestran unas posibilidades y
+  también las condiciones previas para lograr las metas del EEES. (1) Cada
+  método tiene que animar procesos de reflexión, que incluyen tanto las
+  experimentaciones como la incertidumbre en el espacio nuevo de enseñanza.
+  (2) El método de proyectos de aprendizaje es apto a vincular el aprendizaje
+  teórico y práctico,además de incluir elementos de la vida fuera de las
+  instituciones de educación. (3) El enfoque de aprendizaje basado en
+  problemas es más concentrado a objetos determinados del currículo, pero no
+  menos adecuado para motivar a los estudiantes de integrar su conocimiento y
+  generar sentido en lugar de acumular hechos y teoremas. (4) Para superar el
+  dilema, que las metas prometidas de métodos avanzados de enseñanza y
+  aprendizaje determinan al mismo tiempo en su mayor parte condiciones previas
+  de su éxito, se han desarrollado enfoques más estructurados bajo la marca
+  'WELL' significando 'Wechselseitiges Lehren und Lernen' (enseñanza y
+  aprendizaje mutual).%
+    }
+    \field{booktitle}{Revista de educación. 2008, número extraordinario; p.
+  59-81}
+    \field{title}{Aprendizaje activo y metodologías educativas}
+    \verb{url}
+    \verb http://www.revistaeducacion.mec.es/re2008/re2008_04.pdf
+    \endverb
+    \field{year}{2008}
+  \endentry
 
-\bibitem{royo2021}
-f.~given i=P., given=Paloma, ``{Qué son las redes neuronales y cuál es su
-  aplicación en el marketing},'' 9 2021.
+  \entry{royo2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=gifg}{%
+         prefix={given},
+         prefixi={g\bibinitperiod},
+         family={i=P.},
+         familyi={i\bibinitperiod},
+         suffix={given=Paloma},
+         suffixi={g\bibinitperiod},
+         given={family=Royo},
+         giveni={f\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{igfg1}
+    \strng{fullhash}{igfg1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{{Qué son las redes neuronales y cuál es su aplicación en
+  el marketing}}
+    \verb{url}
+    \verb https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicaci
+    \verb on-en-el-marketing/
+    \endverb
+    \field{month}{09}
+    \field{year}{2021}
+  \endentry
 
-\end{thebibliography}
+  \entry{li2008}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LAJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Ai-Jun},
+         giveni={A\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{LAJ1}
+    \strng{fullhash}{LAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{2008 International Conference on Wavelet Analysis and
+  Pattern Recognition}
+    \field{pages}{310\bibrangedash 315}
+    \field{title}{An improved algorithm for incremental learning learn++}
+    \field{volume}{1}
+    \field{year}{2008}
+  \endentry
+
+  \entry{liu2015}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY1}
+    \strng{fullhash}{LY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Yuan Liu INCREMENTAL LEARNING IN DEEP NEURAL NETWORKS}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Nrby2015}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NS}{%
+         family={N{\o}rby},
+         familyi={N\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NS1}
+    \strng{fullhash}{NS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{pages}{551 \bibrangedash  578}
+    \field{title}{Why Forget? On the Adaptive Value of Memory Loss}
+    \field{volume}{10}
+    \field{journaltitle}{Perspectives on Psychological Science}
+    \field{year}{2015}
+  \endentry
+
+  \entry{perez2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PAK}{%
+         family={P{\'e}rez\bibnamedelima Ariza},
+         familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Karel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=HSJE}{%
+         family={Hern{\'a}ndez\bibnamedelima S{\'a}nchez},
+         familyi={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima Emilio},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {2001, Cendecsa}%
+    }
+    \strng{namehash}{PAKHSJE1}
+    \strng{fullhash}{PAKHSJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{3}
+    \field{pages}{699\bibrangedash 709}
+    \field{title}{Aprendizaje y comprensi{\'o}n. Una mirada desde las
+  humanidades}
+    \field{volume}{14}
+    \field{journaltitle}{Humanidades M{\'e}dicas}
+    \field{year}{2014}
+  \endentry
+
+  \entry{salazar2013}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SLAC}{%
+         family={Salazar},
+         familyi={S\bibinitperiod},
+         given={Luis A\bibnamedelima Cruz},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=ADJM}{%
+         family={Aldana},
+         familyi={A\bibinitperiod},
+         given={David J\bibnamedelima Mu{\~n}oz},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=MJAC}{%
+         family={Montes},
+         familyi={M\bibinitperiod},
+         given={Juan A\bibnamedelima Contreras},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SLACADJMMJAC1}
+    \strng{fullhash}{SLACADJMMJAC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{2013 II International Congress of Engineering
+  Mechatronics and Automation (CIIMA)}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa
+  para la clasificaci{\'o}n de patrones obtenidos por un S{\'o}nar}
+    \field{year}{2013}
+  \endentry
+
+  \entry{zhao2022}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=ZB}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Beibei},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Tairan},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Fang},
+         familyi={F\bibinitperiod},
+         given={Fang},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Lin},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RW}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Wenzhang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YX}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Xu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RZ}{%
+         family={Ruan},
+         familyi={R\bibinitperiod},
+         given={Zhangjing},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KX}{%
+         family={Kou},
+         familyi={K\bibinitperiod},
+         given={Xuejin},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZB+1}
+    \strng{fullhash}{ZBWTFFWLRWYXRZKX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2022 8th International Conference on Mechatronics and
+  Robotics Engineering (ICMRE)}
+    \field{pages}{148\bibrangedash 151}
+    \field{title}{Prediction method of 5G high-load cellular based on BP neural
+  network}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput
