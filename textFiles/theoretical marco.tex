@@ -1,6 +1,90 @@
 \section{Marco Teórico}
 
-    \subsection{Revisión de la literatura}
+    
+    
+    \subsection{Redes Neuronales Artificiales}
+        
+        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples unidades de procesamientos. \\
+        Como podemos darnos cuenta, al mencionar RNA lo primero que se nos viene a la mente es el procesamiento biol\'ogico por el que transita el 
+        cerebro humano. El m\'etodo principal de las redes neuronales es sacarle el máximo poder a los algoritmos de aprendizaje maquina, ya que las redes neuronales 
+        tiene un antecedente biol\'ogico.
+
+        Tiene demasiadas (EN LUGAR DETIENEN, PUEDEN DECIR: LAS RNAS PRESENTAN) utilidades las cuales ayudan a distintas (ELIMINEN LA PALABRA DISTINTAS, POSIBLEMENTE TAMBIÉN ELIMINA LA PALABRA ALGUNAS, SON PALABRAS MUY GENÉRICAS QUE PRÁCTICAMENTE NO DICE NADA,MEJOR DIGAN: PUEDEN RESOLVER PROBLEMAS COMO LOS SIGUIENTES) problemáticas, algunas de las funciones que tiene son \cite{liu2015}:
+
+(CONSIDERANDO UNO DE LOS COMENTARIOS QUE LES HAGO MÁS ARRIBA, ELIMINEN ESTOS LISTADOS Y DEJEN TODO ESCRITO EN LA FORMA DE PÁRRAFOS)
+        \begin{enumerate}
+            \item No linealidad.
+            \item Mapeo entrada-salida.
+            \item Aprendizaje robusto a errores en los datos de entrenamiento. 
+            \item Entre otros.
+        \end{enumerate}
+
+        Existen varios tipos de Redes Neuronales tales como: 
+        \begin{itemize}
+            \item Redes Neuronales de Perceptr\'on Multicapa.
+            \item Redes Neuronales Convolucionales.
+            \item Entre otras.
+        \end{itemize}
+    
+        \subsection{Redes Neuronales de Perceptr\'on Multicapa}
+
+(REVISAR REDACCIÓN Y MEJORARLA)
+            Al momento de mapear el progreso de una red nos sirve para conocer buscar un camino adecuado entre la capa de entrada y salida, esto se puede hacer 
+            con problemas de una sola neurona, pero no se pueden resolver problemas no lineales, es aqu\'i donde entran los perceptrones
+            multicapas, los cuales rompen con esta limitaci\'on.
+
+            Estas neuronas est\'an compuestas de 3 capas como se puede ver en la Figura \ref{fig:fig1}:
+            \begin{enumerate}
+                \item Capas de entrada.
+                \item Capas ocultas.
+                \item Capas de salida.
+            \end{enumerate}
+
+            Los datos de entrada se van a ir propagando capa por capa, hasta llegar a la capa final, donde la información pasará
+            por una funci\'on de activaci\'on la cual poermite tener en un rango controlado los valores que se propagan por la red. Al final, las neuronas de la capa de salida darán el resultado esperado o muy proximo a él, si el valor no es correcto, se deberá proceder a una etapa de entrenamiento \cite{liu2015}.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\columnwidth]{MLP.png}
+                \caption{Red Neuronal de Perceptr\'on Multicapa \cite{liu2015}}
+                \label{fig:fig1}
+            \end{figure}
+
+\subsection Algoritmo Backpropagation
+(Aquí describan este algoritmo, la página que les pase de John les puede ayudar. Términos importantes de escribirlo porque sobre él se basaron para hacer la implementación de las redes con pesos duplicados)
+
+
+        \subsection{Redes Neuronales Convolucionales}
+
+            Este tipo de red trabaja con el uso de imágenes, por lo general de alta calidad, el \'unico problema que se tiene 
+            al momento de que sean de alta resoluciones son:
+            \begin{itemize}
+                \item El tiempo de entrenamiento sea enorme.
+                \item El tiempo de testo sea muy tardío.
+            \end{itemize}
+
+            Consta de diversas multicapas alternadas, al final tiene una red perceptr\'on multicapa. (Revisen la redacción, está muy segmentada las ideas, tienen que explicar un poco más para que se entienda mejor, tomen como base la redacción que les pongo al inicio del trabajo, vean cómo voy a explicando más cosas, y aunque me llevo más espacio, queda mejor)
+            La entrada de una red convolucional, con diferentes medidas en altura y anchura de imagen, para el uso 
+            de los proyectos se trabajan en escalas de grises, las cuales contienen filtros y cada filtro tiene distintos 
+            rasgos y características de tamaño. Cada capa es submuestreo de m\'inimo a m\'aximo, muestra donde se toman valores 
+            desde 2 im\'agenes pequeñas hasta no mas de 5 im\'agenes grandes.
+
+            Antes o despu\'es del submuestreo se aplica la activaci\'on sigmoidal para cada mapeo de rasgos \cite{duran2017}.
+
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=\columnwidth]{esquemaRedConvolucional.png}
+                \caption{Esquema de una Red Convolucional \cite{duran2017}}
+                \label{fig:fig2}
+            \end{figure}
+
+Así como las redes convolucionales, también existen las redes profundas(deep learning), sin embargo, como se comenta en esta sección \label{sec:delimitation} el presente trabajo solo se basará en redes del tipo multicapa perceptron usando el algoritmo de bacpkpropagation, donde de ser demostrado los principios aquí descritos,  se podrá aplicar a cualquier otro tipo de algoritmo de aprendizaje.  (LUIS Y SANDRA, AGREGUEN A LA DELIMITACIÓN LO QUE ESTOY INDICANDO AQUÍ, PARA QUE TENGA SENTIDO ESTO)
+
+
+
+\section{Aprendizaje}
+
+\subsection {Aprendizaje en humanos}
         El humano tiene una forma de aprendizaje muy particular, la cual se basa del estudio, donde lee, escribe y practica acerca de
         su tema de interés, pero dicho aprendizaje se puede ir olvidando, esto es una acción muy común que a cualquier persona le sucede.
         Existen estudios donde se comenta que existen tres motivos del porque se olvidan las cosas, proviene parte de la regularización de las emociones,
@@ -33,16 +117,15 @@
             una parte primordial \cite{perez2014}.
 
         \subsubsection{Aprendizaje Activo}
-            El aprendizaje de la forma en la que se conocem no es del todo efectiva, se dice esto porque parte del sistema de educaci\'on porque la manera 
-            correcta es con el principio de \textit{belongingness}, el cual esta asociado al estimulo con su respuesta,
+            El aprendizaje de la forma en la que se conoce no es del todo efectiva, ya que el sistema educativo
+            no se basa en el principio de \textit{belongingness}, el cual esta asociado al estimulo con su respuesta,
             y esto es lo m\'as importante para que el ser humano pueda aprender cualquier cosa.\\
             Este tipo de aprendizaje se basa en la recepci\'on de conocimientos y la pr\'actica donde se ponen en marcha los conocimientos adquiridos.\\
             Otro concepto importante aqu\'i es la tautolog\'ia doble (\textit{selbstt\"atiges Lernen}), que en palabras informales es convertirse en autodidacta, 
             se puede observar que esto pertenece a dicho aprendizaje, porque usa el principio mencionado anteriormente \cite{Huber2008}.
+   
 
-
-
-    \subsection{Aprendizaje Incremental}
+ \subsection{Aprendizaje Incremental}
         Con el pasar de los años la tecnología a evolucionado, eso quiere decir que el Aprendizaje Automático se ha actualizado, que la 
         cantidad de datos va aumentado con más frecuencia.
         
@@ -74,73 +157,5 @@
             Un ejemplo del uso de esta rama es el proyecto \textit{COBWEB}, donde se trata de categorizar el n\'umero de Cl\'uster y la pertenencia 
             de dichas categor\'ias por medio de una m\'etrica probabil\'istica global, esto lo realiza por medio de que se agrega 
             una nueva categor\'ia, este proceso lo que realizar\'a es actualizar todas las probabilisticas con los nuevos datos recabados \cite{fisher1987}.
-    
-    \subsection{Redes Neuronales Artificiales}
-        
-        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples unidades de procesamientos. \\
-        Como podemos darnos cuenta, al mencionar RNA lo primero que se nos viene a la mente es el procesamiento biol\'ogico por el que transita el 
-        cerebro humano. El m\'etodo principal de las redes neuronales es sacarle el máximo poder a los algoritmos de aprendizaje maquina, ya que las redes neuronales 
-        tiene un antecedente biol\'ogico.
 
-        Tiene demasiadas utilidades las cuales ayudan a distintas problemáticas, algunas de las funciones que tiene son \cite{liu2015}:
-
-        \begin{enumerate}
-            \item No linealidad.
-            \item Mapeo entrada-salida.
-            \item Aprendizaje robusto a errores en los datos de entrenamiento. 
-            \item Entre otros.
-        \end{enumerate}
-
-        Existen varios tipos de Redes Neuronales tales como: 
-        \begin{itemize}
-            \item Redes Neuronales de Perceptr\'on Multicapa.
-            \item Redes Neuronales Convolucionales.
-            \item Entre otras.
-        \end{itemize}
-    
-        \subsubsection{Redes Neuronales de Perceptr\'on Multicapa}
-
-            Al momento de mapear el progreso de una red nos sirve para conocer buscar un camino adecuado entre la capa de entrada y salida, esto se puede hacer 
-            con problemas de una sola neurona, pero no se pueden resolver problemas no lineales, es aqu\'i donde entran los perceptrones
-            multicapas, los cuales rompen con esta limitaci\'on.
-
-            Estas neuronas est\'an compuestas de 3 capas:
-            \begin{enumerate}
-                \item Capas de entrada.
-                \item Capas ocultas.
-                \item Capas de salida.
-            \end{enumerate}
-
-            Los datos de entrada se van a ir propagando capa por capa, hasta llegar a la capa final, donde ya pas\'o
-            por una funci\'on de activaci\'on donde se rompió la no linealidad, para poder llegar a un resultado \cite{liu2015}.
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=\columnwidth]{MLP.png}
-                \caption{Red Neuronal de Perceptr\'on Multicapa \cite{liu2015}}
-                \label{fig:fig1}
-            \end{figure}
-
-        \subsubsection{Redes Neuronales Convolucionales}
-
-            Este tipo de red trabaja con el uso de imágenes, por lo general de alta calidad, el \'unico problema que se tiene 
-            al momento de que sean de alta resoluciones son:
-            \begin{itemize}
-                \item El tiempo de entrenamiento sea enorme.
-                \item El tiempo de testo sea muy tardío.
-            \end{itemize}
-
-            Consta de diversas multicapas alternadas, al final tiene una red perceptr\'on multicapa.
-            La entrada de una red convolucional, con diferentes medidas en altura y anchura de imagen, para el uso 
-            de los proyectos se trabajan en escalas de grises, las cuales contienen filtros y cada filtro tiene distintos 
-            rasgos y características de tamaño. Cada capa es submuestreo de m\'inimo a m\'aximo, muestra donde se toman valores 
-            desde 2 im\'agenes pequeñas hasta no mas de 5 im\'agenes grandes.
-
-            Antes o despu\'es del submuestreo se aplica la activaci\'on sigmoidal para cada mapeo de rasgos \cite{duran2017}.
-
-            \begin{figure}[H]
-                \centering
-                \includegraphics[width=\columnwidth]{esquemaRedConvolucional.png}
-                \caption{Esquema de una Red Convolucional \cite{duran2017}}
-                \label{fig:fig2}
-            \end{figure}
+Aquí falta describir a detalle cómo se lleva acabo el aprendizaje incremental, se pueden basar en el trabajo de Bullinaria y Leanr ++, expliquenlo a detalle para que sea su estado del arte
