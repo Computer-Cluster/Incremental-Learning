@@ -4,15 +4,12 @@
   year   = {2000},
 }
 
-@Conference{Bullinaria2009,
-  author   = {John Bullinaria},
-  title    = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning},
-  year     = {2009},
-  month    = nov,
-  note     = {Proceedings of the International Joint Conference on Computational Intelligence (IJCCI 2009) ; Conference date: 01-11-2009},
-  pages    = {427--434},
-  day      = {1},
-  language = {English},
+@InProceedings{bullinaria2009,
+  author    = {Bullinaria, John A},
+  booktitle = {IJCCI},
+  title     = {Evolved Dual Weight Neural Architectures to Facilitate Incremental Learning.},
+  year      = {2009},
+  pages     = {427--434},
 }
 
 @Article{Elwell2011,
@@ -166,6 +163,7 @@
   year   = {2017},
 }
 
+<<<<<<< HEAD
 @InProceedings{zhao2022,
   author       = {Zhao, Beibei and Wu, Tairan and Fang, Fang and Wang, Lin and Ren, Wenzhang and Yang, Xu and Ruan, Zhangjing and Kou, Xuejin},
   booktitle    = {2022 8th International Conference on Mechatronics and Robotics Engineering (ICMRE)},
@@ -194,4 +192,6 @@
   volume       = {1},
 }
 
+=======
+>>>>>>> cefad34b5aaae3818e5c891e989888978ff08933
 @Comment{jabref-meta: databaseType:bibtex;}

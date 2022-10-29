@@ -1,65 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: El aprendizaje incrementado en el uso de las redes neuronales.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib
-Database file #2: bibliography.bib
-Biblatex version: 3.17
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 15 entries,
-            6399 wiz_defined-function locations,
-            1292 strings with 13052 characters,
-and the built_in function-call counts, 103085 in all, are:
-= -- 8122
-> -- 1469
-< -- 414
-+ -- 2577
-- -- 528
-* -- 7609
-:= -- 11448
-add.period$ -- 0
-call.type$ -- 15
-change.case$ -- 178
-chr.to.int$ -- 51
-cite$ -- 28
-duplicate$ -- 10132
-empty$ -- 9407
-format.name$ -- 863
-if$ -- 21119
+A level-1 auxiliary file: textFiles/introduction.aux
+A level-1 auxiliary file: textFiles/approach.aux
+White space in argument---line 9 of file El aprendizaje incrementado en el uso de las redes neuronales.aux
+ : \@input{textFiles/theoretical
+ :                               marco.aux}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: textFiles/hypothesis.aux
+A level-1 auxiliary file: textFiles/methodology.aux
+The style file: ieeetr.bst
+Database file #1: bibliography.bib
+Warning--empty booktitle in liu2015
+You've used 8 entries,
+            1876 wiz_defined-function locations,
+            533 strings with 5070 characters,
+and the built_in function-call counts, 2330 in all, are:
+= -- 229
+> -- 65
+< -- 0
++ -- 26
+- -- 18
+* -- 150
+:= -- 309
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 131
+empty$ -- 246
+format.name$ -- 18
+if$ -- 580
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 0
-newline$ -- 433
-num.names$ -- 632
-pop$ -- 4961
+int.to.str$ -- 8
+missing$ -- 7
+newline$ -- 27
+num.names$ -- 8
+pop$ -- 43
 preamble$ -- 1
-purify$ -- 238
+purify$ -- 0
 quote$ -- 0
-skip$ -- 2546
+skip$ -- 92
 stack$ -- 0
-substring$ -- 15595
-swap$ -- 2012
-text.length$ -- 406
-text.prefix$ -- 17
-top$ -- 1
-type$ -- 496
-warning$ -- 0
-while$ -- 1334
-width$ -- 0
-write$ -- 419
+substring$ -- 176
+swap$ -- 52
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 24
+width$ -- 9
+write$ -- 77
+(There was 1 error message)
