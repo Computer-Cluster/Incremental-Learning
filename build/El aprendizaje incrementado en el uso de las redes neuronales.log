@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  29 OCT 2022 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  29 OCT 2022 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -790,21 +790,18 @@ Package pdftex.def Info: textFiles/portada.pdf , page1 used on input line 34.
 \tf@lof=\write7
 \openout7 = `"El aprendizaje incrementado en el uso de las redes neuronales.lof"'.
 
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `textFiles/introduction.aux'.
-
  (./textFiles/introduction.tex
 
-LaTeX Warning: Citation 'zhao2022' on page 3 undefined on input line 14.
+LaTeX Warning: Citation 'zhao2022' on page 2 undefined on input line 14.
 
 
-LaTeX Warning: Citation 'salazar2013' on page 3 undefined on input line 15.
+LaTeX Warning: Citation 'salazar2013' on page 2 undefined on input line 15.
 
 
-LaTeX Warning: Citation 'liu2015' on page 3 undefined on input line 21.
+LaTeX Warning: Citation 'liu2015' on page 2 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'GiraudCarrier2000' on page 3 undefined on input line 25.
+LaTeX Warning: Citation 'GiraudCarrier2000' on page 2 undefined on input line 25.
 
 
 Overfull \hbox (0.50061pt too wide) in paragraph at lines 23--30
@@ -812,102 +809,129 @@ Overfull \hbox (0.50061pt too wide) in paragraph at lines 23--30
  []
 
 
-LaTeX Warning: Citation 'bullinaria2009' on page 3 undefined on input line 37.
+LaTeX Warning: Citation 'bullinaria2009' on page 2 undefined on input line 37.
 
 
-LaTeX Warning: Citation 'bullinaria2009' on page 3 undefined on input line 39.
+LaTeX Warning: Citation 'bullinaria2009' on page 2 undefined on input line 39.
 
 
-LaTeX Warning: Citation 'li2008' on page 3 undefined on input line 41.
+LaTeX Warning: Citation 'li2008' on page 2 undefined on input line 41.
 
 
-LaTeX Warning: Citation 'Elwell2011' on page 3 undefined on input line 41.
+LaTeX Warning: Citation 'Elwell2011' on page 2 undefined on input line 41.
 
+[2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: Citation 'bullinaria2009' on page 3 undefined on input line 44.
 
-) [3
-
-]
-\openout2 = `textFiles/approach.aux'.
-
- (./textFiles/approach.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+) (./textFiles/approach.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation 'bullinaria2009' on page 4 undefined on input line 7.
+LaTeX Warning: Command \' invalid in math mode on input line 26.
+
+./textFiles/approach.tex:26: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.26 Si má
+           s adelante llega mas información del provlema ($d_{3}$) que se d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Citation 'bullinaria2009' on page 4 undefined on input line 9.
+LaTeX Warning: Command \' invalid in math mode on input line 26.
+
+./textFiles/approach.tex:26: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.26 Si más adelante llega mas informació
+                                           n del provlema ($d_{3}$) que se d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+./textFiles/approach.tex:26: Missing $ inserted.
+<inserted text> 
+                $
+l.26 ...e llega mas información del provlema ($d_
+                                                  {3}$) que se desee incorpo...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (19.5279pt too wide) in paragraph at lines 9--10
+LaTeX Warning: Citation 'bullinaria2009' on page 3 undefined on input line 30.
+
+[3]
+
+LaTeX Warning: Citation 'bullinaria2009' on page 4 undefined on input line 44.
+
+
+Overfull \hbox (19.5279pt too wide) in paragraph at lines 44--48
 []\OT1/cmr/m/n/10 El prob-lema prin-ci-pal del apren-dizaej in-cre-men-tal mostrado en [[]],
  []
 
-[4
+
+Overfull \hbox (2.4918pt too wide) in paragraph at lines 71--76
+\OT1/cmr/m/n/10 LO PUEDEN CAM-BIAR A PAL-ABRAS MAS APROPI-ADAS, Y COMO MEN-
+ []
+
+) (./textFiles/objectives.tex
+
+LaTeX Warning: Citation 'bullinaria2009' on page 4 undefined on input line 5.
 
 
-
-]
-
-LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 17.
-
-
-Overfull \hbox (21.61124pt too wide) in paragraph at lines 17--18
+Overfull \hbox (21.61124pt too wide) in paragraph at lines 5--6
 []\OT1/cmr/m/n/10 Implementar el al-go-ritmo mostrado en [[]] para el re-conocimiento
  []
 
 
-LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 18.
+LaTeX Warning: Citation 'bullinaria2009' on page 4 undefined on input line 6.
 
 
-Overfull \hbox (4.05617pt too wide) in paragraph at lines 18--19
+Overfull \hbox (4.05617pt too wide) in paragraph at lines 6--7
 []\OT1/cmr/m/n/10 Obtener el con-junto de datos de Op-ti-cal Dig-its, limpiar los datos y preparar-
  []
 
+[4]
 
-LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 19.
+LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 7.
+
+) (./textFiles/justification.tex
+
+LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 8.
 
 
-LaTeX Warning: Citation 'bullinaria2009' on page 5 undefined on input line 25.
-
-
-Overfull \hbox (13.22238pt too wide) in paragraph at lines 25--28
+Overfull \hbox (13.22238pt too wide) in paragraph at lines 3--21
 \OT1/cmr/m/n/10 de apren-dizaje de in-for-maci^^Son y olvido de la in-for-maci^^Son an-te-rior [[]].
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
+Underfull \hbox (badness 10000) in paragraph at lines 42--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--51
+Underfull \hbox (badness 10000) in paragraph at lines 48--55
 
+ []
+
+) (./textFiles/delimitation.tex
+
+LaTeX Warning: Citation 'royo2021' on page 6 undefined on input line 7.
+
+) (./textFiles/theoretical marco.tex
+Overfull \hbox (1.58388pt too wide) in paragraph at lines 4--1
+\OT1/cmr/m/n/10 Mul-t-i-capa (RNPM), Re-des Neu-ronales Con-vul-cionales (RNC), Re-des Neu-ronales
  []
 
 [6]
 
-LaTeX Warning: Citation 'royo2021' on page 7 undefined on input line 59.
-
-
-Overfull \hbox (2.4918pt too wide) in paragraph at lines 78--83
-\OT1/cmr/m/n/10 LO PUEDEN CAM-BIAR A PAL-ABRAS MAS APROPI-ADAS, Y COMO MEN-
- []
-
-) [7]
-\openout2 = `"textFiles/theoretical marco.aux"'.
-
- (./textFiles/theoretical marco.tex
-
-LaTeX Warning: Citation 'liu2015' on page 8 undefined on input line 13.
+LaTeX Warning: Citation 'liu2015' on page 7 undefined on input line 13.
 
 
 Overfull \hbox (10.20236pt too wide) in paragraph at lines 13--14
@@ -920,104 +944,87 @@ Overfull \hbox (16.2343pt too wide) in paragraph at lines 13--14
  []
 
 
-LaTeX Warning: Reference `fig:fig1' on page 8 undefined on input line 37.
+LaTeX Warning: Reference `fig:fig1' on page 7 undefined on input line 37.
 
 
-LaTeX Warning: Citation 'liu2015' on page 8 undefined on input line 45.
+LaTeX Warning: Citation 'liu2015' on page 7 undefined on input line 45.
 
-[8
-
-
-
-]
-<images//MLP.png, id=91, 451.6875pt x 449.68pt>
+[7]
+<images//MLP.png, id=87, 451.6875pt x 449.68pt>
 File: images//MLP.png Graphic file (type png)
 <use images//MLP.png>
 Package pdftex.def Info: images//MLP.png  used on input line 49.
 (pdftex.def)             Requested size: 345.0pt x 343.48946pt.
 
 
-LaTeX Warning: Citation 'liu2015' on page 9 undefined on input line 50.
+LaTeX Warning: Citation 'liu2015' on page 8 undefined on input line 50.
 
-[9 <./images//MLP.png>]
+[8 <./images//MLP.png>]
 
-LaTeX Warning: Citation 'duran2017' on page 10 undefined on input line 73.
+LaTeX Warning: Citation 'duran2017' on page 9 undefined on input line 73.
 
-<images//esquemaRedConvolucional.png, id=101, 885.3075pt x 244.915pt>
+<images//esquemaRedConvolucional.png, id=97, 885.3075pt x 244.915pt>
 File: images//esquemaRedConvolucional.png Graphic file (type png)
 <use images//esquemaRedConvolucional.png>
 Package pdftex.def Info: images//esquemaRedConvolucional.png  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 95.44171pt.
 
-LaTeX Warning: Citation 'duran2017' on page 10 undefined on input line 78.
+LaTeX Warning: Citation 'duran2017' on page 9 undefined on input line 78.
 
 
-LaTeX Warning: Citation 'Nrby2015' on page 10 undefined on input line 92.
+LaTeX Warning: Citation 'Nrby2015' on page 9 undefined on input line 92.
 
 
-LaTeX Warning: Citation 'bransford2000' on page 10 undefined on input line 97.
+LaTeX Warning: Citation 'bransford2000' on page 9 undefined on input line 97.
 
 
 Overfull \hbox (3.72374pt too wide) in paragraph at lines 96--98
 \OT1/cmr/m/n/10 tu-dia de un modo mul-ti-dis-ci-plinario, el cual abarca las ^^Sareas de [[]]: 
  []
 
-[10 <./images//esquemaRedConvolucional.png>]
+[9 <./images//esquemaRedConvolucional.png>]
 
-LaTeX Warning: Citation 'perez2014' on page 11 undefined on input line 118.
-
-
-LaTeX Warning: Citation 'Huber2008' on page 11 undefined on input line 126.
+LaTeX Warning: Citation 'perez2014' on page 10 undefined on input line 118.
 
 
-LaTeX Warning: Citation 'GiraudCarrier2000' on page 11 undefined on input line 134.
-
-[11]
-
-LaTeX Warning: Citation 'GiraudCarrier2000' on page 12 undefined on input line 137.
+LaTeX Warning: Citation 'Huber2008' on page 10 undefined on input line 126.
 
 
-LaTeX Warning: Citation 'liu2015' on page 12 undefined on input line 143.
+LaTeX Warning: Citation 'GiraudCarrier2000' on page 10 undefined on input line 134.
+
+[10]
+
+LaTeX Warning: Citation 'GiraudCarrier2000' on page 11 undefined on input line 137.
 
 
-LaTeX Warning: Citation 'GiraudCarrier2000' on page 12 undefined on input line 155.
+LaTeX Warning: Citation 'liu2015' on page 11 undefined on input line 143.
 
 
-LaTeX Warning: Citation 'fisher1987' on page 12 undefined on input line 160.
+LaTeX Warning: Citation 'GiraudCarrier2000' on page 11 undefined on input line 155.
+
+
+LaTeX Warning: Citation 'fisher1987' on page 11 undefined on input line 160.
 
 
 Overfull \hbox (6.47496pt too wide) in paragraph at lines 155--161
 \OT1/cmr/m/it/10 , tal que hi+1 de-pende solo de hola y del ejem-plo ac-tual e" \OT1/cmr/m/n/10 [[]],
  []
 
-) [12]
-\openout2 = `textFiles/hypothesis.aux'.
+) (./textFiles/hypothesis.tex) (./textFiles/methodology.tex
 
- (./textFiles/hypothesis.tex) [13
+LaTeX Warning: Citation 'bullinaria2009' on page 11 undefined on input line 2.
 
-
-
-]
-\openout2 = `textFiles/methodology.aux'.
-
- (./textFiles/methodology.tex
-
-LaTeX Warning: Citation 'bullinaria2009' on page 14 undefined on input line 2.
-
-<images//diagramaGantt.png, id=134, 1227.58624pt x 793.96625pt>
+[11]
+<images//diagramaGantt.png, id=126, 1227.58624pt x 793.96625pt>
 File: images//diagramaGantt.png Graphic file (type png)
 <use images//diagramaGantt.png>
 Package pdftex.def Info: images//diagramaGantt.png  used on input line 15.
 (pdftex.def)             Requested size: 345.0pt x 223.13284pt.
-[14
+)
 
+LaTeX Warning: Empty bibliography on input line 47.
 
-
- <./images//diagramaGantt.png>]) [15]
-
-LaTeX Warning: Empty bibliography on input line 44.
-
-(build/El aprendizaje incrementado en el uso de las redes neuronales.aux (build/textFiles/introduction.aux) (build/textFiles/approach.aux) (build/textFiles/theoretical marco.aux) (build/textFiles/hypothesis.aux) (build/textFiles/methodology.aux))
+[12 <./images//diagramaGantt.png>] [13] (build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1031,7 +1038,7 @@ Package rerunfilecheck Warning: File `"El aprendizaje incrementado en el uso de 
 
 Package rerunfilecheck Info: Checksums for `"El aprendizaje incrementado en el uso de las redes neuronales".out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  68DF1DB405FCBDBCB8912B0A46999211;3458.
+(rerunfilecheck)             After:  778FB3B3D753D91A94579B874F933878;3458.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                "El aprendizaje incrementado en el uso de las redes neuronales"
@@ -1042,18 +1049,18 @@ Package logreq Info: Writing requests to '"El aprendizaje incrementado en el uso
 
  ) 
 Here is how much of TeX's memory you used:
- 21445 strings out of 478287
- 375674 string characters out of 5849289
- 980057 words of memory out of 5000000
- 39285 multiletter control sequences out of 15000+600000
+ 21365 strings out of 478287
+ 371758 string characters out of 5849289
+ 979057 words of memory out of 5000000
+ 39209 multiletter control sequences out of 15000+600000
  473157 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,17n,77p,1953b,1785s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,17n,77p,1953b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (15 pages, 435431 bytes).
+Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (13 pages, 437812 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 61 named destinations out of 1000 (max. 500000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

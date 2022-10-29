@@ -858,24 +858,18 @@ OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.lof
 INPUT ./textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-OUTPUT build/textFiles/introduction.aux
-INPUT ./textFiles/introduction.tex
-INPUT ./textFiles/introduction.tex
-INPUT ./textFiles/introduction.tex
 INPUT textFiles/introduction.tex
+INPUT ./textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
 INPUT textFiles/introduction.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT ./textFiles/approach.tex
-INPUT ./textFiles/approach.tex
-INPUT ./textFiles/approach.tex
-OUTPUT build/textFiles/approach.aux
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./textFiles/approach.tex
 INPUT ./textFiles/approach.tex
 INPUT ./textFiles/approach.tex
 INPUT textFiles/approach.tex
+INPUT ./textFiles/approach.tex
 INPUT ./textFiles/approach.tex
 INPUT textFiles/approach.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -894,19 +888,37 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./textFiles/objectives.tex
+INPUT ./textFiles/objectives.tex
+INPUT ./textFiles/objectives.tex
+INPUT textFiles/objectives.tex
+INPUT ./textFiles/objectives.tex
+INPUT ./textFiles/objectives.tex
+INPUT textFiles/objectives.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./textFiles/justification.tex
+INPUT ./textFiles/justification.tex
+INPUT ./textFiles/justification.tex
+INPUT textFiles/justification.tex
+INPUT ./textFiles/justification.tex
+INPUT ./textFiles/justification.tex
+INPUT textFiles/justification.tex
+INPUT ./textFiles/delimitation.tex
+INPUT ./textFiles/delimitation.tex
+INPUT ./textFiles/delimitation.tex
+INPUT textFiles/delimitation.tex
+INPUT ./textFiles/delimitation.tex
+INPUT ./textFiles/delimitation.tex
+INPUT textFiles/delimitation.tex
+INPUT ./textFiles/theoretical marco.tex
+INPUT ./textFiles/theoretical marco.tex
+INPUT ./textFiles/theoretical marco.tex
+INPUT textFiles/theoretical marco.tex
+INPUT ./textFiles/theoretical marco.tex
+INPUT ./textFiles/theoretical marco.tex
+INPUT textFiles/theoretical marco.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-OUTPUT build/textFiles/theoretical marco.aux
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT textFiles/theoretical marco.tex
 INPUT ./images//MLP.png
 INPUT ./images//MLP.png
 INPUT images//MLP.png
@@ -920,21 +932,15 @@ INPUT ./images//esquemaRedConvolucional.png
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
-OUTPUT build/textFiles/hypothesis.aux
-INPUT ./textFiles/hypothesis.tex
+INPUT textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT textFiles/hypothesis.tex
-INPUT ./textFiles/hypothesis.tex
-INPUT textFiles/hypothesis.tex
-INPUT ./textFiles/methodology.tex
-INPUT ./textFiles/methodology.tex
-INPUT ./textFiles/methodology.tex
-OUTPUT build/textFiles/methodology.aux
 INPUT ./textFiles/methodology.tex
 INPUT ./textFiles/methodology.tex
 INPUT ./textFiles/methodology.tex
 INPUT textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
 INPUT ./textFiles/methodology.tex
 INPUT textFiles/methodology.tex
 INPUT ./images//diagramaGantt.png
@@ -943,21 +949,6 @@ INPUT images//diagramaGantt.png
 INPUT ./images//diagramaGantt.png
 INPUT ./images//diagramaGantt.png
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.aux
-INPUT build/textFiles/introduction.aux
-INPUT build/textFiles/introduction.aux
-INPUT build/textFiles/introduction.aux
-INPUT build/textFiles/approach.aux
-INPUT build/textFiles/approach.aux
-INPUT build/textFiles/approach.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/hypothesis.aux
-INPUT build/textFiles/hypothesis.aux
-INPUT build/textFiles/hypothesis.aux
-INPUT build/textFiles/methodology.aux
-INPUT build/textFiles/methodology.aux
-INPUT build/textFiles/methodology.aux
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.out
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.out
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.run.xml
