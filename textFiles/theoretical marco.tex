@@ -1,19 +1,126 @@
 \section{Marco Teórico}
 
-    
-    
     \subsection{Redes Neuronales Artificiales}
+        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples
+        unidades de procesamientos. \\
+        Como se puede observar, al mencionar RNA lo primero que se viene a la mente es el 
+        procesamiento biol\'ogico por el que transita el cerebro humano. El m\'etodo principal 
+        de las redes neuronales es sacarle el máximo poder a los algoritmos de aprendizaje 
+        maquina, ya que las redes neuronales tienes un antecedente biol\'ogico.
 
+        Una red de una sola neurona solamente resuelve problemas lienales y tiene la 
+        siguiente forma:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\columnwidth]{ANN.jpg}
+            \caption{Red Neuronal Artificial B\'asica}
+            \label{fig:fig1}
+        \end{figure}
+
+        Donde
+        $\begin{cases}  
+            \Sigma
+        \end{cases}$
+        es la representaci\'on matem\'atica de la neurona. \\
+        Los siguientes valores
+        $\begin{cases}
+            x_1, x_2, ... , x_n
+        \end{cases}$
+        señalando a 
+        $\begin{cases} \label{eqn: weight}
+            w_1, w_2, ... , w_n 
+        \end{cases}$ 
+        son los datos de entrada que se le dan a la red.
+        Cuando la información entra en la neurona aqu\'i se procesan los datos, la operci\'on realizada 
+        es una sumatoria ponderada de ellos, dicha ponderaci\'on es asignada a ella  como vemos en la siguiente 
+        ecuaci\'on \eqref{eqn: weight}
+        Entonces la formula de la sumatoria quedar\'ia de la siguiente manera:
+        $\begin{cases} \label{eqn: summation}
+            w_1x_1 + w_2x_2 + w_3x_3
+        \end{cases}$ \\
+        Al verificar bien esta formula, se puede observar que se parece a la operaci\'on de una regresi\'on 
+        la cual es:
+        $\begin{cases}
+            y = w_0 + w_x.
+        \end{cases}$
+        Internamente la neurona realiza una regresi\'on lineal, el parametro que permite a la neurona 
+        moverse verticalmente en la recta se conoce como sesgo, este valor se agrega a la conexi\'on, el cual \
+        usualmente se le da un valor de 1. \\
+        Agregando este nuevo valor a la formula, queda de la siguiente manera: \\
+        $\begin{cases}
+            w_1 + w_2 + w_3 + b
+        \end{cases}$ 
+        donde \textit{b} es el sesgo. \\
         
-        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples unidades de procesamientos. \\
-        Como se puede observar, al mencionar RNA lo primero que se viene a la mente es el procesamiento biol\'ogico por el que transita el 
-        cerebro humano. El m\'etodo principal de las redes neuronales es sacarle el máximo poder a los algoritmos de aprendizaje maquina, ya que las redes neuronales 
-        tienes un antecedente biol\'ogico.
+        Un inconveniente del uso de una sola neurona para experimentos es que solo 
+        va a resolver ejercicios parecidos a la puerta l\'ogica AND u OR.
+        
+        \begin{figure}[H]
+            \begin{subfigure}[H]{0.49\textwidth}
+                \includegraphics[width=\textwidth, height=\textwidth]{and.png}
+                \caption{Puerta L\'ogica And}
+                \label{fig:f1}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}[H]{0.49\textwidth}
+                \includegraphics[width=\textwidth, height=\textwidth]{or.png}
+                \caption{Puerta L\'ogica Or}
+                \label{fig:f2}
+            \end{subfigure}
+            \caption{Puertas L\'ogicas \cite{mcmahon2014}}
+        \end{figure}
+        
+        Pero problemas de tipo XOR no puede, ya que como se nota, una sola neurona sirve para 
+        clasificar de un solo lado, asi que no puede clasificar ejercicios
+        como los de la imagen \ref{fig:fig3}
 
-        Presentan demasiadas utilidades las cuales ayudan a  resolver problemas como los siguientes \cite{liu2015}: 
-        no linealidad, mapeo entrada-salida, aprendizaje robusto a errores en los datos de entrenamiento, entre otros.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=5cm]{xor.png}
+            \caption{Puerta L\'ogica Xor \cite{mcmahon2014}}
+            \label{fig:fig3}
+        \end{figure}
 
-        Existen varios tipos de Redes Neuronales tales como: Redes Neuronales de Perceptr\'on Multicapa, Redes Neuronales Convolucionales, entre otras.
+        Para solucionarlo se usan dos o m\'as neuronas, adem\'as de la funci\'on de activaci\'on.
+
+            \subsubsection{Funci\'on de Activaci\'on}
+                Dicho m\'etodo se utiliza cuando el modelo de RNA contiene dos o m\'as neuronas.
+                Esta funci\'on lo que provoca es dar al modelo una salida no lineal, para 
+                eso la formula \eqref{eqn: summation} es distorciana para quedar de la siguiente 
+                manera: 
+                $\begin{cases}
+                    f( w_1x_1 + w_2x_2 + w_3x_3 )
+                \end{cases}$
+                En otras palabras esto es la suma de varias regresiones lineales, lo cual provoca que se obtenga 
+                un resultado no linel. \\
+                Al hablar de funciones de activaci\'on se deben de comentar las m\'as comunes, como lo es la 
+                funci\'on escalonada.
+                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=5cm]{staggered.png}
+                    \caption{Funci\'on Escalonada}
+                    \label{fig:fig4}
+                \end{figure}
+
+                Dicha funci\'on es representada con: 
+                
+                \[f(x) = \left\{ \begin{array}{lr} 0 & : x < 0\\ 1 & : x \ge 0 \end{array} \right. \]
+
+                La funci\'on sigmoidal, es una de las m\'as comunes, su forma es: 
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=5cm]{sigmoid.png}
+                    \caption{Funci\'on Escalonada}
+                    \label{fig:fig5}
+                \end{figure}
+        Las redes neuronales presentan demasiadas utilidades las cuales ayudan a  resolver problemas como los 
+        siguientes \cite{liu2015}: no linealidad, mapeo entrada-salida, aprendizaje robusto 
+        a errores en los datos de entrenamiento, entre otros.
+
+        Existen varios tipos de Redes Neuronales tales como: Redes Neuronales de Perceptr\'on 
+        Multicapa, Redes Neuronales Convolucionales, entre otras.
     
         \subsection{Redes Neuronales de Perceptr\'on Multicapa}
 
@@ -30,7 +137,7 @@
                 \centering
                 \includegraphics[width=\columnwidth]{MLP.png}
                 \caption{Red Neuronal de Perceptr\'on Multicapa \cite{liu2015}}
-                \label{fig:fig1}
+                \label{fig:fig6}
             \end{figure}
 
 
@@ -55,10 +162,10 @@
                 \centering
                 \includegraphics[width=\columnwidth]{esquemaRedConvolucional.png}
                 \caption{Esquema de una Red Convolucional \cite{duran2017}}
-                \label{fig:fig2}
+                \label{fig:fig7}
             \end{figure}
 
-Así como las redes convolucionales, también existen las redes profundas(deep learning), sin embargo, como se comenta en esta sección \label{sec:delimitation} el presente trabajo solo se basará en redes del tipo multicapa perceptron usando el algoritmo de bacpkpropagation, donde de ser demostrados los principios descritos, se podrá aplicar a cualquier otro tipo de algoritmo de aprendizaje.  (LUIS Y SANDRA, AGREGUEN A LA DELIMITACIÓN LO QUE ESTOY INDICANDO AQUÍ, PARA QUE TENGA SENTIDO ESTO)
+Así como las redes convolucionales, también existen las redes profundas(deep learning), sin embargo, como se comenta en esta sección \ref{sec:delimitation} el presente trabajo solo se basará en redes del tipo multicapa perceptron usando el algoritmo de bacpkpropagation, donde de ser demostrados los principios descritos, se podrá aplicar a cualquier otro tipo de algoritmo de aprendizaje.  (LUIS Y SANDRA, AGREGUEN A LA DELIMITACIÓN LO QUE ESTOY INDICANDO AQUÍ, PARA QUE TENGA SENTIDO ESTO)
 
 
 

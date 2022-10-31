@@ -62,9 +62,9 @@
   isbn      = {978-3-642-41822-8},
 }
 
-@MastersThesis{liu2015,
-  author = {Liu, Yuan},
-  title  = {Incremental learning in deep neural networks},
+@InProceedings{Liu2015,
+  author = {Yuan Liu},
+  title  = {Yuan Liu INCREMENTAL LEARNING IN DEEP NEURAL NETWORKS},
   year   = {2015},
 }
 
@@ -101,8 +101,7 @@
 }
 
 @Misc{royo2021,
-  author = {given-i=P., given=Paloma, family=Royo},
-  month  = {9},
+  author = {Paloma Royo},
   title  = {{Qué son las redes neuronales y cuál es su aplicación en el marketing}},
   year   = {2021},
   url    = {https://artyco.com/que-son-las-redes-neuronales-y-cual-es-su-aplicacion-en-el-marketing/},
@@ -163,7 +162,6 @@
   year   = {2017},
 }
 
-<<<<<<< HEAD
 @InProceedings{zhao2022,
   author       = {Zhao, Beibei and Wu, Tairan and Fang, Fang and Wang, Lin and Ren, Wenzhang and Yang, Xu and Ruan, Zhangjing and Kou, Xuejin},
   booktitle    = {2022 8th International Conference on Mechatronics and Robotics Engineering (ICMRE)},
@@ -192,6 +190,4 @@
   volume       = {1},
 }
 
-=======
->>>>>>> cefad34b5aaae3818e5c891e989888978ff08933
 @Comment{jabref-meta: databaseType:bibtex;}

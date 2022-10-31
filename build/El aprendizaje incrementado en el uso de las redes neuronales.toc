@@ -8,17 +8,18 @@
 \contentsline {section}{\numberline {6}Consecuencias}{7}{section.6}%
 \contentsline {section}{\numberline {7}Marco Teórico}{8}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Redes Neuronales Artificiales}{8}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{8}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Algoritmo Backpropagation}{9}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{9}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Aprendizaje}{10}{subsection.7.5}%
-\contentsline {subsubsection}{\numberline {7.5.1}Aprendizaje en humanos}{10}{subsubsection.7.5.1}%
-\contentsline {subsubsection}{\numberline {7.5.2}Aprendizaje Humano}{10}{subsubsection.7.5.2}%
-\contentsline {subsubsection}{\numberline {7.5.3}Aprendizaje con Compresi\'on}{11}{subsubsection.7.5.3}%
-\contentsline {subsubsection}{\numberline {7.5.4}Aprendizaje Activo}{11}{subsubsection.7.5.4}%
-\contentsline {subsubsection}{\numberline {7.5.5}Aprendizaje Incremental}{11}{subsubsection.7.5.5}%
-\contentsline {subsubsection}{\numberline {7.5.6}Algoritmos de Aprendizaje Incremental}{11}{subsubsection.7.5.6}%
-\contentsline {section}{\numberline {8}Hipotesis}{12}{section.8}%
-\contentsline {section}{\numberline {9}Metodología}{12}{section.9}%
-\contentsline {section}{\numberline {10}Cronograma de Actividades}{12}{section.10}%
-\contentsline {section}{\numberline {11}Organización del Capitulado}{13}{section.11}%
+\contentsline {subsubsection}{\numberline {7.1.1}Funci\'on de Activaci\'on}{9}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Algoritmo Backpropagation}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{11}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Aprendizaje}{12}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Aprendizaje en humanos}{12}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Aprendizaje Humano}{12}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}Aprendizaje con Compresi\'on}{13}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Aprendizaje Activo}{13}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.5}Aprendizaje Incremental}{13}{subsubsection.7.5.5}%
+\contentsline {subsubsection}{\numberline {7.5.6}Algoritmos de Aprendizaje Incremental}{14}{subsubsection.7.5.6}%
+\contentsline {section}{\numberline {8}Hipotesis}{14}{section.8}%
+\contentsline {section}{\numberline {9}Metodología}{14}{section.9}%
+\contentsline {section}{\numberline {10}Cronograma de Actividades}{15}{section.10}%
+\contentsline {section}{\numberline {11}Organización del Capitulado}{15}{section.11}%
