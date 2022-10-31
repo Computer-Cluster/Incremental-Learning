@@ -126,6 +126,29 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Freire2021}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=EFSS}{%
+         family={Estefanía\bibnamedelima Freire},
+         familyi={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={Sarahí\bibnamedelima Silva},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EFSS1}
+    \strng{fullhash}{EFSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{{Redes neuronales - Bootcamp AI}}
+    \verb{url}
+    \verb https://bootcampai.medium.com/redes-neuronales-13349dd1a5bb
+    \endverb
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
   \entry{fisher1987}{article}{}
     \name{author}{1}{}{%
       {{hash=FDH}{%

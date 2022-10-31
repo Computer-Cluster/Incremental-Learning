@@ -53,7 +53,7 @@
         donde \textit{b} es el sesgo. \\
         
         Un inconveniente del uso de una sola neurona para experimentos es que solo 
-        va a resolver ejercicios parecidos a la puerta l\'ogica AND u OR.
+        va a resolver ejercicios parecidos a la puerta l\'ogica AND u OR \label{sec: one neuron}.
         
         \begin{figure}[H]
             \begin{subfigure}[H]{0.49\textwidth}
@@ -83,7 +83,7 @@
 
         Para solucionarlo se usan dos o m\'as neuronas, adem\'as de la funci\'on de activaci\'on.
 
-            \subsubsection{Funci\'on de Activaci\'on}
+            \subsubsection{Funci\'on de Activaci\'on} \label{sec: activation}
                 Dicho m\'etodo se utiliza cuando el modelo de RNA contiene dos o m\'as neuronas.
                 Esta funci\'on lo que provoca es dar al modelo una salida no lineal, para 
                 eso la formula \eqref{eqn: summation} es distorciana para quedar de la siguiente 
@@ -115,6 +115,14 @@
                     \caption{Funci\'on Escalonada}
                     \label{fig:fig5}
                 \end{figure}
+
+                La cual es representada por la siguiente formula:
+
+                \[f(x) = \sigma(x) =  \left\{ \frac{1}{1 + e^{-x}} \right. \]
+
+                Aparte de agregar deformaciones en la linea. nos ayuda en cuestiones probabilisticas \cite{Freire2021}.\\
+
+
         Las redes neuronales presentan demasiadas utilidades las cuales ayudan a  resolver problemas como los 
         siguientes \cite{liu2015}: no linealidad, mapeo entrada-salida, aprendizaje robusto 
         a errores en los datos de entrenamiento, entre otros.
@@ -123,26 +131,38 @@
         Multicapa, Redes Neuronales Convolucionales, entre otras.
     
         \subsection{Redes Neuronales de Perceptr\'on Multicapa}
+            Este tipo de redes entran en el paradigma de Aprendizaje Profundo, ya que como se explic\'o en 
+            la secci\'on anterior \eqref{sec:delimitation} aqu\'i la emulaci\'on de las neuronas humanas son m\'as 
+            exactas.
+            Adem\'as como se explica en esta sección \eqref{sec: one neuron} no es muy recomendado trabajar con una sola 
+            neurona por los problemas de tipo XOR, que por lo general es el que se presenta frecuentemente en las problematicas.
 
-(REVISAR REDACCIÓN Y MEJORARLA)
-            Mapear el progreso de una red sirve para conocer y buscar un camino adecuado entre la capa de entrada y salida, esto se puede hacer 
-            con problemas de una sola neurona, no obstante, los problemas no lineales no se pueden resolver, para ello se usan los perceptrones
-            multicapas, los cuales rompen con esta limitaci\'on.
+            Dichas neuronas se divide en tres capas, capa inicial, oculta y final, en las capas ocultas podemos
+            tener m\'as de una fila de neuronas, estas son las encargadas de realizar las operaciones para eliminar 
+            la linealidad de los proyectos. 
 
-            Estas neuronas est\'an compuestas de 3 capas como se muestra en la Figura \ref{fig:fig1}.
-            Los datos de entrada se van a ir propagando capa por capa, hasta llegar a la capa final, donde la información pasará
-            por una funci\'on de activaci\'on la cual permite tener en un rango controlado los valores que se propagan por la red. Al final, las neuronas de la capa de salida darán el resultado esperado o muy próximo a él, si el valor no es correcto, se deberá proceder a una etapa de entrenamiento \cite{liu2015}.
+            En la secci\'on vista anteriormte \eqref{sec: activation} la liealidad se elimina con las funciones de activaci\'on, dicha funci\'on 
+            es manipulable si se modifican los parametros de la red, esto permitira que se elabore un plano tridimencional, con este plano tridimencional
+            se puede encontrar la soluci\'on al experimento planteado.
+            
+            Como se puede observar en la siguiente imagen \eqref{fig:fig6} esta red est\'a
+            construida por cuatro capas, la cual de ellas dos son ocultas, dentro de esas 
+            capas es donde se realiza la ejecuci\'on de las funciones de activaci\'on.
+
+            Cada neurona de color azul va a generar una funci\'on (puede ser sigmoidal, escalonada, entre otras), 
+            y cuando se llegue a la capa de salida, cada funci\'on se va a sumar, de esta manera 
+            se obtendra una funci\'on no lineal que de resoluci\'on al proyecto.
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=\columnwidth]{MLP.png}
-                \caption{Red Neuronal de Perceptr\'on Multicapa \cite{liu2015}}
+                \includegraphics[width=\columnwidth]{multipercep.jpg}
+                \caption{Perceptron Multicapa}
                 \label{fig:fig6}
             \end{figure}
 
-
-\subsection{Algoritmo Backpropagation}
-(Aquí describan este algoritmo, la página que les pase de John les puede ayudar. Términos importantes de escribirlo porque sobre él se basaron para hacer la implementación de las redes con pesos duplicados)
+            
+        \subsection{Algoritmo Backpropagation}
+            El bacpkpropagation es el algoritmo donde se explica ¿C\'omo aprende la red?
 
 
         \subsection{Redes Neuronales Convolucionales}

@@ -190,4 +190,12 @@
   volume       = {1},
 }
 
+@Misc{mcmahon2014,
+  author = {Ayanna Mcmahon},
+  month  = {12},
+  title  = {{Redes Neuronales Artificiales}},
+  year   = {2014},
+  url    = {https://www.slideserve.com/ayanna-mcmahon/redes-neuronales-artificiales},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
