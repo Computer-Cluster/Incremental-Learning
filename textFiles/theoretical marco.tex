@@ -163,7 +163,60 @@
             
         \subsection{Algoritmo Backpropagation}
             El bacpkpropagation es el algoritmo donde se explica ¿C\'omo aprende la red?
+            Dicho algoritmo fue presentado en 1986, llego a resolver el problema del perceptron 
+            ya que ten\'ia muchas limitaciones, lo que provoco que varios experimentos de inteligencia
+            artificial se pararan.\\
 
+            Este algortimo permite que la red aprenda por si sola, en 1986 se presento \cite{rumelhart1986} 
+            donde muestran un nuevo algoritmo el cual permite que una red neuronal pueda auto-ajustar todos sus 
+            parametros para aprender una representaci\'on interna de la informaci\'on que se esta procesando.
+
+            Usando este algoritmo se podra obtener las derivadas parciales del gradiente y del peso, las cuales
+            sirven para la optimizaci\'on de la red neuronal, dichas derivadas son:
+            \begin{equation*}
+                \frac{\partial C}{\partial W^L}
+            \end{equation*}
+            Pero no se debe de olvidar que tambien se debe de calcular las derivadas del sesgo, la derivada anterior
+            queda de la siguiente forma:
+            \begin{equation*}
+                \frac{\partial C}{\partial b^L}
+            \end{equation*}
+            donde \textit{L} pertenece al n\'umero de capa donde se encuentra. \\
+            Lo que permite a este algoritmo encontrar el error de la derivada es la \textit{chain rule}, la cual en resumen 
+            nos da la siguiente ecuaci\'on :
+            \begin{equation*}
+                C(a(Z^L))
+            \end{equation*}
+
+            Donde 
+            $\begin{cases}
+                Z^L
+            \end{cases}$
+            representa el resultado de la suma ponderada, y la forma explicita de Z es:
+            \begin{equation*}
+                Z^L = W^LX + b^L
+            \end{equation*}
+            , \textit{a} es la funci\'on de activaci\'on 
+            y \textit{C} es la funci\'on de Coste.
+
+            Al aplicar la \textit{Chain Rule} se obtiene que las derivadas parciales a obtener son:
+            \begin{equation*}
+                \frac{\partial C}{\partial w^L} = \frac{\partial C}{\partial a^L} \cdot \frac{\partial a^L}{\partial z^L} \cdot \frac{\partial z^L}{\partial w^L} 
+            \end{equation*}
+            \begin{equation*}
+                \frac{\partial C}{\partial b^L} = \frac{\partial C}{\partial a^L} \cdot \frac{\partial a^L}{\partial z^L} \cdot \frac{\partial z^L}{\partial b^L}
+            \end{equation*}
+
+            Como se ve el uso de todas estas derivadas parciales permiten encontrar el error.
+            En otras palabras lo que realiza dicho algoritmo es terminar un proceso, si se encuentra un error, esta va a regresar
+            hasta la neurona que da error, pero regresa cambiando el valor de \textit{w}, este proceso se va a 
+            repetir hasta encontrar el error perfecto, el cual es donde el error disminuye a lo m\'as bajo y el resultado
+            de la red es lo m\'as acertado.
+
+            Como se observa esta metodolog\'ia es muy \'util en el uso de redes neuronales, es por eso que 
+            se usa en la siguiente investigaci\'on \cite{bullinaria2009} es usada para obtener un buen resultado
+            en el aprendizaje incremental, como es explicado ah\'i es usado para que las redes obtengan una buena topolog\'ia con 
+            buena actualizaci\'on de pesos.
 
         \subsection{Redes Neuronales Convolucionales}
 
