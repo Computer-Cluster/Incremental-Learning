@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  31 OCT 2022 23:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  2 NOV 2022 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -886,7 +886,7 @@ Overfull \hbox (7.55614pt too wide) in paragraph at lines 17--22
 []\OT1/cmr/m/n/10 Las RNAs est^^San for-madas por neu-ronas ar-ti-fi-ciales que sim-u-lan a las biol^^Sogicas.
  []
 
-) (./textFiles/approach.tex [3] [4]) (./textFiles/objectives.tex
+[3]) (./textFiles/approach.tex [4]) (./textFiles/objectives.tex
 Overfull \hbox (4.05617pt too wide) in paragraph at lines 6--7
 []\OT1/cmr/m/n/10 Obtener el con-junto de datos de Op-ti-cal Dig-its, limpiar los datos y preparar-
  []
@@ -896,13 +896,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
-) (./textFiles/delimitation.tex [6]) (./textFiles/consequence.tex) (./textFiles/theoretical marco.tex [7]
-<images//ANN.jpg, id=239, 317.988pt x 184.2885pt>
+) (./textFiles/delimitation.tex) (./textFiles/consequence.tex [7]) (./textFiles/theoretical marco.tex
+<images//ANN.jpg, id=248, 317.988pt x 184.2885pt>
 File: images//ANN.jpg Graphic file (type jpg)
 <use images//ANN.jpg>
 Package pdftex.def Info: images//ANN.jpg  used on input line 15.
@@ -913,81 +913,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--54
  []
 
 [8 <./images//ANN.jpg>]
-<images//and.png, id=247, 304.13625pt x 290.08376pt>
+<images//and.png, id=256, 304.13625pt x 290.08376pt>
 File: images//and.png Graphic file (type png)
 <use images//and.png>
 Package pdftex.def Info: images//and.png  used on input line 60.
 (pdftex.def)             Requested size: 169.0575pt x 169.05428pt.
-<images//or.png, id=249, 304.13625pt x 290.08376pt>
+<images//or.png, id=258, 304.13625pt x 290.08376pt>
 File: images//or.png Graphic file (type png)
 <use images//or.png>
 Package pdftex.def Info: images//or.png  used on input line 66.
 (pdftex.def)             Requested size: 169.0575pt x 169.05428pt.
-<images//xor.png, id=253, 279.0425pt x 294.09875pt>
+<images//xor.png, id=262, 279.0425pt x 294.09875pt>
 File: images//xor.png Graphic file (type png)
 <use images//xor.png>
 Package pdftex.def Info: images//xor.png  used on input line 79.
 (pdftex.def)             Requested size: 142.26378pt x 149.9435pt.
- [9 <./images//and.png> <./images//or.png> <./images//xor.png>]
-<images//staggered.png, id=265, 444.66125pt x 270.00874pt>
+ [9 <./images//and.png> <./images//or.png>]
+<images//staggered.png, id=272, 444.66125pt x 270.00874pt>
 File: images//staggered.png Graphic file (type png)
 <use images//staggered.png>
 Package pdftex.def Info: images//staggered.png  used on input line 101.
 (pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
-<images//sigmoid.png, id=266, 1050.92625pt x 772.8875pt>
+<images//sigmoid.png, id=273, 1050.92625pt x 772.8875pt>
 File: images//sigmoid.png Graphic file (type png)
 <use images//sigmoid.png>
 Package pdftex.def Info: images//sigmoid.png  used on input line 114.
 (pdftex.def)             Requested size: 142.26378pt x 104.61835pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+ [10 <./images//xor.png> <./images//staggered.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
-[10 <./images//staggered.png> <./images//sigmoid.png>]
-<images//multipercep.jpg, id=282, 425.33907pt x 244.66406pt>
+<images//relu.png, id=281, 501.5538pt x 404.712pt>
+File: images//relu.png Graphic file (type png)
+<use images//relu.png>
+Package pdftex.def Info: images//relu.png  used on input line 131.
+(pdftex.def)             Requested size: 170.71652pt x 137.75464pt.
+<images//softmax.png, id=283, 261.97874pt x 300.12125pt>
+File: images//softmax.png Graphic file (type png)
+<use images//softmax.png>
+Package pdftex.def Info: images//softmax.png  used on input line 146.
+(pdftex.def)             Requested size: 170.71652pt x 195.57565pt.
+[11 <./images//sigmoid.png> <./images//relu.png>]
+<images//multipercep.jpg, id=298, 425.33907pt x 244.66406pt>
 File: images//multipercep.jpg Graphic file (type jpg)
 <use images//multipercep.jpg>
-Package pdftex.def Info: images//multipercep.jpg  used on input line 158.
+Package pdftex.def Info: images//multipercep.jpg  used on input line 187.
 (pdftex.def)             Requested size: 345.0pt x 198.46053pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--169
+ [12 <./images//softmax.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 194--198
 
  []
 
-[11 <./images//multipercep.jpg>]
-Overfull \hbox (5.61682pt too wide) in paragraph at lines 226--231
-\OT1/cmr/m/n/10 TIENDA MEJOR, TOMEN COMO BASE LA REDACCI[]ON QUE LES PONGO
+[13 <./images//multipercep.jpg>]
+Overfull \hbox (7.36057pt too wide) in paragraph at lines 252--257
+\OT1/cmr/m/n/10 Las re-des neu-ronales con-volu-cionales (RNC) son las que fa-cil-i-tan el re-conocimiento
  []
 
-[12]
-<images//esquemaRedConvolucional.png, id=295, 885.3075pt x 244.915pt>
-File: images//esquemaRedConvolucional.png Graphic file (type png)
-<use images//esquemaRedConvolucional.png>
-Package pdftex.def Info: images//esquemaRedConvolucional.png  used on input line 236.
-(pdftex.def)             Requested size: 345.0pt x 95.44171pt.
- [13 <./images//esquemaRedConvolucional.png>] [14]) (./textFiles/hypothesis.tex) (./textFiles/methodology.tex) (./textFiles/timeline.tex
-<images//diagramaGantt.jpeg, id=325, 910.40125pt x 566.115pt>
+<images//CNN architecture.png, id=316, 712.6625pt x 325.215pt>
+File: images//CNN architecture.png Graphic file (type png)
+<use images//CNN architecture.png>
+Package pdftex.def Info: images//CNN architecture.png  used on input line 266.
+(pdftex.def)             Requested size: 345.0pt x 157.4363pt.
+[14]
+<images//Maxpool.png, id=326, 164.25pt x 68.547pt>
+File: images//Maxpool.png Graphic file (type png)
+<use images//Maxpool.png>
+Package pdftex.def Info: images//Maxpool.png  used on input line 285.
+(pdftex.def)             Requested size: 142.27478pt x 85.36763pt.
+<images//averagePooling.png, id=327, 697.60625pt x 246.9225pt>
+File: images//averagePooling.png Graphic file (type png)
+<use images//averagePooling.png>
+Package pdftex.def Info: images//averagePooling.png  used on input line 291.
+(pdftex.def)             Requested size: 142.26508pt x 85.3579pt.
+ [15 <./images//CNN architecture.png> <./images//Maxpool.png> <./images//averagePooling.png>] [16]) (./textFiles/hypothesis.tex) (./textFiles/methodology.tex [17]) (./textFiles/timeline.tex
+<images//diagramaGantt.jpeg, id=365, 910.40125pt x 566.115pt>
 File: images//diagramaGantt.jpeg Graphic file (type jpg)
 <use images//diagramaGantt.jpeg>
 Package pdftex.def Info: images//diagramaGantt.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 345.0pt x 214.52989pt.
-) (./textFiles/capitulated.tex [15])
-Overfull \hbox (16.51276pt too wide) in paragraph at lines 52--52
+) (./textFiles/capitulated.tex [18 <./images//diagramaGantt.jpeg>])
+Overfull \hbox (16.51276pt too wide) in paragraph at lines 62--62
 []\OT1/cmr/m/n/10 Jaime Dur^^San Su^^Sarez. ``Re-des neu-ronales con-volu-cionales en R: Re-conocimiento
  []
 
 
-Overfull \hbox (16.37505pt too wide) in paragraph at lines 52--52
+Overfull \hbox (16.37505pt too wide) in paragraph at lines 62--62
 \OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / bootcampai . medium . com / redes -[] neuronales -[] 13349dd1a5bb$[]\OT1/cmr/m/n/10 . 
  []
 
-[16 <./images//diagramaGantt.jpeg>]
-Overfull \hbox (26.08041pt too wide) in paragraph at lines 52--52
+
+Overfull \hbox (26.08041pt too wide) in paragraph at lines 62--62
 \OT1/cmtt/m/n/10 / / www . slideserve . com / ayanna -[] mcmahon / redes -[] neuronales -[] artificiales$[]\OT1/cmr/m/n/10 . 
  []
 
-[17] (build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
+[19] [20] (build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
 Package rerunfilecheck Info: File `"El aprendizaje incrementado en el uso de las redes neuronales".out' has not changed.
 (rerunfilecheck)             Checksum: 62441FB4E650AAEBA210161DE914A021;3812.
 Package logreq Info: Writing requests to '"El aprendizaje incrementado en el uso de las redes neuronales".run.xml'.
@@ -995,18 +1015,18 @@ Package logreq Info: Writing requests to '"El aprendizaje incrementado en el uso
 
  ) 
 Here is how much of TeX's memory you used:
- 23536 strings out of 478287
- 413169 string characters out of 5849289
- 1011849 words of memory out of 5000000
- 41310 multiletter control sequences out of 15000+600000
- 473590 words of font info for 45 fonts, out of 8000000 for 9000
+ 23593 strings out of 478287
+ 414393 string characters out of 5849289
+ 1013340 words of memory out of 5000000
+ 41354 multiletter control sequences out of 15000+600000
+ 473898 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,17n,77p,1953b,2937s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (17 pages, 1014532 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (20 pages, 1175767 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 500000)
- 258 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 

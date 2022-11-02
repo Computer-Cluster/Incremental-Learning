@@ -1,8 +1,11 @@
 \babel@toc {USenglish}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Red Neuronal Artificial B\'asica\relax }}{8}{figure.caption.3}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Puertas L\'ogicas \blx@tocontentsinit {0}\cite {mcmahon2014}\relax }}{9}{figure.caption.4}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Puerta L\'ogica Xor \blx@tocontentsinit {0}\cite {mcmahon2014}\relax }}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Puerta L\'ogica Xor \blx@tocontentsinit {0}\cite {mcmahon2014}\relax }}{10}{figure.caption.5}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Funci\'on Escalonada\relax }}{10}{figure.caption.6}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Funci\'on Escalonada\relax }}{10}{figure.caption.7}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Perceptron Multicapa\relax }}{11}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de una Red Convolucional \blx@tocontentsinit {0}\cite {duran2017}\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Funci\'on Sigmoide\relax }}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Funci\'on ReLU\relax }}{11}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Funci\'on Softmax\relax }}{12}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Perceptron Multicapa\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Arquitectura de una RNC \blx@tocontentsinit {0}\cite {Ortiz2020}\relax }}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces M\'etodos Pooling\relax }}{15}{figure.caption.12}%

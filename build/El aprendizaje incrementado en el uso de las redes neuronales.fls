@@ -988,6 +988,8 @@ INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.lof
 INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.lof
 OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.lof
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT ./textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
@@ -1050,7 +1052,6 @@ INPUT ./images//and.png
 INPUT images//and.png
 INPUT ./images//and.png
 INPUT ./images//and.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT ./images//or.png
 INPUT ./images//or.png
 INPUT images//or.png
@@ -1071,16 +1072,36 @@ INPUT ./images//sigmoid.png
 INPUT images//sigmoid.png
 INPUT ./images//sigmoid.png
 INPUT ./images//sigmoid.png
+INPUT ./images//relu.png
+INPUT ./images//relu.png
+INPUT images//relu.png
+INPUT ./images//relu.png
+INPUT ./images//relu.png
+INPUT ./images//softmax.png
+INPUT ./images//softmax.png
+INPUT images//softmax.png
+INPUT ./images//softmax.png
+INPUT ./images//softmax.png
 INPUT ./images//multipercep.jpg
 INPUT ./images//multipercep.jpg
 INPUT images//multipercep.jpg
 INPUT ./images//multipercep.jpg
 INPUT ./images//multipercep.jpg
-INPUT ./images//esquemaRedConvolucional.png
-INPUT ./images//esquemaRedConvolucional.png
-INPUT images//esquemaRedConvolucional.png
-INPUT ./images//esquemaRedConvolucional.png
-INPUT ./images//esquemaRedConvolucional.png
+INPUT ./images//CNN architecture.png
+INPUT ./images//CNN architecture.png
+INPUT images//CNN architecture.png
+INPUT ./images//CNN architecture.png
+INPUT ./images//CNN architecture.png
+INPUT ./images//Maxpool.png
+INPUT ./images//Maxpool.png
+INPUT images//Maxpool.png
+INPUT ./images//Maxpool.png
+INPUT ./images//Maxpool.png
+INPUT ./images//averagePooling.png
+INPUT ./images//averagePooling.png
+INPUT images//averagePooling.png
+INPUT ./images//averagePooling.png
+INPUT ./images//averagePooling.png
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
@@ -1123,9 +1144,11 @@ INPUT build/El aprendizaje incrementado en el uso de las redes neuronales.run.xm
 OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb

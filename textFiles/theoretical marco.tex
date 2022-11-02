@@ -72,7 +72,7 @@
         
         Pero problemas de tipo XOR no puede, ya que como se nota, una sola neurona sirve para 
         clasificar de un solo lado, asi que no puede clasificar ejercicios
-        como los de la imagen \ref{fig:fig3}
+        como los de la imagen \eqref{fig:fig3}
 
         \begin{figure}[H]
             \centering
@@ -112,7 +112,7 @@
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=5cm]{sigmoid.png}
-                    \caption{Funci\'on Escalonada}
+                    \caption{Funci\'on Sigmoide}
                     \label{fig:fig5}
                 \end{figure}
 
@@ -120,8 +120,37 @@
 
                 \[f(x) = \sigma(x) =  \left\{ \frac{1}{1 + e^{-x}} \right. \]
 
-                Aparte de agregar deformaciones en la linea. nos ayuda en cuestiones probabilisticas \cite{Freire2021}.\\
+                Aparte de agregar deformaciones en la linea. nos ayuda en 
+                cuestiones probabilisticas ya que se reprenta del rango de 0 a 1. \\
 
+                La funci\'on de Unidad Rectificada Lineal o RELU, la cual es unba funci\'on lineal
+                que cuando es positiva es igual a 1 y cuando es negativa es constante a 0, su forma es: \label{subsec: relu}
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=6cm]{relu.png}
+                    \caption{Funci\'on ReLU}
+                    \label{fig:fig6}
+                \end{figure}
+
+                se representa con la siguiente formula \cite{Freire2021}: 
+
+                \[f(x) = \left\{ \begin{array}{lr} 0 & : x < 0\\ x & : x \ge 0 \end{array} \right. \]
+
+                La función Softmax transforma las salidas a una representación en forma de 
+                probabilidades, de tal manera que el sumatorio de todas las probabilidades 
+                de las salidas de 1, su gr\'afica es: \label{subsec: softmax}
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=6cm]{softmax.png}
+                    \caption{Funci\'on Softmax}
+                    \label{fig:fig7}
+                \end{figure}
+
+                su representaci\'on matem\'atica es \cite{calvo-2018}:
+
+                \[f(z)_j = \left\{ \frac{e^{z_j}}{\sum_{K=1}^{K} e^{z_k}} \right. \]
 
         Las redes neuronales presentan demasiadas utilidades las cuales ayudan a  resolver problemas como los 
         siguientes \cite{liu2015}: no linealidad, mapeo entrada-salida, aprendizaje robusto 
@@ -157,7 +186,7 @@
                 \centering
                 \includegraphics[width=\columnwidth]{multipercep.jpg}
                 \caption{Perceptron Multicapa}
-                \label{fig:fig6}
+                \label{fig:fig8}
             \end{figure}
 
             
@@ -220,31 +249,65 @@
 
         \subsection{Redes Neuronales Convolucionales}
 
-            Este tipo de red trabaja con el uso de imágenes, por lo general de alta calidad, el \'unico problema que se tiene 
-            al momento de que sean de alta resoluciones son que el tiempo de entrenamiento sea enorme y el tiempo de testo (Tengo duda de que la palabra testo quede, puedes checarlo? si no pues dejalo asi jsjs)sea muy tardío.
+            Las redes neuronales convolucionales (RNC) son las que facilitan el reconocimiento de imagenes, el trabajo de reconocimiento de
+            imagenes se puede elaborar con RNAs, pero esta tiene demasiadas desventajas, como lo que es perdida de datos, porque cuando se 
+            ingresa una imagen a la capa de entrada, esta se debe de converitr en vectores, si la imagen es de 100 pixeles por 100 pixeles
+            se tendra un vector de 10000 pixeles, esto solo sera en imagenes a blanco y negro, si la imagen es del mismo tamaño pero a color
+            se obtendra un vector de 30000 pixeles, ya que se usan los filtros RGB (Rojo, Verde, Azul).
 
-            Consta de diversas multicapas alternadas, al final tiene una red perceptr\'on multicapa. (REVISEN LA REDACCIÓN, ESTÁ MUY SEGMENTADA LAS IDEAS, TIENEN QUE EXPLICAR UN POCO MÁS PARA QUE SE ENTIENDA MEJOR, TOMEN COMO BASE LA REDACCIÓN QUE LES PONGO AL INICIO DEL TRABAJO, VEAN CÓMO VOY A EXPLICANDO MÁS COSAS, Y AUNQUE ME LLEVO MÁS ESPACIO, QUEDA MEJOR)
-            La entrada de una red convolucional, con diferentes medidas en altura y anchura de imagen, para el uso 
-            de los proyectos se trabajan en escalas de grises, las cuales contienen filtros y cada filtro tiene distintos 
-            rasgos y características de tamaño. Cada capa es submuestreo de m\'inimo a m\'aximo, muestra donde se toman valores 
-            desde 2 im\'agenes pequeñas hasta no mas de 5 im\'agenes grandes.
+            Estas redes, presentan una soluci\'on para la problematica mencionada anteriormente, se basan en las conexiones que existen en 
+            el cerebro junto a la de los ojos.
 
-            Antes o despu\'es del submuestreo se aplica la activaci\'on sigmoidal para cada mapeo de rasgos \cite{duran2017}.
-
+            Sus capas se distribuyen como se muestra imagen \eqref{fig:fig7}:
+            
+            
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=\columnwidth]{esquemaRedConvolucional.png}
-                \caption{Esquema de una Red Convolucional \cite{duran2017}}
-                \label{fig:fig7}
+                \includegraphics[width=\columnwidth]{CNN architecture.png}
+                \caption{Arquitectura de una RNC \cite{Ortiz2020}}
+                \label{fig:fig9}
             \end{figure}
 
-Así como las redes convolucionales, también existen las redes profundas(deep learning), sin embargo, como se comenta en esta sección \ref{sec:delimitation} el presente trabajo solo se basará en redes del tipo multicapa perceptron usando el algoritmo de bacpkpropagation, donde de ser demostrados los principios descritos, se podrá aplicar a cualquier otro tipo de algoritmo de aprendizaje.  (LUIS Y SANDRA, AGREGUEN A LA DELIMITACIÓN LO QUE ESTOY INDICANDO AQUÍ, PARA QUE TENGA SENTIDO ESTO)
+            La capa de entrada contiene una matriz o tensor de matriz (m\'as de una matriz), las capas ocultas con dos etapas y la 
+            capa de salida, donde se obtendra el resultado de la predicci\'on. \\
+            La primer etapa es de extracci\'on de caracteristicas donde las capas estan unidas a capas de \textit{pooling}, estas capas son 
+            donde la imagen se divide en distintos kernels (filtros) el cual permitira hacer submatrices a las imagenes y asi poder recrearla
+            en otra matriz, estos filtros deben ser menor de la imagen, se pueden tener m\'as de un kernel para
+            analizar bien la imagen, existen dos m\'etodos de \textit{pooling}: el \textit{Max Pooling} y el \textit{Average Pooling}
+            ,el \textit{Max Pooling} extrae el valor m\'aximo de las submatrices para crear otra matriz, como se puede observar en la 
+            imagen \eqref{fig:f3}, mientras que el \textit{Average Pooling} el cual obtiene el promedio de las submatrices y con 
+            estos promedios genera otra matriz, como se puede ver en la imagen \eqref{fig:f4} para un mejor resultado se tiene una capa de extracci\'on 
+            o de convoluci\'on con otra capa de pooling, se pueden tener tantas capas de convoluci\'on como las de pooling 
+            para tener una mejor abstracci\'on de conocimientos, en este tipo de conexiones se usan las funciones de activaci\'on conocidas como Relu \eqref{subsec: relu}. 
 
+            \begin{figure}[H]
+                \begin{subfigure}[H]{0.49\textwidth}
+                    \includegraphics[width=5cm, height=3cm]{Maxpool.png}
+                    \caption{Max Pooling}
+                    \label{fig:f3}
+                \end{subfigure}
+                \hfill
+                \begin{subfigure}[H]{0.49\textwidth}
+                    \includegraphics[width=5cm, height=3cm]{averagePooling.png}
+                    \caption{Average Pooling}
+                    \label{fig:f4}
+                \end{subfigure}
+                \caption{M\'etodos Pooling}
+            \end{figure}
 
+            La segunda etapa es la de Full Conected, que equivale a tener una red normal o en otras palabras tener una RNA, aqu\'i 
+            es donde el modelo va a predecir que es lo que se presenta, puede decir si en la imagen hay un perro. gato o alg\'un mueble, 
+            para eso la funci\'on de activaci\'on que se usa es la softmax \eqref{subsec: softmax}, la cual se maneja con probabilidad, esto
+            permitira que se obtenga una buena probabilidad de lo que se puede obtener por la capa de entrada \cite{duran2017,Ortiz2020}.
+            
+            Así como las redes convolucionales, también existen las redes profundas(deep learning), sin embargo, como se comenta en esta 
+            sección \eqref{sec:delimitation} el presente trabajo solo se basará en redes del tipo multicapa perceptron usando el algoritmo 
+            de bacpkpropagation, donde de ser demostrados los principios descritos, se podrá aplicar a cualquier otro tipo de algoritmo 
+            de aprendizaje.
 
 \subsection{Aprendizaje}
 
-\subsubsection{Aprendizaje en humanos}
+    \subsubsection{Aprendizaje en humanos}
         El humano tiene una forma de aprendizaje muy particular, la cual se basa del estudio, donde lee, escribe y practica acerca de
         su tema de interés, pero dicho aprendizaje se puede ir olvidando, esta es una acción muy común que a cualquier persona le sucede.
         Existen estudios donde se comenta que existen tres motivos del porque se olvidan las cosas, proviene parte de la regularización de las emociones,

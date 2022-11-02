@@ -73,6 +73,29 @@
     \field{year}{2009}
   \endentry
 
+  \entry{calvo-2018}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=DC}{%
+         family={Diego},
+         familyi={D\bibinitperiod},
+         given={Calvo},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DC1}
+    \strng{fullhash}{DC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{{Función de activación – Redes neuronales}}
+    \verb{url}
+    \verb https://www.diegocalvo.es/funcion-de-activacion-redes-neuronales/
+    \endverb
+    \field{month}{12}
+    \field{year}{2018}
+  \endentry
+
   \entry{duran2017}{article}{}
     \name{author}{1}{}{%
       {{hash=DSJ}{%
@@ -332,6 +355,63 @@
     \field{volume}{10}
     \field{journaltitle}{Perspectives on Psychological Science}
     \field{year}{2015}
+  \endentry
+
+  \entry{Ortiz2020}{article}{}
+    \name{author}{6}{}{%
+      {{hash=OGFG}{%
+         family={Ortiz-Gomez},
+         familyi={O\bibinithyphendelim G\bibinitperiod},
+         given={Flor\bibnamedelima G.},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tarchi},
+         familyi={T\bibinitperiod},
+         given={Daniele},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Martínez},
+         familyi={M\bibinitperiod},
+         given={Ramón},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=VCA}{%
+         family={Vanelli-Coralli},
+         familyi={V\bibinithyphendelim C\bibinitperiod},
+         given={Alessandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SNMA}{%
+         family={Salas-Natera},
+         familyi={S\bibinithyphendelim N\bibinitperiod},
+         given={Miguel\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LAS}{%
+         family={Landeros-Ayala},
+         familyi={L\bibinithyphendelim A\bibinitperiod},
+         given={Salvador},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OGFG+1}
+    \strng{fullhash}{OGFGTDMRVCASNMALAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.1109/JSYST.2020.3020038
+    \endverb
+    \field{number}{3}
+    \field{pages}{4675\bibrangedash 4686}
+    \field{title}{Convolutional Neural Networks for Flexible Payload Management
+  in VHTS Systems}
+    \field{volume}{15}
+    \field{journaltitle}{IEEE Systems Journal}
+    \field{year}{2021}
   \endentry
 
   \entry{perez2014}{article}{}
