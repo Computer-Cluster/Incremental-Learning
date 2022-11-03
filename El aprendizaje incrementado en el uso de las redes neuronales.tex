@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,USenglish,es-tabla]{babel} 
+\usepackage[spanish,mexico]{babel} 
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{multicol}
@@ -21,9 +21,17 @@
 \usepackage{pdflscape}
 \usepackage{amsmath}
 
+\pagestyle{empty}
+\usepackage[nottoc]{tocbibind}
+\usepackage{times}
 
-\usepackage[backend=bibtex]{biblatex}
-\addbibresource{bibliography.bib}
+
+% M a r g i n s 
+\usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}   % with the script is lower the text, with kile it put +o- 1 cm above, check when pinted in the school
+
+
+%\usepackage[backend=bibtex]{biblatex}
+%\addbibresource{bibliography.bib}
 
 \graphicspath{ {images/} }
 
@@ -57,6 +65,11 @@
     \input{textFiles/timeline}
     \input{textFiles/capitulated}
     
-    \printbibliography  
+    %\printbibliography  
+
+    %\bibliographystyle{acm}
+	\bibliographystyle{plain}
+    \bibliography{bibliography}
+    %\bibliography{BaseDatos2}
 
 \end{document}

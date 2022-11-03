@@ -59,9 +59,6 @@
       <file>numeric.bbx</file>
       <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
-      <file>english.lbx</file>
-      <file>american.lbx</file>
-      <file>USenglish.lbx</file>
       <file>spanish.lbx</file>
     </requires>
   </internal>
@@ -86,7 +83,6 @@
       <file>El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>bibliography.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

@@ -1,65 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: El aprendizaje incrementado en el uso de las redes neuronales.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib
-Database file #2: bibliography.bib
-Biblatex version: 3.17
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 21 entries,
-            6399 wiz_defined-function locations,
-            1328 strings with 14004 characters,
-and the built_in function-call counts, 156183 in all, are:
-= -- 12610
-> -- 2157
-< -- 640
-+ -- 3819
-- -- 769
-* -- 11641
-:= -- 17197
-add.period$ -- 0
-call.type$ -- 21
-change.case$ -- 305
-chr.to.int$ -- 60
-cite$ -- 40
-duplicate$ -- 14836
-empty$ -- 14276
-format.name$ -- 1259
-if$ -- 32155
+The style file: plain.bst
+Database file #1: bibliography.bib
+Warning--empty journal in duran2017
+Warning--empty journal in Huber2008
+Warning--empty booktitle in liu2015
+You've used 20 entries,
+            2118 wiz_defined-function locations,
+            617 strings with 7219 characters,
+and the built_in function-call counts, 6463 in all, are:
+= -- 638
+> -- 253
+< -- 6
++ -- 104
+- -- 82
+* -- 411
+:= -- 1044
+add.period$ -- 59
+call.type$ -- 20
+change.case$ -- 101
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 255
+empty$ -- 552
+format.name$ -- 82
+if$ -- 1384
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 0
-newline$ -- 619
-num.names$ -- 950
-pop$ -- 7097
+int.to.str$ -- 20
+missing$ -- 16
+newline$ -- 99
+num.names$ -- 40
+pop$ -- 125
 preamble$ -- 1
-purify$ -- 396
+purify$ -- 81
 quote$ -- 0
-skip$ -- 3769
+skip$ -- 196
 stack$ -- 0
-substring$ -- 24784
-swap$ -- 2928
-text.length$ -- 568
-text.prefix$ -- 23
-top$ -- 1
-type$ -- 702
-warning$ -- 0
-while$ -- 1914
-width$ -- 0
-write$ -- 599
+substring$ -- 424
+swap$ -- 62
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 3
+while$ -- 66
+width$ -- 22
+write$ -- 208
+(There were 3 warnings)

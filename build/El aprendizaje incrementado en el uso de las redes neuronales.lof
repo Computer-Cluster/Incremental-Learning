@@ -1,12 +1,12 @@
-\babel@toc {USenglish}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Red Neuronal Artificial B\'asica\relax }}{9}{figure.caption.3}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Puertas L\'ogicas \blx@tocontentsinit {0}\cite {mcmahon2014}\relax }}{10}{figure.caption.4}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Puerta L\'ogica Xor \blx@tocontentsinit {0}\cite {mcmahon2014}\relax }}{10}{figure.caption.5}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Funci\'on Escalonada\relax }}{11}{figure.caption.6}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Funci\'on Sigmoide\relax }}{11}{figure.caption.7}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Funci\'on ReLU\relax }}{12}{figure.caption.8}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Funci\'on Softmax\relax }}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Perceptron Multicapa\relax }}{13}{figure.caption.10}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Arquitectura de una RNC \blx@tocontentsinit {0}\cite {Ortiz2020}\relax }}{15}{figure.caption.11}%
-\contentsline {figure}{\numberline {10}{\ignorespaces M\'etodos Pooling\relax }}{16}{figure.caption.12}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Dos enfoques tradicionales del aprendizaje incremental \blx@tocontentsinit {0}\cite {Deshmukh2013}.\relax }}{18}{figure.caption.13}%
+\babel@toc {spanish}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Red Neuronal Artificial B\'asica\relax }}{7}{figure.caption.3}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Puertas L\'ogicas \cite {mcmahon2014}\relax }}{8}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Puerta L\'ogica Xor \cite {mcmahon2014}\relax }}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Funci\'on Escalonada\relax }}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Funci\'on Sigmoide\relax }}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Funci\'on ReLU\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Funci\'on Softmax\relax }}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Perceptron Multicapa\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Arquitectura de una RNC \cite {Ortiz2020}\relax }}{12}{figure.caption.11}%
+\contentsline {figure}{\numberline {10}{\ignorespaces M\'etodos Pooling\relax }}{13}{figure.caption.12}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Dos enfoques tradicionales del aprendizaje incremental \cite {Deshmukh2013}.\relax }}{14}{figure.caption.13}%
