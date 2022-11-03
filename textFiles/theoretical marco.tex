@@ -287,8 +287,8 @@
             en otra matriz, estos filtros deben ser menor de la imagen, se pueden tener m\'as de un kernel para
             analizar bien la imagen, existen dos m\'etodos de \textit{pooling}: el \textit{Max Pooling} y el \textit{Average Pooling},
              el \textit{Max Pooling} extrae el valor m\'aximo de las submatrices para crear otra matriz, como se puede observar en la 
-            Figura \eqref{fig:fig10}, mientras que el \textit{Average Pooling} el cual obtiene el promedio de las submatrices y con 
-            estos promedios genera otra matriz, como se puede ver en la Figura \eqref{fig:fig10} para un mejor resultado se tiene una capa de extracci\'on 
+            Figura \eqref{fig:f3}, mientras que el \textit{Average Pooling} el cual obtiene el promedio de las submatrices y con 
+            estos promedios genera otra matriz, como se puede ver en la Figura \eqref{fig:f4} para un mejor resultado se tiene una capa de extracci\'on 
             o de convoluci\'on con otra capa de pooling, se pueden tener tantas capas de convoluci\'on como las de pooling 
             para tener una mejor abstracci\'on de conocimientos, en este tipo de conexiones se usan las funciones de activaci\'on conocidas como Relu \eqref{subsec: relu}. 
 
@@ -296,13 +296,13 @@
                 \begin{subfigure}[H]{0.49\textwidth}
                     \includegraphics[width=5cm, height=3cm]{Maxpool.png}
                     \caption{Max Pooling}
-                    \label{fig:fig10}
+                    \label{fig:f3}
                 \end{subfigure}
                 \hfill
                 \begin{subfigure}[H]{0.49\textwidth}
                     \includegraphics[width=5cm, height=3cm]{averagePooling.png}
                     \caption{Average Pooling}
-                    \label{fig:fig10}
+                    \label{fig:f4}
                 \end{subfigure}
                 \caption{M\'etodos Pooling}
             \end{figure}
@@ -424,14 +424,14 @@
         
             \textit{"Un algoritmo de aprendizaje es incremental si,
             para cualquier muestra de entrenamiento dada:
-            \begin{equation}
+            \begin{equation*}
                 e_{1} , .... , e_{s}
-			\end{equation}
+			\end{equation*}
             produce un secuencia de hipótesis 
-            \begin{equation}
+            \begin{equation*}
                 h_{0} , h_{1}, . . . , h_{n} 
-            \end{equation}
-            tal que hi+1 depende solo de hola(Tengo duda con la palabra hola si lo tradujiste fijate bien que hayas copiado bien, luego los simbolos no los copia como es ) y del ejemplo actual e"} \cite{GiraudCarrier2000}, como se 
+            \end{equation*}
+            tal que \[ h_{i+1} \] depende solo de \[ h_i \] y del ejemplo actual e"} \cite{GiraudCarrier2000}, como se 
             observa, estos son algoritmos que permiten a la inteligencia artificial poder realizar actividades de predicci\'on 
             de una manera m\'as eficaz.\\
             

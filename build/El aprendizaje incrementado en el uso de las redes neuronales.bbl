@@ -17,6 +17,39 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{Deshmukh2013}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AR}{%
+         family={Ade},
+         familyi={A\bibinitperiod},
+         given={RR},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Deshmukh},
+         familyi={D\bibinitperiod},
+         given={PR},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academy \& Industry Research Collaboration Center (AIRCC)}%
+    }
+    \strng{namehash}{ARDP1}
+    \strng{fullhash}{ARDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{119}
+    \field{title}{Methods for incremental learning: a survey}
+    \field{volume}{3}
+    \field{journaltitle}{International Journal of Data Mining \& Knowledge
+  Management Process}
+    \field{year}{2013}
+  \endentry
+
   \entry{bransford2000}{article}{}
     \name{author}{3}{}{%
       {{hash=BJ}{%

@@ -1,9 +1,9 @@
-PWD /home/luisg/Documents/Incremental-Learning
+PWD /home/luisg/Documentos/Incremental-Learning
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex
+INPUT /home/luisg/Documentos/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex
 OUTPUT build/El aprendizaje incrementado en el uso de las redes neuronales.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1102,6 +1102,11 @@ INPUT ./images//averagePooling.png
 INPUT images//averagePooling.png
 INPUT ./images//averagePooling.png
 INPUT ./images//averagePooling.png
+INPUT ./images/MetodosAprendizajeIncremental.PNG
+INPUT ./images/MetodosAprendizajeIncremental.PNG
+INPUT images/MetodosAprendizajeIncremental.PNG
+INPUT ./images/MetodosAprendizajeIncremental.PNG
+INPUT ./images/MetodosAprendizajeIncremental.PNG
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
 INPUT ./textFiles/hypothesis.tex
