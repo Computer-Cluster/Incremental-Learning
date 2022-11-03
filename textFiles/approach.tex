@@ -1,31 +1,32 @@
 \section{Planeamiento}
-
-    Las Redes Neuronales Artificiales tienen la habilidad de poderse aprender una tarea, 
+	
+	
+    Las Redes Neuronales Artificiales tienen la habilidad de poderse aprender una tarea 
     y poder hacer o resolver tareas de predicción o clasificación básicamente. En este 
     sentido, con algoritmos de aprendizaje como el Backpropagation, permite ajustar los 
     pesos de una RNA para que esta pueda empezar a resolver una tarea particular.  No 
     obstante, muchas de las tareas que se resuelven en la vida diaria, van generando mas 
     información con el tiempo, por ejemplo, el comportamiento de un una serie financiera, 
     o bien la predicción del clima en una determinada región. Así,  se tiene el aprendizaje 
-    incremental, siendo un método poco explorado,  enfocado en poder aprender nueva información del 
-    problema, sin tener que volver a entrenar todo el modelo con la información anterior, y la 
+    incremental, siendo un método poco explorado  enfocado en poder aprender nueva información del 
+    problema, sin tener que volver a entrenar todo el modelo con la información anterior y la 
     nueva que acaba de llegar, esto es, en los modelos actuales de aprendizaje máquina, si se usa 
     un conjunto de datos para entrenar un modelo en especifico, dicho modelo es funcional para 
     dicho conjunto de datos y la información que ello representa. Sin embargo, si es necesario 
     incorporar nueva información al modelo, es necesario recolectar dicha información nueva, 
     agregarla a la que se tenia anteriormente, y volver a entrenar todo el modelo para que \'este 
-    pueda incorporar la nueva información.
+    pueda incorporar la nueva información.\\
 
     De esta forma, una red ya entrenada con un primer conjunto de datos $d_{1}$ se desea entrenar 
     con un nuevo conjunto de datos del mismo problema $d_{2}$, al entrenar la red con $d_{2}$ se 
     perderá en conocimiento aprendido por $d_{1}$.  Si no se desea utilizar un modelo de aprendizaje 
     incremental, se tendría que juntar el conjunto $d_{1}$ y $d_{2}$ en un solo conjunto y volver a 
-    entrenar la RAN para así poder incorporar el nuevo conocimiento ($d_{2}$) a la RNA. Si se desea 
-    utilizar el método de aprendizaje incremental, se puede entrenar en un primer moemnto a la red 
+    entrenar la RNA para así poder incorporar el nuevo conocimiento ($d_{2}$) a la RNA. Si se desea 
+    utilizar el método de aprendizaje incremental, se puede entrenar en un primer momento a la red 
     con el conjunto $d_{1}$, posteriormente con $d_{2}$ teniendo poca perdida de información de $d_{1}$. 
     Si más adelante llega mas información del problema ($d_{3}$) que se desee incorporar a la base 
     de conocimientos de la RNA, entonces solo habrá que entrenar la RNA con $d_{3}$ usando el modelo 
-    incremental para tener una p\'erdida mínima de información de $d_{1}$ y $d_{2}$. 
+    incremental para tener una p\'erdida mínima de información de $d_{1}$ y $d_{2}$. \\
 
     De esta forma, el presente trabajo tomar\'a como base la investigación de \cite{bullinaria2009}, 
     en donde utiliza una configuración de pesos dobles (a una RNA se duplican todos sus pesos), 
@@ -38,13 +39,13 @@
     capa de pesos duplicados, aprenderá muy lentamente los nuevos datos que llegan, y por ende olvidando 
     poco la información que anteriormente se aprendió.  Considerando ello y también que la 
     RNA trabaja en conjunto con ambas capas de pesos duplicados, se pondera la salida de la RNA para 
-    que pueda contemplar la información nueva que se acaba de agregar a la RNA, en ambas capas, así como 
-    la información que se acaba de olvidar de ambas capas de pesos.
+    que pueda contemplar la información nueva que se acaba de agregar a la RNA en ambas capas, así como 
+    la información que se acaba de olvidar de ambas capas de pesos.\\
 
     El problema principal del aprendizaje incremental mostrado en \cite{bullinaria2009}, es que entre 
     más conjuntos de datos nuevos que lleguen, mas se olvidaran los primeros conjuntos que se aprendieron, 
     lo cual no es tan útil si se contempla que en el futuro de una RNA podrán existir 10 o 20 etapas de 
-    entrenamiento incremental con nuevos conjuntos de datos que se vayan recolectando.
+    entrenamiento incremental con nuevos conjuntos de datos que se vayan recolectando.\\
 
     Por ello es indispensable poder explorar nuevas configuraciones de RNAs que permitan mejorar los 
     métodos actuales para permitir una menor cantidad de olvido conforme llegue nueva información al 

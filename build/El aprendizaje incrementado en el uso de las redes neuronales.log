@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  2 NOV 2022 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.29)  2 NOV 2022 23:52
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex"
-(/home/luisg/Documents/Incremental-Learning/El aprendizaje incrementado en el uso de las redes neuronales.tex
+**"./El aprendizaje incrementado en el uso de las redes neuronales.tex"
+(El aprendizaje incrementado en el uso de las redes neuronales.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-05-04>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -22,19 +22,30 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
+)
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2022/05/22 3.75 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen139
-\l@unhyphenated=\language87
- (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@unhyphenated=\language79
+
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count194
- (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Program Files\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks18
 \es@quotdepth=\count195
@@ -42,17 +53,29 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-) (/usr/share/texlive/texmf-dist/tex/generic/babel-english/USenglish.ldf
+)
+(C:\Program Files\MiKTeX\tex/latex/babel-english\USenglish.ldf
 Language: USenglish 2017/06/06 v3.3r English support from the babel system
- (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+
+(C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language39). Reported on input line 105.
+(babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language39). Reported on input line 108.
-))) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(babel)             (\language73). Reported on input line 108.
+)))
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-usenglish.tex
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/en\babel-english-unitedstates
+.tex
+Package babel Info: Importing font and identification data for USenglish
+(babel)             from babel-en-US.ini. Reported on input line 11.
+)) (C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -60,9 +83,11 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count196
 \mult@box=\box50
@@ -130,37 +155,47 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \mult@nat@firstbox=\box93
 \colbreak@box=\box94
 \mc@col@check@num=\count271
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
- (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen151
-\captionmargin@=\dimen152
-\captionwidth=\dimen153
-\caption@tempdima=\dimen154
-\caption@indent=\dimen155
-\caption@parindent=\dimen156
-\caption@hangindent=\dimen157
+)
+(C:\Users\HP\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+
+(C:\Users\HP\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\HP\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen151
+\captionmargin=\dimen152
+\caption@leftmargin=\dimen153
+\caption@rightmargin=\dimen154
+\caption@width=\dimen155
+\caption@indent=\dimen156
+\caption@parindent=\dimen157
+\caption@hangindent=\dimen158
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count272
@@ -168,17 +203,22 @@ Package caption Info: Standard document class detected.
 )
 \c@subfigure=\count274
 \c@subtable=\count275
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count276
 \float@exts=\toks21
 \float@box=\box95
 \@float@everytoks=\toks22
 \@floatcapt=\box96
-) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+)
+(C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Program Files\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2022-05-04 L3 programming layer (loader) 
+
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box97
 ))
@@ -188,9 +228,12 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count278
 \l__lipsum_a_int=\count279
 \l__lipsum_b_int=\count280
- (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+
+(C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
@@ -203,312 +246,371 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
-) (/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/sidecap\sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
- (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\SC@BOXWD=\dimen158
-\SC@CAPWD=\dimen159
-\SC@tempdima=\dimen160
-\SC@tempdimb=\dimen161
+\SC@BOXWD=\dimen159
+\SC@CAPWD=\dimen160
+\SC@tempdima=\dimen161
+\SC@tempdimb=\dimen162
 \c@SC@C=\count281
 \SC@BOX=\box98
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen162
+\col@sep=\dimen163
 \ar@mcellbox=\box99
-\extrarowheight=\dimen163
+\extrarowheight=\dimen164
 \NC@list=\toks23
 \extratabsurround=\skip51
 \backup@length=\skip52
 \ar@cellbox=\box100
-) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip53
-\fb@frw=\dimen164
-\fb@frh=\dimen165
-\FrameRule=\dimen166
-\FrameSep=\dimen167
-) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen168
-\WF@size=\dimen169
+\fb@frw=\dimen165
+\fb@frh=\dimen166
+\FrameRule=\dimen167
+\FrameSep=\dimen168
+)
+(C:\Program Files\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen169
+\WF@size=\dimen170
 \c@WF@wrappedlines=\count282
 \WF@box=\box101
 \WF@everypar=\toks24
 Package: wrapfig 2003/01/31  v 3.6
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count283
 \lst@gtempboxa=\box102
 \lst@token=\toks25
 \lst@length=\count284
-\lst@currlwidth=\dimen170
+\lst@currlwidth=\dimen171
 \lst@column=\count285
 \lst@pos=\count286
-\lst@lostspace=\dimen171
-\lst@width=\dimen172
+\lst@lostspace=\dimen172
+\lst@width=\dimen173
 \lst@newlines=\count287
 \lst@lineno=\count288
-\lst@maxwidth=\dimen173
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+\lst@maxwidth=\dimen174
+
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count289
 \lst@skipnumbers=\count290
 \lst@framebox=\box103
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-05-17 v7.00q Hypertext links for LaTeX
+
+(C:\Program Files\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+)
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Program Files\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen174
-\Hy@linkcounter=\count291
-\Hy@pagecounter=\count292
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+(C:\Program Files\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(C:\Program Files\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Program Files\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+))
+\c@section@level=\count291
+)
+\@linkdim=\dimen175
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-05-17 v7.00q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
-) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(C:\Program Files\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+)
+(C:\Program Files\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count293
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count294
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-05-17 v7.00q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Hyper figures OFF on input line 4139.
+Package hyperref Info: Link nesting OFF on input line 4144.
+Package hyperref Info: Hyper index ON on input line 4147.
+Package hyperref Info: Plain pages OFF on input line 4154.
+Package hyperref Info: Backreferencing OFF on input line 4159.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count294
- (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4385.
+\c@Hy@tempcnt=\count295
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen175
- (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4723.
+\XeTeXLinkMargin=\dimen176
+
+(C:\Program Files\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(C:\Program Files\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
-\Fld@menulength=\count295
-\Field@Width=\dimen176
-\Fld@charsize=\dimen177
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
- (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+\Fld@menulength=\count296
+\Field@Width=\dimen177
+\Fld@charsize=\dimen178
+Package hyperref Info: Hyper figures OFF on input line 6001.
+Package hyperref Info: Link nesting OFF on input line 6006.
+Package hyperref Info: Hyper index ON on input line 6009.
+Package hyperref Info: backreferencing OFF on input line 6016.
+Package hyperref Info: Link coloring OFF on input line 6021.
+Package hyperref Info: Link coloring with OCG OFF on input line 6026.
+Package hyperref Info: PDF/A mode OFF on input line 6031.
+LaTeX Info: Redefining \ref on input line 6078.
+LaTeX Info: Redefining \pageref on input line 6078.
+
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count296
-\c@Item=\count297
-\c@Hfootnote=\count298
+\Hy@abspage=\count297
+\c@Item=\count298
+\c@Hfootnote=\count299
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
- (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-05-17 v7.00q Hyperref driver for pdfTeX
+
+(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
 with kernel methods
 )
-\Fld@listcount=\count299
-\c@bookmark@seq@number=\count300
- (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
+
+(C:\Program Files\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+
+(C:\Program Files\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
 )
 \Hy@SectionHShift=\skip54
-) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/10/09 v0.5w Insert pages of external PDF documents (AM)
+
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count301
-\calc@Bcount=\count302
-\calc@Adimen=\dimen178
-\calc@Bdimen=\dimen179
+\calc@Acount=\count302
+\calc@Bcount=\count303
+\calc@Adimen=\dimen179
+\calc@Bdimen=\dimen180
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count303
+\calc@Ccount=\count304
 \calc@Cskip=\skip57
-) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen180
-\ESO@tempdimb=\dimen181
+\ESO@tempdima=\dimen181
+\ESO@tempdimb=\dimen182
 )
-\AM@pagewidth=\dimen182
-\AM@pageheight=\dimen183
-\AM@fboxrule=\dimen184
- (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+\AM@pagewidth=\dimen183
+\AM@pageheight=\dimen184
+\AM@fboxrule=\dimen185
+
+(C:\Program Files\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/10/09 v0.5w Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count304
+\pdfpages@includegraphics@status=\count305
 \AM@pagebox=\box104
 \AM@global@opts=\toks26
-\AM@pagecnt=\count305
+\AM@pagecnt=\count306
 \AM@toc@title=\toks27
-\c@AM@survey=\count306
+\c@AM@survey=\count307
 \AM@templatesizebox=\box105
-) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks28
-\ex@=\dimen185
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\ex@=\dimen186
+))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen186
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen187
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count307
+\inf@bad=\count308
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count308
-\leftroot@=\count309
+\uproot@=\count309
+\leftroot@=\count310
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count310
-\DOTSCASE@=\count311
+\classnum@=\count311
+\DOTSCASE@=\count312
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box106
 \strutbox@=\box107
-\big@size=\dimen187
+\big@size=\dimen188
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count312
-\c@MaxMatrixCols=\count313
+\macc@depth=\count313
+\c@MaxMatrixCols=\count314
 \dotsspace@=\muskip17
-\c@parentequation=\count314
-\dspbrk@lvl=\count315
+\c@parentequation=\count315
+\dspbrk@lvl=\count316
 \tag@help=\toks29
-\row@=\count316
-\column@=\count317
-\maxfields@=\count318
+\row@=\count317
+\column@=\count318
+\maxfields@=\count319
 \andhelp@=\toks30
-\eqnshift@=\dimen188
-\alignsep@=\dimen189
-\tagshift@=\dimen190
-\tagwidth@=\dimen191
-\totwidth@=\dimen192
-\lineht@=\dimen193
+\eqnshift@=\dimen189
+\alignsep@=\dimen190
+\tagshift@=\dimen191
+\tagwidth@=\dimen192
+\totwidth@=\dimen193
+\lineht@=\dimen194
 \@envbody=\toks31
 \multlinegap=\skip59
 \multlinetaggap=\skip60
 \mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
- (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count319
-) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+\etb@tempcnta=\count320
+)
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count320
- (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+\lrq@indent=\count321
+
+(C:\Program Files\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count321
-\c@listtotal=\count322
-\c@listcount=\count323
-\c@liststart=\count324
-\c@liststop=\count325
-\c@citecount=\count326
-\c@citetotal=\count327
-\c@multicitecount=\count328
-\c@multicitetotal=\count329
-\c@instcount=\count330
-\c@maxnames=\count331
-\c@minnames=\count332
-\c@maxitems=\count333
-\c@minitems=\count334
-\c@citecounter=\count335
-\c@maxcitecounter=\count336
-\c@savedcitecounter=\count337
-\c@uniquelist=\count338
-\c@uniquename=\count339
-\c@refsection=\count340
-\c@refsegment=\count341
-\c@maxextratitle=\count342
-\c@maxextratitleyear=\count343
-\c@maxextraname=\count344
-\c@maxextradate=\count345
-\c@maxextraalpha=\count346
-\c@abbrvpenalty=\count347
-\c@highnamepenalty=\count348
-\c@lownamepenalty=\count349
-\c@maxparens=\count350
-\c@parenlevel=\count351
-\blx@tempcnta=\count352
-\blx@tempcntb=\count353
-\blx@tempcntc=\count354
-\c@blx@maxsection=\count355
-\c@blx@maxsegment@0=\count356
-\blx@notetype=\count357
-\blx@parenlevel@text=\count358
-\blx@parenlevel@foot=\count359
-\c@blx@sectionciteorder@0=\count360
-\blx@entrysetcounter=\count361
-\blx@biblioinstance=\count362
+\c@tabx@nest=\count322
+\c@listtotal=\count323
+\c@listcount=\count324
+\c@liststart=\count325
+\c@liststop=\count326
+\c@citecount=\count327
+\c@citetotal=\count328
+\c@multicitecount=\count329
+\c@multicitetotal=\count330
+\c@instcount=\count331
+\c@maxnames=\count332
+\c@minnames=\count333
+\c@maxitems=\count334
+\c@minitems=\count335
+\c@citecounter=\count336
+\c@maxcitecounter=\count337
+\c@savedcitecounter=\count338
+\c@uniquelist=\count339
+\c@uniquename=\count340
+\c@refsection=\count341
+\c@refsegment=\count342
+\c@maxextratitle=\count343
+\c@maxextratitleyear=\count344
+\c@maxextraname=\count345
+\c@maxextradate=\count346
+\c@maxextraalpha=\count347
+\c@abbrvpenalty=\count348
+\c@highnamepenalty=\count349
+\c@lownamepenalty=\count350
+\c@maxparens=\count351
+\c@parenlevel=\count352
+\blx@tempcnta=\count353
+\blx@tempcntb=\count354
+\blx@tempcntc=\count355
+\c@blx@maxsection=\count356
+\c@blx@maxsegment@0=\count357
+\blx@notetype=\count358
+\blx@parenlevel@text=\count359
+\blx@parenlevel@foot=\count360
+\c@blx@sectionciteorder@0=\count361
+\blx@entrysetcounter=\count362
+\blx@biblioinstance=\count363
 \labelnumberwidth=\skip61
 \labelalphawidth=\skip62
 \biblabelsep=\skip63
@@ -519,85 +621,86 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibhang=\skip68
 \blx@bcfin=\read3
 \blx@bcfout=\write3
-\blx@langwohyphens=\language88
-\c@mincomprange=\count363
-\c@maxcomprange=\count364
-\c@mincompwidth=\count365
+\blx@langwohyphens=\language80
+\c@mincomprange=\count364
+\c@maxcomprange=\count365
+\c@mincompwidth=\count366
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count366
-\c@savedafterword=\count367
-\c@annotator=\count368
-\c@savedannotator=\count369
-\c@author=\count370
-\c@savedauthor=\count371
-\c@bookauthor=\count372
-\c@savedbookauthor=\count373
-\c@commentator=\count374
-\c@savedcommentator=\count375
-\c@editor=\count376
-\c@savededitor=\count377
-\c@editora=\count378
-\c@savededitora=\count379
-\c@editorb=\count380
-\c@savededitorb=\count381
-\c@editorc=\count382
-\c@savededitorc=\count383
-\c@foreword=\count384
-\c@savedforeword=\count385
-\c@holder=\count386
-\c@savedholder=\count387
-\c@introduction=\count388
-\c@savedintroduction=\count389
-\c@namea=\count390
-\c@savednamea=\count391
-\c@nameb=\count392
-\c@savednameb=\count393
-\c@namec=\count394
-\c@savednamec=\count395
-\c@translator=\count396
-\c@savedtranslator=\count397
-\c@shortauthor=\count398
-\c@savedshortauthor=\count399
-\c@shorteditor=\count400
-\c@savedshorteditor=\count401
-\c@labelname=\count402
-\c@savedlabelname=\count403
-\c@institution=\count404
-\c@savedinstitution=\count405
-\c@lista=\count406
-\c@savedlista=\count407
-\c@listb=\count408
-\c@savedlistb=\count409
-\c@listc=\count410
-\c@savedlistc=\count411
-\c@listd=\count412
-\c@savedlistd=\count413
-\c@liste=\count414
-\c@savedliste=\count415
-\c@listf=\count416
-\c@savedlistf=\count417
-\c@location=\count418
-\c@savedlocation=\count419
-\c@organization=\count420
-\c@savedorganization=\count421
-\c@origlocation=\count422
-\c@savedoriglocation=\count423
-\c@origpublisher=\count424
-\c@savedorigpublisher=\count425
-\c@publisher=\count426
-\c@savedpublisher=\count427
-\c@language=\count428
-\c@savedlanguage=\count429
-\c@origlanguage=\count430
-\c@savedoriglanguage=\count431
-\c@pageref=\count432
-\c@savedpageref=\count433
+\c@afterword=\count367
+\c@savedafterword=\count368
+\c@annotator=\count369
+\c@savedannotator=\count370
+\c@author=\count371
+\c@savedauthor=\count372
+\c@bookauthor=\count373
+\c@savedbookauthor=\count374
+\c@commentator=\count375
+\c@savedcommentator=\count376
+\c@editor=\count377
+\c@savededitor=\count378
+\c@editora=\count379
+\c@savededitora=\count380
+\c@editorb=\count381
+\c@savededitorb=\count382
+\c@editorc=\count383
+\c@savededitorc=\count384
+\c@foreword=\count385
+\c@savedforeword=\count386
+\c@holder=\count387
+\c@savedholder=\count388
+\c@introduction=\count389
+\c@savedintroduction=\count390
+\c@namea=\count391
+\c@savednamea=\count392
+\c@nameb=\count393
+\c@savednameb=\count394
+\c@namec=\count395
+\c@savednamec=\count396
+\c@translator=\count397
+\c@savedtranslator=\count398
+\c@shortauthor=\count399
+\c@savedshortauthor=\count400
+\c@shorteditor=\count401
+\c@savedshorteditor=\count402
+\c@labelname=\count403
+\c@savedlabelname=\count404
+\c@institution=\count405
+\c@savedinstitution=\count406
+\c@lista=\count407
+\c@savedlista=\count408
+\c@listb=\count409
+\c@savedlistb=\count410
+\c@listc=\count411
+\c@savedlistc=\count412
+\c@listd=\count413
+\c@savedlistd=\count414
+\c@liste=\count415
+\c@savedliste=\count416
+\c@listf=\count417
+\c@savedlistf=\count418
+\c@location=\count419
+\c@savedlocation=\count420
+\c@organization=\count421
+\c@savedorganization=\count422
+\c@origlocation=\count423
+\c@savedoriglocation=\count424
+\c@origpublisher=\count425
+\c@savedorigpublisher=\count426
+\c@publisher=\count427
+\c@savedpublisher=\count428
+\c@language=\count429
+\c@savedlanguage=\count430
+\c@origlanguage=\count431
+\c@savedoriglanguage=\count432
+\c@pageref=\count433
+\c@savedpageref=\count434
 \shorthandwidth=\skip69
 \shortjournalwidth=\skip70
 \shortserieswidth=\skip71
@@ -614,12 +717,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip82
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-bibtex.def
 File: blx-bibtex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 
 
@@ -629,36 +734,39 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+ (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count434
-\c@textcitetotal=\count435
-\c@textcitemaxnames=\count436
-\c@biburlbigbreakpenalty=\count437
-\c@biburlbreakpenalty=\count438
-\c@biburlnumpenalty=\count439
-\c@biburlucpenalty=\count440
-\c@biburllcpenalty=\count441
+\c@textcitecount=\count435
+\c@textcitetotal=\count436
+\c@textcitemaxnames=\count437
+\c@biburlbigbreakpenalty=\count438
+\c@biburlbreakpenalty=\count439
+\c@biburlnumpenalty=\count440
+\c@biburlucpenalty=\count441
+\c@biburllcpenalty=\count442
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count442
+\c@smartand=\count443
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
 File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count443
-\c@bbx:relatedtotal=\count444
+\c@bbx:relatedcount=\count444
+\c@bbx:relatedtotal=\count445
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
 File: numeric.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -674,33 +782,54 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             2022-05-04 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex\blx-case-expl3.sty
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
 \@indexfile=\write4
-\openout4 = `"El aprendizaje incrementado en el uso de las redes neuronales.idx"'.
+\openout4 = `"El aprendizaje incrementado en el uso de las redes neuronales.idx
+"'.
 
 
-Writing index file "El aprendizaje incrementado en el uso de las redes neuronales".idx
+Writing index file "El aprendizaje incrementado en el uso de las redes neuronal
+es".idx
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count445
-\@quotereset=\count446
-(build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
-\openout1 = `"El aprendizaje incrementado en el uso de las redes neuronales.aux"'.
+\@quotelevel=\count446
+\@quotereset=\count447
+
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.aux
+
+LaTeX Warning: Label `fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f2' multiply defined.
+
+
+LaTeX Warning: Label `fig:f10' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:f10' multiply defined.
+
+)
+\openout1 = `"El aprendizaje incrementado en el uso de las redes neuronales.aux
+"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -720,24 +849,26 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
-\scratchdimen=\dimen194
+\scratchcounter=\count448
+\scratchdimen=\dimen195
 \scratchbox=\box108
-\nofMPsegments=\count448
-\nofMParguments=\count449
+\nofMPsegments=\count449
+\nofMParguments=\count450
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count450
-\MPscratchDim=\dimen195
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
+\MPscratchCnt=\count451
+\MPscratchDim=\dimen196
+\MPnumerator=\count452
+\makeMPintoPDFobject=\count453
 \everyMPtoPDFconversion=\toks34
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -746,7 +877,8 @@ Package caption Info: listings package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+
+(C:\Program Files\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \CenteringLeftskip=\skip83
 \RaggedLeftLeftskip=\skip84
@@ -763,49 +895,48 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \RaggedRightParindent=\skip95
 \JustifyingParindent=\skip96
 )
-\c@lstlisting=\count453
+\c@lstlisting=\count454
 Package hyperref Info: Link coloring OFF on input line 33.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count454
-)
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
- (build/El aprendizaje incrementado en el uso de las redes neuronales.out) (build/El aprendizaje incrementado en el uso de las redes neuronales.out)
+
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.out)
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.out)
 \@outlinefile=\write5
-\openout5 = `"El aprendizaje incrementado en el uso de las redes neuronales.out"'.
+\openout5 = `"El aprendizaje incrementado en el uso de las redes neuronales.out
+"'.
 
 Package biblatex Info: Trying to load language 'USenglish'...
 Package biblatex Info: ... file 'USenglish.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/USenglish.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\USenglish.lbx
 File: USenglish.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\american.lbx
 File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Trying to load language 'american'...
 Package biblatex Info: ... file 'american.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\american.lbx
 File: american.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
 File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 )))
 Package biblatex Info: Trying to load language 'spanish'...
 Package biblatex Info: ... file 'spanish.lbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
+
+(C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\spanish.lbx
 File: spanish.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -814,35 +945,43 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout3 = `El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.bib'.
+\openout3 = `El_aprendizaje_incrementado_en_el_uso_de_las_redes_neuronales-blx.
+bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"El aprendizaje incrementado en el uso de las redes neuronales".bbl' found.
- (build/El aprendizaje incrementado en el uso de las redes neuronales.bbl)
+Package biblatex Info: ... file '"El aprendizaje incrementado en el uso de las 
+redes neuronales".bbl' found.
+
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.bbl)
 Package biblatex Info: Reference section=0 on input line 33.
 Package biblatex Info: Reference segment=0 on input line 33.
 
 
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<textFiles/portada.pdf, id=100, 614.295pt x 794.97pt>
+pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
+<textFiles/portada.pdf, id=99, 614.295pt x 794.97pt>
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf>
 Package pdftex.def Info: textFiles/portada.pdf  used on input line 35.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf>
 Package pdftex.def Info: textFiles/portada.pdf  used on input line 35.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<textFiles/portada.pdf, id=103, page=1, 614.295pt x 794.97pt>
+pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
+<textFiles/portada.pdf, id=102, page=1, 614.295pt x 794.97pt>
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf, page 1>
 Package pdftex.def Info: textFiles/portada.pdf , page1 used on input line 35.
@@ -865,168 +1004,450 @@ Package pdftex.def Info: textFiles/portada.pdf , page1 used on input line 35.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [1
 
- <./textFiles/portada.pdf>] (build/El aprendizaje incrementado en el uso de las redes neuronales.toc
+ <./textFiles/portada.pdf>]
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write6
-\openout6 = `"El aprendizaje incrementado en el uso de las redes neuronales.toc"'.
+\openout6 = `"El aprendizaje incrementado en el uso de las redes neuronales.toc
+"'.
 
- (build/El aprendizaje incrementado en el uso de las redes neuronales.lof)
+
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.lof
+Overfull \hbox (29.45984pt too wide) in paragraph at lines 12--12
+ [][] [][]\OT1/cmr/m/n/10 Dos en-fo-ques tradi-cionales del apren-dizaje in-cre
+-men-tal [[]].[] [][]  
+ []
+
+)
 \tf@lof=\write7
-\openout7 = `"El aprendizaje incrementado en el uso de las redes neuronales.lof"'.
+\openout7 = `"El aprendizaje incrementado en el uso de las redes neuronales.lof
+"'.
 
- [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./textFiles/introduction.tex
-Overfull \hbox (7.55614pt too wide) in paragraph at lines 17--22
-[]\OT1/cmr/m/n/10 Las RNAs est^^San for-madas por neu-ronas ar-ti-fi-ciales que sim-u-lan a las biol^^Sogicas.
+ [2{C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(textFiles/introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
  []
 
-[3]) (./textFiles/approach.tex [4]) (./textFiles/objectives.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+
+ []
+
+
+Overfull \hbox (7.55614pt too wide) in paragraph at lines 18--23
+[]\OT1/cmr/m/n/10 Las RNAs est^^San for-madas por neu-ronas ar-ti-fi-ciales que
+ sim-u-lan a las biol^^Sogicas.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--43
+
+ []
+
+[3]) (textFiles/approach.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--44
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
+
+ []
+
+) (textFiles/objectives.tex
 Overfull \hbox (4.05617pt too wide) in paragraph at lines 6--7
-[]\OT1/cmr/m/n/10 Obtener el con-junto de datos de Op-ti-cal Dig-its, limpiar los datos y preparar-
+[]\OT1/cmr/m/n/10 Obtener el con-junto de datos de Op-ti-cal Dig-its, limpiar l
+os datos y preparar-
  []
 
-) (./textFiles/justification.tex [5]
-Underfull \hbox (badness 10000) in paragraph at lines 44--49
+[5]) (textFiles/justification.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--40
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Underfull \hbox (badness 10000) in paragraph at lines 41--46
 
  []
 
-) (./textFiles/delimitation.tex) (./textFiles/consequence.tex [7]) (./textFiles/theoretical marco.tex
-<images//ANN.jpg, id=248, 317.988pt x 184.2885pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--54
+
+ []
+
+) (textFiles/delimitation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
+
+ []
+
+) (textFiles/consequence.tex [7]
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+) (textFiles/theoretical marco.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
+
+ []
+
+<images//ANN.jpg, id=246, 317.988pt x 184.2885pt>
 File: images//ANN.jpg Graphic file (type jpg)
 <use images//ANN.jpg>
-Package pdftex.def Info: images//ANN.jpg  used on input line 15.
+Package pdftex.def Info: images//ANN.jpg  used on input line 18.
 (pdftex.def)             Requested size: 345.0pt x 199.95375pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--54
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 23--57
 
  []
 
-[8 <./images//ANN.jpg>]
-<images//and.png, id=256, 304.13625pt x 290.08376pt>
+<images//and.png, id=254, 304.13625pt x 290.08376pt>
 File: images//and.png Graphic file (type png)
 <use images//and.png>
-Package pdftex.def Info: images//and.png  used on input line 60.
+Package pdftex.def Info: images//and.png  used on input line 63.
 (pdftex.def)             Requested size: 169.0575pt x 169.05428pt.
-<images//or.png, id=258, 304.13625pt x 290.08376pt>
+<images//or.png, id=256, 304.13625pt x 290.08376pt>
 File: images//or.png Graphic file (type png)
 <use images//or.png>
-Package pdftex.def Info: images//or.png  used on input line 66.
+Package pdftex.def Info: images//or.png  used on input line 69.
 (pdftex.def)             Requested size: 169.0575pt x 169.05428pt.
-<images//xor.png, id=262, 279.0425pt x 294.09875pt>
+[9 <./images//ANN.jpg>]
+<images//xor.png, id=266, 279.0425pt x 294.09875pt>
 File: images//xor.png Graphic file (type png)
 <use images//xor.png>
-Package pdftex.def Info: images//xor.png  used on input line 79.
+Package pdftex.def Info: images//xor.png  used on input line 82.
 (pdftex.def)             Requested size: 142.26378pt x 149.9435pt.
- [9 <./images//and.png> <./images//or.png>]
-<images//staggered.png, id=272, 444.66125pt x 270.00874pt>
-File: images//staggered.png Graphic file (type png)
-<use images//staggered.png>
-Package pdftex.def Info: images//staggered.png  used on input line 101.
-(pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
-<images//sigmoid.png, id=273, 1050.92625pt x 772.8875pt>
-File: images//sigmoid.png Graphic file (type png)
-<use images//sigmoid.png>
-Package pdftex.def Info: images//sigmoid.png  used on input line 114.
-(pdftex.def)             Requested size: 142.26378pt x 104.61835pt.
- [10 <./images//xor.png> <./images//staggered.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--101
 
  []
 
-<images//relu.png, id=281, 501.5538pt x 404.712pt>
+<images//staggered.png, id=270, 444.66125pt x 270.00874pt>
+File: images//staggered.png Graphic file (type png)
+<use images//staggered.png>
+Package pdftex.def Info: images//staggered.png  used on input line 107.
+(pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
+[10 <./images//and.png> <./images//or.png> <./images//xor.png>]
+<images//sigmoid.png, id=278, 1050.92625pt x 772.8875pt>
+File: images//sigmoid.png Graphic file (type png)
+<use images//sigmoid.png>
+Package pdftex.def Info: images//sigmoid.png  used on input line 120.
+(pdftex.def)             Requested size: 142.26378pt x 104.61835pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+<images//relu.png, id=279, 501.5538pt x 404.712pt>
 File: images//relu.png Graphic file (type png)
 <use images//relu.png>
-Package pdftex.def Info: images//relu.png  used on input line 131.
+Package pdftex.def Info: images//relu.png  used on input line 137.
 (pdftex.def)             Requested size: 170.71652pt x 137.75464pt.
-<images//softmax.png, id=283, 261.97874pt x 300.12125pt>
+[11 <./images//staggered.png> <./images//sigmoid.png>]
+<images//softmax.png, id=289, 261.97874pt x 300.12125pt>
 File: images//softmax.png Graphic file (type png)
 <use images//softmax.png>
-Package pdftex.def Info: images//softmax.png  used on input line 146.
+Package pdftex.def Info: images//softmax.png  used on input line 152.
 (pdftex.def)             Requested size: 170.71652pt x 195.57565pt.
-[11 <./images//sigmoid.png> <./images//relu.png>]
-<images//multipercep.jpg, id=298, 425.33907pt x 244.66406pt>
+ [12 <./images//relu.png> <./images//softmax.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+<images//multipercep.jpg, id=305, 425.33907pt x 244.66406pt>
 File: images//multipercep.jpg Graphic file (type jpg)
 <use images//multipercep.jpg>
-Package pdftex.def Info: images//multipercep.jpg  used on input line 187.
+Package pdftex.def Info: images//multipercep.jpg  used on input line 192.
 (pdftex.def)             Requested size: 345.0pt x 198.46053pt.
- [12 <./images//softmax.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 194--198
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--205
 
  []
 
 [13 <./images//multipercep.jpg>]
-Overfull \hbox (7.36057pt too wide) in paragraph at lines 252--257
-\OT1/cmr/m/n/10 Las re-des neu-ronales con-volu-cionales (RNC) son las que fa-cil-i-tan el re-conocimiento
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
+
  []
 
-<images//CNN architecture.png, id=316, 712.6625pt x 325.215pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
+
+ []
+
+
+Overfull \hbox (7.36057pt too wide) in paragraph at lines 263--268
+\OT1/cmr/m/n/10 Las re-des neu-ronales con-volu-cionales (RNC) son las que fa-c
+il-i-tan el re-conocimiento
+ []
+
+[14]
+<images//CNN architecture.png, id=319, 712.6625pt x 325.215pt>
 File: images//CNN architecture.png Graphic file (type png)
 <use images//CNN architecture.png>
-Package pdftex.def Info: images//CNN architecture.png  used on input line 266.
+Package pdftex.def Info: images//CNN architecture.png  used on input line 277.
 (pdftex.def)             Requested size: 345.0pt x 157.4363pt.
-[14]
-<images//Maxpool.png, id=326, 164.25pt x 68.547pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+
+ []
+
+
+Package caption Warning: \label without proper reference on input line 6.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:fig10' on page 15 undefined on input line 290.
+
+
+Package caption Warning: \label without proper reference on input line 6.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:fig10' on page 15 undefined on input line 291.
+
+<images//Maxpool.png, id=325, 164.25pt x 68.547pt>
 File: images//Maxpool.png Graphic file (type png)
 <use images//Maxpool.png>
-Package pdftex.def Info: images//Maxpool.png  used on input line 285.
+Package pdftex.def Info: images//Maxpool.png  used on input line 297.
 (pdftex.def)             Requested size: 142.27478pt x 85.36763pt.
-<images//averagePooling.png, id=327, 697.60625pt x 246.9225pt>
+<images//averagePooling.png, id=326, 697.60625pt x 246.9225pt>
 File: images//averagePooling.png Graphic file (type png)
 <use images//averagePooling.png>
-Package pdftex.def Info: images//averagePooling.png  used on input line 291.
+Package pdftex.def Info: images//averagePooling.png  used on input line 303.
 (pdftex.def)             Requested size: 142.26508pt x 85.3579pt.
- [15 <./images//CNN architecture.png> <./images//Maxpool.png> <./images//averagePooling.png>] [16]) (./textFiles/hypothesis.tex) (./textFiles/methodology.tex [17]) (./textFiles/timeline.tex
-<images//diagramaGantt.jpeg, id=365, 910.40125pt x 566.115pt>
+[15 <./images//CNN architecture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 310--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+[16 <./images//Maxpool.png> <./images//averagePooling.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 348--351
+
+ []
+
+
+LaTeX Warning: Citation 'Deshmukh2013' on page 17 undefined on input line 382.
+
+<images//MetodosAprendizajeIncremental.png, id=352, 832.61063pt x 397.485pt>
+File: images//MetodosAprendizajeIncremental.png Graphic file (type png)
+<use images//MetodosAprendizajeIncremental.png>
+Package pdftex.def Info: images//MetodosAprendizajeIncremental.png  used on inp
+ut line 386.
+(pdftex.def)             Requested size: 345.0pt x 164.70453pt.
+
+LaTeX Warning: Citation 'Deshmukh2013' on page 17 undefined on input line 387.
+
+
+LaTeX Warning: Citation 'Deshmukh2013' on page 17 undefined on input line 387.
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 387--387
+[]\OT1/cmr/m/n/10 Figure 11: |Dos en-fo-ques tradi-cionales del apren-dizaje in
+-cre-men-tal
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+[18 <./images//MetodosAprendizajeIncremental.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--437
+
+ []
+
+) (textFiles/hypothesis.tex) (textFiles/methodology.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[19]) (textFiles/timeline.tex
+<images//diagramaGantt.jpeg, id=381, 910.40125pt x 566.115pt>
 File: images//diagramaGantt.jpeg Graphic file (type jpg)
 <use images//diagramaGantt.jpeg>
 Package pdftex.def Info: images//diagramaGantt.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 345.0pt x 214.52989pt.
-) (./textFiles/capitulated.tex [18 <./images//diagramaGantt.jpeg>])
-Overfull \hbox (16.51276pt too wide) in paragraph at lines 62--62
-[]\OT1/cmr/m/n/10 Jaime Dur^^San Su^^Sarez. ``Re-des neu-ronales con-volu-cionales en R: Re-conocimiento
+) (textFiles/capitulated.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
  []
 
 
-Overfull \hbox (16.37505pt too wide) in paragraph at lines 62--62
-\OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / bootcampai . medium . com / redes -[] neuronales -[] 13349dd1a5bb$[]\OT1/cmr/m/n/10 . 
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+) [20 <./images//diagramaGantt.jpeg>]
+Overfull \hbox (16.51276pt too wide) in paragraph at lines 61--61
+[]\OT1/cmr/m/n/10 Jaime Dur^^San Su^^Sarez. ``Re-des neu-ronales con-volu-ciona
+les en R: Re-conocimiento
  []
 
 
-Overfull \hbox (26.08041pt too wide) in paragraph at lines 62--62
-\OT1/cmtt/m/n/10 / / www . slideserve . com / ayanna -[] mcmahon / redes -[] neuronales -[] artificiales$[]\OT1/cmr/m/n/10 . 
+Overfull \hbox (16.37505pt too wide) in paragraph at lines 61--61
+\OT1/cmr/m/sc/10 url\OT1/cmr/m/n/10 : []$\OT1/cmtt/m/n/10 https : / / bootcampa
+i . medium . com / redes -[] neuronales -[] 13349dd1a5bb$[]\OT1/cmr/m/n/10 . 
  []
 
-[19] [20] (build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
-Package rerunfilecheck Info: File `"El aprendizaje incrementado en el uso de las redes neuronales".out' has not changed.
-(rerunfilecheck)             Checksum: 62441FB4E650AAEBA210161DE914A021;3812.
-Package logreq Info: Writing requests to '"El aprendizaje incrementado en el uso de las redes neuronales".run.xml'.
-\openout1 = `"El aprendizaje incrementado en el uso de las redes neuronales.run.xml"'.
+
+Overfull \hbox (26.08041pt too wide) in paragraph at lines 61--61
+\OT1/cmtt/m/n/10 / / www . slideserve . com / ayanna -[] mcmahon / redes -[] ne
+uronales -[] artificiales$[]\OT1/cmr/m/n/10 . 
+ []
+
+[21] [22]
+(C:\Users\HP\Incremental-Learning\build\El aprendizaje incrementado en el uso d
+e las redes neuronales.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `"El aprendizaje incrementado en el uso de la
+s redes neuronales".out' has not changed.
+(rerunfilecheck)             Checksum: C8FA3778C56DE9D8CA2C3D9C3468CED4;3820.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                "El aprendizaje incrementado en el uso de las redes n
+euronales"
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to '"El aprendizaje incrementado en el us
+o de las redes neuronales".run.xml'.
+\openout1 = `"El aprendizaje incrementado en el uso de las redes neuronales.run
+.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23593 strings out of 478287
- 414393 string characters out of 5849289
- 1013340 words of memory out of 5000000
- 41354 multiletter control sequences out of 15000+600000
+ 23783 strings out of 478614
+ 418815 string characters out of 2852946
+ 1018995 words of memory out of 3000000
+ 41477 multiletter control sequences out of 15000+600000
  473898 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,17n,77p,1953b,2937s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (20 pages, 1175767 bytes).
+ 72i,17n,77p,1912b,2937s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Progra
+m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "C:\Users\HP\Incremental-Learning\build\El aprendizaje increm
+entado en el uso de las redes neuronales.pdf" (22 pages, 1280200 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 278 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

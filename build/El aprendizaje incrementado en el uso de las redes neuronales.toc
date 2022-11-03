@@ -5,21 +5,21 @@
 \contentsline {subsection}{\numberline {3.1}Objetivos Particulares}{5}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Justificación}{6}{section.4}%
 \contentsline {section}{\numberline {5}Delimitación}{7}{section.5}%
-\contentsline {section}{\numberline {6}Consecuencias}{7}{section.6}%
+\contentsline {section}{\numberline {6}Consecuencias}{8}{section.6}%
 \contentsline {section}{\numberline {7}Marco Teórico}{8}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Redes Neuronales Artificiales}{8}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Funci\'on de Activaci\'on}{10}{subsubsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{12}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Redes Neuronales de Perceptr\'on Multicapa}{13}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Algoritmo Backpropagation}{13}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{14}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}Redes Neuronales Convolucionales}{15}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Aprendizaje}{16}{subsection.7.5}%
 \contentsline {subsubsection}{\numberline {7.5.1}Aprendizaje en humanos}{16}{subsubsection.7.5.1}%
 \contentsline {subsubsection}{\numberline {7.5.2}Aprendizaje Humano}{16}{subsubsection.7.5.2}%
-\contentsline {subsubsection}{\numberline {7.5.3}Aprendizaje con Compresi\'on}{16}{subsubsection.7.5.3}%
-\contentsline {subsubsection}{\numberline {7.5.4}Aprendizaje Activo}{16}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.3}Aprendizaje con Comprensi\'on}{16}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Aprendizaje Activo}{17}{subsubsection.7.5.4}%
 \contentsline {subsubsection}{\numberline {7.5.5}Aprendizaje Incremental}{17}{subsubsection.7.5.5}%
 \contentsline {subsubsection}{\numberline {7.5.6}Algoritmos de Aprendizaje Incremental}{17}{subsubsection.7.5.6}%
-\contentsline {section}{\numberline {8}Hipotesis}{18}{section.8}%
-\contentsline {section}{\numberline {9}Metodología}{18}{section.9}%
-\contentsline {section}{\numberline {10}Cronograma de Actividades}{18}{section.10}%
-\contentsline {section}{\numberline {11}Organización del Capitulado}{19}{section.11}%
+\contentsline {section}{\numberline {8}Hipótesis}{19}{section.8}%
+\contentsline {section}{\numberline {9}Metodología}{19}{section.9}%
+\contentsline {section}{\numberline {10}Cronograma de Actividades}{20}{section.10}%
+\contentsline {section}{\numberline {11}Organización del Capitulado}{20}{section.11}%
