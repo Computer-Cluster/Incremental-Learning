@@ -85,11 +85,6 @@ Paloma Royo.
 \newblock {Qué son las redes neuronales y cuál es su aplicación en el
   marketing}, 2021.
 
-\bibitem{rumelhart1986}
-David~E Rumelhart, Geoffrey~E Hinton, and Ronald~J Williams.
-\newblock Learning representations by back-propagating errors.
-\newblock {\em nature}, 323(6088):533--536, 1986.
-
 \bibitem{salazar2013}
 Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
 \newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la

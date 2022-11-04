@@ -1,9 +1,9 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\'{I}ndice de figuras}{2}{section*.2}%
 \contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
-\contentsline {section}{\numberline {2}Planeamiento del Problema}{3}{section.2}%
-\contentsline {section}{\numberline {3}Objetivos}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Objetivos Particulares}{4}{subsection.3.1}%
+\contentsline {section}{\numberline {2}Planeamiento del Problema}{4}{section.2}%
+\contentsline {section}{\numberline {3}Objetivos}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivos Particulares}{5}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Hipótesis}{5}{section.4}%
 \contentsline {section}{\numberline {5}Justificación}{5}{section.5}%
 \contentsline {section}{\numberline {6}Delimitación}{6}{section.6}%
@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {8.5.2}Aprendizaje Humano}{13}{subsubsection.8.5.2}%
 \contentsline {subsubsection}{\numberline {8.5.3}Aprendizaje con Comprensi\'on}{13}{subsubsection.8.5.3}%
 \contentsline {subsubsection}{\numberline {8.5.4}Aprendizaje Activo}{13}{subsubsection.8.5.4}%
-\contentsline {subsubsection}{\numberline {8.5.5}Aprendizaje Incremental}{14}{subsubsection.8.5.5}%
+\contentsline {subsubsection}{\numberline {8.5.5}Aprendizaje Incremental}{13}{subsubsection.8.5.5}%
 \contentsline {subsubsection}{\numberline {8.5.6}Algoritmos de Aprendizaje Incremental}{14}{subsubsection.8.5.6}%
 \contentsline {section}{\numberline {9}Metodología}{15}{section.9}%
 \contentsline {section}{\numberline {10}Cronograma de Actividades}{16}{section.10}%

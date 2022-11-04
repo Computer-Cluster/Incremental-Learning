@@ -152,42 +152,29 @@ Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal,
         \subsection{Algoritmo Backpropagation}
         	
         	
-        	El bacpkpropagation es el algoritmo donde se explica c\'omo aprende la red.
-            Dicho algoritmo fue presentado en 1986, lleg\'o a resolver el problema del perceptron 
-            ya que ten\'ia muchas limitaciones, lo que provoc\'o que varios experimentos de inteligencia
-            artificial se pararan.\\
-
-            Este algoritmo permite que la red aprenda por si sola, en 1986 se present\'o \cite{rumelhart1986}, 
-            donde muestran un nuevo algoritmo el cual permite que una red neuronal pueda auto-ajustar todos sus 
-            parámetros para aprender una representaci\'on interna de la informaci\'on que se esta procesando.\\
+        	El bacpkpropagation es un algoritmo de aprendizaje que permite el aprendizaje de la red,
+            permite que una red neuronal pueda auto-ajustar todos sus parámetros para aprender una representaci\'on 
+            interna de la informaci\'on que se está procesando. Lleg\'o a dar solución a la limitante del perceptron, este 
+            resuelve los problemas lineales, la cual es que no se puede extender a redes más complejas, 
+            es decir, a problemas no lineales. \\
 
             Usando este algoritmo se podrá obtener las derivadas parciales del gradiente y del peso, las cuales
             sirven para la optimizaci\'on de la red neuronal, dichas derivadas son:
-            \begin{equation*}
-                \frac{\partial C}{\partial W^L}
-            \end{equation*}
+                $\frac{\partial C}{\partial W^L}$
             
             Pero no se debe de olvidar que también se debe de calcular las derivadas del sesgo, la derivada anterior
             queda de la siguiente forma:
-            \begin{equation*}
-                \frac{\partial C}{\partial b^L}
-            \end{equation*}
+                $\frac{\partial C}{\partial b^L}$
             donde \textit{L} pertenece al n\'umero de capa donde se encuentra. \\
             
             Lo que permite a este algoritmo encontrar el error de la derivada es la \textit{chain rule}, la cual en resumen 
             da la siguiente ecuaci\'on :
-            \begin{equation*}
-                C(a(Z^L))
-            \end{equation*}
+                $C(a(Z^L))$
 
             Donde 
-            $\begin{cases}
-                Z^L
-            \end{cases}$
+                $Z^L$
             representa el resultado de la suma ponderada, y la forma explicita de Z es:
-            \begin{equation*}
-                Z^L = W^LX + b^L
-            \end{equation*}
+                $Z^L = W^LX + b^L$
             \textit{a} es la funci\'on de activaci\'on 
             y \textit{C} es la funci\'on de Coste.
 
