@@ -3,15 +3,8 @@
     \subsection{Redes Neuronales Artificiales}
     	
     	
-        Las redes neuronales artificiales (RNA) son procesos los cuales contienen simples
-        unidades de procesamientos. \\
-        
-        Como se puede observar, al mencionar RNA lo primero que se viene a la mente es el 
-        procesamiento biol\'ogico por el que transita el cerebro humano. El m\'etodo principal 
-        de las redes neuronales es sacarle el máximo poder a los algoritmos de aprendizaje 
-        m\'aquina, ya que las redes neuronales tienen un antecedente biol\'ogico.\\
-
-        Una red de una sola neurona solamente resuelve problemas lineales y tiene la 
+        Las redes neuronales artificiales (RNA) son modelos computacionales de la Inteligencia Artificial los cuales contienen simples
+        unidades de procesamientos llamadas neuronas.  Ellas se inspiran en el cerebro humano, tomando como base la conectividad entre neuronas y el aprendizaje que pueden tener.  Un perceptron o neurona (artificial) solamente resuelve problemas lineales y tiene la 
         siguiente forma:
         \begin{figure}[H]
             \centering
@@ -20,43 +13,16 @@
             \label{fig:fig1}
         \end{figure}
 
-        Donde
-        $\begin{cases}  
-            \Sigma
-        \end{cases}$
-        es la representaci\'on matem\'atica de la neurona. \\
-        Los siguientes valores
-        $\begin{cases}
-            x_1, x_2, ... , x_n
-        \end{cases}$
-        señalando a 
-        $\begin{cases} \label{eqn: weight}
-            w_1, w_2, ... , w_n 
-        \end{cases}$ 
-        son los datos de entrada que se le dan a la red.
-        Cuando la información entra en la neurona ah\'i se procesan los datos, la operci\'on realizada 
-        es una sumatoria ponderada de ellos, dicha ponderaci\'on es asignada a ella como se observa en la siguiente 
-        ecuaci\'on \eqref{eqn: weight}
-        Entonces la f\'ormula de la sumatoria quedar\'ia de la siguiente manera:
-        $\begin{cases} \label{eqn: summation}
-            w_1x_1 + w_2x_2 + w_3x_3
-        \end{cases}$ \\
-        Al verificar bien esta formula, se puede observar que se parece a la operaci\'on de una regresi\'on 
-        la cual es:
-        $\begin{cases}
-            y = w_0 + w_x.
-        \end{cases}$
-        Internamente la neurona realiza una regresi\'on lineal, el parámetro que permite a la neurona 
-        moverse verticalmente en la recta se conoce como sesgo, este valor se agrega a la conexi\'on, el cual \
-        usualmente se le da un valor de 1. \\
-        Agregando este nuevo valor a la f\'ormula, queda de la siguiente manera: \\
-        $\begin{cases}
-            w_1 + w_2 + w_3 + b
-        \end{cases}$ 
-        donde \textit{b} es el sesgo. \\
+       % Donde $\Sigma$ es la representaci\'on matem\'atica de la neurona.,  $x_1$, $x_2$,  \dots  ,$x_n$ son las variables de entrada a la red.  $w_1,$w_2$,  \dots , $w_n$ son los pesos con los cuales se van a podnerar las entradas, es decir multiplicar cuando la información entra en la neurona. Posterior a multiplicar el peso por la entrada correspondiente,  se suman todos esos valores $w_1$$x_1$ + $w_2$$x_2$ + $w_3$$x_3$
+        
+        Al revisar esta formula, se puede observar que se parece a la operaci\'on de una regresi\'on 
+        la cual es:  $y$ = $w_0$ + $w_i$$x_i$,  de esta forma, internamente la neurona realiza una regresi\'on lineal. En su contraparte, el parámetro que permite a la neurona trazar una recta cruzando el eje $y$ en el plano cartesiano (eje de las ordenadas), a ello se conoce como sesgo (del inglés $bias$),  este valor se agrega a la conexi\'on, el cual usualmente se le da un valor de 1. \\
+        Agregando este nuevo valor a la f\'ormula, queda de la siguiente manera: $ y = \Sigma w_i x_i + w_0 b$,  donde \textit{b} es el sesgo. \\
         
         Un inconveniente del uso de una sola neurona para experimentos es que solo 
-        va a resolver ejercicios parecidos a la puerta l\'ogica AND u OR \label{sec: one neuron}.
+        va a resolver ejercicios parecidos a la puerta l\'ogica AND u OR 
+% Esta etiqueta la elimine de aquí, usialemnte no se ponen etiquetas de estar forma, si no, directamente dentre de una figura, al inmediatamante que se hace una sección o capítulo, ecuciones más pequeñas com oestas no ahce falta ponerla. Si enumeramos ecuaciones ahí si, para más adelante hacer referencia a ellas.
+%\label{sec: one neuron}.
         
         \begin{figure}[H]
             \begin{subfigure}[H]{0.49\textwidth}
@@ -68,9 +34,9 @@
             \begin{subfigure}[H]{0.49\textwidth}
                 \includegraphics[width=\textwidth, height=\textwidth]{or.png}
                 \caption{Puerta L\'ogica Or}
-                \label{fig:f2}
+                \label{fig:f2}  % Aquí no les recomeindo poner la etiquta de fig2 porque no dice nada, y cuando tengan 50 figuras no van a saber cual es cual, mejor ponganle un nombre alusivo a lo que es la etiqueta
             \end{subfigure}
-            \caption{Puertas L\'ogicas \cite{mcmahon2014}}
+            \caption{Puertas L\'ogicas}
         \end{figure}
         
         Pero problemas de tipo XOR no puede, ya que como se nota, una sola neurona sirve para 
@@ -80,11 +46,11 @@
         \begin{figure}[H]
             \centering
             \includegraphics[width=5cm]{xor.png}
-            \caption{Puerta L\'ogica Xor \cite{mcmahon2014}}
+            \caption{Puerta L\'ogica Xor}
             \label{fig:fig3}
         \end{figure}
 
-        Para solucionarlo se usan dos o m\'as neuronas, adem\'as de la funci\'on de activaci\'on.
+        Para solucionarlo se usan dos o m\'as neuronas, adem\'as de la funci\'on de activaci\'on, que es la que permite pasar la informaicón de una neurona a otra, en un rango especificado, y la cual se describirá en la siguiente sección.
 
             \subsubsection{Funci\'on de Activaci\'on} \label{sec: activation}
             
@@ -93,9 +59,8 @@
                 Esta funci\'on lo que provoca es dar al modelo una salida no lineal, para 
                 eso la f\'ormula \eqref{eqn: summation} es distorcionada para quedar de la siguiente 
                 manera: 
-                $\begin{cases}
-                    f( w_1x_1 + w_2x_2 + w_3x_3 )
-                \end{cases}$
+           
+                    $f( w_1x_1 + w_2x_2 + w_3x_3 + b_0)$ para el caso de 3 entradas.              
                 En otras palabras esto es la suma de varias regresiones lineales, lo cual provoca que se obtenga 
                 un resultado no lineal. \\
                 
@@ -126,8 +91,8 @@
 
                 \[f(x) = \sigma(x) =  \left\{ \frac{1}{1 + e^{-x}} \right. \]
 
-                Aparte de agregar deformaciones en la linea, ayuda en 
-                cuestiones probabil\'isticas ya que se representa del rango de 0 a 1. \\
+                Aparte de ralizar dicha transformación, las funciones de tranasferencia ayudan en 
+                cuestiones probabil\'isticas ya que se representa del rango de 0 a 1.  Aunado a que por ejemplo, la función sigmoidal es diferenciable, lo que permite al algoritmo de backpropagation porde llevar a cabo el entrenamiento.
 
                 La funci\'on de Unidad Rectificada Lineal o RELU, la cual es una funci\'on lineal
                 que cuando es positiva es igual a 1 y cuando es negativa es constante a 0, su forma es: \label{subsec: relu}
@@ -160,32 +125,24 @@
 
         Las redes neuronales presentan demasiadas utilidades las cuales ayudan a resolver problemas como los 
         siguientes \cite{liu2015}: no linealidad, mapeo entrada-salida, aprendizaje robusto 
-        a errores en los datos de entrenamiento, entre otros.
-
-        Existen varios tipos de Redes Neuronales tales como: Redes Neuronales de Perceptr\'on 
-        Multicapa, Redes Neuronales Convolucionales, entre otras.
+        a errores en los datos de entrenamiento, entre otros.  Existen varios tipos de Redes Neuronales tales como: Redes Neuronales de Perceptr\'on 
+        Multicapa, Redes Neuronales Convolucionales, entre otras, las cuales se describirán brevemente más adelante.
     
         \subsection{Redes Neuronales de Perceptr\'on Multicapa}
         
-        Este tipo de redes entran en el paradigma de Aprendizaje Profundo, ya que como se explic\'o en 
-            la secci\'on anterior \eqref{sec:delimitation}, aqu\'i la emulaci\'on de las neuronas humanas son m\'as 
-            exactas.
-            Adem\'as como se explica en esta sección \eqref{sec: one neuron} no es muy recomendado trabajar con una sola 
-            neurona por los problemas de tipo XOR, que por lo general, es el que se presenta frecuentemente en las problemáticas.\\
+            Las Redes Neuronales de Perceptr\'on Multicapa se dividen en tres capas: capa inicial, oculta y final. En las capas ocultas se pueden 
+            tener m\'as de una fila de neuronas, las cuales son las encargadas de realizar las operaciones para eliminar 
+            la linealidad de los datos.  También, como se comentó anteriormente,  Sec. \eqref{sec: activation} la linealidad de los datos es elimina 
+            con las funciones de activaci\'on,  las cuales modifican los parámetros de la red,  permitiendo que se elabore un plano tridimencional,  
+            con el cual se puede encontrar la soluci\'on al problema planteado.\\
+            Adem\'as como se explica en esta sección anterior \eqref{sec: one neuron} no es muy recomendado trabajar con una sola 
+            neurona por los problemas presentados al resolver tareas como el XOR donde se requieren de dos líneas rectas para clasificar el problema correctaemnte.
 
-            Dichas neuronas se dividen en tres capas: capa inicial, oculta y final. En las capas ocultas se pueden 
-            tener m\'as de una fila de neuronas, estas son las encargadas de realizar las operaciones para eliminar 
-            la linealidad de los proyectos. 
-
-            En la secci\'on vista anteriormte \eqref{sec: activation} la linealidad se elimina con las funciones de activaci\'on, dicha funci\'on 
-            es manipulable si se modifican los parámetros de la red, esto permitirá que se elabore un plano tridimencional, y con este plano se puede encontrar la soluci\'on al problema planteado.\\
+            Como se puede observar en la figura \eqref{fig:fig8}, para este caso se cuenta con una MLP que consta de 4 capas,  1 de entradas, 2 ocultas y 1 de salida,. En las capas ocultas y de salida se lleva a cabo el procesamiento de las funciones de activación, donde cabe notar que no es así para la primera capa de entrada, donde unicamente sirve para representar las entradas al modelo, i.e. ahí no hay funciones de transferencia. 
             
-            Como se puede observar en la siguiente imagen \eqref{fig:fig8} esta red est\'a
-            construida por cuatro capas, la cual de ellas dos son ocultas, dentro de esas 
-            capas es donde se realiza la ejecuci\'on de las funciones de activaci\'on. 
-            Cada neurona de color azul va a generar una funci\'on (puede ser sigmoidal, escalonada, entre otras), 
+Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal, escalonada, entre otras), 
             y cuando se llegue a la capa de salida, cada funci\'on se va a sumar, de esta manera 
-            se obtendrá una funci\'on no lineal que de resoluci\'on al proyecto.
+            se obtendrá una funci\'on no lineal que de resoluci\'on a la tarea a resolver.
 
             \begin{figure}[H]
                 \centering
@@ -275,7 +232,7 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=\columnwidth]{CNN architecture.png}
-                \caption{Arquitectura de una RNC \cite{Ortiz2020}}
+                \caption{Arquitectura de una RNC}
                 \label{fig:fig9}
             \end{figure}
 
@@ -384,7 +341,7 @@
         \begin{figure}[H]
         	\centering
         	\includegraphics[width=\columnwidth]{MetodosAprendizajeIncremental.png}
-            \caption{Dos enfoques tradicionales del aprendizaje incremental \cite{Deshmukh2013}.}
+            \caption{Dos enfoques tradicionales del aprendizaje incremental.}
             \label{fig:fig11}
         \end{figure} 
         1 Metodología de acumulación de datos. 2 Metodología de aprendizaje por conjuntos.\\

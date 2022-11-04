@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish,mexico]{babel} 
 \usepackage{amsfonts}
+\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -19,11 +20,11 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
-\usepackage{amsmath}
 
 \pagestyle{empty}
 \usepackage[nottoc]{tocbibind}
 \usepackage{times}
+%\usepackage{apacite}
 
 
 % M a r g i n s 
@@ -45,22 +46,22 @@
     \listoffigures
     \newpage
     \begin{abstract}
-        El aprendizaje incremental es una evoluci\'on para el \'area de la inteligencia artificial
-        por el cual los algoritmos de Machine y Deep Learning pueden ser optimizados como es presentado
-        en \cite{bullinaria2009}, en especifico, en las redes neuronales se utiliza esta metodolog\'ia 
-        para que los modelos de predicci\'on sean m\'as precisos, para esto se usan m\'etodos como el algoritmo de backpropagation, el cual combinado junto con las redes neuronales de perceptr\'on multiple 
-        ayudan a que los modelos sean muy eficientes.
-        En la presente investigaci\'on se manejar\'a una optimizaci\'on en la predicci\'on con el 
-        uso del perceptron multiple.
+        El aprendizaje incremental es un área de la Inteligencia Artificial la cual permite agregar nuevo conocimiento 
+        a un modelo (e.g. Redes Neuronales Artificiales) sin la necesidad de entrenar el modelo con toda la información 
+        histórica de la tarea en cuestión \cite{bullinaria2009}. En el presente trabajo de investigación se ocupara el modelo de Redes 
+        Neuronales Artificiales enfocada en la clasificación de dígitos escritos a mano usando el algoritmo de 
+        entrenamiento de backpropagation, con redes Multi capa Perceptron y duplicación de pesos múltiples 
+        simulando memoria a corto y largo plazo para mejorar los resultados presentados en \cite{bullinaria2009}.
+
     \end{abstract}
     \input{textFiles/introduction}
     \input{textFiles/approach}
     \input{textFiles/objectives}
+    \input{textFiles/hypothesis}
     \input{textFiles/justification}
     \input{textFiles/delimitation}
     \input{textFiles/consequence}
     \input{textFiles/theoretical marco}
-    \input{textFiles/hypothesis}
     \input{textFiles/methodology}
     \input{textFiles/timeline}
     \input{textFiles/capitulated}

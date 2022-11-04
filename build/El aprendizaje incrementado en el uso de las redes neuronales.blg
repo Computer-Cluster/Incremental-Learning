@@ -6,45 +6,45 @@ Database file #1: bibliography.bib
 Warning--empty journal in duran2017
 Warning--empty journal in Huber2008
 Warning--empty booktitle in liu2015
-You've used 20 entries,
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            617 strings with 7219 characters,
-and the built_in function-call counts, 6463 in all, are:
-= -- 638
-> -- 253
+            614 strings with 7163 characters,
+and the built_in function-call counts, 6264 in all, are:
+= -- 621
+> -- 246
 < -- 6
-+ -- 104
-- -- 82
-* -- 411
-:= -- 1044
-add.period$ -- 59
-call.type$ -- 20
-change.case$ -- 101
++ -- 101
+- -- 80
+* -- 403
+:= -- 1012
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 97
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 255
-empty$ -- 552
-format.name$ -- 82
-if$ -- 1384
+cite$ -- 22
+duplicate$ -- 248
+empty$ -- 530
+format.name$ -- 80
+if$ -- 1341
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 19
 missing$ -- 16
-newline$ -- 99
-num.names$ -- 40
-pop$ -- 125
+newline$ -- 95
+num.names$ -- 38
+pop$ -- 116
 preamble$ -- 1
-purify$ -- 81
+purify$ -- 78
 quote$ -- 0
-skip$ -- 196
+skip$ -- 188
 stack$ -- 0
-substring$ -- 424
-swap$ -- 62
+substring$ -- 419
+swap$ -- 61
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 76
 warning$ -- 3
-while$ -- 66
-width$ -- 22
-write$ -- 208
+while$ -- 64
+width$ -- 21
+write$ -- 200
 (There were 3 warnings)
