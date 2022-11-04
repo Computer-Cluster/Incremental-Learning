@@ -57,12 +57,9 @@
             
                 Dicho m\'etodo se utiliza cuando el modelo de RNA contiene dos o m\'as neuronas.
                 Esta funci\'on lo que provoca es dar al modelo una salida no lineal, para 
-                eso la f\'ormula \eqref{eqn: summation} es distorcionada para quedar de la siguiente 
-                manera: 
-           
-                    $f( w_1x_1 + w_2x_2 + w_3x_3 + b_0)$ para el caso de 3 entradas.              
-                En otras palabras esto es la suma de varias regresiones lineales, lo cual provoca que se obtenga 
-                un resultado no lineal. \\
+                eso la segunda f\'ormula presentada es distorcionada para quedar de la siguiente 
+                manera: $f( w_1x_1 + w_2x_2 + w_3x_3 + b_0)$ para el caso de 3 entradas.              
+                
                 
                 Al hablar de funciones de activaci\'on se deben de comentar las m\'as comunes, como lo es la 
                 funci\'on escalonada.
@@ -91,7 +88,7 @@
 
                 \[f(x) = \sigma(x) =  \left\{ \frac{1}{1 + e^{-x}} \right. \]
 
-                Aparte de ralizar dicha transformación, las funciones de tranasferencia ayudan en 
+                Aparte de realizar dicha transformación, las funciones de tranasferencia ayudan en 
                 cuestiones probabil\'isticas ya que se representa del rango de 0 a 1.  Aunado a que por ejemplo, la función sigmoidal es diferenciable, lo que permite al algoritmo de backpropagation porde llevar a cabo el entrenamiento.
 
                 La funci\'on de Unidad Rectificada Lineal o RELU, la cual es una funci\'on lineal
@@ -130,15 +127,15 @@
     
         \subsection{Redes Neuronales de Perceptr\'on Multicapa}
         
-            Las Redes Neuronales de Perceptr\'on Multicapa se dividen en tres capas: capa inicial, oculta y final. En las capas ocultas se pueden 
+            Las Redes Neuronales de Perceptr\'on Multicapa se pueden dividir en dos capas (las de entrada y salida), pero también en tres o más capas (la de entrada, una o más capas ocultas y la de salida).  En las capas ocultas se pueden 
             tener m\'as de una fila de neuronas, las cuales son las encargadas de realizar las operaciones para eliminar 
-            la linealidad de los datos.  También, como se comentó anteriormente,  Sec. \eqref{sec: activation} la linealidad de los datos es elimina 
+            la linealidad de los datos.  También, como se comentó anteriormente,  Sec. \eqref{sec: activation} la linealidad de los datos se elimina 
             con las funciones de activaci\'on,  las cuales modifican los parámetros de la red,  permitiendo que se elabore un plano tridimencional,  
             con el cual se puede encontrar la soluci\'on al problema planteado.\\
-            Adem\'as como se explica en esta sección anterior \eqref{sec: one neuron} no es muy recomendado trabajar con una sola 
-            neurona por los problemas presentados al resolver tareas como el XOR donde se requieren de dos líneas rectas para clasificar el problema correctaemnte.
+            Adem\'as como se explicó anteriormente, no es muy recomendado trabajar con una sola 
+            neurona por los problemas presentados al resolver, tareas como el XOR donde se requieren de dos líneas rectas para clasificar el problema correctaemnte.
 
-            Como se puede observar en la figura \eqref{fig:fig8}, para este caso se cuenta con una MLP que consta de 4 capas,  1 de entradas, 2 ocultas y 1 de salida,. En las capas ocultas y de salida se lleva a cabo el procesamiento de las funciones de activación, donde cabe notar que no es así para la primera capa de entrada, donde unicamente sirve para representar las entradas al modelo, i.e. ahí no hay funciones de transferencia. 
+            Como se puede observar en la figura \eqref{fig:fig8}, para este caso se cuenta con una MLP que consta de 4 capas,  1 de entrada, 2 ocultas y 1 de salida. En las capas ocultas y de salida se lleva a cabo el procesamiento de las funciones de activación, donde cabe notar que no es así para la primera capa de entrada, donde unicamente sirve para representar las entradas al modelo, i.e. ahí no hay funciones de transferencia. 
             
 Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal, escalonada, entre otras), 
             y cuando se llegue a la capa de salida, cada funci\'on se va a sumar, de esta manera 

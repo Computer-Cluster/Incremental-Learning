@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.29)  4 NOV 2022 10:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.8.29)  4 NOV 2022 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,102 +772,90 @@ File: images//xor.png Graphic file (type png)
 <use images//xor.png>
 Package pdftex.def Info: images//xor.png  used on input line 48.
 (pdftex.def)             Requested size: 142.26378pt x 149.9435pt.
-
-
-LaTeX Warning: Reference `eqn: summation' on page 8 undefined on input line 60.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--66
-
- []
-
 <images//staggered.png, id=260, 444.66125pt x 270.00874pt>
 File: images//staggered.png Graphic file (type png)
 <use images//staggered.png>
-Package pdftex.def Info: images//staggered.png  used on input line 72.
+Package pdftex.def Info: images//staggered.png  used on input line 69.
 (pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
-[8 <./images//and.png> <./images//or.png> <./images//xor.png>]
+ [8 <./images//and.png> <./images//or.png> <./images//xor.png>]
 <images//sigmoid.png, id=268, 1050.92625pt x 772.8875pt>
 File: images//sigmoid.png Graphic file (type png)
 <use images//sigmoid.png>
-Package pdftex.def Info: images//sigmoid.png  used on input line 85.
+Package pdftex.def Info: images//sigmoid.png  used on input line 82.
 (pdftex.def)             Requested size: 142.26378pt x 104.61835pt.
 <images//relu.png, id=269, 501.5538pt x 404.712pt>
 File: images//relu.png Graphic file (type png)
 <use images//relu.png>
-Package pdftex.def Info: images//relu.png  used on input line 102.
+Package pdftex.def Info: images//relu.png  used on input line 99.
 (pdftex.def)             Requested size: 170.71652pt x 137.75464pt.
 <images//softmax.png, id=271, 261.97874pt x 300.12125pt>
 File: images//softmax.png Graphic file (type png)
 <use images//softmax.png>
-Package pdftex.def Info: images//softmax.png  used on input line 117.
+Package pdftex.def Info: images//softmax.png  used on input line 114.
 (pdftex.def)             Requested size: 170.71652pt x 195.57565pt.
  [9 <./images//staggered.png> <./images//sigmoid.png> <./images//relu.png>]
-
-LaTeX Warning: Reference `sec: one neuron' on page 10 undefined on input line 138.
-
 <images//multipercep.jpg, id=287, 425.33907pt x 244.66406pt>
 File: images//multipercep.jpg Graphic file (type jpg)
 <use images//multipercep.jpg>
-Package pdftex.def Info: images//multipercep.jpg  used on input line 149.
+Package pdftex.def Info: images//multipercep.jpg  used on input line 146.
 (pdftex.def)             Requested size: 441.01773pt x 253.69795pt.
-[10 <./images//softmax.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--162
+ [10 <./images//softmax.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--166
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
 
  []
 
 [11 <./images//multipercep.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 206--210
+Underfull \hbox (badness 10000) in paragraph at lines 203--207
 
  []
 
 <images//CNN architecture.png, id=303, 712.6625pt x 325.215pt>
 File: images//CNN architecture.png Graphic file (type png)
 <use images//CNN architecture.png>
-Package pdftex.def Info: images//CNN architecture.png  used on input line 234.
+Package pdftex.def Info: images//CNN architecture.png  used on input line 231.
 (pdftex.def)             Requested size: 441.01773pt x 201.25407pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 <images//Maxpool.png, id=307, 164.25pt x 68.547pt>
 File: images//Maxpool.png Graphic file (type png)
 <use images//Maxpool.png>
-Package pdftex.def Info: images//Maxpool.png  used on input line 254.
+Package pdftex.def Info: images//Maxpool.png  used on input line 251.
 (pdftex.def)             Requested size: 142.27478pt x 85.36763pt.
 <images//averagePooling.png, id=308, 697.60625pt x 246.9225pt>
 File: images//averagePooling.png Graphic file (type png)
 <use images//averagePooling.png>
-Package pdftex.def Info: images//averagePooling.png  used on input line 260.
+Package pdftex.def Info: images//averagePooling.png  used on input line 257.
 (pdftex.def)             Requested size: 142.26508pt x 85.3579pt.
 [12 <./images//CNN architecture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 267--271
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
@@ -875,45 +863,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--308
 <images//MetodosAprendizajeIncremental.png, id=339, 832.61063pt x 397.485pt>
 File: images//MetodosAprendizajeIncremental.png Graphic file (type png)
 <use images//MetodosAprendizajeIncremental.png>
-Package pdftex.def Info: images//MetodosAprendizajeIncremental.png  used on input line 343.
+Package pdftex.def Info: images//MetodosAprendizajeIncremental.png  used on input line 340.
 (pdftex.def)             Requested size: 441.01773pt x 210.53867pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--352
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--358
+Underfull \hbox (badness 10000) in paragraph at lines 350--355
 
  []
 
 [14 <./images/MetodosAprendizajeIncremental.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 359--366
+Underfull \hbox (badness 10000) in paragraph at lines 356--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--366
+Underfull \hbox (badness 10000) in paragraph at lines 356--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--394
+Underfull \hbox (badness 10000) in paragraph at lines 388--391
 
  []
 
@@ -947,22 +935,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `"El aprendizaje incrementado en el uso de las redes neuronales".out' has not changed.
 (rerunfilecheck)             Checksum: FA83A4985665A673EF31399368EC74B7;4131.
  ) 
 Here is how much of TeX's memory you used:
- 16608 strings out of 478287
- 270996 string characters out of 5849289
+ 16606 strings out of 478287
+ 270963 string characters out of 5849289
  668317 words of memory out of 5000000
- 34421 multiletter control sequences out of 15000+600000
+ 34419 multiletter control sequences out of 15000+600000
  483330 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,17n,77p,773b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (17 pages, 1159078 bytes).
+Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (17 pages, 1158484 bytes).
 PDF statistics:
  440 PDF objects out of 1000 (max. 8388607)
  360 compressed objects within 4 object streams
