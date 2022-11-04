@@ -152,43 +152,17 @@ Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal,
         \subsection{Algoritmo Backpropagation}
         	
         	
-        	El bacpkpropagation es un algoritmo de aprendizaje que permite el aprendizaje de la red,
-            permite que una red neuronal pueda auto-ajustar todos sus parámetros para aprender una representaci\'on 
+        	El bacpkpropagation es un algoritmo de aprendizaje que permite que una red neuronal pueda auto-ajustar todos sus parámetros para aprender una representaci\'on 
             interna de la informaci\'on que se está procesando. Lleg\'o a dar solución a la limitante del perceptron, este 
             resuelve los problemas lineales, la cual es que no se puede extender a redes más complejas, 
             es decir, a problemas no lineales. \\
 
-            Usando este algoritmo se podrá obtener las derivadas parciales del gradiente y del peso, las cuales
-            sirven para la optimizaci\'on de la red neuronal, dichas derivadas son:
-                $\frac{\partial C}{\partial W^L}$
-            
-            Pero no se debe de olvidar que también se debe de calcular las derivadas del sesgo, la derivada anterior
-            queda de la siguiente forma:
-                $\frac{\partial C}{\partial b^L}$
-            donde \textit{L} pertenece al n\'umero de capa donde se encuentra. \\
-            
-            Lo que permite a este algoritmo encontrar el error de la derivada es la \textit{chain rule}, la cual en resumen 
-            da la siguiente ecuaci\'on :
-                $C(a(Z^L))$
-
-            Donde 
-                $Z^L$
-            representa el resultado de la suma ponderada, y la forma explicita de Z es:
-                $Z^L = W^LX + b^L$
-            \textit{a} es la funci\'on de activaci\'on 
-            y \textit{C} es la funci\'on de Coste.
-
-            Al aplicar la \textit{Chain Rule} se obtiene que las derivadas parciales a conseguir son:
-            \begin{equation*}
-                \frac{\partial C}{\partial w^L} = \frac{\partial C}{\partial a^L} \cdot \frac{\partial a^L}{\partial z^L} \cdot \frac{\partial z^L}{\partial w^L} 
-            \end{equation*}
-            \begin{equation*}
-                \frac{\partial C}{\partial b^L} = \frac{\partial C}{\partial a^L} \cdot \frac{\partial a^L}{\partial z^L} \cdot \frac{\partial z^L}{\partial b^L}
-            \end{equation*}
-            \\
-
-            Como se observa, el uso de todas estas derivadas parciales permiten encontrar el error, en otras palabras, lo que realiza dicho algoritmo es terminar un proceso, si se encuentra un error, este va a regresar
-            hasta la neurona que da error, pero regresa cambiando el valor de \textit{w}, este proceso se va a 
+            Usando este algoritmo se podrán obtener las derivadas parciales del gradiente y del peso, las cuales
+            sirven para la optimizaci\'on de la red neuronal.
+            Pero también se deben de calcular las derivadas del sesgo, donde se encuentra el n\'umero de capa donde esta la falla.
+            El uso de estas derivadas parciales permite encontrar el error, en otras palabras, lo que realiza dicho algoritmo es terminar un proceso y 
+            si se encuentra un error, este va a regresar
+            hasta la neurona donde se encuentra este, pero va regresando desde la capa de salida hacia la primer capa oculta, este proceso se va a 
             repetir hasta encontrar el error perfecto, el cual es donde el error disminuye a lo m\'as bajo y el resultado
             de la red es lo m\'as acertado.\\
 
@@ -252,6 +226,8 @@ Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal,
             es donde el modelo va a predecir que es lo que se presenta, puede decir si en la imagen hay un perro, gato o alg\'un mueble, 
             para eso la funci\'on de activaci\'on que se usa es softmax \eqref{subsec: softmax}, la cual se maneja con probabilidad, esto
             permitirá que se obtenga una buena probabilidad de lo que se puede obtener por la capa de entrada \cite{duran2017,Ortiz2020}.\\
+
+            Este tipo de redes es una parte del Deep Learning, y no se entrará tanto en detalle ya que el presente trabajo de investigación, se enfoca en las redes muilticapa.
   
 
 \subsection{Aprendizaje}
