@@ -1,0 +1,126 @@
+\documentclass[letter, 12pt, twoside]{report}  
+\usepackage[spanish,mexico]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[top=2.4cm, bottom=2.7cm, left=3.3cm, right=2.0cm]{geometry}   % with the script is lower the text, with kile it put +o- 1 cm above, check when pinted in the school
+%\usepackage[square, comma, sort&compress]{natbib}
+\usepackage{makeidx}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3} 		
+\usepackage{url}
+\usepackage{subfig}  % para usar la función subfigura
+\usepackage{epsfig}  % para trabajar con figs eps 
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{booktabs}
+\usepackage{rotating} 				% for vertical text in tables with  \begin{sideways}Paper\end{sideways} &\begin{sideways}Static\end{sideways} \\
+\usepackage{algorithm}
+%\usepackage[numbered]{algo}
+%\usepackage[printonlyused,withpage]{acronym}
+\usepackage{hyphenat} 			%hyphenation of compound words
+\usepackage{array} 			% to increse space between rows in tables using \setlength{\extrarowheight}{1.5pt}
+%\usepackage{multicol}
+\usepackage{pdflscape} 			% for landscape some pages
+\usepackage{textcomp} 			% for the +- sign \textpm
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+\makeindex
+
+\begin{document}
+
+    \include{textFiles/title}
+    \pagenumbering{roman}
+    \newpage
+    \thispagestyle{empty}
+    % Empty page
+
+
+    % put double spacing
+    \doublespacing
+
+    \thispagestyle{empty}
+    %1-2 pages
+    \begin{abstract}
+
+        El aprendizaje incremental es un área de la Inteligencia Artificial la cual permite agregar nuevo conocimiento 
+        a un modelo (e.g. Redes Neuronales Artificiales) sin la necesidad de entrenar el modelo con toda la información 
+        histórica de la tarea en cuestión %\cite{bullinaria2009}. En el presente trabajo de investigación se ocupará el modelo de Redes 
+        Neuronales Artificiales enfocada en la clasificación de dígitos escritos a mano usando el algoritmo de 
+        entrenamiento de backpropagation, con redes Multi capa Perceptron y duplicación de pesos múltiples 
+        simulando memoria a corto y largo plazo para mejorar los resultados presentados en %\cite{bullinaria2009}.\\
+
+    \end{abstract}
+
+    \newpage
+    \thispagestyle{empty}
+    % Empty page
+
+    % dedication
+    \newpage
+    \thispagestyle{empty}
+
+    %  \addvspace{3in}
+    \vspace*{2in}
+
+
+    \noindent \hspace{2in} Dedicatoria 
+
+    \newpage
+    \thispagestyle{empty}
+    % Empty page
+    ~
+
+    \chapter*{Agradecimientos}
+    \thispagestyle{empty}
+
+
+    Sus agradecimientos
+
+    \tableofcontents
+
+    \listoffigures
+
+    \listoftables
+
+    % \listofalgorithms
+
+
+    \newpage
+    \thispagestyle{empty}
+    % Empty page
+    ~
+
+    % A c r o n y m s
+    \include{textFiles/acroList}
+
+    %\newpage
+
+    \pagenumbering{arabic}
+
+    % put double spacing
+    \doublespacing
+
+
+
+    % Each one is a chapter 
+    \include{textFiles/introduction}
+
+    \newpage
+    \thispagestyle{empty}
+    % Empty page
+    
+    \include{textFiles/theoretical marco}
+    \include{textFiles/prueba}
+
+
+    %\bibliographystyle{acm}
+    \bibliographystyle{ieeetr}%plain}
+    \bibliography{bibliography}
+    %\bibliography{BaseDatos2}
+
+
+%\printindex
+\end{document}
+

@@ -1,0 +1,1009 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.24)  8 DEC 2022 22:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/luisg/Documents/Incremental-Learning/Thesis/El aprendizaje incrementado en el uso de las redes neuronales.tex"
+(/home/luisg/Documents/Incremental-Learning/Thesis/El aprendizaje incrementado en el uso de las redes neuronales.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count194
+\U@D=\dimen139
+\l@unhyphenated=\language87
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count195
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks16
+\es@quotdepth=\count196
+Package babel Info: Making " an active character on input line 570.
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count266
+\c@continuedfloat=\count267
+)
+\c@KVtest=\count268
+\sf@farskip=\skip49
+\sf@captopadj=\dimen155
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count269
+\c@subfigure@save=\count270
+\c@lofdepth=\count271
+\c@subtable=\count272
+\c@subtable@save=\count273
+\c@lotdepth=\count274
+\sf@top=\skip52
+\sf@bottom=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
+)
+\epsfxsize=\dimen158
+\epsfysize=\dimen159
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count275
+\multirow@dima=\skip55
+\bigstrutjot=\dimen160
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/bigstrut.sty
+Package: bigstrut 2021/03/15 v2.8 Provide larger struts in tabulars
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen161
+\lightrulewidth=\dimen162
+\cmidrulewidth=\dimen163
+\belowrulesep=\dimen164
+\belowbottomsep=\dimen165
+\aboverulesep=\dimen166
+\abovetopsep=\dimen167
+\cmidrulesep=\dimen168
+\cmidrulekern=\dimen169
+\defaultaddspace=\dimen170
+\@cmidla=\count276
+\@cmidlb=\count277
+\@aboverulesep=\dimen171
+\@belowrulesep=\dimen172
+\@thisruleclass=\count278
+\@lastruleclass=\count279
+\@thisrulewidth=\dimen173
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count280
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box50
+\rot@mess@toks=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count281
+\float@exts=\toks22
+\float@box=\box51
+\@float@everytoks=\toks23
+\@floatcapt=\box52
+)
+\@float@every@algorithm=\toks24
+\c@algorithm=\count282
+) (/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language88
+LaTeX Info: Redefining \_ on input line 43.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen174
+\ar@mcellbox=\box53
+\extrarowheight=\dimen175
+\NC@list=\toks25
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box54
+) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `"El aprendizaje incrementado en el uso de las redes neuronales.idx"'.
+
+
+Writing index file "El aprendizaje incrementado en el uso de las redes neuronales".idx
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box55
+)
+
+LaTeX Warning: Unused global option(s):
+    [letter].
+
+(build/El aprendizaje incrementado en el uso de las redes neuronales.aux)
+\openout1 = `"El aprendizaje incrementado en el uso de las redes neuronales.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(93.89418pt, 463.49532pt, 56.9055pt)
+* v-part:(T,H,B)=(68.28644pt, 649.8612pt, 76.82234pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=463.49532pt
+* \textheight=649.8612pt
+* \oddsidemargin=21.62419pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-40.98355pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=95.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count284
+\scratchdimen=\dimen176
+\scratchbox=\box56
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen177
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\openout2 = `textFiles/title.aux'.
+
+ (./textFiles/title.tex [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [1
+
+
+] [2] [3] [4
+
+]
+No file "El aprendizaje incrementado en el uso de las redes neuronales".toc.
+\tf@toc=\write4
+\openout4 = `"El aprendizaje incrementado en el uso de las redes neuronales.toc"'.
+
+[5
+
+]
+No file "El aprendizaje incrementado en el uso de las redes neuronales".lof.
+\tf@lof=\write5
+\openout5 = `"El aprendizaje incrementado en el uso de las redes neuronales.lof"'.
+
+[6
+
+]
+No file "El aprendizaje incrementado en el uso de las redes neuronales".lot.
+\tf@lot=\write6
+\openout6 = `"El aprendizaje incrementado en el uso de las redes neuronales.lot"'.
+
+[7
+
+] [8]
+\openout2 = `textFiles/acroList.aux'.
+
+ (./textFiles/acroList.tex) [9
+
+
+]
+\openout2 = `textFiles/introduction.aux'.
+
+ (./textFiles/introduction.tex
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
+ []
+
+
+LaTeX Warning: Citation `zhao2022' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `salazar2013' on page 1 undefined on input line 16.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+
+ []
+
+
+LaTeX Warning: Citation `liu2015' on page 1 undefined on input line 22.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--23
+
+ []
+
+
+Underfull \vbox (badness 6978) has occurred while \output is active []
+
+ [1
+
+
+
+
+]
+
+LaTeX Warning: Citation `GiraudCarrier2000' on page 2 undefined on input line 26.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--31
+
+ []
+
+
+LaTeX Warning: Citation `bullinaria2009' on page 2 undefined on input line 38.
+
+
+LaTeX Warning: Citation `bullinaria2009' on page 2 undefined on input line 40.
+
+
+LaTeX Warning: Citation `li2008' on page 2 undefined on input line 42.
+
+
+LaTeX Warning: Citation `Elwell2011' on page 2 undefined on input line 42.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--43
+
+ []
+
+
+LaTeX Warning: Citation `bullinaria2009' on page 2 undefined on input line 45.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2] [3]
+\openout2 = `"textFiles/theoretical marco.aux"'.
+
+ (./textFiles/theoretical marco.tex
+Cap\'{\i }tulo 2.
+<images//ANN.jpg, id=49, 317.988pt x 184.2885pt>
+File: images//ANN.jpg Graphic file (type jpg)
+<use images//ANN.jpg>
+Package pdftex.def Info: images//ANN.jpg  used on input line 11.
+(pdftex.def)             Requested size: 463.49532pt x 268.63153pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4
+
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+
+ []
+
+
+./textFiles/theoretical marco.tex:28: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28             \begin{subfigure}
+                                  [H]{0.49\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:28: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.28 ...      \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./textFiles/theoretical marco.tex:28: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.28 ...      \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<images//and.png, id=53, 304.13625pt x 290.08376pt>
+File: images//and.png Graphic file (type png)
+<use images//and.png>
+Package pdftex.def Info: images//and.png  used on input line 29.
+(pdftex.def)             Requested size: 463.50777pt x 463.52379pt.
+
+Overfull \hbox (38.84816pt too wide) in paragraph at lines 28--30
+[]\OT1/cmr/m/n/12 [H]0.49 [] 
+ []
+
+
+./textFiles/theoretical marco.tex:32: LaTeX Error: \begin{figure} on input line 27 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32             \end{subfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./textFiles/theoretical marco.tex:34: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34             \begin{subfigure}
+                                  [H]{0.49\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:34: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.34 ...      \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./textFiles/theoretical marco.tex:34: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.34 ...      \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<images//or.png, id=55, 304.13625pt x 290.08376pt>
+File: images//or.png Graphic file (type png)
+<use images//or.png>
+Package pdftex.def Info: images//or.png  used on input line 35.
+(pdftex.def)             Requested size: 463.50777pt x 463.52379pt.
+
+./textFiles/theoretical marco.tex:38: LaTeX Error: \begin{figure} on input line 27 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38             \end{subfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5 <./images//ANN.jpg>]
+Overfull \vbox (377.33377pt too high) has occurred while \output is active []
+
+ [6 <./images//and.png> <./images//or.png>]
+./textFiles/theoretical marco.tex:44: Undefined control sequence.
+l.44         como los de la Figura \eqref
+                                         {fig:fig3}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images//xor.png, id=67, 279.0425pt x 294.09875pt>
+File: images//xor.png Graphic file (type png)
+<use images//xor.png>
+Package pdftex.def Info: images//xor.png  used on input line 48.
+(pdftex.def)             Requested size: 142.26378pt x 149.9435pt.
+<images//staggered.png, id=68, 444.66125pt x 270.00874pt>
+File: images//staggered.png Graphic file (type png)
+<use images//staggered.png>
+Package pdftex.def Info: images//staggered.png  used on input line 69.
+(pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
+[7 <./images//xor.png> <./images//staggered.png>]
+<images//sigmoid.png, id=74, 1050.92625pt x 772.8875pt>
+File: images//sigmoid.png Graphic file (type png)
+<use images//sigmoid.png>
+Package pdftex.def Info: images//sigmoid.png  used on input line 82.
+(pdftex.def)             Requested size: 142.26378pt x 104.61835pt.
+<images//relu.png, id=75, 501.5538pt x 404.712pt>
+File: images//relu.png Graphic file (type png)
+<use images//relu.png>
+Package pdftex.def Info: images//relu.png  used on input line 99.
+(pdftex.def)             Requested size: 170.71652pt x 137.75464pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./images//sigmoid.png>]
+
+LaTeX Warning: Citation `Freire2021' on page 9 undefined on input line 104.
+
+<images//softmax.png, id=83, 261.97874pt x 300.12125pt>
+File: images//softmax.png Graphic file (type png)
+<use images//softmax.png>
+Package pdftex.def Info: images//softmax.png  used on input line 114.
+(pdftex.def)             Requested size: 170.71652pt x 195.57565pt.
+
+LaTeX Warning: Citation `calvo-2018' on page 9 undefined on input line 119.
+
+[9 <./images//relu.png> <./images//softmax.png>]
+
+LaTeX Warning: Citation `liu2015' on page 10 undefined on input line 124.
+
+./textFiles/theoretical marco.tex:132: Undefined control sequence.
+l.132 ...o se comentó anteriormente,  Sec. \eqref
+                                                  {sec: activation} la linea...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./textFiles/theoretical marco.tex:138: Undefined control sequence.
+l.138 ...omo se puede observar en la figura \eqref
+                                                  {fig:fig8}, para este caso...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[10]
+<images//multipercep.jpg, id=94, 425.33907pt x 244.66406pt>
+File: images//multipercep.jpg Graphic file (type jpg)
+<use images//multipercep.jpg>
+Package pdftex.def Info: images//multipercep.jpg  used on input line 146.
+(pdftex.def)             Requested size: 463.49532pt x 266.62627pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--168
+
+ []
+
+[11 <./images//multipercep.jpg>]
+
+LaTeX Warning: Citation `bullinaria2009' on page 12 undefined on input line 171.
+
+./textFiles/theoretical marco.tex:187: Undefined control sequence.
+l.187 ...distribuyen como se muestra Figura \eqref
+                                                  {fig:fig9}:
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<images//CNN architecture.png, id=98, 712.6625pt x 325.215pt>
+File: images//CNN architecture.png Graphic file (type png)
+<use images//CNN architecture.png>
+Package pdftex.def Info: images//CNN architecture.png  used on input line 192.
+(pdftex.def)             Requested size: 463.49532pt x 211.51129pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+./textFiles/theoretical marco.tex:205: Undefined control sequence.
+l.205             Figura \eqref
+                               {fig:f3}, mientras que el \textit{Average Poo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./textFiles/theoretical marco.tex:206: Undefined control sequence.
+l.206 ...iz, como se puede ver en la Figura \eqref
+                                                  {fig:f4} para un mejor res...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./textFiles/theoretical marco.tex:208: Undefined control sequence.
+l.208 ...e activaci\'on conocidas como Relu \eqref
+                                                  {subsec: relu}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./textFiles/theoretical marco.tex:211: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211                 \begin{subfigure}
+                                       [H]{0.49\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:211: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.211 ...     \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./textFiles/theoretical marco.tex:211: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.211 ...     \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<images//Maxpool.png, id=102, 164.25pt x 68.547pt>
+File: images//Maxpool.png Graphic file (type png)
+<use images//Maxpool.png>
+Package pdftex.def Info: images//Maxpool.png  used on input line 212.
+(pdftex.def)             Requested size: 142.27478pt x 85.36763pt.
+
+./textFiles/theoretical marco.tex:215: LaTeX Error: \begin{figure} on input line 210 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215                 \end{subfigure}
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./textFiles/theoretical marco.tex:217: LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217                 \begin{subfigure}
+                                       [H]{0.49\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:217: Missing number, treated as zero.
+<to be read again> 
+                   }
+l.217 ...     \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./textFiles/theoretical marco.tex:217: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.217 ...     \begin{subfigure}[H]{0.49\textwidth}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<images//averagePooling.png, id=103, 697.60625pt x 246.9225pt>
+File: images//averagePooling.png Graphic file (type png)
+<use images//averagePooling.png>
+Package pdftex.def Info: images//averagePooling.png  used on input line 218.
+(pdftex.def)             Requested size: 142.26508pt x 85.3579pt.
+
+./textFiles/theoretical marco.tex:221: LaTeX Error: \begin{figure} on input line 210 ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221                 \end{subfigure}
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \vbox (badness 1852) has occurred while \output is active []
+
+ [13 <./images//CNN architecture.png>]
+./textFiles/theoretical marco.tex:227: Undefined control sequence.
+l.227 ...activaci\'on que se usa es softmax \eqref
+                                                  {subsec: softmax}, la cual...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `duran2017' on page 14 undefined on input line 228.
+
+
+LaTeX Warning: Citation `Ortiz2020' on page 14 undefined on input line 228.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--229
+
+ []
+
+
+LaTeX Warning: Citation `Nrby2015' on page 14 undefined on input line 241.
+
+[14 <./images//Maxpool.png> <./images//averagePooling.png>]
+
+LaTeX Warning: Citation `bransford2000' on page 15 undefined on input line 248.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+
+LaTeX Warning: Citation `perez2014' on page 15 undefined on input line 260.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--268
+
+ []
+
+[15]
+
+LaTeX Warning: Citation `Huber2008' on page 16 undefined on input line 271.
+
+
+LaTeX Warning: Citation `GiraudCarrier2000' on page 16 undefined on input line 280.
+
+
+LaTeX Warning: Citation `GiraudCarrier2000' on page 16 undefined on input line 283.
+
+
+LaTeX Warning: Citation `liu2015' on page 16 undefined on input line 289.
+
+
+LaTeX Warning: Citation `Deshmukh2013' on page 16 undefined on input line 299.
+
+[16]
+<images//MetodosAprendizajeIncremental.png, id=120, 832.61063pt x 397.485pt>
+File: images//MetodosAprendizajeIncremental.png Graphic file (type png)
+<use images//MetodosAprendizajeIncremental.png>
+Package pdftex.def Info: images//MetodosAprendizajeIncremental.png  used on input line 303.
+(pdftex.def)             Requested size: 463.49532pt x 221.27394pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
+
+ []
+
+[17 <./images/MetodosAprendizajeIncremental.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+./textFiles/theoretical marco.tex:351: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:351: Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./textFiles/theoretical marco.tex:351: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:351: Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./textFiles/theoretical marco.tex:351: LaTeX Error: Environment equation* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:351: Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./textFiles/theoretical marco.tex:351: LaTeX Error: \begin{document} ended by \end{equation*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./textFiles/theoretical marco.tex:351: Missing $ inserted.
+<inserted text> 
+                $
+l.351 ...olo de \[ h_i \] y del ejemplo actual e"}
+                                                   \cite{GiraudCarrier2000},...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Warning: Citation `GiraudCarrier2000' on page 19 undefined on input line 351.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--354
+
+ []
+
+
+LaTeX Warning: Citation `fisher1987' on page 19 undefined on input line 357.
+
+) [19]
+\openout2 = `textFiles/prueba.aux'.
+
+
+No file textFiles/prueba.tex.
+No file "El aprendizaje incrementado en el uso de las redes neuronales".bbl.
+(build/El aprendizaje incrementado en el uso de las redes neuronales.aux (build/textFiles/title.aux)
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ (build/textFiles/acroList.aux) (build/textFiles/introduction.aux) (build/textFiles/theoretical marco.aux) (build/textFiles/prueba.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5687 strings out of 478287
+ 103618 string characters out of 5849289
+ 397594 words of memory out of 5000000
+ 23780 multiletter control sequences out of 15000+600000
+ 475066 words of font info for 47 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 70i,7n,79p,619b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "build/El aprendizaje incrementado en el uso de las redes neuronales.pdf" (29 pages, 972114 bytes).
+PDF statistics:
+ 183 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

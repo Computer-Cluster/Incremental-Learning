@@ -1,0 +1,56 @@
+\section{Justificación}
+	
+	
+    Las redes neuronales permiten el aprendizaje automático y la resolución 
+    de distintos problemas,  pero como se comentó anteriormente,  las técnicas 
+    de aprendizaje máquina, tienen una deficiencia que es al momento de aumentar 
+    los nuevos bloques de datos que llegan para aprender,  se obtiene un deterioro 
+    en el rendimiento de aprendizaje de información y olvido de la información anterior \cite{bullinaria2009}.\\
+    
+    Los resultados que se han obtenido no han funcionado a la perfección, la 
+    memoria a corto plazo olvida poco pero va olvidando, y lo ideal sería que no 
+    olvidara. Biológicamente, los humanos pueden aprender nuevas tareas, o información 
+    nueva de un problema, y no olvida de forma significativa lo que anteriormente 
+    aprendió, no obstante, eso no pasa actualmente con las RNA y en general con 
+    cualquier algoritmo de aprendizaje máquina. En otro sentido, los humanos 
+    ya tienen cierta configuración en el cerebro que les permite aprender como 
+    se hace actualmente,  y se puede afirmar que por el momento no hay ningún 
+    procedimiento (ya sea quirúrgico o no) que permita modificar la estructura del cerebro 
+    para aprender mas y olvidar menos.\\
+
+    No obstante,  computacionalmente nada puede impedir que se experimente con más 
+    configuraciones y llegar al punto en donde toda la información que ingrese a un 
+    modelo (por ejemplo RNAs) se acumule, y si no hay problema de almacenamiento, que \'esta se siga 
+    acumulando y que no olvide, esto podría ser bueno en diversas situaciones.\\
+
+    Desde un punto de vista computacional, si llega nueva información y no se ocupa aprendizaje 
+    incremental, esto implicar\'a volver a entrenar todo el sistema con la información anterior y 
+    la actual (por ejemplo, $d_{1}$ y $d_{2}$) y considerando que una de las desventajas que tienen la 
+    RNAs es que el entrenamiento es un cuello de botella, siendo este donde se lleva la mayor 
+    parte de cómputo y por consiguiente de energía. Lo mencionado anteriormente implica que volver a entrenar con toda 
+    la información acumulada, gastará más energía y tiempo, que si solo se entrena con la nueva 
+    información que llega al modelo. En su contraparte,  existe una gran variedad de herramientas,
+    las cuales permiten codificar una red neuronal artificial con librerías ya preexistentes, para esta investigación solo se 
+    expondrán 2 empresas, siendo estas las más importantes: Microsoft y Google. 
+    La primera cuenta con la plataforma de Azure que renta una maquina virtual donde se puede 
+    programar en Python, y la segunda, cuenta con Google Colab que de igual forma brinda 
+    una m\'aquina virtual para realizar experimentos de Maching Learning, la \'unica diferencia 
+    contra Azure es que dicha herramienta es gratuita, y una similitud que tienen es que en ambas herramientas
+    se puede programar en el mismo lenguaje.\\
+
+    Como se puede observar, las herramientas mencionadas permiten la programación en Pyhton, y esto se debe a que 
+    dicho lenguaje es una herramienta de software libre que no requiere licencia, es relativamente 
+    fácil poder depurar un código y permite acelerar más el desarrollo de aplicaciones,  a diferencia 
+    de otros lenguajes más estructurados como C o Java, adem\'as tiene m\'as librerías para el 
+    desarrollo de Maching Learning, por ejemplo, TensorFlow, Numpi, entre otras. \\
+
+    TensorFlow es una librería de Python que permite construir y entrenar redes neuronales para 
+    detectar patrones y razonamientos usados por los humanos, en la presente investigaci\'on se 
+    usar\'a dado a que favorece la creaci\'on de una RNA, permite la elaboraci\'on de cualquier 
+    tipo de algoritmo de Machine Learning, cabe mencionar que también se puede usar para Deep Learning, 
+    facilita la adquisici\'on de datos modelos de capacitaci\'on, predicciones y refinamiento de 
+    resultados, est\'a disponible para el uso en computadores personales, pero es recomendado 
+    usarlo en su propio editor en la nube que es Colab.\\
+    
+    Keras es un framework de alto nivel para 
+    el aprendizaje, escrito en Python y capaz de correr sobre los frameworks TensorFlow, por esta razón se usar\'a para la presente investigación, pues facilita los procesos de experimentación rápida, y ya que al ejecutarse en TensorFlow, por consiguiente se puede ejecutar en Colab.
