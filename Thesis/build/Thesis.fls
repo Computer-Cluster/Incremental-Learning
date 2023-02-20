@@ -401,18 +401,9 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Thesis.toc
-INPUT Thesis.toc
-INPUT Thesis.toc
 OUTPUT build/Thesis.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT ./Thesis.lof
-INPUT Thesis.lof
-INPUT Thesis.lof
 OUTPUT build/Thesis.lof
-INPUT ./Thesis.lot
-INPUT Thesis.lot
-INPUT Thesis.lot
 OUTPUT build/Thesis.lot
 INPUT ./textFiles/acroList.tex
 INPUT ./textFiles/acroList.tex
@@ -445,11 +436,6 @@ INPUT textFiles/theoretical marco.tex
 INPUT ./textFiles/theoretical marco.tex
 INPUT textFiles/theoretical marco.tex
 OUTPUT build/textFiles/prueba.aux
-INPUT ./Thesis.bbl
-INPUT Thesis.bbl
-INPUT ./Thesis.bbl
-INPUT Thesis.bbl
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT build/Thesis.aux
 INPUT build/textFiles/title.aux
 INPUT build/textFiles/title.aux
@@ -470,4 +456,3 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
