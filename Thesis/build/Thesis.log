@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.12.23)  19 FEB 2023 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.12.23)  20 FEB 2023 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -191,6 +191,17 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+ (/usr/share/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count283
+\decimalpart=\count284
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+)
+\AC@clearlist=\toks26
 )
 \@indexfile=\write3
 \openout3 = `Thesis.idx'.
@@ -199,27 +210,27 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 Writing index file Thesis.idx
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count283
+\l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box55
 ) (build/Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Info: Redefining \. on input line 31.
-LaTeX Info: Redefining \% on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -262,17 +273,17 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
+\scratchcounter=\count286
 \scratchdimen=\dimen177
 \scratchbox=\box56
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count287
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count289
 \MPscratchDim=\dimen178
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -286,13 +297,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 
-LaTeX Warning: Citation `bullinaria2009' on page \es@scroman {i} undefined on input line 49.
+LaTeX Warning: Citation `bullinaria2009' on page \es@scroman {i} undefined on input line 50.
 
 
-LaTeX Warning: Citation `bullinaria2009' on page \es@scroman {i} undefined on input line 52.
+LaTeX Warning: Citation `bullinaria2009' on page \es@scroman {i} undefined on input line 53.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--53
+Underfull \hbox (badness 10000) in paragraph at lines 48--54
 
  []
 
@@ -356,7 +367,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 ]
 
-LaTeX Warning: Citation `Elwell2011' on page 2 undefined on input line 109.
+LaTeX Warning: Citation `Elwell2011' on page 2 undefined on input line 110.
 
 [2
 
@@ -376,23 +387,23 @@ Cap\'{\i }tulo 2.
 No file textFiles/prueba.tex.
 No file Thesis.bbl.
 (build/Thesis.aux (build/textFiles/title.aux)
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
  (build/textFiles/acroList.aux) (build/textFiles/introduction.aux) (build/textFiles/theoretical marco.aux) (build/textFiles/prueba.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5609 strings out of 478238
- 100195 string characters out of 5850455
- 396984 words of memory out of 5000000
- 23767 multiletter control sequences out of 15000+600000
+ 6191 strings out of 478238
+ 108552 string characters out of 5850455
+ 408364 words of memory out of 5000000
+ 24336 multiletter control sequences out of 15000+600000
  471368 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,5n,79p,670b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on build/Thesis.pdf (13 pages, 58080 bytes).
+Output written on build/Thesis.pdf (13 pages, 57170 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
