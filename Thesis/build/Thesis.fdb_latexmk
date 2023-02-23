@@ -1,32 +1,34 @@
 # Fdb version 3
-["bibtex build/Thesis"] 1676953674 "build/Thesis.aux" "build/Thesis.bbl" "build/Thesis" 1676953674
+["bibtex build/Thesis"] 1677126615 "build/Thesis.aux" "build/Thesis.bbl" "build/Thesis" 1677126615
   "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1650183167 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "build/Thesis.aux" 1676953674 434 af7a98c6adadf316e4f99ebb1673e858 "pdflatex"
-  "build/textFiles/acroList.aux" 1676953674 780 38522d9c38ef155fe5d75f51e815c902 "pdflatex"
-  "build/textFiles/introduction.aux" 1676953674 1004 2357c31581f83d7fce8ee901a70b5b5c "pdflatex"
-  "build/textFiles/prueba.aux" 1676953674 778 f4edbf0341e993f29b4af96f936b5fa6 "pdflatex"
-  "build/textFiles/theoretical marco.aux" 1676953674 967 62d8b363a40042b5c97d3c9d30e0a3f3 "pdflatex"
-  "build/textFiles/title.aux" 1676953674 777 2bd7bfe3a2c3d32a61a8b5903bda901a "pdflatex"
+  "build/Thesis.aux" 1677126615 434 9275ee9f28f569b5e42276febe500b8f "pdflatex"
+  "build/textFiles/acroList.aux" 1677126615 780 38522d9c38ef155fe5d75f51e815c902 "pdflatex"
+  "build/textFiles/introduction.aux" 1677126615 1236 7aee0d7e574b45bd7151175a73bf7d6c "pdflatex"
+  "build/textFiles/prueba.aux" 1677126615 778 be901625ea1408f2965505b3e092d084 "pdflatex"
+  "build/textFiles/theoretical marco.aux" 1677126615 967 263a6871e95f04df7bcb2dd8b0533550 "pdflatex"
+  "build/textFiles/title.aux" 1677126615 777 2bd7bfe3a2c3d32a61a8b5903bda901a "pdflatex"
   "dataSet.bib" 1672542628 12440 4ffdc9a2509fd6d2f68c92a26110f82d ""
   (generated)
   "build/Thesis.bbl"
   "build/Thesis.blg"
-["makeindex build/Thesis.idx"] 1676953674 "build/Thesis.idx" "build/Thesis.ind" "build/Thesis" 1676953674
+["makeindex build/Thesis.idx"] 1677126615 "build/Thesis.idx" "build/Thesis.ind" "build/Thesis" 1677126615
   "build/Thesis.idx" 0 -1 0 "pdflatex"
   (generated)
   "build/Thesis.ilg"
   "build/Thesis.ind"
-["pdflatex"] 1676953673 "/home/luis/Documents/Incremental-Learning/Thesis/Thesis.tex" "build/Thesis.pdf" "Thesis" 1676953673
+["pdflatex"] 1677126614 "/home/luis/Documents/Incremental-Learning/Thesis/Thesis.tex" "build/Thesis.pdf" "Thesis" 1677126614
   "/home/luis/Documents/Incremental-Learning/Thesis/Thesis.tex" 1676953271 3257 b2ca90d93b4db8e6be36ae87cba99ee6 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1650183167 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1650183167 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1650183167 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1650183167 1292 296a67155bdbfc32aa9c636f21e91433 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1650183167 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1650183167 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1650183167 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1650183167 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1650183167 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1650183167 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1650183167 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1650183167 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
   "/usr/share/texmf-dist/tex/generic/babel/babel.sty" 1650183167 147649 823237dc86e8acfaa45204ca8085a60e ""
@@ -76,7 +78,7 @@
   "Thesis.lot" 0 -1 0 ""
   "Thesis.tex" 1676953271 3257 b2ca90d93b4db8e6be36ae87cba99ee6 ""
   "Thesis.toc" 0 -1 0 ""
-  "build/Thesis.aux" 1676953673 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "build/Thesis.aux" 1677126614 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "build/Thesis.bbl" 0 -1 0 "bibtex build/Thesis"
   "build/Thesis.ind" 0 -1 0 "makeindex build/Thesis.idx"
   "build/Thesis.lof" 0 -1 0 "pdflatex"
@@ -89,7 +91,7 @@
   "build/textFiles/theoretical marco.aux" 0 -1 0 "pdflatex"
   "build/textFiles/title.aux" 0 -1 0 "pdflatex"
   "textFiles/acroList.tex" 1676953349 2374 c8396de31d9ea609b9e91e585c0c36c1 ""
-  "textFiles/introduction.tex" 1676868442 1137 bbf12c1bd8530dd32c79e2a03a664ecb ""
+  "textFiles/introduction.tex" 1677126613 3812 be73156bc61c60a9af4221f4d75b6db6 ""
   "textFiles/prueba.tex" 0 -1 0 ""
   "textFiles/theoretical marco.tex" 1671934698 31 19ff7930c2326c947643595d2ec60606 ""
   "textFiles/title.tex" 1676860953 623 081b030a0bfa9b1b3ebd006e857e54d1 ""
