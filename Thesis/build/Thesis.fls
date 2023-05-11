@@ -1,7 +1,7 @@
-PWD /home/luis/Documents/Incremental-Learning/Thesis
+PWD /home/luisg/Documents/Incremental-Learning/Thesis
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/luis/Documents/Incremental-Learning/Thesis/Thesis.tex
+INPUT /home/luisg/Documents/Incremental-Learning/Thesis/Thesis.tex
 OUTPUT build/Thesis.log
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/report.cls
@@ -36,6 +36,11 @@ INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 INPUT /usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+INPUT /usr/share/texmf-dist/tex/generic/babel/locale/es/babel-es.ini
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
@@ -324,6 +329,17 @@ INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/share/texmf-dist/tex/latex/graphics/lscape.sty
@@ -398,6 +414,21 @@ INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT build/Thesis.aux
 INPUT build/Thesis.aux
 INPUT build/Thesis.aux
+INPUT build/textFiles/title.aux
+INPUT build/textFiles/title.aux
+INPUT build/textFiles/title.aux
+INPUT build/textFiles/acroList.aux
+INPUT build/textFiles/acroList.aux
+INPUT build/textFiles/acroList.aux
+INPUT build/textFiles/introduction.aux
+INPUT build/textFiles/introduction.aux
+INPUT build/textFiles/introduction.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/methodology.aux
+INPUT build/textFiles/methodology.aux
+INPUT build/textFiles/methodology.aux
 OUTPUT build/Thesis.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -435,9 +466,26 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT build/Thesis.toc
+INPUT build/Thesis.toc
+INPUT build/Thesis.toc
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT build/Thesis.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT build/Thesis.lof
+INPUT build/Thesis.lof
+INPUT build/Thesis.lof
 OUTPUT build/Thesis.lof
+INPUT build/Thesis.lot
+INPUT build/Thesis.lot
+INPUT build/Thesis.lot
 OUTPUT build/Thesis.lot
 INPUT ./textFiles/acroList.tex
 INPUT ./textFiles/acroList.tex
@@ -460,17 +508,36 @@ INPUT textFiles/introduction.tex
 INPUT ./textFiles/introduction.tex
 INPUT textFiles/introduction.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-OUTPUT build/textFiles/theoretical marco.aux
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT textFiles/theoretical marco.tex
-INPUT ./textFiles/theoretical marco.tex
-INPUT textFiles/theoretical marco.tex
-OUTPUT build/textFiles/prueba.aux
+INPUT ./textFiles/literatureReview.tex
+INPUT ./textFiles/literatureReview.tex
+INPUT ./textFiles/literatureReview.tex
+OUTPUT build/textFiles/literatureReview.aux
+INPUT ./textFiles/literatureReview.tex
+INPUT ./textFiles/literatureReview.tex
+INPUT ./textFiles/literatureReview.tex
+INPUT textFiles/literatureReview.tex
+INPUT ./textFiles/literatureReview.tex
+INPUT textFiles/literatureReview.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./images//ANN.jpg
+INPUT images//ANN.jpg
+INPUT ./images//ANN.jpg
+INPUT ./images//ANN.jpg
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+OUTPUT build/textFiles/methodology.aux
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT textFiles/methodology.tex
+INPUT ./textFiles/methodology.tex
+INPUT textFiles/methodology.tex
+INPUT build/Thesis.bbl
+INPUT build/Thesis.bbl
+INPUT build/Thesis.bbl
+INPUT build/Thesis.bbl
 INPUT build/Thesis.aux
 INPUT build/textFiles/title.aux
 INPUT build/textFiles/title.aux
@@ -481,14 +548,17 @@ INPUT build/textFiles/acroList.aux
 INPUT build/textFiles/introduction.aux
 INPUT build/textFiles/introduction.aux
 INPUT build/textFiles/introduction.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/theoretical marco.aux
-INPUT build/textFiles/prueba.aux
-INPUT build/textFiles/prueba.aux
-INPUT build/textFiles/prueba.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/literatureReview.aux
+INPUT build/textFiles/methodology.aux
+INPUT build/textFiles/methodology.aux
+INPUT build/textFiles/methodology.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
