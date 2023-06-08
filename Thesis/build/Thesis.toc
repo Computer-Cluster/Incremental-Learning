@@ -2,4 +2,5 @@
 \contentsline {chapter}{\numberline {1}Introducción}{1}{}%
 \contentsline {chapter}{\numberline {2}Revisión de la Literatura}{4}{}%
 \contentsline {section}{\numberline {2.1}Redes Neuronales Artificiales}{4}{}%
-\contentsline {chapter}{\numberline {3}Metodología}{6}{}%
+\contentsline {subsection}{\numberline {2.1.1}Función de Activación}{5}{}%
+\contentsline {chapter}{\numberline {3}Metodología}{7}{}%

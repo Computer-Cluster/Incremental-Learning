@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.5.5)  11 MAY 2023 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.5.26)  8 JUN 2023 00:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,7 +402,13 @@ Package pdftex.def Info: images//ANN.jpg  used on input line 8.
 
 
 
- <./images//ANN.jpg>]) [5]
+ <./images//ANN.jpg>] [5]
+<images//staggered.png, id=59, 444.66125pt x 270.00874pt>
+File: images//staggered.png Graphic file (type png)
+<use images//staggered.png>
+Package pdftex.def Info: images//staggered.png  used on input line 37.
+(pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
+) [6 <./images//staggered.png>]
 \openout2 = `textFiles/methodology.aux'.
 
  (./textFiles/methodology.tex
@@ -417,12 +423,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [6
+) [7
 
 
 
 
-] (build/Thesis.bbl) [7
+] (build/Thesis.bbl) [8
 
 
 
@@ -431,18 +437,18 @@ LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (build/textFiles/acroList.aux) (build/textFiles/introduction.aux) (build/textFiles/literatureReview.aux) (build/textFiles/methodology.aux)) ) 
 Here is how much of TeX's memory you used:
- 6388 strings out of 476025
- 112888 string characters out of 5796533
+ 6400 strings out of 476025
+ 113142 string characters out of 5796532
  1857388 words of memory out of 5000000
- 26708 multiletter control sequences out of 15000+600000
- 517787 words of font info for 50 fonts, out of 8000000 for 9000
+ 26718 multiletter control sequences out of 15000+600000
+ 518094 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,79p,1257b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/Thesis.pdf (17 pages, 131843 bytes).
+ 72i,7n,79p,1257b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on build/Thesis.pdf (18 pages, 166208 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

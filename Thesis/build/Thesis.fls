@@ -524,6 +524,11 @@ INPUT ./images//ANN.jpg
 INPUT images//ANN.jpg
 INPUT ./images//ANN.jpg
 INPUT ./images//ANN.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./images//staggered.png
+INPUT images//staggered.png
+INPUT ./images//staggered.png
+INPUT ./images//staggered.png
 INPUT ./textFiles/methodology.tex
 INPUT ./textFiles/methodology.tex
 INPUT ./textFiles/methodology.tex
@@ -556,9 +561,11 @@ INPUT build/textFiles/methodology.aux
 INPUT build/textFiles/methodology.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
