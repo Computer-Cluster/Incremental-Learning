@@ -24,6 +24,8 @@
 \usepackage{textcomp} 			% for the +- sign \textpm
 \usepackage{acronym}
 \usepackage{graphicx}
+\usepackage{pdfpages}
+
 
 \graphicspath{ {images/} }
 
@@ -31,7 +33,7 @@
 
 \begin{document}
 
-    \include{textFiles/title}
+    \includepdf{textFiles/portada}
     \pagenumbering{roman}
     \newpage
     \thispagestyle{empty}
@@ -111,6 +113,11 @@
     \newpage
     \thispagestyle{empty}
     % Empty page
+    \include{textFiles/approach}
+    \include{textFiles/objectives}
+    \include{textFiles/researchQuestion}
+    \include{textFiles/justification}
+    \include{textFiles/delimitation}
     
     \include{textFiles/literatureReview}
     \include{textFiles/methodology}

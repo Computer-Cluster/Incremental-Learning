@@ -1,6 +1,14 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{}%
-\contentsline {chapter}{\numberline {2}Revisión de la Literatura}{4}{}%
-\contentsline {section}{\numberline {2.1}Redes Neuronales Artificiales}{4}{}%
-\contentsline {subsection}{\numberline {2.1.1}Función de Activación}{5}{}%
-\contentsline {chapter}{\numberline {3}Metodología}{7}{}%
+\contentsline {chapter}{\numberline {2}Planeamiento del Problema}{3}{}%
+\contentsline {chapter}{\numberline {3}Objetivos}{6}{}%
+\contentsline {section}{\numberline {3.1}Objetivos Específicos}{6}{}%
+\contentsline {chapter}{\numberline {4}Preguntas de Investigación}{7}{}%
+\contentsline {chapter}{\numberline {5}Justificación}{8}{}%
+\contentsline {chapter}{\numberline {6}Delimitación}{11}{}%
+\contentsline {chapter}{\numberline {7}Revisión de la Literatura}{12}{}%
+\contentsline {section}{\numberline {7.1}Redes Neuronales Artificiales}{12}{}%
+\contentsline {subsection}{\numberline {7.1.1}Función de Activación}{13}{}%
+\contentsline {section}{\numberline {7.2}Aprendizaje Incremental}{14}{}%
+\contentsline {subsection}{\numberline {7.2.1}Algoritmos de Aprendizaje Incremental}{15}{}%
+\contentsline {chapter}{\numberline {8}Metodología}{18}{}%
