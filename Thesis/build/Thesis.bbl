@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bullinaria2009}
 J.~A. Bullinaria, ``Evolved dual weight neural architectures to facilitate incremental learning.,'' in {\em IJCCI}, pp.~427--434, 2009.
@@ -26,5 +26,8 @@ P.~Royo, ``{Qué son las redes neuronales y cuál es su aplicación en el market
 
 \bibitem{Deshmukh2013}
 R.~Ade and P.~Deshmukh, ``Methods for incremental learning: a survey,'' {\em International Journal of Data Mining \& Knowledge Management Process}, vol.~3, no.~4, p.~119, 2013.
+
+\bibitem{fisher1987}
+D.~H. Fisher, ``Knowledge acquisition via incremental conceptual clustering,'' {\em Machine learning}, vol.~2, no.~2, pp.~139--172, 1987.
 
 \end{thebibliography}

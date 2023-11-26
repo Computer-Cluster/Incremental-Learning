@@ -21,7 +21,7 @@
 
     Para solucionarlo se usan dos o más neuronas, además de la función de activación, que es la que permite pasar la informaicón de una neurona a otra, en un rango especificado, y la cual se describirá en la siguiente sección.
 
-    \subsection{Función de Activación}
+    \subsection{Función de Activación} \label{sec: activation}
 
       Dicho método se utiliza cuando el modelo de RNA contiene dos o más neuronas.
       Esta función lo que provoca es dar al modelo una salida no lineal, para eso la segunda fórmula presentada es distorcionada para quedar de la siguiente manera: $f( w_1x_1 + w_2x_2 + w_3x_3 + b_0)$ para el caso de 3 entradas.
@@ -38,6 +38,36 @@
         \caption{Función Escalonada}
         \label{fig:Función Escalonada}
       \end{figure}
+
+      Las redes neuronales presentan demasiadas utilidades las cuales ayudan a resolver problemas como se muestra en el siguiente \cite{liu2015}: no linealidad, mapeo entrada-salida, aprendizaje robusto a errores en los datos de entrenamiento, entre otros.  Existen varios tipos de Redes Neuronales tales como: Redes Neuronales de Perceptr\'on Multicapa, Redes Neuronales Convolucionales, entre otras, las cuales se describirán brevemente más adelante.
+      
+      \subsection{Redes Neuronales de Perceptr\'on Multicapa}
+
+        Las Redes Neuronales de Perceptr\'on Multicapa se pueden dividir en dos capas (las de entrada y salida), pero también en tres o más capas (la de entrada, una o más capas ocultas y la de salida).  En las capas ocultas se pueden tener m\'as de una fila de neuronas, las cuales son las encargadas de realizar las operaciones para eliminar la linealidad de los datos.  También, como se comentó anteriormente,  Sec. \eqref{sec: activation} la linealidad de los datos se elimina con las funciones de activaci\'on,  las cuales modifican los parámetros de la red,  permitiendo que se elabore un plano tridimencional, con el cual se puede encontrar la soluci\'on al problema planteado.\\
+        Adem\'as como se explicó anteriormente, no es muy recomendado trabajar con una sola neurona por los problemas presentados al resolver, tareas como el XOR donde se requieren de dos líneas rectas para clasificar el problema correctaemnte.
+
+        Como se puede observar en la figura \eqref{fig:fig8}, para este caso se cuenta con una MLP que consta de 4 capas,  1 de entrada, 2 ocultas y 1 de salida. En las capas ocultas y de salida se lleva a cabo el procesamiento de las funciones de activación, donde cabe notar que no es así para la primera capa de entrada, donde unicamente sirve para representar las entradas al modelo, i.e. ahí no hay funciones de transferencia. 
+
+        Así, las neuronas de color azul cuentan con una funci\'on (puede ser sigmoidal, escalonada, entre otras), y cuando se llegue a la capa de salida, cada funci\'on se va a sumar, de esta manera se obtendrá una funci\'on no lineal que de resoluci\'on a la tarea a resolver.
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\columnwidth]{multipercep.jpg}
+          \caption{Perceptron Multicapa}
+          \label{fig:fig8}
+        \end{figure}
+
+    \subsection{Algoritmo Backpropagation}
+        
+      El bacpkpropagation es un algoritmo de aprendizaje que permite que una red neuronal pueda auto-ajustar todos sus parámetros para aprender una representaci\'on interna de la informaci\'on que se está procesando. Lleg\'o a dar solución a la limitante del perceptron, este resuelve los problemas lineales, la cual es que no se puede extender a redes más complejas, es decir, a problemas no lineales. \\
+
+      Usando este algoritmo se podrán obtener las derivadas parciales del gradiente y del peso, las cuales sirven para la optimizaci\'on de la red neuronal.
+
+      Pero también se deben de calcular las derivadas del sesgo, donde se encuentra el n\'umero de capa donde esta la falla.
+
+      El uso de estas derivadas parciales permite encontrar el error, en otras palabras, lo que realiza dicho algoritmo es terminar un proceso y si se encuentra un error, este va a regresar hasta la neurona donde se encuentra este, pero va regresando desde la capa de salida hacia la primer capa oculta, este proceso se va a repetir hasta encontrar el error perfecto, el cual es donde el error disminuye a lo m\'as bajo y el resultado de la red es lo m\'as acertado.\\
+
+      Con lo anterior expuesto, se puede decir que esta metodolog\'ia es muy \'util en el uso de redes neuronales, es por eso que se usa en la investigaci\'on \cite{bullinaria2009}, para obtener un buen resultado en el aprendizaje incremental, como es explicado ah\'i es usado para que las redes obtengan una buena topolog\'ia con buena actualizaci\'on de pesos.
+
   \section{Aprendizaje Incremental}
     Con el pasar de los años la tecnología a evolucionado, eso quiere decir que el Aprendizaje Automático se ha actualizado y que la cantidad de datos va aumentado con más frecuencia.
     
@@ -57,13 +87,14 @@
       4) Generar una nueva clase o cluster cuando sea necesario. Dividir o fusionar los clusters cuando sea necesario. 
       5). Ser de naturaleza dinámica con el entorno cambiante \cite{Deshmukh2013}.
 
-      \begin{figure}[H]
-        	\centering
-        	\includegraphics[width=\columnwidth]{MetodosAprendizajeIncremental.png}
-            \caption{Dos enfoques tradicionales del aprendizaje incremental.}
-            \label{fig:fig11}
+        \begin{figure}[H]
+          \centering
+          \includegraphics[width=\columnwidth]{MetodosAprendizajeIncremental.png}
+          \caption{Dos enfoques tradicionales del aprendizaje incremental.}
+          \label{fig:fig11}
         \end{figure} 
-        1 Metodología de acumulación de datos. 2 Metodología de aprendizaje por conjuntos.\\
+      
+      1 Metodología de acumulación de datos. 2 Metodología de aprendizaje por conjuntos.\\
         
 		Como se observa en la Figura 11, en el primer método, cuando se recibe una nueva porción de datos Dj, se descarta hj-1 y se desarrolla una nueva hipótesis hj, basada en todos los datos disponibles acumulados hasta el momento. 
 		Y en el segundo método, cuando se recibe una nueva porción de datos Dj, se desarrolla una única hipótesis nueva o un conjunto de hipótesis nuevas basadas en los nuevos datos. 
@@ -93,3 +124,15 @@
 				\item Repetir el procedimiento cuando se reciba la siguiente porción del nuevo conjunto de datos.
 			\end{enumerate}
 			Resultado: La hipótesis final.\\
+
+      \textit{"Un algoritmo de aprendizaje es incremental si, para cualquier muestra de entrenamiento dada:
+        \begin{equation*}
+          e_{1} , .... , e_{s}
+			  \end{equation*}
+      produce un secuencia de hipótesis 
+        \begin{equation*}
+          h_{0} , h_{1}, . . . , h_{n} 
+        \end{equation*}
+      tal que \[ h_{i+1} \] depende solo de \[ h_i \] y del ejemplo actual e"} \cite{GiraudCarrier2000}, como se observa, estos son algoritmos que permiten a la inteligencia artificial poder realizar actividades de predicci\'on de una manera m\'as eficaz.\\
+            
+      Un ejemplo del uso de esta rama es el proyecto \textit{COBWEB}, donde se trata de categorizar el n\'umero de Cl\'uster y la pertenencia de dichas categor\'ias por medio de una m\'etrica probabil\'istica global, esto lo realiza por medio de que se agrega una nueva categor\'ia, este proceso lo que realizar\'a es actualizar todas las probabil\'isticas con los nuevos datos recabados \cite{fisher1987}.
