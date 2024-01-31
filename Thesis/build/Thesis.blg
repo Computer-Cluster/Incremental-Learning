@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Thesis.aux
-A level-1 auxiliary file: textFiles/acroList.aux
 A level-1 auxiliary file: textFiles/introduction.aux
 A level-1 auxiliary file: textFiles/approach.aux
 A level-1 auxiliary file: textFiles/objectives.aux
@@ -10,13 +9,15 @@ A level-1 auxiliary file: textFiles/justification.aux
 A level-1 auxiliary file: textFiles/delimitation.aux
 A level-1 auxiliary file: textFiles/literatureReview.aux
 A level-1 auxiliary file: textFiles/methodology.aux
+A level-1 auxiliary file: textFiles/findings.aux
 A level-1 auxiliary file: textFiles/capitulated.aux
+A level-1 auxiliary file: textFiles/timeline.aux
 The style file: ieeetr.bst
 Database file #1: dataset.bib
 Warning--empty booktitle in liu2015
 You've used 10 entries,
             1876 wiz_defined-function locations,
-            551 strings with 5418 characters,
+            552 strings with 5440 characters,
 and the built_in function-call counts, 2877 in all, are:
 = -- 290
 > -- 77

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.9)  24 NOV 2023 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.9)  31 JAN 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -333,7 +333,7 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (build/Thesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- (build/textFiles/acroList.aux) (build/textFiles/introduction.aux) (build/textFiles/approach.aux) (build/textFiles/objectives.aux) (build/textFiles/researchQuestion.aux) (build/textFiles/justification.aux) (build/textFiles/delimitation.aux) (build/textFiles/literatureReview.aux) (build/textFiles/methodology.aux) (build/textFiles/capitulated.aux))
+ (build/textFiles/introduction.aux) (build/textFiles/approach.aux) (build/textFiles/objectives.aux) (build/textFiles/researchQuestion.aux) (build/textFiles/justification.aux) (build/textFiles/delimitation.aux) (build/textFiles/literatureReview.aux) (build/textFiles/methodology.aux) (build/textFiles/findings.aux) (build/textFiles/capitulated.aux) (build/textFiles/timeline.aux))
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -432,26 +432,15 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <textFiles/portada.pdf, id=1, 614.295pt x 794.97pt>
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf>
 Package pdftex.def Info: textFiles/portada.pdf  used on input line 38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf>
 Package pdftex.def Info: textFiles/portada.pdf  used on input line 38.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file ./textFiles/portada.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 <textFiles/portada.pdf, id=4, page=1, 614.295pt x 794.97pt>
 File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf, page 1>
@@ -473,47 +462,30 @@ File: textFiles/portada.pdf Graphic file (type pdf)
 <use textFiles/portada.pdf, page 1>
 Package pdftex.def Info: textFiles/portada.pdf , page1 used on input line 38.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[1
+ [1
 
  <./textFiles/portada.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 52--58
 
  []
 
-[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2] [3
-
-] (build/Thesis.toc
+[1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (build/Thesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [1
+
+])
 \tf@toc=\write4
 \openout4 = `Thesis.toc'.
 
- [4
-
-] (build/Thesis.lof
+ [2] (build/Thesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
 \openout5 = `Thesis.lof'.
 
- [5
-
-] (build/Thesis.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lot=\write6
-\openout6 = `Thesis.lot'.
-
- [6
-
-] [7]
-\openout2 = `textFiles/acroList.aux'.
-
- (./textFiles/acroList.tex) [8
-
+ [1
 
 ]
 \openout2 = `textFiles/introduction.aux'.
@@ -535,9 +507,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[1
-
-
+[2
 
 
 ]
@@ -545,7 +515,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) [2]
+) [3]
 \openout2 = `textFiles/approach.aux'.
 
  (./textFiles/approach.tex
@@ -560,7 +530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--30
 
  []
 
-[3
+[4
 
 
 
@@ -575,12 +545,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--49
 
  []
 
-[4]) [5]
+[5]) [6]
 \openout2 = `textFiles/objectives.aux'.
 
  (./textFiles/objectives.tex
 Cap\'{\i }tulo 3.
-) [6
+) [7
 
 
 
@@ -590,7 +560,7 @@ Cap\'{\i }tulo 3.
 
  (./textFiles/researchQuestion.tex
 Cap\'{\i }tulo 4.
-) [7
+) [8
 
 
 
@@ -615,7 +585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
-[8
+[9
 
 
 
@@ -635,12 +605,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--54
 
  []
 
-[9]) [10]
+[10]) [11]
 \openout2 = `textFiles/delimitation.aux'.
 
  (./textFiles/delimitation.tex
 Cap\'{\i }tulo 6.
-) [11
+) [12
 
 
 
@@ -650,24 +620,24 @@ Cap\'{\i }tulo 6.
 
  (./textFiles/literatureReview.tex
 Cap\'{\i }tulo 7.
-<images//ANN.jpg, id=94, 317.988pt x 184.2885pt>
+<images//ANN.jpg, id=83, 317.988pt x 184.2885pt>
 File: images//ANN.jpg Graphic file (type jpg)
 <use images//ANN.jpg>
 Package pdftex.def Info: images//ANN.jpg  used on input line 8.
 (pdftex.def)             Requested size: 446.70819pt x 258.90196pt.
-[12
+[13
 
 
 
 
- <./images//ANN.jpg>] [13]
-<images//staggered.png, id=102, 444.66125pt x 270.00874pt>
+ <./images//ANN.jpg>] [14]
+<images//staggered.png, id=91, 444.66125pt x 270.00874pt>
 File: images//staggered.png Graphic file (type png)
 <use images//staggered.png>
 Package pdftex.def Info: images//staggered.png  used on input line 37.
 (pdftex.def)             Requested size: 142.26378pt x 86.38396pt.
- [14 <./images//staggered.png>]
-<images//multipercep.jpg, id=110, 425.33907pt x 244.66406pt>
+ [15 <./images//staggered.png>]
+<images//multipercep.jpg, id=100, 425.33907pt x 244.66406pt>
 File: images//multipercep.jpg Graphic file (type jpg)
 <use images//multipercep.jpg>
 Package pdftex.def Info: images//multipercep.jpg  used on input line 54.
@@ -677,13 +647,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-[15 <./images//multipercep.jpg>]
+[16 <./images//multipercep.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[16]
-<images//MetodosAprendizajeIncremental.png, id=118, 832.61063pt x 397.485pt>
+[17]
+<images//MetodosAprendizajeIncremental.png, id=107, 832.61063pt x 397.485pt>
 File: images//MetodosAprendizajeIncremental.png Graphic file (type png)
 <use images//MetodosAprendizajeIncremental.png>
 Package pdftex.def Info: images//MetodosAprendizajeIncremental.png  used on input line 92.
@@ -698,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
-[17 <./images//MetodosAprendizajeIncremental.png>]
+[18 <./images//MetodosAprendizajeIncremental.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 103--108
 
  []
@@ -718,7 +688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
@@ -728,7 +698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-) [19]
+) [20]
 \openout2 = `textFiles/methodology.aux'.
 
  (./textFiles/methodology.tex
@@ -743,15 +713,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) [20
+) [21
 
 
 
 
 ]
+\openout2 = `textFiles/findings.aux'.
+
+ (./textFiles/findings.tex
+Cap\'{\i }tulo 9.
+<images//firstResullt.png, id=122, 1206.5075pt x 432.61626pt>
+File: images//firstResullt.png Graphic file (type png)
+<use images//firstResullt.png>
+Package pdftex.def Info: images//firstResullt.png  used on input line 10.
+(pdftex.def)             Requested size: 446.70819pt x 160.17113pt.
+[22
+
+
+
+
+ <./images//firstResullt.png>]
+<images//epochAccuracy.png, id=127, 645.41125pt x 331.2375pt>
+File: images//epochAccuracy.png Graphic file (type png)
+<use images//epochAccuracy.png>
+Package pdftex.def Info: images//epochAccuracy.png  used on input line 21.
+(pdftex.def)             Requested size: 446.70819pt x 229.25665pt.
+<images//epochLoss.png, id=128, 645.41125pt x 327.2225pt>
+File: images//epochLoss.png Graphic file (type png)
+<use images//epochLoss.png>
+Package pdftex.def Info: images//epochLoss.png  used on input line 28.
+(pdftex.def)             Requested size: 446.70819pt x 226.47778pt.
+ [23 <./images//epochAccuracy.png>]
+<images//evaluationAccuracyvsIterations.png, id=133, 635.37375pt x 338.26375pt>
+File: images//evaluationAccuracyvsIterations.png Graphic file (type png)
+<use images//evaluationAccuracyvsIterations.png>
+Package pdftex.def Info: images//evaluationAccuracyvsIterations.png  used on input line 35.
+(pdftex.def)             Requested size: 446.70819pt x 237.83078pt.
+ [24 <./images//epochLoss.png> <./images//evaluationAccuracyvsIterations.png>]
+<images//secondResult.png, id=139, 1195.46625pt x 428.60126pt>
+File: images//secondResult.png Graphic file (type png)
+<use images//secondResult.png>
+Package pdftex.def Info: images//secondResult.png  used on input line 46.
+(pdftex.def)             Requested size: 446.70819pt x 160.1561pt.
+ [25 <./images//secondResult.png>]
+<images//epochAccuracySecondNN.png, id=144, 648.4225pt x 323.2075pt>
+File: images//epochAccuracySecondNN.png Graphic file (type png)
+<use images//epochAccuracySecondNN.png>
+Package pdftex.def Info: images//epochAccuracySecondNN.png  used on input line 57.
+(pdftex.def)             Requested size: 446.70819pt x 222.66325pt.
+<images//epochLossSecondNN.png, id=145, 655.44875pt x 325.215pt>
+File: images//epochLossSecondNN.png Graphic file (type png)
+<use images//epochLossSecondNN.png>
+Package pdftex.def Info: images//epochLossSecondNN.png  used on input line 64.
+(pdftex.def)             Requested size: 446.70819pt x 221.64447pt.
+<images//evalutionAccuracyvsIterationSeoondNN.png, id=146, 645.41125pt x 328.22626pt>
+File: images//evalutionAccuracyvsIterationSeoondNN.png Graphic file (type png)
+<use images//evalutionAccuracyvsIterationSeoondNN.png>
+Package pdftex.def Info: images//evalutionAccuracyvsIterationSeoondNN.png  used on input line 71.
+(pdftex.def)             Requested size: 446.70819pt x 227.17252pt.
+ [26 <./images//epochAccuracySecondNN.png> <./images//epochLossSecondNN.png>]) [27 <./images//evalutionAccuracyvsIterationSeoondNN.png>]
 \openout2 = `textFiles/capitulated.aux'.
 
  (./textFiles/capitulated.tex
+Cap\'{\i }tulo 10.
+
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
@@ -761,31 +787,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-) [21
+) [28
 
 
 
-] (build/Thesis.bbl [22
+
+]
+\openout2 = `textFiles/timeline.aux'.
+
+ (./textFiles/timeline.tex
+Cap\'{\i }tulo 11.
+<images//diagramaGantt.jpeg, id=160, 910.40125pt x 566.115pt>
+File: images//diagramaGantt.jpeg Graphic file (type jpg)
+<use images//diagramaGantt.jpeg>
+Package pdftex.def Info: images//diagramaGantt.jpeg  used on input line 5.
+(pdftex.def)             Requested size: 446.70819pt x 277.77885pt.
+) [29
 
 
 
-]) [23] (build/Thesis.aux
+
+ <./images//diagramaGantt.jpeg>] (build/Thesis.bbl [30
+
+
+
+]) [31] (build/Thesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- (build/textFiles/acroList.aux) (build/textFiles/introduction.aux) (build/textFiles/approach.aux) (build/textFiles/objectives.aux) (build/textFiles/researchQuestion.aux) (build/textFiles/justification.aux) (build/textFiles/delimitation.aux) (build/textFiles/literatureReview.aux) (build/textFiles/methodology.aux) (build/textFiles/capitulated.aux)) ) 
+ (build/textFiles/introduction.aux) (build/textFiles/approach.aux) (build/textFiles/objectives.aux) (build/textFiles/researchQuestion.aux) (build/textFiles/justification.aux) (build/textFiles/delimitation.aux) (build/textFiles/literatureReview.aux) (build/textFiles/methodology.aux) (build/textFiles/findings.aux) (build/textFiles/capitulated.aux) (build/textFiles/timeline.aux)) ) 
 Here is how much of TeX's memory you used:
- 9055 strings out of 476025
- 160569 string characters out of 5790017
+ 9168 strings out of 476025
+ 164377 string characters out of 5790017
  1858388 words of memory out of 5000000
- 29264 multiletter control sequences out of 15000+600000
+ 29363 multiletter control sequences out of 15000+600000
  518469 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,17n,79p,1258b,427s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,17n,79p,1258b,473s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on build/Thesis.pdf (33 pages, 377092 bytes).
+Output written on build/Thesis.pdf (35 pages, 726340 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
