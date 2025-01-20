@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: dataset.bib
+Warning--empty journal in Huber2008
+Warning--empty booktitle in liu2015
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            594 strings with 6468 characters,
+and the built_in function-call counts, 5232 in all, are:
+= -- 523
+> -- 188
+< -- 6
++ -- 78
+- -- 60
+* -- 320
+:= -- 833
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 78
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 216
+empty$ -- 457
+format.name$ -- 60
+if$ -- 1136
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 13
+newline$ -- 80
+num.names$ -- 32
+pop$ -- 99
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 167
+stack$ -- 0
+substring$ -- 352
+swap$ -- 59
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 2
+while$ -- 55
+width$ -- 18
+write$ -- 169
+(There were 2 warnings)

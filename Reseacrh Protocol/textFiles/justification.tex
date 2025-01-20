@@ -1,0 +1,14 @@
+\section{Justificación}
+
+Las redes neuronales artificiales permiten el aprendizaje automático y la resolución de distintos problemas. Sin embargo, como se mencionó anteriormente, las técnicas de aprendizaje automático presentan una deficiencia importante: cuando se incorporan nuevos bloques de datos, se observa un deterioro en el rendimiento del aprendizaje y un olvido de la información previamente aprendida \cite{bullinaria2009}. 
+
+Aunque los resultados obtenidos hasta ahora no han sido perfectos, la memoria a corto plazo de las redes neuronales tiende a olvidar con el tiempo, lo cual es una limitación. En contraste, los seres humanos pueden aprender nuevas tareas o información de un problema sin olvidar de manera significativa lo que previamente aprendieron. Aunque biológicamente los humanos tienen una estructura cerebral que les permite aprender y retener mejor la información, actualmente no existe ningún procedimiento que permita modificar la estructura del cerebro para mejorar la retención y reducir el olvido.
+
+Desde un punto de vista computacional, no hay limitaciones inherentes que impidan experimentar con nuevas configuraciones de redes neuronales artificiales (RNAs) para lograr que toda la información ingresada en el modelo se acumule, sin problemas de almacenamiento, y sin olvidar la información previa. Esto podría ser beneficioso en diversas aplicaciones.
+
+En un escenario en el que no se utilice aprendizaje incremental, la llegada de nueva información implicaría la necesidad de volver a entrenar todo el modelo con la información anterior y la nueva. Esto sería un proceso costoso en términos de cómputo y energía, ya que el entrenamiento de una RNA es uno de los cuellos de botella principales, lo que significa un alto consumo de recursos. En cambio, si solo se entrena con la nueva información, se podrían reducir tanto el tiempo como el consumo energético.
+
+Existen varias herramientas que permiten codificar redes neuronales artificiales utilizando librerías preexistentes. En esta investigación, se destacan dos plataformas principales: Microsoft Azure y Google Colab. Azure ofrece una máquina virtual para programar en Python, mientras que Google Colab proporciona un entorno similar, pero de forma gratuita. Ambas herramientas permiten trabajar con Python, un lenguaje de programación libre y fácil de depurar, ideal para el desarrollo de aplicaciones de Machine Learning.
+
+Una de las librerías más populares para Machine Learning es TensorFlow, que facilita la creación y entrenamiento de redes neuronales, permitiendo detectar patrones y razonamientos. Debido a sus capacidades y a su compatibilidad con Deep Learning, TensorFlow será la librería utilizada en esta investigación, particularmente porque es compatible con Keras, un framework de alto nivel que se ejecuta sobre TensorFlow. Keras simplifica los procesos de experimentación rápida y es ideal para su ejecución en plataformas como Google Colab.
+
