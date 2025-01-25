@@ -26,23 +26,21 @@
 \usepackage{times}
 %\usepackage{apacite}
 
-\graphicspath{ {images/} }
+\graphicspath{{../05_Images/}}
 
 % Márgenes
 \usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}
 
-\title{Aprendizaje incremental para la tarea de reconocimiento
-de dígitos con Redes Neuronales Artificiales}
+\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Nueronales Artificiales Aplicado al Conjunto de
+Datos Optdigit}
 
 \makeindex
 
 \begin{document}
 
-    \includepdf{textFiles/portada.pdf}
-    \newpage
+    \includepdf{../03_Chapters/portada}
     \tableofcontents
     \listoffigures
-    \newpage
     \maketitle
     \begin{abstract}
         El aprendizaje incremental es un área de la Inteligencia Artificial la cual permite agregar nuevo conocimiento 
@@ -55,22 +53,21 @@ de dígitos con Redes Neuronales Artificiales}
         \textbf{Palabras claves:} Aprendizaje Incremental, Redes Multi Capa, Redes Neuronales Artificiales
     \end{abstract}
 
-    \input{textFiles/introduction}
-    \input{textFiles/approach}
-    \input{textFiles/objectives}
-    \input{textFiles/hypothesis}
-    \input{textFiles/justification}
-    \input{textFiles/delimitation}
-    \input{textFiles/consequence}
-    \input{textFiles/theoretical marco}
-    \input{textFiles/methodology}
-    \input{textFiles/capitulated}
+    \input{../03_Chapters/introduction}
+    \input{../03_Chapters/approach}
+    \input{../03_Chapters/objectives}
+    \input{../03_Chapters/hypothesis}
+    \input{../03_Chapters/justification}
+    \input{../03_Chapters/delimitation}
+    \input{../03_Chapters/consequence}
+    \input{../03_Chapters/theoretical marco}
+    \input{../03_Chapters/methodology}
+    \input{../03_Chapters/capitulated}
     
     %\printbibliography  
-
     %\bibliographystyle{acm}
-    \bibliography{dataset}
-    \bibliographystyle{plain}
+    %\bibliographystyle{plain}
+    \bibliography{../02_References/dataset}
     %\bibliography{BaseDatos2}
 
 \end{document}
