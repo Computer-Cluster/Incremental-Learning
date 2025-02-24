@@ -1,0 +1,31 @@
+# Ignorar archivos generados por LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Ignorar carpetas de compilación
+/build/
+/01_Protocol/build/
+
+# Ignorar archivos de editor/IDE
+*.swp
+*.swo
+*.DS_Store
+*.vscode/
+
+# Ignorar archivos de sistema
+Thumbs.db
+.DS_Store
+
+# Ignorar carpetas de dependencias o entornos virtuales (si usas Python)
+venv/
+__pycache__/
+*.pyc

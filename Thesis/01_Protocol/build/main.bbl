@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{Deshmukh2013}
+RR~Ade and PR~Deshmukh.
+\newblock Methods for incremental learning: a survey.
+\newblock {\em International Journal of Data Mining \& Knowledge Management Process}, 3(4):119, 2013.
+
+\bibitem{bullinaria2009}
+John~A Bullinaria.
+\newblock Evolved dual weight neural architectures to facilitate incremental learning.
+\newblock In {\em IJCCI}, pages 427--434, 2009.
+
+\bibitem{Elwell2011}
+Ryan Elwell and Robi Polikar.
+\newblock Incremental learning of concept drift in nonstationary environments.
+\newblock {\em IEEE Transactions on Neural Networks}, 22(10):1517--1531, 2011.
+
+\bibitem{fisher1987}
+Douglas~H Fisher.
+\newblock Knowledge acquisition via incremental conceptual clustering.
+\newblock {\em Machine learning}, 2(2):139--172, 1987.
+
+\bibitem{GiraudCarrier2000}
+Christophe~G. Giraud-Carrier.
+\newblock A note on the utility of incremental learning.
+\newblock {\em AI Commun.}, 13:215--224, 2000.
+
+\bibitem{li2008}
+Ai-Jun Li.
+\newblock An improved algorithm for incremental learning learn++.
+\newblock In {\em 2008 International Conference on Wavelet Analysis and Pattern Recognition}, volume~1, pages 310--315. IEEE, 2008.
+
+\bibitem{liu2015}
+Yuan Liu.
+\newblock Yuan liu incremental learning in deep neural networks.
+\newblock 2015.
+
+\bibitem{renganathan2019}
+V~Renganathan.
+\newblock Overview of artificial neural network models in the biomedical domain.
+\newblock {\em Bratislava Medical Journal/Bratislavské Lekárske Listy}, 120(7), 2019.
+
+\bibitem{royo2021}
+Paloma Royo.
+\newblock {Qué son las redes neuronales y cuál es su aplicación en el marketing}, 2021.
+
+\bibitem{salazar2013}
+Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
+\newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones obtenidos por un s{\'o}nar.
+\newblock In {\em 2013 II International Congress of Engineering Mechatronics and Automation (CIIMA)}, pages 1--6. IEEE, 2013.
+
+\bibitem{zhao2022}
+Beibei Zhao, Tairan Wu, Fang Fang, Lin Wang, Wenzhang Ren, Xu~Yang, Zhangjing Ruan, and Xuejin Kou.
+\newblock Prediction method of 5g high-load cellular based on bp neural network.
+\newblock In {\em 2022 8th International Conference on Mechatronics and Robotics Engineering (ICMRE)}, pages 148--151. IEEE, 2022.
+
+\end{thebibliography}

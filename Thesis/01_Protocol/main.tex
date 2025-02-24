@@ -13,7 +13,6 @@
 \usepackage[rightcaption]{sidecap}
 \usepackage{array}
 \usepackage{framed}
-\usepackage{color}
 \usepackage{wrapfig}
 \definecolor{shadecolor}{RGB}{224,238,238}
 \usepackage{listings}
@@ -21,53 +20,49 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{verbatim}
-\pagestyle{empty}
+\pagestyle{plain}
 \usepackage[nottoc]{tocbibind}
 \usepackage{times}
-%\usepackage{apacite}
 
-\graphicspath{{../05_Images/}}
+\graphicspath{{../04_Images/}}
 
 % Márgenes
 \usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}
 
-\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Nueronales Artificiales Aplicado al Conjunto de
+\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Neuronales Artificiales Aplicado al Conjunto de
 Datos Optdigit}
 
 \makeindex
 
 \begin{document}
 
-    \includepdf{../03_Chapters/portada}
+    \includepdf{../02_Chapters/portada}
     \tableofcontents
     \listoffigures
     \maketitle
     \begin{abstract}
-        El aprendizaje incremental es un área de la Inteligencia Artificial la cual permite agregar nuevo conocimiento 
-        a un modelo (e.g. Redes Neuronales Artificiales) sin la necesidad de entrenar el modelo con toda la información 
-        histórica de la tarea en cuestión \cite{bullinaria2009}. En el presente trabajo de investigación se ocupará el modelo de Redes 
-        Neuronales Artificiales enfocada en la clasificación de dígitos escritos a mano usando el algoritmo de 
-        entrenamiento de backpropagation, con redes Multi capa Perceptron y duplicación de pesos múltiples 
-        simulando memoria a corto y largo plazo para mejorar los resultados presentados en \cite{bullinaria2009}.\\
+        En un enfoque normal, primero se entrena el modelo con un conjunto de datos inicial, y una vez que el modelo está listo, se utiliza para realizar predicciones. Sin embargo, si llega nueva información, es necesario reentrenar el modelo desde cero, utilizando tanto la información histórica como la nueva. Este proceso puede ser computacionalmente costoso y poco eficiente, especialmente cuando se manejan grandes volúmenes de datos.
+        
+        El aprendizaje incremental es un área de la Inteligencia Artificial que permite agregar nuevo conocimiento a un modelo (e.g., Redes Neuronales Artificiales) sin la necesidad de entrenar el modelo con toda la información histórica de la tarea en cuestión \cite{bullinaria2009}. En el presente trabajo de investigación se utilizará el modelo de Redes Neuronales Artificiales enfocado en la clasificación de dígitos escritos a mano, empleando el algoritmo de entrenamiento de backpropagation, con redes Multicapa Perceptron y duplicación de pesos múltiples, simulando memoria a corto y largo plazo para mejorar los resultados presentados en \cite{bullinaria2009}.
+        \end{abstract}
+        
+        \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
 
-        \textbf{Palabras claves:} Aprendizaje Incremental, Redes Multi Capa, Redes Neuronales Artificiales
-    \end{abstract}
-
-    \input{../03_Chapters/introduction}
-    \input{../03_Chapters/approach}
-    \input{../03_Chapters/objectives}
-    \input{../03_Chapters/hypothesis}
-    \input{../03_Chapters/justification}
-    \input{../03_Chapters/delimitation}
-    \input{../03_Chapters/consequence}
-    \input{../03_Chapters/theoretical marco}
-    \input{../03_Chapters/methodology}
-    \input{../03_Chapters/capitulated}
+    \input{../02_Chapters/introduction}
+    \input{../02_Chapters/approach}
+    \input{../02_Chapters/objectives}
+    \input{../02_Chapters/hypothesis}
+    \input{../02_Chapters/justification}
+    \input{../02_Chapters/delimitation}
+    \input{../02_Chapters/consequence}
+    \input{../02_Chapters/theoretical_framework}
+    \input{../02_Chapters/methodology}
+    \input{../02_Chapters/capitulated}
     
     %\printbibliography  
     %\bibliographystyle{acm}
-    %\bibliographystyle{plain}
-    \bibliography{../02_References/dataset}
+    \bibliographystyle{plain}
+    \bibliography{dataset}
     %\bibliography{BaseDatos2}
 
 \end{document}
