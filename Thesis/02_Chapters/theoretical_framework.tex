@@ -1,12 +1,33 @@
 \section{Marco Teórico}
 
+    \subsection{Optical Digit}
+
+        Es un conjunto de datos utilizado en el área de reconocimiento de patrones, el motivo de su creación fue para la investigación de reconocimiento de caracteres ópticos de caracteres (OCR).
+        Su representación es de imagenes en la escala de grises con un tamaño de 8x8 pixeles (Como se muestra en la Figura \ref{fig:optical_digit}), cada imagen representa un número en el rango de 0 a 9,Su representación es de imágenes en la escala de grises con un tamaño de 8x8 píxeles (como se muestra en la Figura \ref{fig:optical_digit}), cada imagen representa un número en el rango de 0 a 9, dicho dataset contiene un total de 5620 imágenes, apesar de esto el dataset tiene un balance de clases, lo que quiere decir que cada clase (en este caso cada dígito) tiene la misma cantidad de muestras.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=5cm]{optical_digit/four_optical_digit.png}
+            \caption{Conjunto de Datos Optical Digit}
+            \label{fig:optical_digit}
+        \end{figure}
+
+        Este conjunto de datos se utiliza en diferentes áreas de la inteligencia artificial, tales como:
+        
+        \begin{enumerate}
+            \item Clasificación de digitos.
+            \item Reconocimiento de patrones.
+            \item Comparación de modelos. 
+            \item Aprendizaje supervisado.
+        \end{enumerate}
+        Al usar este tipo de conjunto de datos se obtienem algunas ventajas que por su simplicidad y tamaño permite que los test sean más rápidas que con otros.
     \subsection{Redes Neuronales Artificiales}
 
         Las redes neuronales artificiales (RNA) son modelos computacionales dentro de la Inteligencia Artificial que contienen unidades de procesamiento simples llamadas neuronas. Estas se inspiran en el cerebro humano, basándose en la conectividad entre neuronas y el aprendizaje que pueden tener. Un perceptrón o neurona (artificial) solo resuelve problemas lineales y tiene la siguiente forma:
 
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\columnwidth]{ANN.jpg}
+            \includegraphics[width=\columnwidth]{neural_networks/multilayer_perceptron/ANN.jpg}
             \caption{Red Neuronal Artificial Básica}
             \label{fig:nerural_network}
         \end{figure}
@@ -21,13 +42,13 @@
 
         \begin{figure}[H]
             \begin{subfigure}[H]{0.49\textwidth}
-                \includegraphics[width=\textwidth, height=\textwidth]{and.png}
+                \includegraphics[width=\textwidth, height=\textwidth]{logic_gates/and.png}
                 \caption{Puerta Lógica AND}
                 \label{fig:and_logic_gate}
             \end{subfigure}
             \hfill
             \begin{subfigure}[H]{0.49\textwidth}
-                \includegraphics[width=\textwidth, height=\textwidth]{or.png}
+                \includegraphics[width=\textwidth, height=\textwidth]{logic_gates/or.png}
                 \caption{Puerta Lógica OR}
                 \label{fig:or_logic_gate}
             \end{subfigure}
@@ -37,7 +58,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[width=5cm]{xor.png}
+            \includegraphics[width=5cm]{logic_gates/xor.png}
             \caption{Puerta Lógica XOR}
             \label{fig:xor_logic_gate}
         \end{figure}
@@ -55,7 +76,7 @@
                 Esta función se utiliza para problemas de clasificación, ya que su salida es binaria, es decir, 0 o 1.
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=5cm]{staggered.png}
+                    \includegraphics[width=5cm]{activation_functions/staggered.png}
                     \caption{Función Escalonada}
                     \label{fig:step_function}
                 \end{figure}
@@ -73,7 +94,7 @@
                 Esta función es una de las más comunes, ya que su salida es un rango de 0 a 1, lo que permite interpretarla como una probabilidad.
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=5cm]{sigmoid.png}
+                    \includegraphics[width=5cm]{activation_functions/sigmoid.png}
                     \caption{Función Sigmoide}
                     \label{fig:sigmoid_function}
                 \end{figure}
@@ -92,7 +113,7 @@
 
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=6cm]{relu.png}
+                    \includegraphics[width=6cm]{activation_functions/relu.png}
                     \caption{Función ReLU}
                     \label{fig:relu_function}
                 \end{figure}
@@ -110,7 +131,7 @@
                 Esta función se utiliza en la capa de salida de la red neuronal, ya que transforma las salidas en una representación probabilística, de tal manera que la suma de todas las probabilidades sea 1.
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=6cm]{softmax.png}
+                    \includegraphics[width=6cm]{activation_functions/softmax.png}
                     \caption{Función Softmax}
                     \label{fig:softmax_function}
                 \end{figure}
@@ -126,7 +147,7 @@
 
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=6cm]{tanh.png}
+                    \includegraphics[width=6cm]{activation_functions/tanh.png}
                     \caption{Función Tangente Hiperbólica}
                     \label{fig:tanh_function}
                 \end{figure}
@@ -151,7 +172,7 @@
 
         \begin{figure}[H]
             \centering
-            \includegraphics[width=\columnwidth]{multipercep.jpg}
+            \includegraphics[width=\columnwidth]{neural_networks/multilayer_perceptron/multipercep.jpg}
             \caption{Red Neuronal Multicapa}
             \label{fig:multilayer_perceptron}
         \end{figure}
@@ -196,7 +217,7 @@
 
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=\columnwidth]{MetodosAprendizajeIncremental.png}
+                \includegraphics[width=\columnwidth]{incremental_learning/incremental_learning_methods.png}
                 \caption{Dos enfoques tradicionales del aprendizaje incremental.}
                 \label{fig:incremental_learning_algorithm}
             \end{figure}
@@ -220,3 +241,5 @@
             Como se observa, estos algoritmos permiten que la inteligencia artificial realice tareas de predicción de manera más eficiente.
 
             Un ejemplo de esta metodología es el proyecto \textit{COBWEB}, que categoriza el número de clusters y la pertenencia de dichos clusters utilizando una métrica probabilística global. Este proceso implica agregar nuevas categorías, actualizando las probabilidades con los nuevos datos recolectados \cite{fisher1987}.
+    
+    \subsection{Estado del Arte}
