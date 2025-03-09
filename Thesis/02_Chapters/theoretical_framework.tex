@@ -243,3 +243,40 @@
             Un ejemplo de esta metodología es el proyecto \textit{COBWEB}, que categoriza el número de clusters y la pertenencia de dichos clusters utilizando una métrica probabilística global. Este proceso implica agregar nuevas categorías, actualizando las probabilidades con los nuevos datos recolectados \cite{fisher1987}.
     
     \subsection{Estado del Arte}
+        \subsubsection{Introducción}
+            En la actualidad, el aprendizaje incremental es una de las áreas de Inteligencia Artificial más investigadas, enfocada en el desarrollo de modelos que se mantengan en constante aprendizaje. A lo largo de los años, se han realizado diversas investigaciones en este campo, destacando aplicaciones en áreas como la salud, la robótica, entre otras. \\
+            El enfoque en específico en esta área es la creación de modelos que puedan aprender nuevos conocimientos y puedan implementar el \textit{Lifelong learning}  (aprendizaje a lo largo de la vida o aprendizaje de por vida), el cual como se ha visto ha beneficiado al aprendizaje humano, también se prevé que en el área de la inteligencia artificial beneficie a los modelos de aprendizaje automático y poder obtener una mejor precisión en los resultados obtenidos. \\
+            Como se verá a continuación, se presentarán algunas investigaciones que han implementado el aprendizaje incremental y han creado sus propios modelos, los cuales han favorecido el área de aplicación en la que se encuentran.
+            
+
+        \subsubsection{Aprendizaje Incremental en la Róbotica}
+            Como podemos observar en la siguiente investigación: \cite{lippi2021} tiene el objetivo de mejorar su prototipo de Wearable-Walker-Exoskeleton, el cual consta de una prótesis la cual trabaja por medio de redes neuronales artificiales, las cuales entran en un constante aprendizaje conforme el usuario va utilizando dicha prótesis.
+            El motivo de implementar aprendizaje incremental a dicho proyecto es por el constante conocimiento que van adquiriendo las redes neuronales, al ser un proyecto de robótica, debe mantenerse en constante aprendizaje para ofrecer una mejor experiencia al usuario.
+
+        \subsubsection{Aprendizaje Incremental en Redes Neuronales Convolucionales}
+        Xing Wei menciona en su investigación \cite{WEI2020} que en el área de redes neuronales convolucionales (RNA convolucionales) se tiene la problemática de que, al recibir un nuevo conjunto de aprendizaje, el modelo entrenado tiende a olvidar los datos previos. En varios de sus objetivos a largo plazo, se plantea que, por medio del aprendizaje incremental, un coche autónomo pueda circular por diversas vías urbanas. Sin embargo, para lograrlo, el modelo entrenado debe mantener el conocimiento previamente adquirido y, al mismo tiempo, seguir obteniendo nuevos conocimientos.
+
+        Para ello, en dicha investigación se proponen distintas soluciones, entre las cuales destacan:
+
+        \begin{enumerate}
+            \item El diseño de una red de aprendizaje incremental.
+            \item Un entrenamiento de aprendizaje incremental de extremo a extremo para su adaptación.
+            \item Una alineación multinivel, la cual permitiría reducir la discrepancia y así alinear los datos previos con los nuevos.
+        \end{enumerate}
+        
+        Como resultado de la investigación, se obtuvo un nuevo tipo de entrenamiento con aprendizaje incremental, el cual propone dividir el conjunto de datos (dominio) en distintos dominios. Al combinar esto con el aprendizaje incremental, se obtiene un resultado más coherente y eficiente.
+
+        \subsubsection{Aprendizaje Incremental en el Tráfico Cifrado}
+        MEMENTO es un nuevo enfoque propuesto en \cite{CERASUOLO2024}, el cual se divide en tres bloques principales: 1) Gestión de memoria, 2) Procedimiento de entrenamiento, y 3) Rectificación del modelo.
+        
+        El objetivo de la investigación es permitir que los modelos de clasificación puedan aprender nuevas aplicaciones sin olvidar las que ya han aprendido. Esto permite que MEMENTO realice una clasificación de tráfico cifrado en entornos de red en constante evolución.
+        
+        Su solución fue la división de biflujos, lo que permite que las aplicaciones antiguas se almacenen en una memoria limitada y puedan ser utilizadas en el futuro cuando el modelo necesite reaprender. Entre los distintos métodos utilizados, el que más destacó fue el procedimiento conocido como \textit{Herding}, el cual selecciona los biflujos más cercanos al centroide de cada clase latente. Este método resultó ser más efectivo al equilibrar el rendimiento y el tiempo de ejecución. Sin embargo, el uso de \textit{Herding} no fue suficiente, por lo que se implementó el método de \textit{Jittering}, el cual añade ruido gaussiano a los tiempos de llegada entre cada paquete. En otras palabras, agrega un valor constante a todos los paquetes que llegan en un biflujo. Esto se realizó con el propósito de equilibrar el aprendizaje de las aplicaciones antiguas con las nuevas.
+        
+        Este enfoque fue probado con los conjuntos de datos \textit{MIRAGE19}, que es un conjunto de datos de tráfico cifrado de aplicaciones móviles para Android, y \textit{CESNET-TLS22}, que es un conjunto de datos genéricos.
+        
+        Los resultados demostraron que MEMENTO mejoró el rendimiento de la clasificación de tráfico cifrado en aplicaciones móviles en un 16,3\% y en aplicaciones genéricas en un 2,5\%.
+            
+
+        % \subsection{Conclusiones}
+        %     En la actualidad, el aprendizaje incremental es una área de la inteligencia artificial con multiples aplicaciones, tanto en la robotica, medicina, clasificación, entre otra más. También hay que tener en cuenta que permite que los modelos obtengan más conocimientos sin olvidar el que ya obtuvieron, el motivo de esta investigación es crear un modelo de aprendizaje incremental diviendo los pesos de las redes neuronales, 

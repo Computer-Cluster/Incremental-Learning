@@ -267,4 +267,56 @@
   volume  = {120},
 }
 
+@Article{PARISI201954,
+  author   = {German I. Parisi and Ronald Kemker and Jose L. Part and Christopher Kanan and Stefan Wermter},
+  journal  = {Neural Networks},
+  title    = {Continual lifelong learning with neural networks: A review},
+  year     = {2019},
+  issn     = {0893-6080},
+  pages    = {54-71},
+  volume   = {113},
+  abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
+  doi      = {https://doi.org/10.1016/j.neunet.2019.01.012},
+  keywords = {Continual learning, Lifelong learning, Catastrophic forgetting, Developmental systems, Memory consolidation},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0893608019300231},
+}
+
+@Misc{lippi2021,
+  author        = {Vittorio Lippi and Cristian Camardella and Alessandro Filippeschi and Francesco Porcini},
+  title         = {Identification of Gait Phases with Neural Networks for Smooth Transparent Control of a Lower Limb Exoskeleton},
+  year          = {2021},
+  archiveprefix = {arXiv},
+  eprint        = {2107.03746},
+  primaryclass  = {cs.RO},
+  url           = {https://arxiv.org/abs/2107.03746},
+}
+
+@Article{WEI2020,
+  author   = {Xing Wei and Shaofan Liu and Yaoci Xiang and Zhangling Duan and Chong Zhao and Yang Lu},
+  journal  = {Knowledge-Based Systems},
+  title    = {Incremental learning based multi-domain adaptation for object detection},
+  year     = {2020},
+  issn     = {0950-7051},
+  pages    = {106420},
+  volume   = {210},
+  abstract = {Cross-domain object detection uses knowledge from source domain tasks to enhance the object detection in target domain. It can reduce the workload of data annotations in the new domain and significantly improve the adaptation ability of the network. We consider a more realistic transfer scenario, that is, our target domain samples cannot be obtained at the same time so that learners cannot forget the old domain knowledge while learning the new domain knowledge, which is consistent with the basic assumption of incremental learning. However, the existing methods do not consider the sequential learning process of the multiple target domains which may cause performance degradation. To address this issue, we propose a novel multi-domain adaptation method for object detection based on incremental learning. Specifically, the incremental learning network saves the knowledge of multiple domains and makes the model to fuse the knowledge of different domains during the training effectively. To make it work better, the progressive training strategy is proposed to make the model gradually adapt to multiple domains. Moreover, we use a multi-level feature alignment module to ensure that domain alignment is realized on features at various levels. We perform experiments on two sets of 6 datasets, which demonstrate that our model can effectively solve the problem of domain knowledge forgetting in multi-target domain adaptation and significantly improve the detection accuracy in each domain.},
+  doi      = {https://doi.org/10.1016/j.knosys.2020.106420},
+  keywords = {Domain adaptation, Object detection, Incremental learning, Image processing},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0950705120305499},
+}
+
+@Article{CERASUOLO2024,
+  author   = {Francesco Cerasuolo and Alfredo Nascita and Giampaolo Bovenzi and Giuseppe Aceto and Domenico Ciuonzo and Antonio Pescapè and Dario Rossi},
+  journal  = {Computer Networks},
+  title    = {MEMENTO: A novel approach for class incremental learning of encrypted traffic},
+  year     = {2024},
+  issn     = {1389-1286},
+  pages    = {110374},
+  volume   = {245},
+  abstract = {In the ever-changing digital environment, ensuring the ongoing effectiveness of traffic analysis and security measures is crucial. Therefore, Class Incremental Learning (CIL) in encrypted Traffic Classification (TC) is essential for adapting to evolving network behaviors and the rapid development of new applications. However, the application of CIL techniques in the TC domain is not straightforward, usually leading to unsatisfactory performance figures. Specifically, the improvement goal is to reduce forgetting on old apps and increase the capacity in learning new ones, in order to improve overall classification performance—reducing the drop from a model “trained-from-scratch”. The contribution of this work is the design of a novel fine-tuning approach called MEMENTO, which is obtained through the careful design of different building blocks: memory management, model training, and rectification strategies. In detail, we propose the application of traffic biflows augmentation strategies to better capitalize on old apps biflows, we introduce improvements in the distillation stage, and we design a general rectification strategy that includes several existing proposals. To assess our proposal, we leverage two publicly-available encrypted network traffic datasets, i.e., MIRAGE19 and CESNET-TLS22. As a result, on both datasets MEMENTO achieves a significant improvement in classifying new apps (w.r.t. the best-performing alternative, i.e., BiC) while maintaining stable performance on old ones. Equally important, MEMENTO achieves satisfactory overall TC performance, filling the gap toward a trained-from-scratch model and offering a considerable gain in terms of time (up to 10× speed-up) to obtain up-to-date and running classifiers. The experimental evaluation relies on a comprehensive performance evaluation workbench for CIL proposals, which is based on a wider set of metrics (as opposed to the existing literature in TC).},
+  doi      = {https://doi.org/10.1016/j.comnet.2024.110374},
+  keywords = {Traffic classification, Class incremental learning, Mobile apps, Encrypted traffic, Deep learning},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1389128624002068},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

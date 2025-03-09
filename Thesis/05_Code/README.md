@@ -2,8 +2,8 @@
 
 ## Notebooks
 
-- `digitRecognirion.ipynb`: Implementacion de un modelo de red neuronal para el reconocimiento de digitos utilizando el conjunto de optdigits.
 - `imagesClassifer.ipynb`: Implementacion de un modelo de red neuronal para la clasificacion de imagenes usando el conjunto de datos Fashion MNIST.
+- `optDigitNN.ipynb`: Implementacion de un modelo de red neuronal para el reconocimiento de digitos utilizando el cojunto de optdigits.
 
 ## C_Code
 

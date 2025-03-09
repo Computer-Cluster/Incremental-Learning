@@ -10,6 +10,11 @@ John~A Bullinaria.
 \newblock Evolved dual weight neural architectures to facilitate incremental learning.
 \newblock In {\em IJCCI}, pages 427--434, 2009.
 
+\bibitem{CERASUOLO2024}
+Francesco Cerasuolo, Alfredo Nascita, Giampaolo Bovenzi, Giuseppe Aceto, Domenico Ciuonzo, Antonio Pescapè, and Dario Rossi.
+\newblock Memento: A novel approach for class incremental learning of encrypted traffic.
+\newblock {\em Computer Networks}, 245:110374, 2024.
+
 \bibitem{Elwell2011}
 Ryan Elwell and Robi Polikar.
 \newblock Incremental learning of concept drift in nonstationary environments.
@@ -30,6 +35,10 @@ Ai-Jun Li.
 \newblock An improved algorithm for incremental learning learn++.
 \newblock In {\em 2008 International Conference on Wavelet Analysis and Pattern Recognition}, volume~1, pages 310--315. IEEE, 2008.
 
+\bibitem{lippi2021}
+Vittorio Lippi, Cristian Camardella, Alessandro Filippeschi, and Francesco Porcini.
+\newblock Identification of gait phases with neural networks for smooth transparent control of a lower limb exoskeleton, 2021.
+
 \bibitem{liu2015}
 Yuan Liu.
 \newblock Yuan liu incremental learning in deep neural networks.
@@ -48,6 +57,11 @@ Paloma Royo.
 Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
 \newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones obtenidos por un s{\'o}nar.
 \newblock In {\em 2013 II International Congress of Engineering Mechatronics and Automation (CIIMA)}, pages 1--6. IEEE, 2013.
+
+\bibitem{WEI2020}
+Xing Wei, Shaofan Liu, Yaoci Xiang, Zhangling Duan, Chong Zhao, and Yang Lu.
+\newblock Incremental learning based multi-domain adaptation for object detection.
+\newblock {\em Knowledge-Based Systems}, 210:106420, 2020.
 
 \bibitem{zhao2022}
 Beibei Zhao, Tairan Wu, Fang Fang, Lin Wang, Wenzhang Ren, Xu~Yang, Zhangjing Ruan, and Xuejin Kou.
