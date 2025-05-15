@@ -30,6 +30,16 @@ Christophe~G. Giraud-Carrier.
 \newblock A note on the utility of incremental learning.
 \newblock {\em AI Commun.}, 13:215--224, 2000.
 
+\bibitem{huerta2009}
+H~Vega Huerta, A~Cortez V{\'a}squez, Ana~Mar{\'\i}a Huayna, Luis~Alarc{\'o}n Loayza, and P~Romero Naupari.
+\newblock Reconocimiento de patrones mediante redes neuronales artificiales.
+\newblock {\em Revista de investigaci{\'o}n de Sistemas e Inform{\'a}tica}, 6(2):17--26, 2009.
+
+\bibitem{jacznik2016}
+Rodrigo Jacznik, Mariano Tassara, Iv{\'a}n D'Uva, Guillermo Baldino, Roxana~Silvia Giandini, and Leopoldo Nahuel.
+\newblock Integrando modelo de aprendizaje supervisado al an{\'a}lisis del desempe{\~n}o de alumnos en cursos virtuales sobre plataformas moodle.
+\newblock In {\em XXII Congreso Argentino de Ciencias de la Computaci{\'o}n (CACIC 2016).}, 2016.
+
 \bibitem{li2008}
 Ai-Jun Li.
 \newblock An improved algorithm for incremental learning learn++.
@@ -44,10 +54,25 @@ Yuan Liu.
 \newblock Yuan liu incremental learning in deep neural networks.
 \newblock 2015.
 
+\bibitem{mercado2015}
+Darwin Mercado~Polo, Luis Pedraza~Caballero, and Edinson Mart{\'\i}nez~G{\'o}mez.
+\newblock Comparaci{\'o}n de redes neuronales aplicadas a la predicci{\'o}n de series de tiempo.
+\newblock {\em Prospectiva}, 13(2):88--95, 2015.
+
+\bibitem{pechuan2015}
+Luis~Miralles Pechu{\'a}n, Dafne~A Rosso-Pelayo, and Jorge Brieva.
+\newblock Reconocimiento de d{\'\i}gitos escritos a mano mediante m{\'e}todos de tratamiento de imagen y modelos de clasificaci{\'o}n.
+\newblock {\em Res. Comput. Sci.}, 93:83--94, 2015.
+
 \bibitem{renganathan2019}
 V~Renganathan.
 \newblock Overview of artificial neural network models in the biomedical domain.
 \newblock {\em Bratislava Medical Journal/Bratislavské Lekárske Listy}, 120(7), 2019.
+
+\bibitem{Rojas1996}
+Ra{\'u}l Rojas.
+\newblock {\em The Backpropagation Algorithm}, pages 149--182.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1996.
 
 \bibitem{royo2021}
 Paloma Royo.

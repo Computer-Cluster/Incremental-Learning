@@ -41,10 +41,15 @@ Datos Optdigit}
     \listoffigures
     \maketitle
     \begin{abstract}
-        En un enfoque normal, primero se entrena el modelo con un conjunto de datos inicial, y una vez que el modelo está listo, se utiliza para realizar predicciones. Sin embargo, si llega nueva información, es necesario reentrenar el modelo desde cero, utilizando tanto la información histórica como la nueva. Este proceso puede ser computacionalmente costoso y poco eficiente, especialmente cuando se manejan grandes volúmenes de datos.
+        Una red neuronal artificial es un modelo de Aprendizaje Automático inspirado en el funcionamiento de las redes neuronales biológicas. Está compuesta por neuronas artificiales (o nodos) organizadas en capas (entrada, oculta y salida), donde la información se procesa mediante transformaciones matemáticas no lineales.
         
-        El aprendizaje incremental es un área de la Inteligencia Artificial que permite agregar nuevo conocimiento a un modelo (e.g., Redes Neuronales Artificiales) sin la necesidad de entrenar el modelo con toda la información histórica de la tarea en cuestión \cite{bullinaria2009}. En el presente trabajo de investigación se utilizará el modelo de Redes Neuronales Artificiales enfocado en la clasificación de dígitos escritos a mano, empleando el algoritmo de entrenamiento de backpropagation, con redes Multicapa Perceptron y duplicación de pesos múltiples, simulando memoria a corto y largo plazo para mejorar los resultados presentados en \cite{bullinaria2009}.
+        El aprendizaje de estos modelos se realiza a través de un proceso de entrenamiento, en el cual los datos atraviesan la red capa por capa. En cada neurona se calcula una función de activación, se estima la pérdida comparando la salida con el valor real, y luego se aplica el algoritmo de retropropagación para ajustar los pesos y sesgos con el objetivo de minimizar dicha pérdida. Este proceso se repite hasta que la pérdida converge.
+        
+        En el enfoque tradicional, el modelo se entrena con un conjunto inicial de datos y, ante la llegada de nueva información, debe reentrenarse desde cero utilizando todos los datos disponibles. Este proceso puede resultar ineficiente y costoso computacionalmente, especialmente con grandes volúmenes de datos.
+        
+        El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
         \end{abstract}
+        
         
         \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
 
@@ -59,6 +64,10 @@ Datos Optdigit}
     \input{../02_Chapters/methodology}
     \input{../02_Chapters/capitulated}
     \input{../02_Chapters/gantt_chart}
+
+    \appendix
+    \section{Fases de la Retropropagación}              \label{ap:backprop}
+    \input{../02_Chapters/appendices/backpropagation} 
     
     %\printbibliography  
     %\bibliographystyle{acm}
