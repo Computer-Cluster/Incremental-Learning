@@ -1,8 +1,8 @@
-# Makefile ejemplo para proyectos en C
-CC = clang
+
+CC = gcc
 CFLAGS = -Wall -Wextra -lm
-TARGET = build/cnn
-SRC = src/cnn.c
+TARGET = build/gan
+SRC = src/gan.c
 
 all: $(TARGET)
 
