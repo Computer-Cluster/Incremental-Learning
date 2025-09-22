@@ -20,7 +20,7 @@
             \item Comparación de modelos \cite{mercado2015}. 
             \item Aprendizaje supervisado \cite{jacznik2016}.
         \end{enumerate}
-        Al usar este tipo de conjunto de datos se obtienem algunas ventajas que por su simplicidad y tamaño permite que los test sean más rápidas que con otros.
+        Al usar este tipo de conjunto de datos se obtienen algunas ventajas que por su simplicidad y tamaño permite que los test sean más rápidas que con otros.
     \subsection{Redes Neuronales Artificiales}
 
         Las redes neuronales artificiales (RNA) son modelos computacionales dentro de la Inteligencia Artificial que contienen unidades de procesamiento simples llamadas neuronas. Estas se inspiran en el cerebro humano, basándose en la conectividad entre neuronas y el aprendizaje que pueden tener. Un perceptrón o neurona (artificial) solo resuelve problemas lineales y tiene la siguiente forma:
@@ -34,7 +34,7 @@
 
         Donde $\Sigma$ es la representación matemática de la neurona. $x_1$, $x_2$, \dots ,$x_n$ son las variables de entrada a la red, y $w_1$, $w_2$, \dots ,$w_n$ son los pesos con los cuales se ponderan las entradas, es decir, se multiplican cuando la información entra en la neurona. Posteriormente, se suman todos esos valores: $w_1 x_1 + w_2 x_2 + w_3 x_3$. 
 
-        Al revisar la fórmula anterioir, se puede observar que se parece a la operación de una regresión, la cual es: $y = w_0 + w_i x_i$. De esta manera, internamente la neurona realiza una regresión lineal. El parámetro que permite a la neurona trazar una recta cruzando el eje $y$ en el plano cartesiano (eje de las ordenadas) es conocido como sesgo (del inglés $bias$). Este valor se agrega a la conexión y usualmente se le asigna un valor de 1.
+        Al revisar la fórmula anterior, se puede observar que se parece a la operación de una regresión, la cual es: $y = w_0 + w_i x_i$. De esta manera, internamente la neurona realiza una regresión lineal. El parámetro que permite a la neurona trazar una recta cruzando el eje $y$ en el plano cartesiano (eje de las ordenadas) es conocido como sesgo (del inglés $bias$). Este valor se agrega a la conexión y usualmente se le asigna un valor de 1.
 
         Agregando este nuevo valor a la fórmula, queda de la siguiente manera: $y = \Sigma w_i x_i + w_0 b$, donde $b$ es el sesgo. 
 
@@ -115,7 +115,7 @@
                 Sin mencionar que este tipo de funciones es ajustable, lo cual es una característica importante del algoritmo de retropropagación (Sección: \ref{sec:backpropagation}).
             
             \item \textbf{Función de Unidad Rectificada Lineal (ReLU):} \\
-                Esta función es la más utilizadas en RNAs ya que supera los problemas de desvanecimeinto del gradiente, además de ser más rápida en el entrenamiento. \\
+                Esta función es la más utilizada en RNAs ya que supera los problemas de desvanecimeinto del gradiente, además de ser más rápida en el entrenamiento. \\
                 Es una función lineal que, cuando es positiva, toma el valor de la entrada, y cuando es negativa, toma el valor de 0.
 
                 \begin{itemize}
@@ -197,7 +197,7 @@
 
         Para poder realizar todo este proceso de retropropagación, es necesario contar con una función de activación diferenciable.
 
-        Como se ha visto existen distintos tipos de funciones de activación y el algoritmode retropropagación es aplicable a todas ellas. Una función de activación diferenciable hace que la función computada por una red neuronal sea diferenciable, ya que la red en sí misma computa solamente composiciones de funciones. La función de error también se vuelve diferenciable. \cite{Rojas1996}. 
+        Como se ha visto existen distintos tipos de funciones de activación y el algoritmo de retropropagación es aplicable a todas ellas. Una función de activación diferenciable hace que la función computada por una red neuronal sea diferenciable, ya que la red en sí misma computa solamente composiciones de funciones. La función de error también se vuelve diferenciable. \cite{Rojas1996}. 
 
         El algoritmo de retropropagación calcula gradientes mediante un proceso en dos fases:
 
@@ -264,43 +264,74 @@ Para entender mejor lo siguiente véase el Apéndice \ref{ap:backprop} (Seccione
 
             Un ejemplo de esta metodología es el proyecto \textit{COBWEB}, que categoriza el número de clusters y la pertenencia de dichos clusters utilizando una métrica probabilística global. Este proceso implica agregar nuevas categorías, actualizando las probabilidades con los nuevos datos recolectados \cite{fisher1987}.
     
-    \subsection{Estado del Arte}
-        \subsubsection{Introducción}
-            En la actualidad, el aprendizaje incremental es una de las áreas de Inteligencia Artificial más investigadas, enfocada en el desarrollo de modelos que se mantengan en constante aprendizaje. A lo largo de los años, se han realizado diversas investigaciones en este campo, destacando aplicaciones en áreas como la salud, la robótica, entre otras. \\
-            El enfoque en específico en esta área es la creación de modelos que puedan aprender nuevos conocimientos y puedan implementar el \textit{Lifelong learning}  (aprendizaje a lo largo de la vida o aprendizaje de por vida), el cual como se ha visto ha beneficiado al aprendizaje humano, también se prevé que en el área de la inteligencia artificial beneficie a los modelos de aprendizaje automático y poder obtener una mejor precisión en los resultados obtenidos. \\
-            Como se verá a continuación, se presentarán algunas investigaciones que han implementado el aprendizaje incremental y han creado sus propios modelos, los cuales han favorecido el área de aplicación en la que se encuentran.
-            
+\subsection{Estado del Arte}
 
-        \subsubsection{Aprendizaje Incremental en la Róbotica}
-            En \cite{lippi2021} se tiene el objetivo de mejorar su prototipo de Wearable-Walker-Exoskeleton, el cual consta de una prótesis la cual trabaja por medio de redes neuronales artificiales, las cuales entran en un constante aprendizaje conforme el usuario va utilizando dicha prótesis.
-            El motivo de implementar aprendizaje incremental a dicho proyecto es por el constante conocimiento que van adquiriendo las redes neuronales, al ser un proyecto de robótica, debe mantenerse en constante aprendizaje para ofrecer una mejor experiencia al usuario.
+    \subsubsection{Introducción}
+    El aprendizaje incremental se ha convertido en uno de los temas de mayor interés dentro de la Inteligencia Artificial (IA), ya que responde a una necesidad central: la capacidad de los sistemas de aprender de manera continua sin olvidar lo previamente adquirido. A diferencia del entrenamiento tradicional, donde un modelo es entrenado en un conjunto fijo de datos y pierde eficacia cuando se enfrenta a nuevas tareas, el aprendizaje incremental busca emular la forma en que los humanos adquieren conocimiento a lo largo de la vida, acumulando experiencias de manera progresiva. \\
+    
+    El auge de esta área radica en su potencial para abordar aplicaciones en entornos dinámicos, donde los datos cambian constantemente, como ocurre en la robótica, la ciberseguridad, los sistemas médicos y la conducción autónoma. En este contexto, la investigación reciente ha enfatizado el concepto de \textit{Lifelong Learning}, que consiste en mantener modelos adaptativos y resistentes al \textit{olvido catastrófico}. Este último, definido como la pérdida de información previamente aprendida al introducir nuevos datos, constituye uno de los mayores desafíos para las redes neuronales artificiales (Parisi et al., 2019). \\
+    
+    A continuación, se revisan investigaciones relevantes que muestran los avances, aplicaciones y retos del aprendizaje incremental, partiendo desde áreas específicas como la robótica, las redes neuronales convolucionales y la clasificación de tráfico cifrado, hasta llegar a los métodos generales que se han diseñado para mitigar el olvido catastrófico.
 
-        \subsubsection{Aprendizaje Incremental en Redes Neuronales Convolucionales}
-        Xing Wei menciona en su investigación \cite{WEI2020} que en el área de redes neuronales convolucionales (RNA convolucionales) se tiene la problemática de que, al recibir un nuevo conjunto de aprendizaje, el modelo entrenado tiende a olvidar los datos previos. En varios de sus objetivos a largo plazo, se plantea que, por medio del aprendizaje incremental, un coche autónomo pueda circular por diversas vías urbanas. Sin embargo, para lograrlo, el modelo entrenado debe mantener el conocimiento previamente adquirido y, al mismo tiempo, seguir obteniendo nuevos conocimientos.
+    \subsubsection{Aprendizaje Incremental en Robótica}
+    La robótica es uno de los campos donde el aprendizaje incremental ha demostrado gran relevancia. Un ejemplo notable se encuentra en el trabajo de \cite{lippi2021}, donde se desarrolló el prototipo \textit{Wearable-Walker-Exoskeleton}, una prótesis inteligente basada en redes neuronales artificiales. Este dispositivo integra mecanismos de aprendizaje incremental que permiten a la prótesis adaptarse progresivamente al usuario conforme aumenta el tiempo de interacción. \\
+    
+    La motivación de este tipo de implementación radica en que los entornos robóticos y biomédicos son altamente cambiantes y dependen de las características particulares de cada persona. Por ejemplo, la forma de caminar de un paciente, su peso, altura o nivel de movilidad generan patrones distintos que un sistema rígido no podría manejar eficientemente. En este sentido, el aprendizaje incremental dota al exoesqueleto de la capacidad de personalización y mejora continua, ofreciendo así una experiencia más confiable y natural para el usuario. \\
+    
+    Este tipo de investigaciones demuestra cómo el aprendizaje incremental no solo aporta beneficios técnicos, sino que también abre la puerta a aplicaciones con impacto social y médico, permitiendo diseñar prótesis, sillas de ruedas inteligentes y otros dispositivos que se adapten dinámicamente al contexto y las necesidades humanas.
 
-        Para ello, en dicha investigación se proponen distintas soluciones, entre las cuales destacan:
+    \subsubsection{Aprendizaje Incremental en Redes Neuronales Convolucionales}
+    En el área de visión por computadora, las redes neuronales convolucionales (CNN, por sus siglas en inglés) han sido fundamentales para tareas como el reconocimiento de imágenes, la clasificación de objetos y la detección de patrones complejos. No obstante, estas redes presentan una limitación conocida: tienden a olvidar el conocimiento previamente adquirido al ser expuestas a nuevas tareas, un fenómeno conocido como \textit{catastrophic forgetting}. \\
+    
+    Xing Wei, en su investigación \cite{WEI2020}, señala que esta problemática es crítica en sistemas de conducción autónoma, donde un vehículo debe adaptarse a múltiples escenarios urbanos sin perder la información previamente aprendida. Si un coche autónomo aprende a circular en una ciudad determinada, debería ser capaz de aplicar ese conocimiento en otra urbe sin necesidad de reentrenar desde cero ni olvidar lo aprendido. \\
+    
+    Para enfrentar este desafío, el autor propuso varias soluciones innovadoras:
+    \begin{enumerate}
+        \item El diseño de una arquitectura de red orientada específicamente al aprendizaje incremental.
+        \item La implementación de un entrenamiento de extremo a extremo adaptado al aprendizaje incremental.
+        \item El desarrollo de una estrategia de alineación multinivel, que busca reducir la discrepancia entre los datos antiguos y los nuevos, alineando representaciones de distintas fases de aprendizaje.
+    \end{enumerate}
+    
+    Los resultados mostraron que al dividir el conjunto de datos en dominios y combinarlos con técnicas de aprendizaje incremental, se obtuvo un modelo más robusto y menos propenso a olvidar tareas anteriores. Esto representa un avance significativo, ya que se acerca al ideal de tener sistemas de visión artificial capaces de generalizar de manera continua y sostenida en entornos complejos.
 
-        \begin{enumerate}
-            \item El diseño de una red de aprendizaje incremental.
-            \item Un entrenamiento de aprendizaje incremental de extremo a extremo para su adaptación.
-            \item Una alineación multinivel, la cual permitiría reducir la discrepancia y así alinear los datos previos con los nuevos.
-        \end{enumerate}
-        
-        Como resultado de la investigación, se obtuvo un nuevo tipo de entrenamiento con aprendizaje incremental, el cual propone dividir el conjunto de datos (dominio) en distintos dominios. Al combinar esto con el aprendizaje incremental, se obtiene un resultado más coherente y eficiente.
+    \subsubsection{Aprendizaje Incremental en Clasificación de Tráfico Cifrado}
+    En el ámbito de la ciberseguridad y las redes de comunicación, el aprendizaje incremental también ha adquirido relevancia debido a la constante aparición de nuevas aplicaciones y protocolos. Un ejemplo destacado es el enfoque \textit{MEMENTO}, presentado por \cite{CERASUOLO2024}. Este modelo fue diseñado para la clasificación de tráfico cifrado en redes, un entorno donde las aplicaciones cambian y evolucionan rápidamente. \\
+    
+    El modelo se estructura en tres componentes principales: 
+    \begin{itemize}
+        \item \textbf{Gestión de memoria}: almacenamiento eficiente de información previa para futuras fases de aprendizaje.
+        \item \textbf{Procedimiento de entrenamiento}: incorporación de nuevas clases sin comprometer las existentes.
+        \item \textbf{Rectificación del modelo}: ajustes dinámicos para equilibrar la estabilidad y la plasticidad del sistema.
+    \end{itemize}
+    
+    Para mejorar la retención de información, se implementó la técnica de división de biflujos, que captura tanto los paquetes enviados como los recibidos, proporcionando un contexto bidireccional más completo que un flujo unidireccional. Asimismo, se emplearon dos métodos clave:
+    \begin{itemize}
+        \item \textit{Herding}, encargado de seleccionar los biflujos más cercanos al centroide de cada clase, equilibrando precisión y eficiencia computacional.
+        \item \textit{Jittering}, que introduce ruido gaussiano en los tiempos de llegada de los paquetes, evitando que el modelo dependa únicamente de patrones exactos y mejorando la capacidad de generalización.
+    \end{itemize}
+    
+    El sistema fue validado con conjuntos de datos relevantes como \textit{MIRAGE19} y \textit{CESNET-TLS22}, obteniendo mejoras del 16,3\% en aplicaciones móviles y del 2,5\% en aplicaciones genéricas. Estos resultados demuestran que el aprendizaje incremental puede mejorar la seguridad y la eficiencia en la clasificación de tráfico cifrado, un área clave en la protección de infraestructuras digitales.
 
-        \subsubsection{Aprendizaje Incremental en el Tráfico Cifrado}
+    \subsubsection{Métodos Generales para Abordar el Olvido Catastrófico}
+    Más allá de aplicaciones específicas, la literatura ha desarrollado métodos generales para mitigar el olvido catastrófico. Este fenómeno, ampliamente descrito por Parisi et al. (2019), ocurre cuando un modelo entrenado en una tarea olvida parte o la totalidad de lo aprendido al ser expuesto a una tarea distinta. Un ejemplo sencillo lo constituye un sistema que primero aprende a distinguir entre gatos y perros, y luego debe clasificar televisores y monitores. Al adquirir la segunda tarea, el sistema pierde parte de la información sobre la primera:contentReference[oaicite:0]{index=0}. \\
+    
+    Para enfrentar este problema, se han propuesto distintas familias de métodos:
+    \begin{itemize}
+        \item \textbf{Métodos basados en regularización}: como el \textit{Elastic Weight Consolidation} (Kirkpatrick et al., 2017), que penaliza los cambios drásticos en los parámetros relevantes para tareas previas.
+        \item \textbf{Métodos basados en memoria}: que almacenan ejemplos representativos de tareas pasadas para reintroducirlos en el entrenamiento de nuevas tareas.
+        \item \textbf{Arquitecturas dinámicas}: como las redes progresivas (ICESC, 2020), que expanden su estructura mediante la adición de nuevas columnas de neuronas y conexiones laterales, preservando los modelos anteriores.
+    \end{itemize}
+    
+    Estos enfoques buscan equilibrar dos propiedades fundamentales del aprendizaje: la \textit{plasticidad}, entendida como la capacidad de adquirir nuevo conocimiento, y la \textit{estabilidad}, que implica la retención de lo previamente aprendido. Investigadores como Bullinaria sostienen que este equilibrio es esencial para avanzar hacia el verdadero \textit{Lifelong Learning}:contentReference[oaicite:1]{index=1}.
 
-        MEMENTO es un nuevo enfoque propuesto en \cite{CERASUOLO2024}, el cual se divide en tres bloques principales: 1) Gestión de memoria, 2) Procedimiento de entrenamiento, y 3) Rectificación del modelo.
-        
-        El objetivo de la investigación es permitir que los modelos de clasificación puedan aprender nuevas aplicaciones sin olvidar las que ya han aprendido. Esto permite que MEMENTO realice una clasificación de tráfico cifrado en entornos de red en constante evolución.
-        
-        Su solución fue la división de biflujos, lo que permite que las aplicaciones antiguas se almacenen en una memoria limitada y puedan ser utilizadas en el futuro cuando el modelo necesite reaprender. Un biflujo representa una comunicación bidireccional entre dos extremos de una conexión de red. A diferencia de un flujo unidireccional, el biflujo incluye tanto los paquetes enviados como los recibidos, capturando así el contexto completo de la comunicación. Esta representación resulta útil en tareas de clasificación de tráfico, ya que proporciona una visión más completa del comportamiento de una aplicación en la red.
+    \subsubsection{Síntesis del Estado del Arte}
+    La revisión realizada permite identificar avances importantes en la aplicación del aprendizaje incremental en diversos dominios. En robótica, se ha comprobado su utilidad en la adaptación personalizada de prótesis y exoesqueletos. En redes neuronales convolucionales, se han propuesto arquitecturas capaces de mantener conocimiento previo al enfrentar nuevos escenarios, como en el caso de los vehículos autónomos. En la clasificación de tráfico cifrado, enfoques como MEMENTO han demostrado mejoras cuantitativas significativas en la detección y análisis de aplicaciones en evolución. \\
+    
+    No obstante, persisten limitaciones comunes: la necesidad de arquitecturas especializadas dificulta la escalabilidad, el costo computacional de las soluciones puede ser elevado, y aún resulta complejo lograr un balance perfecto entre estabilidad y plasticidad. Esto plantea la necesidad de explorar nuevas líneas de investigación que reduzcan la dependencia de memoria externa, mejoren la eficiencia energética y permitan a los modelos adaptarse de manera más natural a entornos cambiantes. \\
+    
+    En conclusión, el aprendizaje incremental se perfila como un componente esencial para la construcción de sistemas de inteligencia artificial más robustos, flexibles y cercanos al comportamiento humano. El presente trabajo se orienta a contribuir a este campo, proponiendo un enfoque que integre lo mejor de las técnicas revisadas y que responda a las limitaciones actuales, avanzando hacia sistemas más resilientes y capaces de un verdadero \textit{aprendizaje continuo}.
 
-        Entre los distintos métodos utilizados, el que más destacó fue el procedimiento conocido como \textit{Herding}, el cual selecciona los biflujos más cercanos al centroide de cada clase latente. Este método resultó ser más efectivo al equilibrar el rendimiento y el tiempo de ejecución. Sin embargo, el uso de \textit{Herding} no fue suficiente, por lo que se implementó el método de \textit{Jittering}, el cual añade ruido gaussiano a los tiempos de llegada entre cada paquete. En otras palabras, agrega un valor constante a todos los paquetes que llegan en un biflujo. Esto se realizó con el propósito de equilibrar el aprendizaje de las aplicaciones antiguas con las nuevas.
-        
-        Este enfoque fue probado con los conjuntos de datos \textit{MIRAGE19}, que es un conjunto de datos de tráfico cifrado de aplicaciones móviles para Android, y \textit{CESNET-TLS22}, que es un conjunto de datos genéricos.
-        
-        Los resultados demostraron que MEMENTO mejoró el rendimiento de la clasificación de tráfico cifrado en aplicaciones móviles en un 16,3\% y en aplicaciones genéricas en un 2,5\%.
+
 
 
         % \subsection{Conclusiones}

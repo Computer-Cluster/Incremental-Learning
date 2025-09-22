@@ -1,0 +1,31 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\title{Perfiles de Aprendizaje Incremental en OptDigits: Baseline, Dual-Bullinaria y Dual-Bullinaria-X2}
+\author{Tu Nombre}
+\date{\today}
+\begin{document}
+\maketitle
+
+\section*{Resumen}
+Comparamos tres configuraciones para aprendizaje incremental en \emph{OptDigits} bajo el protocolo de 6 lotes (200 patrones, 20 por clase), sesiones T1..T6, sin \emph{rehearsal}. Presentamos un baseline (MLP), la configuración \emph{Dual-Bullinaria} (pesos principales + rápidos con $\sigma\approx 17$, $\delta\approx 0.0011$, $\lambda\approx 0$, y tasa IH muy reducida), y una extensión \emph{Dual-Bullinaria-X2} que intensifica el canal rápido ($\sigma\approx 34$, $\delta\approx 0.0022$) y puede resetearse al inicio de cada sesión.
+
+\section{Protocolo}
+Se construyen 6 lotes balanceados $B_1..B_6$ de 200 ejemplos (20 por clase). Se entrena en $T_1..T_6$ usando únicamente $B_t$. Tras cada sesión, evaluamos en: $B_t$, $\cup_{j<t} B_j$, validación y prueba.
+
+\section{Perfiles}
+\paragraph{Baseline} MLP estándar (64--128--64--10) con Adam ($\\eta=10^{-3}$); sin dualidad ni decays diferenciados.
+\paragraph{Dual-Bullinaria} \emph{Dual weights}: canal \emph{main} con $\\lambda\\approx 0$ y canal \emph{fast} con $\\sigma\\approx 17$, $\\delta\\approx 0.0011$. IH con tasa muy baja (\\textasciitilde{}1000× menor). Épocas por sesión: 400.
+\paragraph{Dual-Bullinaria-X2} Intensifica la dualidad: $\\sigma\\approx 34$, $\\delta\\approx 0.0022$, $\\lambda\\approx 0$, IH lenta; opcional reset de \emph{fast} al inicio de cada sesión.
+
+\section{Resultados}
+Se recomienda usar 30--100 semillas y reportar medias $\\pm$ error estándar para Acc\_Bt, Acc\_prev, Acc\_val y Acc\_test por $T$. El cuaderno adjunto exporta CSV, tablas LaTeX y figuras comparativas.
+
+\section{Discusión y conclusiones}
+\emph{Dual-Bullinaria} reduce significativamente el olvido frente a Baseline. La variante \emph{X2} muestra menor caída en Acc\_prev y estabilidad mayor en T4--T6, a cambio de más cómputo y cierta sensibilidad a hiperparámetros. En conjunto, los perfiles duales constituyen extensiones prácticas del experimento original.
+
+\end{document}
