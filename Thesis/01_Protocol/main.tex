@@ -23,6 +23,28 @@
 \pagestyle{plain}
 \usepackage[nottoc]{tocbibind}
 \usepackage{times}
+% ==== PREÁMBULO ====
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, fit, shapes.geometric}
+
+% Estilos PRISMA
+\tikzset{
+  prismaBox/.style = {
+    rectangle, rounded corners, draw=black, thick,
+    align=left, inner sep=5pt, minimum width=5.2cm
+  },
+  prismaGroup/.style = {
+    rectangle, rounded corners, draw=black!40, dashed, inner sep=8pt
+  },
+  prismaArrow/.style = {
+    -{Latex[length=2mm,width=1mm]}, very thick
+  },
+  prismaNote/.style = {
+    rectangle, draw=black!60, align=left, inner sep=3pt, font=\footnotesize
+  }
+}
+
+
 
 \graphicspath{{../04_Images/}}
 
