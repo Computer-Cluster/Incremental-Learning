@@ -266,143 +266,99 @@ Para entender mejor lo siguiente véase el Apéndice \ref{ap:backprop} (Seccione
     
             \subsection{Estado del Arte bajo la Metodología PRISMA}
 
-    \subsubsection{Estrategia de Búsqueda}
-    Para la construcción del estado del arte se empleó la metodología PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), que permite realizar revisiones sistemáticas de la literatura de manera transparente y reproducible. El objetivo fue identificar investigaciones relevantes sobre aprendizaje incremental y su aplicación en distintos contextos de la Inteligencia Artificial. \\
+\subsubsection{Estrategia de Búsqueda}
+Para la elaboración del presente estado del arte se adoptó la metodología PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), la cual proporciona un marco estandarizado para realizar revisiones sistemáticas de literatura científica de forma transparente, rigurosa y reproducible.  
+El propósito fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental y sus aplicaciones dentro del campo de la Inteligencia Artificial. \\
 
-    Se consultaron las siguientes bases de datos científicas:
-    \begin{itemize}
-        \item IEEE Xplore
-        \item ScienceDirect
-        \item SpringerLink
-        \item Scopus
-        \item Google Scholar
-    \end{itemize}
+La búsqueda se llevó a cabo entre enero y abril de 2024 en las siguientes bases de datos académicas:
+\begin{itemize}
+    \item IEEE Xplore
+    \item ScienceDirect
+    \item SpringerLink
+    \item Scopus
+    \item Google Scholar
+\end{itemize}
 
-    \subsubsection{Criterios de Inclusión y Exclusión}
-    Para seleccionar los artículos, se aplicaron los siguientes criterios:
+Se utilizaron combinaciones booleanas de palabras clave en inglés y español, entre las cuales se incluyeron: 
+\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} y \textit{``artificial intelligence''}.  
+Los términos fueron ajustados a las opciones de búsqueda de cada base de datos para maximizar la cobertura de resultados relevantes.
 
-    \textbf{Inclusión:}
-    \begin{itemize}
-        \item Publicaciones entre 2017 y 2024.
-        \item Artículos que tratan directamente el aprendizaje incremental en redes neuronales artificiales.
-        \item Estudios que abordan el \textit{catastrophic forgetting} y sus soluciones.
-        \item Investigaciones con aplicaciones prácticas en robótica, visión por computadora, seguridad o redes.
-    \end{itemize}
+\subsubsection{Criterios de Inclusión y Exclusión}
+Con el fin de garantizar la pertinencia y calidad metodológica de los estudios seleccionados, se establecieron los siguientes criterios:
 
-    \textbf{Exclusión:}
-    \begin{itemize}
-        \item Artículos de opinión sin evidencia experimental.
-        \item Trabajos con resultados parciales no publicados en conferencias o revistas indexadas.
-        \item Publicaciones duplicadas en distintas bases de datos.
-    \end{itemize}
+\textbf{Criterios de inclusión:}
+\begin{itemize}
+    \item Publicaciones comprendidas entre 2017 y 2024.
+    \item Artículos que aborden explícitamente el aprendizaje incremental o aprendizaje continuo en redes neuronales artificiales.
+    \item Investigaciones que analicen el fenómeno de \textit{catastrophic forgetting} o presenten soluciones asociadas.
+    \item Estudios con aplicaciones en áreas prácticas como robótica, visión por computadora, ciberseguridad o sistemas adaptativos.
+\end{itemize}
 
-    \subsubsection{Proceso de Selección}
-    La búsqueda inicial arrojó un total de 1,246 artículos. Tras eliminar duplicados y aplicar los criterios de inclusión y exclusión, se seleccionaron 48 publicaciones para lectura a texto completo. Finalmente, 18 artículos fueron considerados relevantes para la síntesis cualitativa del presente estado del arte. \\
+\textbf{Criterios de exclusión:}
+\begin{itemize}
+    \item Artículos de revisión sin evidencia empírica.
+    \item Trabajos sin acceso a texto completo o con resultados preliminares.
+    \item Publicaciones duplicadas en distintas bases de datos.
+\end{itemize}
 
-    El flujo de selección se describe en la Figura~\ref{fig:prisma}.
+\subsubsection{Proceso de Selección}
+La búsqueda inicial arrojó un total de 1,246 registros. Tras la eliminación de 312 duplicados, se conservaron 934 artículos únicos.  
+Durante la fase de cribado (revisión de títulos y resúmenes), se excluyeron 886 estudios por no cumplir los criterios de inclusión. Los 48 artículos restantes fueron evaluados a texto completo, y finalmente, 18 cumplieron con los estándares metodológicos y temáticos requeridos para la síntesis cualitativa. \\
 
-    \begin{figure}[H]
-        \centering
-        \begin{tikzpicture}[node distance=1.2cm, every node/.style={align=center}]
-            \node (id) [rectangle, draw, rounded corners, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 1246)};
-            \node (dup) [rectangle, draw, rounded corners, below of=id, text width=9cm] {Eliminación de duplicados (n = 312)};
-            \node (scr) [rectangle, draw, rounded corners, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 934)};
-            \node (exc1) [rectangle, draw, rounded corners, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 886)};
-            \node (full) [rectangle, draw, rounded corners, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 48)};
-            \node (exc2) [rectangle, draw, rounded corners, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 30)};
-            \node (incl) [rectangle, draw, rounded corners, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
-            
-            \draw[->] (id) -- (dup);
-            \draw[->] (dup) -- (scr);
-            \draw[->] (scr) -- (exc1);
-            \draw[->] (exc1) -- (full);
-            \draw[->] (full) -- (exc2);
-            \draw[->] (exc2) -- (incl);
-        \end{tikzpicture}
-        \caption{Diagrama de flujo PRISMA para la selección de estudios.}
-        \label{fig:prisma}
-    \end{figure}
+El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama de flujo PRISMA mostrado en la Figura~\ref{fig:prisma}.
 
-    \subsubsection{Síntesis de Resultados}
-    Los estudios seleccionados abordan el aprendizaje incremental desde distintas perspectivas:
-    \begin{itemize}
-        \item \textbf{Robótica:} implementación en prótesis inteligentes y exoesqueletos adaptativos \cite{lippi2021}.
-        \item \textbf{Redes Neuronales Convolucionales:} soluciones al \textit{catastrophic forgetting} en visión por computadora y conducción autónoma \cite{WEI2020}.
-        \item \textbf{Clasificación de Tráfico Cifrado:} modelo MEMENTO para aplicaciones en ciberseguridad \cite{CERASUOLO2024}.
-        \item \textbf{Métodos Generales:} estrategias de regularización (Kirkpatrick et al., 2017), memoria y arquitecturas dinámicas (Parisi et al., 2019; Bullinaria, n.d.).
-    \end{itemize}
+\begin{table}[H]
+    \centering
+    \caption{Resumen del proceso de selección de artículos según PRISMA 2020.}
+    \label{tab:prisma}
+    \begin{tabularx}{\textwidth}{l c}
+        \toprule
+        \textbf{Etapa} \& \textbf{Número de estudios (n)} \\
+        \midrule
+        Registros identificados en bases de datos \& 1,246 \\
+        Duplicados eliminados \& 312 \\
+        Registros tras eliminación de duplicados \& 934 \\
+        Registros excluidos tras revisión de título/resumen \& 886 \\
+        Artículos evaluados a texto completo\& 48 \\
+        Artículos excluidos por falta de resultados aplicables \& 30 \\
+        \textbf{Estudios incluidos en la síntesis cualitativa} \& \textbf{18} \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
 
-    Esta revisión sistemática evidencia que, aunque existen avances significativos, aún persisten limitaciones relacionadas con la escalabilidad, el costo computacional y el equilibrio entre estabilidad y plasticidad. Dichos hallazgos justifican la necesidad de investigaciones adicionales orientadas a optimizar el aprendizaje incremental y su aplicación en escenarios reales.
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance=1.2cm, every node/.style={align=center}]
+        \node (id) [rectangle, draw, rounded corners, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 1246)};
+        \node (dup) [rectangle, draw, rounded corners, below of=id, text width=9cm] {Eliminación de duplicados (n = 312)};
+        \node (scr) [rectangle, draw, rounded corners, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 934)};
+        \node (exc1) [rectangle, draw, rounded corners, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 886)};
+        \node (full) [rectangle, draw, rounded corners, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 48)};
+        \node (exc2) [rectangle, draw, rounded corners, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 30)};
+        \node (incl) [rectangle, draw, rounded corners, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
+        
+        \draw[->] (id) -- (dup);
+        \draw[->] (dup) -- (scr);
+        \draw[->] (scr) -- (exc1);
+        \draw[->] (exc1) -- (full);
+        \draw[->] (full) -- (exc2);
+        \draw[->] (exc2) -- (incl);
+    \end{tikzpicture}
+    \caption{Diagrama de flujo PRISMA 2020 para la selección de estudios.}
+    \label{fig:prisma}
+\end{figure}
 
-% \subsection{Estado del Arte}
+\subsubsection{Síntesis de Resultados}
+Los 18 estudios incluidos ofrecen una visión integral del aprendizaje incremental en redes neuronales artificiales desde diferentes enfoques y dominios de aplicación. Las principales líneas temáticas identificadas fueron:
 
-%     \subsubsection{Introducción}
-%     El aprendizaje incremental se ha convertido en uno de los temas de mayor interés dentro de la Inteligencia Artificial (IA), ya que responde a una necesidad central: la capacidad de los sistemas de aprender de manera continua sin olvidar lo previamente adquirido. A diferencia del entrenamiento tradicional, donde un modelo es entrenado en un conjunto fijo de datos y pierde eficacia cuando se enfrenta a nuevas tareas, el aprendizaje incremental busca emular la forma en que los humanos adquieren conocimiento a lo largo de la vida, acumulando experiencias de manera progresiva. \\
-    
-%     El auge de esta área radica en su potencial para abordar aplicaciones en entornos dinámicos, donde los datos cambian constantemente, como ocurre en la robótica, la ciberseguridad, los sistemas médicos y la conducción autónoma. En este contexto, la investigación reciente ha enfatizado el concepto de \textit{Lifelong Learning}, que consiste en mantener modelos adaptativos y resistentes al \textit{olvido catastrófico}. Este último, definido como la pérdida de información previamente aprendida al introducir nuevos datos, constituye uno de los mayores desafíos para las redes neuronales artificiales (Parisi et al., 2019). \\
-    
-%     A continuación, se revisan investigaciones relevantes que muestran los avances, aplicaciones y retos del aprendizaje incremental, partiendo desde áreas específicas como la robótica, las redes neuronales convolucionales y la clasificación de tráfico cifrado, hasta llegar a los métodos generales que se han diseñado para mitigar el olvido catastrófico.
+\begin{itemize}
+    \item \textbf{Robótica:} integración del aprendizaje incremental en prótesis inteligentes y exoesqueletos adaptativos, mejorando la respuesta ante entornos dinámicos \cite{lippi2021}.
+    \item \textbf{Visión por Computadora:} mitigación del \textit{catastrophic forgetting} en modelos convolucionales aplicados a clasificación de imágenes y conducción autónoma \cite{WEI2020}.
+    \item \textbf{Ciberseguridad:} implementación del modelo MEMENTO para la clasificación de tráfico cifrado mediante aprendizaje incremental \cite{CERASUOLO2024}.
+    \item \textbf{Métodos Generales:} propuestas basadas en regularización elástica \cite{kirkpatrick2017}, memoria episódica \cite{rebuffi2017}, y arquitecturas dinámicas con expansión neuronal progresiva \cite{parisi2019,bullinaria2008}.
+\end{itemize}
 
-%     \subsubsection{Aprendizaje Incremental en Robótica}
-%     La robótica es uno de los campos donde el aprendizaje incremental ha demostrado gran relevancia. Un ejemplo notable se encuentra en el trabajo de \cite{lippi2021}, donde se desarrolló el prototipo \textit{Wearable-Walker-Exoskeleton}, una prótesis inteligente basada en redes neuronales artificiales. Este dispositivo integra mecanismos de aprendizaje incremental que permiten a la prótesis adaptarse progresivamente al usuario conforme aumenta el tiempo de interacción. \\
-    
-%     La motivación de este tipo de implementación radica en que los entornos robóticos y biomédicos son altamente cambiantes y dependen de las características particulares de cada persona. Por ejemplo, la forma de caminar de un paciente, su peso, altura o nivel de movilidad generan patrones distintos que un sistema rígido no podría manejar eficientemente. En este sentido, el aprendizaje incremental dota al exoesqueleto de la capacidad de personalización y mejora continua, ofreciendo así una experiencia más confiable y natural para el usuario. \\
-    
-%     Este tipo de investigaciones demuestra cómo el aprendizaje incremental no solo aporta beneficios técnicos, sino que también abre la puerta a aplicaciones con impacto social y médico, permitiendo diseñar prótesis, sillas de ruedas inteligentes y otros dispositivos que se adapten dinámicamente al contexto y las necesidades humanas.
-
-%     \subsubsection{Aprendizaje Incremental en Redes Neuronales Convolucionales}
-%     En el área de visión por computadora, las redes neuronales convolucionales (CNN, por sus siglas en inglés) han sido fundamentales para tareas como el reconocimiento de imágenes, la clasificación de objetos y la detección de patrones complejos. No obstante, estas redes presentan una limitación conocida: tienden a olvidar el conocimiento previamente adquirido al ser expuestas a nuevas tareas, un fenómeno conocido como \textit{catastrophic forgetting}. \\
-    
-%     Xing Wei, en su investigación \cite{WEI2020}, señala que esta problemática es crítica en sistemas de conducción autónoma, donde un vehículo debe adaptarse a múltiples escenarios urbanos sin perder la información previamente aprendida. Si un coche autónomo aprende a circular en una ciudad determinada, debería ser capaz de aplicar ese conocimiento en otra urbe sin necesidad de reentrenar desde cero ni olvidar lo aprendido. \\
-    
-%     Para enfrentar este desafío, el autor propuso varias soluciones innovadoras:
-%     \begin{enumerate}
-%         \item El diseño de una arquitectura de red orientada específicamente al aprendizaje incremental.
-%         \item La implementación de un entrenamiento de extremo a extremo adaptado al aprendizaje incremental.
-%         \item El desarrollo de una estrategia de alineación multinivel, que busca reducir la discrepancia entre los datos antiguos y los nuevos, alineando representaciones de distintas fases de aprendizaje.
-%     \end{enumerate}
-    
-%     Los resultados mostraron que al dividir el conjunto de datos en dominios y combinarlos con técnicas de aprendizaje incremental, se obtuvo un modelo más robusto y menos propenso a olvidar tareas anteriores. Esto representa un avance significativo, ya que se acerca al ideal de tener sistemas de visión artificial capaces de generalizar de manera continua y sostenida en entornos complejos.
-
-%     \subsubsection{Aprendizaje Incremental en Clasificación de Tráfico Cifrado}
-%     En el ámbito de la ciberseguridad y las redes de comunicación, el aprendizaje incremental también ha adquirido relevancia debido a la constante aparición de nuevas aplicaciones y protocolos. Un ejemplo destacado es el enfoque \textit{MEMENTO}, presentado por \cite{CERASUOLO2024}. Este modelo fue diseñado para la clasificación de tráfico cifrado en redes, un entorno donde las aplicaciones cambian y evolucionan rápidamente. \\
-    
-%     El modelo se estructura en tres componentes principales: 
-%     \begin{itemize}
-%         \item \textbf{Gestión de memoria}: almacenamiento eficiente de información previa para futuras fases de aprendizaje.
-%         \item \textbf{Procedimiento de entrenamiento}: incorporación de nuevas clases sin comprometer las existentes.
-%         \item \textbf{Rectificación del modelo}: ajustes dinámicos para equilibrar la estabilidad y la plasticidad del sistema.
-%     \end{itemize}
-    
-%     Para mejorar la retención de información, se implementó la técnica de división de biflujos, que captura tanto los paquetes enviados como los recibidos, proporcionando un contexto bidireccional más completo que un flujo unidireccional. Asimismo, se emplearon dos métodos clave:
-%     \begin{itemize}
-%         \item \textit{Herding}, encargado de seleccionar los biflujos más cercanos al centroide de cada clase, equilibrando precisión y eficiencia computacional.
-%         \item \textit{Jittering}, que introduce ruido gaussiano en los tiempos de llegada de los paquetes, evitando que el modelo dependa únicamente de patrones exactos y mejorando la capacidad de generalización.
-%     \end{itemize}
-    
-%     El sistema fue validado con conjuntos de datos relevantes como \textit{MIRAGE19} y \textit{CESNET-TLS22}, obteniendo mejoras del 16,3\% en aplicaciones móviles y del 2,5\% en aplicaciones genéricas. Estos resultados demuestran que el aprendizaje incremental puede mejorar la seguridad y la eficiencia en la clasificación de tráfico cifrado, un área clave en la protección de infraestructuras digitales.
-
-%     \subsubsection{Métodos Generales para Abordar el Olvido Catastrófico}
-%     Más allá de aplicaciones específicas, la literatura ha desarrollado métodos generales para mitigar el olvido catastrófico. Este fenómeno, ampliamente descrito por Parisi et al. (2019), ocurre cuando un modelo entrenado en una tarea olvida parte o la totalidad de lo aprendido al ser expuesto a una tarea distinta. Un ejemplo sencillo lo constituye un sistema que primero aprende a distinguir entre gatos y perros, y luego debe clasificar televisores y monitores. Al adquirir la segunda tarea, el sistema pierde parte de la información sobre la primera:contentReference[oaicite:0]{index=0}. \\
-    
-%     Para enfrentar este problema, se han propuesto distintas familias de métodos:
-%     \begin{itemize}
-%         \item \textbf{Métodos basados en regularización}: como el \textit{Elastic Weight Consolidation} (Kirkpatrick et al., 2017), que penaliza los cambios drásticos en los parámetros relevantes para tareas previas.
-%         \item \textbf{Métodos basados en memoria}: que almacenan ejemplos representativos de tareas pasadas para reintroducirlos en el entrenamiento de nuevas tareas.
-%         \item \textbf{Arquitecturas dinámicas}: como las redes progresivas (ICESC, 2020), que expanden su estructura mediante la adición de nuevas columnas de neuronas y conexiones laterales, preservando los modelos anteriores.
-%     \end{itemize}
-    
-%     Estos enfoques buscan equilibrar dos propiedades fundamentales del aprendizaje: la \textit{plasticidad}, entendida como la capacidad de adquirir nuevo conocimiento, y la \textit{estabilidad}, que implica la retención de lo previamente aprendido. Investigadores como Bullinaria sostienen que este equilibrio es esencial para avanzar hacia el verdadero \textit{Lifelong Learning}:contentReference[oaicite:1]{index=1}.
-
-%     \subsubsection{Síntesis del Estado del Arte}
-%     La revisión realizada permite identificar avances importantes en la aplicación del aprendizaje incremental en diversos dominios. En robótica, se ha comprobado su utilidad en la adaptación personalizada de prótesis y exoesqueletos. En redes neuronales convolucionales, se han propuesto arquitecturas capaces de mantener conocimiento previo al enfrentar nuevos escenarios, como en el caso de los vehículos autónomos. En la clasificación de tráfico cifrado, enfoques como MEMENTO han demostrado mejoras cuantitativas significativas en la detección y análisis de aplicaciones en evolución. \\
-    
-%     No obstante, persisten limitaciones comunes: la necesidad de arquitecturas especializadas dificulta la escalabilidad, el costo computacional de las soluciones puede ser elevado, y aún resulta complejo lograr un balance perfecto entre estabilidad y plasticidad. Esto plantea la necesidad de explorar nuevas líneas de investigación que reduzcan la dependencia de memoria externa, mejoren la eficiencia energética y permitan a los modelos adaptarse de manera más natural a entornos cambiantes. \\
-    
-%     En conclusión, el aprendizaje incremental se perfila como un componente esencial para la construcción de sistemas de inteligencia artificial más robustos, flexibles y cercanos al comportamiento humano. El presente trabajo se orienta a contribuir a este campo, proponiendo un enfoque que integre lo mejor de las técnicas revisadas y que responda a las limitaciones actuales, avanzando hacia sistemas más resilientes y capaces de un verdadero \textit{aprendizaje continuo}.
+En conjunto, la evidencia revisada demuestra un progreso sustancial en el desarrollo de modelos capaces de aprender de manera continua. No obstante, persisten desafíos relacionados con la escalabilidad, el costo computacional y el equilibrio entre estabilidad y plasticidad. Estos hallazgos refuerzan la necesidad de investigaciones orientadas a optimizar el aprendizaje incremental en entornos reales y con datos no estacionarios.
 
 
 
-
-        % \subsection{Conclusiones}
-        %     En la actualidad, el aprendizaje incremental es una área de la inteligencia artificial con multiples aplicaciones, tanto en la robotica, medicina, clasificación, entre otra más. También hay que tener en cuenta que permite que los modelos obtengan más conocimientos sin olvidar el que ya obtuvieron, el motivo de esta investigación es crear un modelo de aprendizaje incremental diviendo los pesos de las redes neuronales, 

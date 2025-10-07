@@ -1,34 +1,51 @@
 \documentclass[10pt,a4paper]{article}
+
+% ==== Codificación y lenguaje ====
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,mexico]{babel} 
+\usepackage[T1]{fontenc}
+\usepackage[spanish,mexico]{babel}
+
+% ==== Matemáticas y fuentes ====
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amssymb}
+% Fuente tipo Times moderna (texto + matemáticas)
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+
+% ==== Columnas, imágenes y flotantes ====
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{float}
-\usepackage{lipsum}
+\usepackage{wrapfig}
+\graphicspath{{../04_Images/}}
+
+% ==== Varios ====
 \usepackage{xcolor}
-\usepackage[rightcaption]{sidecap}
 \usepackage{array}
 \usepackage{framed}
-\usepackage{wrapfig}
 \definecolor{shadecolor}{RGB}{224,238,238}
 \usepackage{listings}
-\usepackage[hidelinks]{hyperref}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage{verbatim}
-\pagestyle{plain}
 \usepackage[nottoc]{tocbibind}
-\usepackage{times}
-<<<<<<< HEAD
-% ==== PREÁMBULO ====
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning, fit, shapes.geometric}
+\usepackage{lipsum} % (opcional, solo para texto de prueba)
+\usepackage[rightcaption]{sidecap}
 
-% Estilos PRISMA
+% ==== Márgenes ====
+\usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}
+
+% ==== Tablas robustas y autoajustables ====
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+% ==== TikZ (una sola vez, con todas las librerías) ====
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,calc}
+
+% ==== Estilos PRISMA (TikZ) ====
 \tikzset{
   prismaBox/.style = {
     rectangle, rounded corners, draw=black, thick,
@@ -45,47 +62,35 @@
   }
 }
 
-=======
-% Paquete principal de TikZ
-\usepackage{tikz}
-
-% Librerías útiles para diagramas de flujo
-\usetikzlibrary{arrows.meta}      % Para personalizar flechas
-\usetikzlibrary{shapes.geometric} % Para formas (rectángulos, círculos, etc.)
-\usetikzlibrary{positioning}      % Para colocar nodos relativos
-\usetikzlibrary{fit}              % Para agrupar nodos
-\usetikzlibrary{calc}             % Para cálculos de posiciones
->>>>>>> 722d1cb ([FEAT]: add a new version of the PRISMA metodology)
-
-
-\graphicspath{{../04_Images/}}
-
-% Márgenes
-\usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}
-
-\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Neuronales Artificiales Aplicado al Conjunto de
-Datos Optdigit}
-
+% ==== Índice temático (si lo vas a usar) ====
+\usepackage{makeidx}
 \makeindex
 
-\begin{document}
+% ==== SIEMPRE al final del preámbulo ====
+\usepackage[hidelinks]{hyperref}
 
-    \includepdf{../02_Chapters/portada}
+\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Neuronales Artificiales Aplicado al Conjunto de Datos Optdigit}
+
+\begin{document}
+    % Portada en PDF (sin cabeceras/num), ajusta la ruta/archivo:
+    \includepdf[pages=-,pagecommand={},fitpaper=true]{../02_Chapters/portada.pdf}
+
     \tableofcontents
     \listoffigures
+
     \maketitle
+
     \begin{abstract}
         Una red neuronal artificial es un modelo de Aprendizaje Automático inspirado en el funcionamiento de las redes neuronales biológicas. Está compuesta por neuronas artificiales (o nodos) organizadas en capas (entrada, oculta y salida), donde la información se procesa mediante transformaciones matemáticas no lineales.
-        
+
         El aprendizaje de estos modelos se realiza a través de un proceso de entrenamiento, en el cual los datos atraviesan la red capa por capa. En cada neurona se calcula una función de activación, se estima la pérdida comparando la salida con el valor real, y luego se aplica el algoritmo de retropropagación para ajustar los pesos y sesgos con el objetivo de minimizar dicha pérdida. Este proceso se repite hasta que la pérdida converge.
-        
+
         En el enfoque tradicional, el modelo se entrena con un conjunto inicial de datos y, ante la llegada de nueva información, debe reentrenarse desde cero utilizando todos los datos disponibles. Este proceso puede resultar ineficiente y costoso computacionalmente, especialmente con grandes volúmenes de datos.
-        
+
         El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
-        \end{abstract}
-        
-        
-        \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
+    \end{abstract}
+
+    \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
 
     \input{../02_Chapters/introduction}
     \input{../02_Chapters/approach}
@@ -100,13 +105,12 @@ Datos Optdigit}
     \input{../02_Chapters/gantt_chart}
 
     \appendix
-    \section{Fases de la Retropropagación}              \label{ap:backprop}
-    \input{../02_Chapters/appendices/backpropagation} 
-    
-    %\printbibliography  
-    %\bibliographystyle{acm}
+    \section{Fases de la Retropropagación} \label{ap:backprop}
+    \input{../02_Chapters/appendices/backpropagation}
+
     \bibliographystyle{plain}
     \bibliography{dataset}
-    %\bibliography{BaseDatos2}
 
+    % Imprime el índice si lo usas
+    \printindex
 \end{document}
