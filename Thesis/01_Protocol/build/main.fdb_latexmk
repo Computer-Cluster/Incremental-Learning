@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex build/main"] 1759799863 "build/main.aux" "build/main.bbl" "build/main" 1759799868 2
+["bibtex build/main"] 1759799887 "build/main.aux" "build/main.bbl" "build/main" 1759799904 2
   "./dataset.bib" 1747288552 23219 f6a27b010ee9babee50fce697d77f6b2 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1759799868 9649 bb1d6bf0ec9b8d60c52ce9dd252d48af "pdflatex"
+  "build/main.aux" 1759799903 9649 bb1d6bf0ec9b8d60c52ce9dd252d48af "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["makeindex build/main.idx"] 1759799860 "build/main.idx" "build/main.ind" "build/main" 1759799868 0
-  "build/main.idx" 1759799867 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex build/main.idx"] 1759799883 "build/main.idx" "build/main.ind" "build/main" 1759799904 0
+  "build/main.idx" 1759799902 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/main.ilg"
   "build/main.ind"
   (rewritten before read)
-["pdflatex"] 1759799865 "/Users/macbook/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1759799868 2
+["pdflatex"] 1759799901 "/Users/macbook/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1759799904 2
   "../02_Chapters/appendices/backpropagation.tex" 1748044720 2652 66f2c67e7d05eb50b6b29e015ac984e1 ""
   "../02_Chapters/approach.tex" 1748044519 5124 9bf20cfed3df575365158a66cb0df819 ""
   "../02_Chapters/capitulated.tex" 1747248889 1380 4479f212f87dd36c4058929939d640f5 ""
@@ -246,13 +246,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1699588838 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1699588719 7883456 9a8b50c986a81fa9c3c60b85bee84ab3 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "build/main.aux" 1759799868 9649 bb1d6bf0ec9b8d60c52ce9dd252d48af "pdflatex"
-  "build/main.bbl" 1759799864 0 d41d8cd98f00b204e9800998ecf8427e "bibtex build/main"
+  "build/main.aux" 1759799903 9649 bb1d6bf0ec9b8d60c52ce9dd252d48af "pdflatex"
+  "build/main.bbl" 1759799887 0 d41d8cd98f00b204e9800998ecf8427e "bibtex build/main"
   "build/main.ind" 0 -1 0 "makeindex build/main.idx"
-  "build/main.lof" 1759799868 1494 5501eae3797671d631f24ef6f78d7e10 "pdflatex"
-  "build/main.out" 1759799868 5144 7341e7d525ceaec5bd7aeba7fc812cf2 "pdflatex"
-  "build/main.toc" 1759799868 2642 b49d28c28604ae1e4439c4374d3668ab "pdflatex"
-  "main.aux" 0 -1 0 ""
+  "build/main.lof" 1759799903 1494 5501eae3797671d631f24ef6f78d7e10 "pdflatex"
+  "build/main.out" 1759799903 5144 7341e7d525ceaec5bd7aeba7fc812cf2 "pdflatex"
+  "build/main.toc" 1759799903 2642 b49d28c28604ae1e4439c4374d3668ab "pdflatex"
   "main.lof" 0 -1 0 ""
   "main.tex" 1759799511 4701 07a3936587947889f80176d8f856bac9 ""
   "main.toc" 0 -1 0 ""
