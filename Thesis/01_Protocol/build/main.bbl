@@ -15,6 +15,11 @@ Francesco Cerasuolo, Alfredo Nascita, Giampaolo Bovenzi, Giuseppe Aceto, Domenic
 \newblock Memento: A novel approach for class incremental learning of encrypted traffic.
 \newblock {\em Computer Networks}, 245:110374, 2024.
 
+\bibitem{de2021continual}
+Matthias De~Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu~Jia, Ale{\v{s}} Leonardis, Gregory Slabaugh, and Tinne Tuytelaars.
+\newblock A continual learning survey: Defying forgetting in classification tasks.
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence}, 44(7):3366--3385, 2021.
+
 \bibitem{Elwell2011}
 Ryan Elwell and Robi Polikar.
 \newblock Incremental learning of concept drift in nonstationary environments.
@@ -30,6 +35,10 @@ Christophe~G. Giraud-Carrier.
 \newblock A note on the utility of incremental learning.
 \newblock {\em AI Commun.}, 13:215--224, 2000.
 
+\bibitem{hacohenforgetting}
+Guy Hacohen and Tinne Tuytelaars.
+\newblock Forgetting order of continual learning: What is learned first is forgotten last.
+
 \bibitem{huerta2009}
 H~Vega Huerta, A~Cortez V{\'a}squez, Ana~Mar{\'\i}a Huayna, Luis~Alarc{\'o}n Loayza, and P~Romero Naupari.
 \newblock Reconocimiento de patrones mediante redes neuronales artificiales.
@@ -39,6 +48,11 @@ H~Vega Huerta, A~Cortez V{\'a}squez, Ana~Mar{\'\i}a Huayna, Luis~Alarc{\'o}n Loa
 Rodrigo Jacznik, Mariano Tassara, Iv{\'a}n D'Uva, Guillermo Baldino, Roxana~Silvia Giandini, and Leopoldo Nahuel.
 \newblock Integrando modelo de aprendizaje supervisado al an{\'a}lisis del desempe{\~n}o de alumnos en cursos virtuales sobre plataformas moodle.
 \newblock In {\em XXII Congreso Argentino de Ciencias de la Computaci{\'o}n (CACIC 2016).}, 2016.
+
+\bibitem{kirkpatrick2017overcoming}
+James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei~A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, et~al.
+\newblock Overcoming catastrophic forgetting in neural networks.
+\newblock {\em Proceedings of the national academy of sciences}, 114(13):3521--3526, 2017.
 
 \bibitem{li2008}
 Ai-Jun Li.
@@ -82,6 +96,11 @@ Paloma Royo.
 Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
 \newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones obtenidos por un s{\'o}nar.
 \newblock In {\em 2013 II International Congress of Engineering Mechatronics and Automation (CIIMA)}, pages 1--6. IEEE, 2013.
+
+\bibitem{sarkar2025adaptive}
+Krisanu Sarkar.
+\newblock Adaptive variance-penalized continual learning with fisher regularization.
+\newblock {\em arXiv preprint arXiv:2508.16632}, 2025.
 
 \bibitem{WEI2020}
 Xing Wei, Shaofan Liu, Yaoci Xiang, Zhangling Duan, Chong Zhao, and Yang Lu.
