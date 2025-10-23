@@ -264,168 +264,168 @@ Para entender mejor lo siguiente véase el Apéndice \ref{ap:backprop} (Seccione
 
             Un ejemplo de esta metodología es el proyecto \textit{COBWEB}, que categoriza el número de clusters y la pertenencia de dichos clusters utilizando una métrica probabilística global. Este proceso implica agregar nuevas categorías, actualizando las probabilidades con los nuevos datos recolectados \cite{fisher1987}.
     
-\subsection{Estado del Arte bajo la Metodología PRISMA}
+% \subsection{Estado del Arte bajo la Metodología PRISMA}
 
-\subsubsection{Estrategia de Búsqueda}
-Para la elaboración del presente estado del arte se adoptó la metodología PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), la cual proporciona un marco estandarizado para realizar revisiones sistemáticas de literatura científica de forma transparente, rigurosa y reproducible.  
-El objetivo fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental, el aprendizaje continuo y las estrategias para mitigar el \textit{catastrophic forgetting} en redes neuronales artificiales. \\
+% \subsubsection{Estrategia de Búsqueda}
+% Para la elaboración del presente estado del arte se adoptó la metodología PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), la cual proporciona un marco estandarizado para realizar revisiones sistemáticas de literatura científica de forma transparente, rigurosa y reproducible.  
+% El objetivo fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental, el aprendizaje continuo y las estrategias para mitigar el \textit{catastrophic forgetting} en redes neuronales artificiales. \\
 
-La búsqueda se llevó a cabo entre enero y abril de 2024 en las siguientes bases de datos académicas:
-\begin{itemize}
-    \item IEEE Xplore
-    \item ScienceDirect
-    \item SpringerLink
-    \item Scopus
-    \item Google Scholar
-    \item Advancing Computing as a Science \& Profession
-    \item ArXiv (Cornell University)
-\end{itemize}
+% La búsqueda se llevó a cabo entre enero y abril de 2024 en las siguientes bases de datos académicas:
+% \begin{itemize}
+%     \item IEEE Xplore
+%     \item ScienceDirect
+%     \item SpringerLink
+%     \item Scopus
+%     \item Google Scholar
+%     \item Advancing Computing as a Science \& Profession
+%     \item ArXiv (Cornell University)
+% \end{itemize}
 
-Se emplearon combinaciones booleanas de palabras clave en inglés y español, entre las cuales se incluyeron: 
-\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} y \textit{``artificial intelligence''}.  
-Los términos se ajustaron a las opciones de búsqueda de cada base de datos con el fin de maximizar la cobertura de resultados relevantes.
+% Se emplearon combinaciones booleanas de palabras clave en inglés y español, entre las cuales se incluyeron: 
+% \textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} y \textit{``artificial intelligence''}.  
+% Los términos se ajustaron a las opciones de búsqueda de cada base de datos con el fin de maximizar la cobertura de resultados relevantes.
 
-\subsubsection{Criterios de Inclusión y Exclusión}
-Con el propósito de garantizar la pertinencia y calidad metodológica de los estudios seleccionados, se establecieron los siguientes criterios:
+% \subsubsection{Criterios de Inclusión y Exclusión}
+% Con el propósito de garantizar la pertinencia y calidad metodológica de los estudios seleccionados, se establecieron los siguientes criterios:
 
-\textbf{Criterios de inclusión:}
-\begin{itemize}
-    \item Publicaciones comprendidas entre 2017 y 2025.
-    \item Artículos que aborden explícitamente el aprendizaje incremental o continuo en redes neuronales artificiales.
-    \item Investigaciones que analicen el fenómeno del \textit{catastrophic forgetting} o propongan soluciones asociadas.
-    \item Estudios con aplicaciones en áreas como robótica, visión por computadora, ciberseguridad o sistemas adaptativos.
-\end{itemize}
+% \textbf{Criterios de inclusión:}
+% \begin{itemize}
+%     \item Publicaciones comprendidas entre 2017 y 2025.
+%     \item Artículos que aborden explícitamente el aprendizaje incremental o continuo en redes neuronales artificiales.
+%     \item Investigaciones que analicen el fenómeno del \textit{catastrophic forgetting} o propongan soluciones asociadas.
+%     \item Estudios con aplicaciones en áreas como robótica, visión por computadora, ciberseguridad o sistemas adaptativos.
+% \end{itemize}
 
-\textbf{Criterios de exclusión:}
-\begin{itemize}
-    \item Artículos de revisión sin evidencia empírica.
-    \item Trabajos sin acceso a texto completo o con resultados preliminares.
-    \item Publicaciones duplicadas o con sesgos metodológicos evidentes.
-\end{itemize}
+% \textbf{Criterios de exclusión:}
+% \begin{itemize}
+%     \item Artículos de revisión sin evidencia empírica.
+%     \item Trabajos sin acceso a texto completo o con resultados preliminares.
+%     \item Publicaciones duplicadas o con sesgos metodológicos evidentes.
+% \end{itemize}
 
-\subsubsection{Proceso de Selección}
-La búsqueda inicial arrojó un total de 1,246 registros. Tras la eliminación de 312 duplicados, se conservaron 934 artículos únicos.  
-Durante la fase de cribado (revisión de títulos y resúmenes), se descartaron 886 estudios por no cumplir los criterios de inclusión. Los 48 artículos restantes fueron evaluados a texto completo, y finalmente, 18 cumplieron con los estándares metodológicos y temáticos requeridos para la síntesis cualitativa. \\
+% \subsubsection{Proceso de Selección}
+% La búsqueda inicial arrojó un total de 1,246 registros. Tras la eliminación de 312 duplicados, se conservaron 934 artículos únicos.  
+% Durante la fase de cribado (revisión de títulos y resúmenes), se descartaron 886 estudios por no cumplir los criterios de inclusión. Los 48 artículos restantes fueron evaluados a texto completo, y finalmente, 18 cumplieron con los estándares metodológicos y temáticos requeridos para la síntesis cualitativa. \\
 
-El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama de flujo PRISMA mostrado en la Figura~\ref{fig:prisma}.
+% El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama de flujo PRISMA mostrado en la Figura~\ref{fig:prisma}.
 
-\begin{table}[H]
-    \centering
-    \caption{Resumen del proceso de selección de artículos según PRISMA 2020.}
-    \label{tab:prisma}
-    \begin{tabularx}{\textwidth}{l c}
-        \toprule
-        \textbf{Etapa} & \textbf{Número de estudios (n)} \\
-        \midrule
-        Registros identificados en bases de datos & 60 \\
-        Duplicados eliminados & 15 \\
-        Registros tras eliminación de duplicados & 45 \\
-        Registros excluidos tras revisión de título/resumen & 30 \\
-        Artículos evaluados a texto completo & 28 \\
-        Artículos excluidos por falta de resultados aplicables & 2 \\
-        \textbf{Estudios incluidos en la síntesis cualitativa} & \textbf{18} \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
+% \begin{table}[H]
+%     \centering
+%     \caption{Resumen del proceso de selección de artículos según PRISMA 2020.}
+%     \label{tab:prisma}
+%     \begin{tabularx}{\textwidth}{l c}
+%         \toprule
+%         \textbf{Etapa} & \textbf{Número de estudios (n)} \\
+%         \midrule
+%         Registros identificados en bases de datos & 60 \\
+%         Duplicados eliminados & 15 \\
+%         Registros tras eliminación de duplicados & 45 \\
+%         Registros excluidos tras revisión de título/resumen & 30 \\
+%         Artículos evaluados a texto completo & 28 \\
+%         Artículos excluidos por falta de resultados aplicables & 2 \\
+%         \textbf{Estudios incluidos en la síntesis cualitativa} & \textbf{18} \\
+%         \bottomrule
+%     \end{tabularx}
+% \end{table}
 
-\begin{figure}[H]
-    \centering
-    \begin{tikzpicture}[node distance=1.1cm, every node/.style={align=center, font=\small, fill=gray!5, rounded corners}]
-        \node (id) [rectangle, draw, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 60)};
-        \node (dup) [rectangle, draw, below of=id, text width=9cm] {Eliminación de duplicados (n = 15)};
-        \node (scr) [rectangle, draw, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 45)};
-        \node (exc1) [rectangle, draw, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 30)};
-        \node (full) [rectangle, draw, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 28)};
-        \node (exc2) [rectangle, draw, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 2)};
-        \node (incl) [rectangle, draw, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}[node distance=1.1cm, every node/.style={align=center, font=\small, fill=gray!5, rounded corners}]
+%         \node (id) [rectangle, draw, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 60)};
+%         \node (dup) [rectangle, draw, below of=id, text width=9cm] {Eliminación de duplicados (n = 15)};
+%         \node (scr) [rectangle, draw, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 45)};
+%         \node (exc1) [rectangle, draw, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 30)};
+%         \node (full) [rectangle, draw, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 28)};
+%         \node (exc2) [rectangle, draw, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 2)};
+%         \node (incl) [rectangle, draw, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
         
-        \draw[->] (id) -- (dup);
-        \draw[->] (dup) -- (scr);
-        \draw[->] (scr) -- (exc1);
-        \draw[->] (exc1) -- (full);
-        \draw[->] (full) -- (exc2);
-        \draw[->] (exc2) -- (incl);
-    \end{tikzpicture}
-    \caption{Diagrama de flujo PRISMA 2020 para la selección de estudios.}
-    \label{fig:prisma}
-\end{figure}
+%         \draw[->] (id) -- (dup);
+%         \draw[->] (dup) -- (scr);
+%         \draw[->] (scr) -- (exc1);
+%         \draw[->] (exc1) -- (full);
+%         \draw[->] (full) -- (exc2);
+%         \draw[->] (exc2) -- (incl);
+%     \end{tikzpicture}
+%     \caption{Diagrama de flujo PRISMA 2020 para la selección de estudios.}
+%     \label{fig:prisma}
+% \end{figure}
 
-\subsubsection{Síntesis de Resultados}
-Los 18 estudios seleccionados ofrecen una visión integral del aprendizaje incremental en redes neuronales artificiales desde diferentes perspectivas y dominios de aplicación. Las principales líneas temáticas identificadas fueron:
+% \subsubsection{Síntesis de Resultados}
+% Los 18 estudios seleccionados ofrecen una visión integral del aprendizaje incremental en redes neuronales artificiales desde diferentes perspectivas y dominios de aplicación. Las principales líneas temáticas identificadas fueron:
 
-\begin{itemize}
-    \item \textbf{Robótica:} integración del aprendizaje incremental en prótesis inteligentes y exoesqueletos adaptativos, mejorando la respuesta ante entornos dinámicos \cite{lippi2021}.
-    \item \textbf{Visión por Computadora:} mitigación del \textit{catastrophic forgetting} en modelos convolucionales aplicados a clasificación de imágenes y conducción autónoma \cite{WEI2020}.
-    \item \textbf{Ciberseguridad:} implementación del modelo MEMENTO para la clasificación de tráfico cifrado mediante aprendizaje incremental \cite{CERASUOLO2024}.
-    \item \textbf{Métodos Generales:} propuestas basadas en regularización elástica \cite{kirkpatrick2017overcoming}, memoria episódica \cite{rebuffi2017}, y arquitecturas dinámicas con expansión neuronal progresiva \cite{parisi2019,bullinaria2008}.
-    \item \textbf{Tendencias emergentes (2024–2025):} \cite{hacohenforgetting} destacan los patrones \textit{LIFO} en el aprendizaje continuo, donde los ejemplos aprendidos con mayor rapidez tienden a conservarse mejor, mientras que aquellos que requieren mayor tiempo de entrenamiento son más propensos al olvido. Asimismo, \cite{sarkar2025adaptive} proponen \textit{EVCL+} (Elastic Variational Continual Learning Plus), una metodología que combina la regularización de Fisher con un enfoque de aprendizaje variacional para proteger los parámetros relevantes.
-    \item \textbf{Taxonomías y comparativas recientes:} De Lange et al. \cite{de2021continual} presentan una clasificación de métodos de aprendizaje continuo en tres familias principales: \textit{Replay}, \textit{Regularization-based} y \textit{Parameter Isolation}. Sus resultados destacan que métodos como PackNet e iCaRL logran mejor retención del conocimiento, mientras que MAS (\textit{Memory Aware Synapses}) muestra mayor robustez frente a la variación de hiperparámetros.
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{Robótica:} integración del aprendizaje incremental en prótesis inteligentes y exoesqueletos adaptativos, mejorando la respuesta ante entornos dinámicos \cite{lippi2021}.
+%     \item \textbf{Visión por Computadora:} mitigación del \textit{catastrophic forgetting} en modelos convolucionales aplicados a clasificación de imágenes y conducción autónoma \cite{WEI2020}.
+%     \item \textbf{Ciberseguridad:} implementación del modelo MEMENTO para la clasificación de tráfico cifrado mediante aprendizaje incremental \cite{CERASUOLO2024}.
+%     \item \textbf{Métodos Generales:} propuestas basadas en regularización elástica \cite{kirkpatrick2017overcoming}, memoria episódica \cite{rebuffi2017icarl}, y arquitecturas dinámicas con expansión neuronal progresiva \cite{bullinaria2009}. 
+%     \item \textbf{Tendencias emergentes (2024–2025):} \cite{hacohenforgetting} destacan los patrones \textit{LIFO} en el aprendizaje continuo, donde los ejemplos aprendidos con mayor rapidez tienden a conservarse mejor, mientras que aquellos que requieren mayor tiempo de entrenamiento son más propensos al olvido. Asimismo, \cite{sarkar2025adaptive} proponen \textit{EVCL+} (Elastic Variational Continual Learning Plus), una metodología que combina la regularización de Fisher con un enfoque de aprendizaje variacional para proteger los parámetros relevantes.
+%     \item \textbf{Taxonomías y comparativas recientes:} De Lange et al. \cite{de2021continual} presentan una clasificación de métodos de aprendizaje continuo en tres familias principales: \textit{Replay}, \textit{Regularization-based} y \textit{Parameter Isolation}. Sus resultados destacan que métodos como PackNet e iCaRL logran mejor retención del conocimiento, mientras que MAS (\textit{Memory Aware Synapses}) muestra mayor robustez frente a la variación de hiperparámetros.
+% \end{itemize}
 
-\subsubsection{Principales Tendencias y Vacíos Identificados}
-El análisis comparativo revela una evolución clara en las estrategias de mitigación del olvido catastrófico. Entre 2017 y 2020 dominaron los métodos basados en regularización (EWC, SI, MAS), centrados en preservar la importancia sináptica de los parámetros. A partir de 2021, la literatura muestra un auge de métodos híbridos que combinan \textit{replay}, distillation y expansión dinámica, buscando mejorar el equilibrio estabilidad–plasticidad.  
-Durante 2023–2025, las investigaciones más recientes se han enfocado en la eficiencia computacional, el ajuste adaptativo de hiperparámetros y la integración de paradigmas variacionales o generativos.
+% \subsubsection{Principales Tendencias y Vacíos Identificados}
+% El análisis comparativo revela una evolución clara en las estrategias de mitigación del olvido catastrófico. Entre 2017 y 2020 dominaron los métodos basados en regularización (EWC, SI, MAS), centrados en preservar la importancia sináptica de los parámetros. A partir de 2021, la literatura muestra un auge de métodos híbridos que combinan \textit{replay}, distillation y expansión dinámica, buscando mejorar el equilibrio estabilidad–plasticidad.  
+% Durante 2023–2025, las investigaciones más recientes se han enfocado en la eficiencia computacional, el ajuste adaptativo de hiperparámetros y la integración de paradigmas variacionales o generativos.
 
-No obstante, aún persisten desafíos como:
-\begin{itemize}
-    \item Escalabilidad a entornos no estacionarios y distribuidos.
-    \item Dependencia de memoria externa o buffers de repetición.
-    \item Falta de estandarización de métricas para medir olvido y estabilidad.
-    \item Costo computacional elevado en arquitecturas profundas.
-\end{itemize}
+% No obstante, aún persisten desafíos como:
+% \begin{itemize}
+%     \item Escalabilidad a entornos no estacionarios y distribuidos.
+%     \item Dependencia de memoria externa o buffers de repetición.
+%     \item Falta de estandarización de métricas para medir olvido y estabilidad.
+%     \item Costo computacional elevado en arquitecturas profundas.
+% \end{itemize}
 
-\subsubsection{Conclusión del Estado del Arte}
-La evidencia revisada demuestra un progreso sustancial en el desarrollo de modelos capaces de aprender de manera continua. Sin embargo, las limitaciones actuales en términos de escalabilidad, plasticidad controlada y eficiencia energética motivan la exploración de nuevas estrategias.  
-En este contexto, la presente investigación busca contribuir a la optimización del aprendizaje incremental mediante la evaluación de distintos perfiles experimentales —\textit{Baseline}, \textit{Dual-Bullinaria} y \textit{Dual-Bullinaria x2}—, orientados a mitigar el olvido catastrófico con una menor complejidad computacional.
+% \subsubsection{Conclusión del Estado del Arte}
+% La evidencia revisada demuestra un progreso sustancial en el desarrollo de modelos capaces de aprender de manera continua. Sin embargo, las limitaciones actuales en términos de escalabilidad, plasticidad controlada y eficiencia energética motivan la exploración de nuevas estrategias.  
+% En este contexto, la presente investigación busca contribuir a la optimización del aprendizaje incremental mediante la evaluación de distintos perfiles experimentales —\textit{Baseline}, \textit{Dual-Bullinaria} y \textit{Dual-Bullinaria x2}—, orientados a mitigar el olvido catastrófico con una menor complejidad computacional.
 
-\begin{table}[H]
-\centering
-\caption{Resumen analítico de los estudios seleccionados sobre aprendizaje incremental y mitigación del olvido catastrófico (2017–2025).}
-\label{tab:resumen-estudios}
-\renewcommand{\arraystretch}{1.2}
-\scriptsize
-\begin{tabularx}{\textwidth}{p{1.3cm} p{2.6cm} p{2.5cm} p{2.4cm} p{2.3cm} X}
-\toprule
-\textbf{Año} & \textbf{Autor(es)} & \textbf{Tipo de red / dominio} & \textbf{Estrategia o método} & \textbf{Aplicación} & \textbf{Hallazgos y aportes principales} \\
-\midrule
-2017 & Kirkpatrick et al. & ANN / CNN & Elastic Weight Consolidation (EWC) & Clasificación de imágenes & Introduce la regularización de Fisher para preservar parámetros relevantes y reducir el olvido. \\
+% \begin{table}[H]
+% \centering
+% \caption{Resumen analítico de los estudios seleccionados sobre aprendizaje incremental y mitigación del olvido catastrófico (2017–2025).}
+% \label{tab:resumen-estudios}
+% \renewcommand{\arraystretch}{1.2}
+% \scriptsize
+% \begin{tabularx}{\textwidth}{p{1.3cm} p{2.6cm} p{2.5cm} p{2.4cm} p{2.3cm} X}
+% \toprule
+% \textbf{Año} & \textbf{Autor(es)} & \textbf{Tipo de red / dominio} & \textbf{Estrategia o método} & \textbf{Aplicación} & \textbf{Hallazgos y aportes principales} \\
+% \midrule
+% 2017 & Kirkpatrick et al. & ANN / CNN & Elastic Weight Consolidation (EWC) & Clasificación de imágenes & Introduce la regularización de Fisher para preservar parámetros relevantes y reducir el olvido. \\
 
-2017 & Rebuffi et al. & CNN & iCaRL (Incremental Classifier and Representation Learning) & Visión por computadora & Combina replay con distillation; sienta bases del aprendizaje incremental por clases. \\
+% 2017 & Rebuffi et al. & CNN & iCaRL (Incremental Classifier and Representation Learning) & Visión por computadora & Combina replay con distillation; sienta bases del aprendizaje incremental por clases. \\
 
-2017 & Li \& Hoiem & CNN & Learning without Forgetting (LwF) & Clasificación incremental & Aplica distillation para mantener conocimiento previo sin almacenar datos antiguos. \\
+% 2017 & Li \& Hoiem & CNN & Learning without Forgetting (LwF) & Clasificación incremental & Aplica distillation para mantener conocimiento previo sin almacenar datos antiguos. \\
 
-2018 & Zenke et al. & ANN / Deep & Synaptic Intelligence (SI) & Clasificación general & Mide importancia sináptica acumulada durante el aprendizaje; enfoque biológico. \\
+% 2018 & Zenke et al. & ANN / Deep & Synaptic Intelligence (SI) & Clasificación general & Mide importancia sináptica acumulada durante el aprendizaje; enfoque biológico. \\
 
-2019 & Parisi et al. & General & Arquitecturas dinámicas / expansión neuronal progresiva & Robótica y control adaptativo & Propone expandir la red para nuevas tareas manteniendo estabilidad previa. \\
+% 2019 & Parisi et al. & General & Arquitecturas dinámicas / expansión neuronal progresiva & Robótica y control adaptativo & Propone expandir la red para nuevas tareas manteniendo estabilidad previa. \\
 
-2020 & Wei et al. & CNN & Regularización y replay & Visión (autonomía vehicular) & Mejora la retención al combinar replay con control de tasa de olvido en CNN. \\
+% 2020 & Wei et al. & CNN & Regularización y replay & Visión (autonomía vehicular) & Mejora la retención al combinar replay con control de tasa de olvido en CNN. \\
 
-2021 & Lippi et al. & ANN / RNN & Incremental reinforcement learning & Robótica / prótesis inteligentes & Aplica aprendizaje incremental para mejorar adaptabilidad en prótesis dinámicas. \\
+% 2021 & Lippi et al. & ANN / RNN & Incremental reinforcement learning & Robótica / prótesis inteligentes & Aplica aprendizaje incremental para mejorar adaptabilidad en prótesis dinámicas. \\
 
-2021 & De Lange et al. & CNN / DNN & Revisión comparativa (Replay / Regularization / Parameter Isolation) & Clasificación incremental & Establece una taxonomía de enfoques; PackNet e iCaRL logran los mejores resultados generales. \\
+% 2021 & De Lange et al. & CNN / DNN & Revisión comparativa (Replay / Regularization / Parameter Isolation) & Clasificación incremental & Establece una taxonomía de enfoques; PackNet e iCaRL logran los mejores resultados generales. \\
 
-2021 & van de Ven \& Tolias & ANN & Tres escenarios de aprendizaje continuo & Teórico & Define los escenarios: task-, domain-, y class-incremental learning. \\
+% 2021 & van de Ven \& Tolias & ANN & Tres escenarios de aprendizaje continuo & Teórico & Define los escenarios: task-, domain-, y class-incremental learning. \\
 
-2022 & Mundt et al. & CNN / Deep & Replay y distillation & Entornos reales (robótica, visión) & Amplía el marco de aprendizaje continuo a contextos no estacionarios. \\
+% 2022 & Mundt et al. & CNN / Deep & Replay y distillation & Entornos reales (robótica, visión) & Amplía el marco de aprendizaje continuo a contextos no estacionarios. \\
 
-2023 & Mai et al. & General & Online continual learning survey & Teórico / análisis & Resume los retos del aprendizaje continuo en línea y las métricas de olvido. \\
+% 2023 & Mai et al. & General & Online continual learning survey & Teórico / análisis & Resume los retos del aprendizaje continuo en línea y las métricas de olvido. \\
 
-2024 & Cerasuolo et al. & ANN / Deep & MEMENTO Model (incremental classifier) & Ciberseguridad / tráfico cifrado & Propone aprendizaje incremental en clasificación de tráfico; mejora adaptabilidad en tiempo real. \\
+% 2024 & Cerasuolo et al. & ANN / Deep & MEMENTO Model (incremental classifier) & Ciberseguridad / tráfico cifrado & Propone aprendizaje incremental en clasificación de tráfico; mejora adaptabilidad en tiempo real. \\
 
-2024 & Hacohen \& Tuytelaars & CNN / DNN & Goldilocks Sampling (orden de aprendizaje) & Clasificación incremental & Demuestran que los ejemplos aprendidos primero tienden a conservarse mejor (“LIFO effect”). \\
+% 2024 & Hacohen \& Tuytelaars & CNN / DNN & Goldilocks Sampling (orden de aprendizaje) & Clasificación incremental & Demuestran que los ejemplos aprendidos primero tienden a conservarse mejor (“LIFO effect”). \\
 
-2024 & Guo et al. & Generative Models & Survey on continual learning in generative models & Modelos generativos / IA multimodal & Clasifica métodos de CL aplicados a modelos de difusión y LLMs. \\
+% 2024 & Guo et al. & Generative Models & Survey on continual learning in generative models & Modelos generativos / IA multimodal & Clasifica métodos de CL aplicados a modelos de difusión y LLMs. \\
 
-2025 & Sarkar et al. & Variational NN & EVCL+ (Elastic Variational Continual Learning Plus) & Aprendizaje continuo variacional & Combina regularización de Fisher y aprendizaje variacional; reduce olvido y mantiene estabilidad. \\
+% 2025 & Sarkar et al. & Variational NN & EVCL+ (Elastic Variational Continual Learning Plus) & Aprendizaje continuo variacional & Combina regularización de Fisher y aprendizaje variacional; reduce olvido y mantiene estabilidad. \\
 
-2025 & Harun et al. & ANN / Online & GRASP (Rehearsal Policy) & Online continual learning & Propone política de repetición selectiva; mejora eficiencia 40\% frente a muestreo uniforme. \\
+% 2025 & Harun et al. & ANN / Online & GRASP (Rehearsal Policy) & Online continual learning & Propone política de repetición selectiva; mejora eficiencia 40\% frente a muestreo uniforme. \\
 
-2025 & Borsos et al. & Generative models & Generative Replay revisited & CL generativo & Actualiza técnicas de replay generativo con control de diversidad; mejora estabilidad sin memoria extra. \\
+% 2025 & Borsos et al. & Generative models & Generative Replay revisited & CL generativo & Actualiza técnicas de replay generativo con control de diversidad; mejora estabilidad sin memoria extra. \\
 
-2025 & Smith \& Kanan & Vision Transformers (ViT) & Continual Learning in Vision Transformers & Visión por computadora & Evalúa el olvido catastrófico en ViTs; recomienda regularización adaptativa según capas. \\
-\bottomrule
-\end{tabularx}
-\end{table}
+% 2025 & Smith \& Kanan & Vision Transformers (ViT) & Continual Learning in Vision Transformers & Visión por computadora & Evalúa el olvido catastrófico en ViTs; recomienda regularización adaptativa según capas. \\
+% \bottomrule
+% \end{tabularx}
+% \end{table}
 
 
 

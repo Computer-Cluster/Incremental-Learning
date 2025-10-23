@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex build/main"] 1760339446.31424 "build/main.aux" "build/main.bbl" "build/main" 1760339576.74735 0
-  "./dataset.bib" 1760337681.07724 25689 55b73f2b29512ef06f98f1352d0a8db6 ""
+["bibtex build/main"] 1761185794.68259 "build/main.aux" "build/main.bbl" "build/main" 1761185796.3887 0
+  "./dataset.bib" 1761185562.22739 26029 97b5d7b3bc12cfd84cefe7e5cfe72b18 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1760339576.4436 11056 b36e9b3323aa1c790a45c8110a524510 "pdflatex"
+  "build/main.aux" 1761185796.08627 10481 f8f50266439f62811b6dcca8a0aceaa6 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["makeindex build/main.idx"] 1760338712.97583 "build/main.idx" "build/main.ind" "build/main" 1760339576.74723 0
-  "build/main.idx" 1760339575.64178 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex build/main.idx"] 1761185792.9039 "build/main.idx" "build/main.ind" "build/main" 1761185796.38855 0
+  "build/main.idx" 1761185795.23932 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/main.ilg"
   "build/main.ind"
   (rewritten before read)
-["pdflatex"] 1760339575.18185 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1760339576.74746 0
+["pdflatex"] 1761185794.77905 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1761185796.38881 0
   "../02_Chapters/appendices/backpropagation.tex" 1748044720 2652 66f2c67e7d05eb50b6b29e015ac984e1 ""
   "../02_Chapters/approach.tex" 1748044519 5124 9bf20cfed3df575365158a66cb0df819 ""
   "../02_Chapters/capitulated.tex" 1747248889 1380 4479f212f87dd36c4058929939d640f5 ""
@@ -22,11 +22,12 @@
   "../02_Chapters/gantt_chart.tex" 1747249978 237 c774aa974ade9c3248bba84c25613ea6 ""
   "../02_Chapters/hypothesis.tex" 1737340086 343 de15358b1477e3eae5b2a02a6abd40d8 ""
   "../02_Chapters/introduction.tex" 1737338864 2969 8782852a202c73e762e8e6e0b016755f ""
-  "../02_Chapters/justification.tex" 1737340278 2994 3046b23540026ef4577e48186b36f1d2 ""
+  "../02_Chapters/justification.tex" 1761185791.03657 3050 fc9d93d564130eb21c9215c98e959c9e ""
   "../02_Chapters/methodology.tex" 1737352362 2097 6ef756d9b4418153e72d8c3ceca92010 ""
   "../02_Chapters/objectives.tex" 1746423311 1363 ac063fa43221960dfd8bb1eaabcdcd10 ""
   "../02_Chapters/portada.pdf" 1748044071 94731 41c7dcbb38eee167611b322111fd44e6 ""
-  "../02_Chapters/theoretical_framework.tex" 1760339574.96026 32931 23cbc37246eb8a842c9f3f8625334293 ""
+  "../02_Chapters/results.tex" 1761185328.50744 7812 de41993216d6b61683a8a59d3c2ed445 ""
+  "../02_Chapters/theoretical_framework.tex" 1761185628.29648 33182 4fbac8483d580d701526c60f9be0b125 ""
   "../04_Images/activation_functions/relu.png" 1699585350 16980 4229dd280e03b7b3a5dc26c808c4b15b ""
   "../04_Images/activation_functions/sigmoid.png" 1699585350 254022 8f71e93832bfe17ecc4f718c47f9b35f ""
   "../04_Images/activation_functions/softmax.png" 1699585350 16134 0404b03d07332d96699825dd2424feea ""
@@ -40,7 +41,9 @@
   "../04_Images/neural_networks/multilayer_perceptron/ANN.jpg" 1699585350 20797 479f8bba9c35b1f5c10da4fb9b5cce40 ""
   "../04_Images/neural_networks/multilayer_perceptron/multipercep.jpg" 1740353996 69674 1f92d194a2ee5f95e4c26462a42739f6 ""
   "../04_Images/optical_digit/four_optical_digit.png" 1740459654 21907 80606af7fb6366107d2233652e80fb9c ""
-  "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" 1759801122 4732 54767c6b0ec4e2c048d1f12988f2a12d ""
+  "../04_Images/results/catastrophic_forgetting.png" 1761183353.38232 45228 53fe128887a4de6db096cfc8ba50b2ca ""
+  "../04_Images/results/perfil_comparation.png" 1761183875.91979 46863 8b54bc73086fb1418252387273184d0b ""
+  "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" 1761185118.92064 4768 6133f046a7f33ffe0df06c5a364f37cd ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -77,6 +80,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/txmiaSTbb.tfm" 1569879884 920 99acdf374993fd46fd345f9cac168080 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/txmiaX.tfm" 1736550153 1708 e6ab41b8c6f33e297f8c7977f1424a40 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/newtx/txsys.tfm" 1724614892 1656 68b5079c64f1cefe2cf442b6a60cf2fd ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmb.tfm" 1254269485 1608 bde4475c6eb5aa292519d95aa26b6413 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1255129411 1600 20cdf11dab97d5d39e847571f9314407 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb" 1724614892 32409 aee30089ce2d804d7327a2f8ccff0462 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb" 1572128992 35776 3cf3205badc1a3a38b65b34f4cef78d9 ""
@@ -87,6 +91,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb" 1698694482 255251 958c6ad4e5518904a53cf1118c612893 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb" 1698694482 286816 82db2bfe6920054b1a43661c07078412 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb" 1698694482 248316 6c047e35119cde1bffb3263909816feb ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb" 1255129411 131776 4be3e220f990dc716f91bb7965c09237 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb" 1255129411 133302 8dca243a80ecf4cfe00077d4bd995bd7 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf" 1583272976 956 44be8e0aea9c6d145fc21c9948a6b4b5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/public/newtx/ntxexx.vf" 1699567298 1716 73c8d39d4c3ace9ec98a8f066bb3b494 ""
@@ -286,13 +291,13 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758440188 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "build/main.aux" 1760339576.4436 11056 b36e9b3323aa1c790a45c8110a524510 "pdflatex"
-  "build/main.bbl" 1760339446.40416 5532 0e432f06ca08e891208de1d3c935c72c "bibtex build/main"
-  "build/main.ind" 1760338463 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
-  "build/main.lof" 1760339576.4459 1408 8649b9e592bdee9351003abcb992dc3c "pdflatex"
-  "build/main.out" 1760339576.44551 5786 55636847817d06dc97d940ad31cd350f "pdflatex"
-  "build/main.toc" 1760339576.44585 2928 81178e46e4e5c690cef5c428698f5845 "pdflatex"
-  "main.tex" 1759801122 4732 54767c6b0ec4e2c048d1f12988f2a12d ""
+  "build/main.aux" 1761185796.08627 10481 f8f50266439f62811b6dcca8a0aceaa6 "pdflatex"
+  "build/main.bbl" 1761185794.77354 3712 14d25252b4bb7b378b7f21282987e80e "bibtex build/main"
+  "build/main.ind" 1761185792.98799 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
+  "build/main.lof" 1761185796.08849 1538 5651dcad67a1e09919c87b6610bdd219 "pdflatex"
+  "build/main.out" 1761185796.08815 4765 115a6389eb2a29e65e7e084a9106e234 "pdflatex"
+  "build/main.toc" 1761185796.08845 2518 674c047b6baeb7a8d0b20caef2a844c5 "pdflatex"
+  "main.tex" 1761185118.92064 4768 6133f046a7f33ffe0df06c5a364f37cd ""
   (generated)
   "build/main.aux"
   "build/main.idx"
