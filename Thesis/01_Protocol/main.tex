@@ -1,51 +1,23 @@
 \documentclass[10pt,a4paper]{article}
-
-% ==== Codificación y lenguaje ====
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,mexico]{babel}
-
-% ==== Matemáticas y fuentes ====
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
-% Fuente tipo Times moderna (texto + matemáticas)
-\usepackage{newtxtext}
-\usepackage{newtxmath}
-
-% ==== Columnas, imágenes y flotantes ====
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{float}
-\usepackage{wrapfig}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{newtxtext,newtxmath}
+\usepackage{multicol,graphicx,subcaption,float,wrapfig}
 \graphicspath{{../04_Images/}}
-
-% ==== Varios ====
-\usepackage{xcolor}
-\usepackage{array}
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{224,238,238}
-\usepackage{listings}
-\usepackage{pdfpages}
-\usepackage{pdflscape}
-\usepackage{verbatim}
+\usepackage{xcolor,array,framed,listings,pdfpages,pdflscape,verbatim}
 \usepackage[nottoc]{tocbibind}
-\usepackage{lipsum} % (opcional, solo para texto de prueba)
 \usepackage[rightcaption]{sidecap}
-
-% ==== Márgenes ====
-\usepackage[top=2.5cm, bottom=2.5cm, left=3.0cm, right=2.5cm]{geometry}
-
-% ==== Tablas robustas y autoajustables ====
-\usepackage{tabularx}
-\usepackage{booktabs}
-
-% ==== TikZ (una sola vez, con todas las librerías) ====
+\usepackage[top=2.5cm,bottom=2.5cm,left=3.0cm,right=2.5cm]{geometry}
+\usepackage{tabularx,booktabs}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,calc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{makeidx}
 
-% ==== Estilos PRISMA (TikZ) ====
+\definecolor{shadecolor}{RGB}{224,238,238}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,calc}
 \tikzset{
   prismaBox/.style = {
     rectangle, rounded corners, draw=black, thick,
@@ -62,17 +34,11 @@
   }
 }
 
-% ==== Índice temático (si lo vas a usar) ====
-\usepackage{makeidx}
 \makeindex
-
-% ==== SIEMPRE al final del preámbulo ====
-\usepackage[hidelinks]{hyperref}
 
 \title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Neuronales Artificiales Aplicado al Conjunto de Datos Optdigit}
 
 \begin{document}
-    % Portada en PDF (sin cabeceras/num), ajusta la ruta/archivo:
     \includepdf[pages=-,pagecommand={},fitpaper=true]{../02_Chapters/portada.pdf}
 
     \tableofcontents
@@ -87,7 +53,7 @@
 
         En el enfoque tradicional, el modelo se entrena con un conjunto inicial de datos y, ante la llegada de nueva información, debe reentrenarse desde cero utilizando todos los datos disponibles. Este proceso puede resultar ineficiente y costoso computacionalmente, especialmente con grandes volúmenes de datos.
 
-        El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
+        El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos  \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
     \end{abstract}
 
     \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
@@ -100,19 +66,20 @@
     \input{../02_Chapters/delimitation}
     \input{../02_Chapters/consequence}
     \input{../02_Chapters/theoretical_framework}
+    \input{../02_Chapters/state_of_art}
     \input{../02_Chapters/methodology}
     \input{../02_Chapters/capitulated}
     \input{../02_Chapters/gantt_chart}
     \input{../02_Chapters/results}
 
+    \bibliographystyle{plain}
+    \bibliography{dataset}
 
     \appendix
     \section{Fases de la Retropropagación} \label{ap:backprop}
     \input{../02_Chapters/appendices/backpropagation}
 
-    \bibliographystyle{plain}
-    \bibliography{dataset}
+ 
 
-    % Imprime el índice si lo usas
     \printindex
 \end{document}
