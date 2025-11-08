@@ -1,5 +1,3 @@
-# Ignorar archivos generados por LaTeX
-*.aux
 *.log
 *.out
 *.toc
@@ -8,24 +6,96 @@
 *.bbl
 *.blg
 *.synctex.gz
-*.fls
 *.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.tmp
+*.bak
+*.bcf
+*.run.xml
 
-# Ignorar carpetas de compilación
 /build/
 /01_Protocol/build/
+/**/build/
 
-# Ignorar archivos de editor/IDE
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+.vscode/
+.idea/
 *.swp
 *.swo
-*.DS_Store
-*.vscode/
+*.kate-swp
+*.project
+*.workspace
+*.sublime-project
+*.sublime-workspace
 
-# Ignorar archivos de sistema
-Thumbs.db
-.DS_Store
-
-# Ignorar carpetas de dependencias o entornos virtuales (si usas Python)
-venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+*.log
+*.tmp
+
+*.o
+*.obj
+*.exe
+*.out
+*.class
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+*.doc
+*.docx
+*.odt
+*.odp
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+!07_Presentations/**
+!06_Thesis/Final/**
+!01_Protocol/build/main.pdf
+!03_Papers/Protocol_Papers/Bullinaria2009.pdf
+!07_Presentations/science_week/Aprendizaje Incremental.pptx
+
+**/*.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+**/outputs/
+**/*.h5
+**/*.pt
+**/*.pkl
+**/*.npz
+**/*.npy
+**/*.ckpt
+**/results/*.csv
+**/04_Images
+
+*~ 
+*.bak
+*.old
+*.orig
+*.tmp
+*.conflicted copy*
