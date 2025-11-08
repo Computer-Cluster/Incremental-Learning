@@ -1,0 +1,156 @@
+\section{Estado del Arte}
+
+\subsection{Estrategia de Búsqueda}
+Para la elaboración del presente estado del arte se adoptó la metodología PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), la cual proporciona un marco estandarizado para realizar revisiones sistemáticas de literatura científica de forma transparente, rigurosa y reproducible.  
+
+El objetivo fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental, el aprendizaje continuo y las estrategias para mitigar el \textit{catastrophic forgetting} en redes neuronales artificiales.  
+
+La búsqueda bibliográfica se realizó desde el año \textbf{2010 hasta 2025}, con el propósito de abarcar tanto los trabajos fundacionales —como los propuestos por Bullinaria y otros autores en la década de 2010— como los avances más recientes en la materia.  
+El periodo se seleccionó considerando que a partir de 2010 comenzó a consolidarse el interés científico en los mecanismos de retención y olvido dentro del aprendizaje automático.  
+
+El proceso de búsqueda se llevó a cabo entre 2010 y 2025 en las siguientes bases de datos académicas:
+\begin{itemize}
+    \item IEEE Xplore
+    \item ScienceDirect
+    \item SpringerLink
+    \item Scopus
+    \item Google Scholar
+    \item Advancing Computing as a Science \& Profession
+    \item ArXiv (Cornell University)
+\end{itemize}
+
+Se emplearon combinaciones booleanas de palabras clave en inglés y español, entre las cuales se incluyeron: 
+\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} y \textit{``artificial intelligence''}.  
+Los términos se adaptaron a las opciones de búsqueda de cada base de datos con el fin de maximizar la cobertura y recuperar los estudios más relevantes y actualizados.
+
+\subsection{Criterios de Inclusión y Exclusión}
+Con el propósito de garantizar la pertinencia y calidad metodológica de los estudios seleccionados, se establecieron los siguientes criterios:
+
+\textbf{Criterios de inclusión:}
+\begin{itemize}
+    \item Publicaciones comprendidas entre 2010 y 2025.
+    \item Artículos que aborden explícitamente el aprendizaje incremental o continuo en redes neuronales artificiales.
+    \item Investigaciones que analicen el fenómeno del \textit{catastrophic forgetting} o propongan soluciones asociadas.
+    \item Estudios con aplicaciones en áreas como robótica, visión por computadora, ciberseguridad o sistemas adaptativos.
+\end{itemize}
+
+\textbf{Criterios de exclusión:}
+\begin{itemize}
+    \item Artículos de revisión sin evidencia empírica.
+    \item Trabajos sin acceso a texto completo o con resultados preliminares.
+    \item Publicaciones duplicadas o con sesgos metodológicos evidentes.
+\end{itemize}
+
+\subsection{Proceso de Selección}
+La búsqueda inicial arrojó un total de 1,246 registros. Tras la eliminación de 312 duplicados, se conservaron 934 artículos únicos.  
+Durante la fase de cribado (revisión de títulos y resúmenes), se descartaron 886 estudios por no cumplir los criterios de inclusión.  
+Los 48 artículos restantes fueron evaluados a texto completo, y finalmente, 18 cumplieron con los estándares metodológicos y temáticos requeridos para la síntesis cualitativa.  
+
+El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama de flujo PRISMA mostrado en la Figura~\ref{fig:prisma}.
+
+\begin{table}[H]
+    \centering
+    \caption{Resumen del proceso de selección de artículos según PRISMA 2020.}
+    \label{tab:prisma}
+    \begin{tabularx}{\textwidth}{l c}
+        \toprule
+        \textbf{Etapa} & \textbf{Número de estudios (n)} \\
+        \midrule
+        Registros identificados en bases de datos & 60 \\
+        Duplicados eliminados & 15 \\
+        Registros tras eliminación de duplicados & 45 \\
+        Registros excluidos tras revisión de título/resumen & 30 \\
+        Artículos evaluados a texto completo & 28 \\
+        Artículos excluidos por falta de resultados aplicables & 2 \\
+        \textbf{Estudios incluidos en la síntesis cualitativa} & \textbf{18} \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[node distance=1.1cm, every node/.style={align=center, font=\small, fill=gray!5, rounded corners}]
+        \node (id) [rectangle, draw, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 60)};
+        \node (dup) [rectangle, draw, below of=id, text width=9cm] {Eliminación de duplicados (n = 15)};
+        \node (scr) [rectangle, draw, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 45)};
+        \node (exc1) [rectangle, draw, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 30)};
+        \node (full) [rectangle, draw, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 28)};
+        \node (exc2) [rectangle, draw, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 2)};
+        \node (incl) [rectangle, draw, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
+        
+        \draw[->] (id) -- (dup);
+        \draw[->] (dup) -- (scr);
+        \draw[->] (scr) -- (exc1);
+        \draw[->] (exc1) -- (full);
+        \draw[->] (full) -- (exc2);
+        \draw[->] (exc2) -- (incl);
+    \end{tikzpicture}
+    \caption{Diagrama de flujo PRISMA 2020 para la selección de estudios.}
+    \label{fig:prisma}
+\end{figure}
+
+\subsubsection{Síntesis de Resultados}
+
+Los 18 estudios analizados ofrecen una panorámica completa del aprendizaje incremental en redes neuronales artificiales, abordando diferentes dominios, arquitecturas y estrategias de mitigación del olvido catastrófico. 
+El análisis comparativo permitió identificar seis líneas temáticas principales, que reflejan tanto la evolución conceptual como las aplicaciones prácticas más relevantes del área:
+
+\begin{itemize}
+    \item \textbf{Robótica y control adaptativo:}  
+    En este campo, el aprendizaje incremental se aplica principalmente al control de prótesis inteligentes, exoesqueletos y robots autónomos, donde los sistemas deben adaptarse continuamente a condiciones cambiantes del entorno o del usuario. 
+    Lippi et al. \cite{lippi2021} destacan que los modelos incrementales permiten una recalibración dinámica sin necesidad de reentrenamiento global, favoreciendo respuestas más precisas y energéticamente eficientes.  
+    Estos hallazgos respaldan la idea de mantener mecanismos de memoria dual, donde una parte del sistema consolida experiencias estables mientras otra se ajusta a las nuevas entradas.
+
+    \item \textbf{Visión por computadora y reconocimiento de patrones:}  
+    En esta línea, se observa un amplio uso de redes convolucionales (\textit{CNNs}) con mecanismos de aprendizaje continuo aplicados a la \textbf{clasificación de imágenes, segmentación semántica y conducción autónoma}.  
+    Wei et al. \cite{WEI2020} muestran que la combinación de estrategias de \textit{replay} con regularización selectiva mejora la retención de características visuales.  
+    Sin embargo, estos métodos suelen depender del almacenamiento de muestras anteriores, lo que implica un mayor costo computacional y de memoria. 
+    En este contexto, modelos biológicamente inspirados como el de \cite{bullinaria2009} ofrecen una alternativa más ligera al no requerir memoria explícita.
+
+    \item \textbf{Ciberseguridad y análisis de tráfico:}  
+    Cerasuolo et al. \cite{CERASUOLO2024} implementan el modelo \textit{MEMENTO} para la clasificación incremental de tráfico cifrado, demostrando la aplicabilidad del aprendizaje continuo en escenarios de detección de anomalías.  
+    Su enfoque combina estrategias de consolidación de pesos con métricas de estabilidad temporal, lo que refuerza la relevancia del manejo jerárquico de la memoria en sistemas que deben responder en tiempo real.
+
+    \item \textbf{Métodos generales y enfoques teóricos:}  
+    Entre los avances más influyentes destacan los métodos de regularización elástica propuestos por Kirkpatrick et al. \cite{kirkpatrick2017overcoming}, los mecanismos de memoria episódica como \textit{iCaRL} \cite{rebuffi2017icarl}, y las arquitecturas con expansión neuronal progresiva descritas por \cite{bullinaria2009}.  
+    Estas propuestas reflejan distintas aproximaciones al dilema estabilidad-plasticidad: mientras EWC y MAS priorizan la preservación del conocimiento, los modelos progresivos fomentan la flexibilidad estructural y la adaptación sostenida.
+
+    \item \textbf{Tendencias emergentes (2024–2025):}  
+    Investigaciones recientes como las de Hacohen et al. \cite{hacohenforgetting} evidencian patrones \textit{LIFO} (\textit{Last In, First Out}) en el aprendizaje continuo, donde los ejemplos aprendidos más rápidamente tienden a conservarse mejor, mientras que los más difíciles se olvidan con mayor facilidad.  
+    Por su parte, Sarkar et al. \cite{sarkar2025adaptive} proponen \textit{EVCL+} (\textit{Elastic Variational Continual Learning Plus}), una metodología que combina regularización de Fisher con aprendizaje variacional para proteger los parámetros más significativos.  
+    Estas tendencias reflejan un interés creciente por la optimización adaptativa del espacio de pesos, alineándose con la filosofía de Bullinaria, que propone ajustar los pesos mediante duplicidades controladas en lugar de recurrir a memorias externas.
+
+    \item \textbf{Taxonomías y comparativas recientes:}  
+    De Lange et al. \cite{de2021continual} establecen una clasificación estructurada de los métodos de aprendizaje continuo en tres grandes familias: Replay, Regularization-based y Parameter Isolation.  
+    Sus resultados demuestran que modelos como \textit{PackNet} e \textit{iCaRL} logran mayor retención de conocimiento, mientras que \textit{Memory Aware Synapses (MAS)} presenta una mayor robustez frente a la variación de hiperparámetros.  
+    No obstante, la mayoría de estas aproximaciones requieren gestión explícita de memoria o expansión arquitectónica, lo cual incrementa la complejidad.  
+    Por ello, se recomienda explorar alternativas de consolidación interna de pesos como las propuestas por Bullinaria, que equilibran eficiencia y estabilidad con un costo computacional mínimo.
+\end{itemize}
+
+\subsubsection{Conclusión del Estado del Arte}
+
+El análisis del estado del arte revela un progreso significativo en el desarrollo de modelos de aprendizaje incremental aplicados a diversos dominios, desde la robótica y la visión por computadora hasta la ciberseguridad y el procesamiento del lenguaje natural. 
+Este avance ha permitido a los sistemas de inteligencia artificial adaptarse gradualmente a nuevos entornos sin requerir un reentrenamiento completo, demostrando que la capacidad de aprender de forma continua es esencial para alcanzar comportamientos verdaderamente inteligentes y autónomos.
+
+No obstante, a pesar de los logros obtenidos, la literatura revisada pone de manifiesto que el aprendizaje incremental aún enfrenta desafíos fundamentales relacionados con la estabilidad, la plasticidad y la eficiencia computacional. 
+En particular, los modelos actuales tienden a caer en alguno de los dos extremos del dilema estabilidad–plasticidad: o bien conservan demasiado conocimiento previo, dificultando la incorporación de nueva información, o bien se adaptan rápidamente a datos recientes, a costa de olvidar lo ya aprendido. 
+Este balance sigue siendo una de las principales barreras para la consolidación de un aprendizaje verdaderamente continuo.
+
+Las estrategias contemporáneas para mitigar el \textit{olvido catastrófico} —tales como los métodos de regularización, \textit{replay} y aislamiento de parámetros— han demostrado efectividad parcial, pero presentan limitaciones que afectan su escalabilidad y aplicabilidad práctica. 
+Los métodos de regularización (como EWC o MAS) requieren estimaciones de importancia de los parámetros, lo que implica un alto costo computacional; los métodos de repetición (\textit{replay}) dependen del almacenamiento o generación de datos antiguos, afectando la privacidad y el rendimiento; y los métodos de aislamiento de parámetros (como \textit{PackNet} o \textit{Progressive Networks}) tienden a incrementar el tamaño de la red de forma indefinida, comprometiendo su eficiencia en contextos de aprendizaje prolongado. 
+
+Estas limitaciones evidencian la necesidad de explorar alternativas que integren los beneficios de dichas estrategias sin incrementar la complejidad del modelo ni depender de memorias explícitas. 
+En este contexto, los enfoques biológicamente inspirados cobran relevancia, al ofrecer mecanismos que emulan la consolidación de memoria del cerebro humano -particularmente la interacción entre el hipocampo (memoria a corto plazo) y la neocorteza (memoria a largo plazo)—, lo que permite mantener una retención gradual y eficiente del conocimiento.  
+
+Dentro de esta línea, el modelo propuesto por \cite{bullinaria2009} constituye una contribución clave al introducir un sistema de memoria dual basado en la duplicación de pesos sinápticos. 
+Este diseño permite que una parte de la red procese la información reciente de manera dinámica (memoria de corto plazo), mientras otra parte consolida el conocimiento estable (memoria de largo plazo). 
+Dicho enfoque ofrece una alternativa viable frente a las arquitecturas que dependen de memorias externas o expansiones estructurales, proporcionando una solución más simple, eficiente y con fundamentos neurocomputacionales sólidos.
+
+Sin embargo, los estudios revisados también indican que el modelo de Bullinaria, aunque conceptualmente robusto, ha sido poco explorado y carece de extensiones que analicen su comportamiento con diferentes configuraciones de memoria o variaciones en la duplicación de pesos. 
+La mayoría de las investigaciones se han limitado a replicar su implementación original sin evaluar su potencial para optimizar la estabilidad–plasticidad en escenarios más complejos o prolongados de aprendizaje incremental.
+
+Por ello, la presente investigación se plantea como una extensión directa de dicho trabajo, con el propósito de evaluar y ampliar el modelo de memoria dual hacia una arquitectura de múltiples duplicaciones de pesos, analizando su impacto en la retención de conocimiento, la tasa de olvido y la eficiencia del entrenamiento. 
+A través de esta propuesta, se busca determinar si el incremento en el número de memorias intermedias puede favorecer una transición más gradual entre la adquisición y la consolidación del aprendizaje, reduciendo así el olvido catastrófico sin incrementar significativamente el costo computacional.
+
+En síntesis, mientras las estrategias modernas se centran en la complejidad arquitectónica o el uso intensivo de recursos, el enfoque propuesto retoma un principio fundamental: la simplicidad biológicamente inspirada como base de la estabilidad del aprendizaje. 
+De comprobarse su efectividad, este modelo podría representar un paso intermedio entre las aproximaciones tradicionales y los sistemas verdaderamente adaptativos, aportando una alternativa más sostenible, interpretable y eficiente dentro del campo del aprendizaje incremental en redes neuronales artificiales.
+
