@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex build/main"] 1762652562.34073 "build/main.aux" "build/main.bbl" "build/main" 1762652564.06988 0
-  "./dataset.bib" 1762648408.52203 16669 c0ad9096fb7cc586beb0e0af395afbf5 ""
+["bibtex build/main"] 1762653560.35914 "build/main.aux" "build/main.bbl" "build/main" 1762653562.10157 0
+  "./dataset.bib" 1762653554.80824 16750 cc4a9303c52b1a8f3726399a76cb11a3 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1762652563.76965 13189 9f0564b85b8d104ae27014445b26b8be "pdflatex"
+  "build/main.aux" 1762653561.80389 14159 0d76ca093c410e0fa5603744450df92e "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["makeindex build/main.idx"] 1762652558.7092 "build/main.idx" "build/main.ind" "build/main" 1762652564.06978 0
-  "build/main.idx" 1762652562.96038 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex build/main.idx"] 1762653556.83476 "build/main.idx" "build/main.ind" "build/main" 1762653562.10148 0
+  "build/main.idx" 1762653560.97327 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/main.ilg"
   "build/main.ind"
   (rewritten before read)
-["pdflatex"] 1762652562.43648 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1762652564.06999 0
+["pdflatex"] 1762653560.45323 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1762653562.10167 0
   "../02_Chapters/appendices/backpropagation.tex" 1762643035.68239 2652 66f2c67e7d05eb50b6b29e015ac984e1 ""
   "../02_Chapters/approach.tex" 1748044519 5124 9bf20cfed3df575365158a66cb0df819 ""
   "../02_Chapters/capitulated.tex" 1747248889 1380 4479f212f87dd36c4058929939d640f5 ""
@@ -22,12 +22,12 @@
   "../02_Chapters/gantt_chart.tex" 1762643035.68342 237 c774aa974ade9c3248bba84c25613ea6 ""
   "../02_Chapters/hypothesis.tex" 1737340086 343 de15358b1477e3eae5b2a02a6abd40d8 ""
   "../02_Chapters/introduction.tex" 1737338864 2969 8782852a202c73e762e8e6e0b016755f ""
-  "../02_Chapters/justification.tex" 1762643035.68381 3050 fc9d93d564130eb21c9215c98e959c9e ""
+  "../02_Chapters/justification.tex" 1762652819.60372 4395 34b2ef0e483271d7a2e86784bae3aaa1 ""
   "../02_Chapters/methodology.tex" 1737352362 2097 6ef756d9b4418153e72d8c3ceca92010 ""
-  "../02_Chapters/objectives.tex" 1762643035.68406 1363 ac063fa43221960dfd8bb1eaabcdcd10 ""
+  "../02_Chapters/objectives.tex" 1762652883.74554 1711 2574add16bef84c865a628e230cecadb ""
   "../02_Chapters/portada.pdf" 1762643035.68684 94731 41c7dcbb38eee167611b322111fd44e6 ""
   "../02_Chapters/results.tex" 1761185328.50744 7812 de41993216d6b61683a8a59d3c2ed445 ""
-  "../02_Chapters/state_of_art.tex" 1762652542.50858 15626 42e83a66a15e5a9eafca0fe38814bd0c ""
+  "../02_Chapters/state_of_art.tex" 1762653129.21989 18879 aeca7e04222313209517adf406bbc826 ""
   "../02_Chapters/theoretical_framework.tex" 1762652542.50905 35528 0a09c62fc47db6ec6d48dcdb1319a7a3 ""
   "../04_Images/activation_functions/relu.png" 1762650627.61623 16980 4229dd280e03b7b3a5dc26c808c4b15b ""
   "../04_Images/activation_functions/sigmoid.png" 1762650627.61801 254022 8f71e93832bfe17ecc4f718c47f9b35f ""
@@ -294,12 +294,12 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758440188 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "build/main.aux" 1762652563.76965 13189 9f0564b85b8d104ae27014445b26b8be "pdflatex"
-  "build/main.bbl" 1762652562.43063 5933 136206f644908464902ea0db45b72c23 "bibtex build/main"
-  "build/main.ind" 1762652558.79559 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
-  "build/main.lof" 1762652563.77231 1883 7fece2879b82be99bef8394eecb374a5 "pdflatex"
-  "build/main.out" 1762652563.77179 6563 d7bc5ffd2f5ced41021cba27080f3ab5 "pdflatex"
-  "build/main.toc" 1762652563.77226 3427 e107ef72be8db325feae0b408738615e "pdflatex"
+  "build/main.aux" 1762653561.80389 14159 0d76ca093c410e0fa5603744450df92e "pdflatex"
+  "build/main.bbl" 1762653560.44761 7094 43d0603ab596296db2c2228f9dd99f21 "bibtex build/main"
+  "build/main.ind" 1762653556.91563 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
+  "build/main.lof" 1762653561.80634 1884 a2419b1a99d27e06b25d1ff710aa6fd0 "pdflatex"
+  "build/main.out" 1762653561.80587 6871 b61b455e916f41422538d804ddb212ea "pdflatex"
+  "build/main.toc" 1762653561.8063 3549 7cfad5d59cd3568d02712c8775aa3b12 "pdflatex"
   "main.tex" 1762651916.42064 4024 f42be7a4dea67b555ce7cd756f4cb18c ""
   (generated)
   "build/main.aux"
