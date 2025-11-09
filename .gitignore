@@ -91,7 +91,7 @@ ENV/
 **/*.npy
 **/*.ckpt
 **/results/*.csv
-**/04_Images
+
 
 *~ 
 *.bak
