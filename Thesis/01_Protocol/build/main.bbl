@@ -1,0 +1,122 @@
+\begin{thebibliography}{10}
+
+\bibitem{Deshmukh2013}
+RR~Ade and PR~Deshmukh.
+\newblock Methods for incremental learning: a survey.
+\newblock {\em International Journal of Data Mining \& Knowledge Management Process}, 3(4):119, 2013.
+
+\bibitem{bullinaria2009}
+John~A Bullinaria.
+\newblock Evolved dual weight neural architectures to facilitate incremental learning.
+\newblock In {\em IJCCI}, pages 427--434, 2009.
+
+\bibitem{CERASUOLO2024}
+Francesco Cerasuolo, Alfredo Nascita, Giampaolo Bovenzi, Giuseppe Aceto, Domenico Ciuonzo, Antonio Pescapè, and Dario Rossi.
+\newblock Memento: A novel approach for class incremental learning of encrypted traffic.
+\newblock {\em Computer Networks}, 245:110374, 2024.
+
+\bibitem{de2021continual}
+Matthias De~Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu~Jia, {Ale\v{s}} Leonardis, Gregory Slabaugh, and Tinne Tuytelaars.
+\newblock A continual learning survey: Defying forgetting in classification tasks.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 44(7):3366--3385, 2021.
+
+\bibitem{Elwell2011}
+Ryan Elwell and Robi Polikar.
+\newblock Incremental learning of concept drift in nonstationary environments.
+\newblock {\em IEEE Transactions on Neural Networks}, 22(10):1517--1531, 2011.
+
+\bibitem{fisher1987}
+Douglas~H Fisher.
+\newblock Knowledge acquisition via incremental conceptual clustering.
+\newblock {\em Machine learning}, 2(2):139--172, 1987.
+
+\bibitem{GiraudCarrier2000}
+Christophe~G. Giraud-Carrier.
+\newblock A note on the utility of incremental learning.
+\newblock {\em AI Commun.}, 13:215--224, 2000.
+
+\bibitem{hacohenforgetting}
+Guy Hacohen and Tinne Tuytelaars.
+\newblock Forgetting order of continual learning: What is learned first is forgotten last.
+\newblock \url{https://arxiv.org/abs/xxxx.xxxxx}, 2023.
+\newblock arXiv preprint.
+
+\bibitem{huerta2009}
+H.~Vega Huerta, A.~Cortez V{\'a}squez, Ana~Mar{\'\i}a Huayna, Luis~Alarc{\'o}n Loayza, and P.~Romero Naupari.
+\newblock Reconocimiento de patrones mediante redes neuronales artificiales.
+\newblock {\em Revista de investigaci{\'o}n de Sistemas e Inform{\'a}tica}, 6(2):17--26, 2009.
+
+\bibitem{jacznik2016}
+Rodrigo Jacznik, Mariano Tassara, Iv{\'a}n D'Uva, Guillermo Baldino, Roxana~Silvia Giandini, and Leopoldo Nahuel.
+\newblock Integrando modelo de aprendizaje supervisado al an{\'a}lisis del desempe{\~n}o de alumnos en cursos virtuales sobre plataformas moodle.
+\newblock In {\em XXII Congreso Argentino de Ciencias de la Computaci{\'o}n (CACIC 2016)}, 2016.
+
+\bibitem{kirkpatrick2017overcoming}
+James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei~A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, et~al.
+\newblock Overcoming catastrophic forgetting in neural networks.
+\newblock {\em Proceedings of the National Academy of Sciences}, 114(13):3521--3526, 2017.
+
+\bibitem{li2008}
+Ai-Jun Li.
+\newblock An improved algorithm for incremental learning learn++.
+\newblock In {\em 2008 International Conference on Wavelet Analysis and Pattern Recognition}, volume~1, pages 310--315. IEEE, 2008.
+
+\bibitem{lippi2021}
+Vittorio Lippi, Cristian Camardella, Alessandro Filippeschi, and Francesco Porcini.
+\newblock Identification of gait phases with neural networks for smooth transparent control of a lower limb exoskeleton, 2021.
+
+\bibitem{liu2015}
+Yuan Liu.
+\newblock Incremental learning in deep neural networks, 2015.
+\newblock Unpublished manuscript.
+
+\bibitem{pechuan2015}
+Luis~Miralles Pechu{\'a}n, Dafne~A. Rosso-Pelayo, and Jorge Brieva.
+\newblock Reconocimiento de d{\'\i}gitos escritos a mano mediante m{\'e}todos de tratamiento de imagen y modelos de clasificaci{\'o}n.
+\newblock {\em Res. Comput. Sci.}, 93:83--94, 2015.
+
+\bibitem{mercado2015}
+Darwin~Mercado Polo, Luis~Pedraza Caballero, and Edinson~Martínez Gómez.
+\newblock Comparación de redes neuronales aplicadas a la predicción de series de tiempo.
+\newblock {\em Prospectiva}, 13(2):88--95, 2015.
+
+\bibitem{rebuffi2017icarl}
+Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl, and Christoph~H. Lampert.
+\newblock icarl: Incremental classifier and representation learning.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 2001--2010, 2017.
+
+\bibitem{renganathan2019}
+V~Renganathan.
+\newblock Overview of artificial neural network models in the biomedical domain.
+\newblock {\em Bratislava Medical Journal/Bratislavské Lekárske Listy}, 120(7), 2019.
+
+\bibitem{Rojas1996}
+Ra{\'u}l Rojas.
+\newblock {\em The Backpropagation Algorithm}, pages 149--182.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1996.
+
+\bibitem{royo2021}
+Paloma Royo.
+\newblock {Qué son las redes neuronales y cuál es su aplicación en el marketing}, 2021.
+
+\bibitem{salazar2013}
+Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
+\newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones obtenidos por un s{\'o}nar.
+\newblock In {\em 2013 II International Congress of Engineering Mechatronics and Automation (CIIMA)}, pages 1--6. IEEE, 2013.
+
+\bibitem{sarkar2025adaptive}
+Krisanu Sarkar.
+\newblock Adaptive variance-penalized continual learning with fisher regularization.
+\newblock {\em arXiv preprint arXiv:2508.16632}, 2025.
+
+\bibitem{WEI2020}
+Xing Wei, Shaofan Liu, Yaoci Xiang, Zhangling Duan, Chong Zhao, and Yang Lu.
+\newblock Incremental learning based multi-domain adaptation for object detection.
+\newblock {\em Knowledge-Based Systems}, 210:106420, 2020.
+
+\bibitem{zhao2022}
+Beibei Zhao, Tairan Wu, Fang Fang, Lin Wang, Wenzhang Ren, Xu~Yang, Zhangjing Ruan, and Xuejin Kou.
+\newblock Prediction method of 5g high-load cellular based on bp neural network.
+\newblock In {\em 2022 8th International Conference on Mechatronics and Robotics Engineering (ICMRE)}, pages 148--151. IEEE, 2022.
+
+\end{thebibliography}
