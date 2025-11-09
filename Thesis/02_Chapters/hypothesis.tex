@@ -1,3 +1,40 @@
-\section{Hipótesis}
+\section{Hipótesis y Criterios de Evaluación}
+
+\subsection{Hipótesis de Investigación}
+
+El aprendizaje incremental en redes neuronales artificiales enfrenta el desafío de equilibrar la estabilidad del conocimiento adquirido con la plasticidad necesaria para incorporar nueva información. Bajo este contexto, se plantea la siguiente hipótesis de investigación:
+
+\begin{quote}
+    \textbf{Hipótesis general:} 
+    La incorporación de memorias duplicadas adicionales en una arquitectura neuronal basada en el modelo de \cite{bullinaria2009} incrementará la retención del conocimiento previo en al menos un 10--15\% respecto al modelo original, manteniendo un costo computacional comparable y sin requerir mecanismos explícitos de \textit{replay}.
+\end{quote}
+
+Esta hipótesis parte de la premisa de que la duplicación de pesos sinápticos actúa como un mecanismo de consolidación distribuida, análogo a los procesos de transferencia de memoria de corto a largo plazo observados en sistemas biológicos.  
+De esta forma, se busca demostrar que el uso de múltiples memorias intermedias puede mitigar el \textit{olvido catastrófico} y favorecer una transición más gradual entre las fases de aprendizaje incremental.
+
+\subsection{Criterios de Evaluación} \label{sec:criterios_eval}
+
+Para validar la hipótesis propuesta, se consideran los siguientes criterios de evaluación cuantitativos y cualitativos, aplicados a cada bloque incremental del experimento:
+
+\begin{itemize}
+    \item \textbf{Exactitud incremental promedio (IA):} medida del desempeño global del modelo considerando la acumulación progresiva de conocimiento a través de los bloques de entrenamiento.
     
-La inclusión de más de dos capas de pesos duplicados, cada una con sus respectivas tasas de aprendizaje, puede reducir el olvido de la información previamente aprendida en un modelo de aprendizaje incremental utilizando redes neuronales artificiales del tipo MLP, cuando se aplica el algoritmo de Backpropagation.
+    \item \textbf{Tasa de olvido (F):} porcentaje de pérdida de precisión en los conjuntos de datos anteriores tras el aprendizaje de un nuevo bloque, calculado como:
+    \[
+    F = \frac{A_{i-1} - A_{i}}{A_{i-1}} \times 100
+    \]
+    donde $A_{i}$ representa la precisión obtenida en el conjunto anterior tras entrenar el bloque $i$.
+    
+    \item \textbf{Retención de memoria (RM):} proporción del conocimiento conservado al finalizar el entrenamiento incremental, comparando el rendimiento final con el inicial:
+    \[
+    RM = \frac{A_{f}}{A_{0}} \times 100
+    \]
+    donde $A_{f}$ es la precisión final y $A_{0}$ la inicial.
+    
+    \item \textbf{Costo computacional (CC):} tiempo promedio de entrenamiento por bloque y uso de recursos, con el objetivo de determinar la eficiencia de la arquitectura propuesta frente al modelo base.
+    
+    \item \textbf{Estabilidad-plasticidad (EP):} análisis cualitativo del equilibrio entre la preservación del conocimiento anterior y la capacidad de adaptación del modelo ante nuevas tareas.
+\end{itemize}
+
+Los resultados obtenidos para cada métrica serán analizados de manera comparativa entre las variantes del modelo (con diferente número de memorias duplicadas) y con el esquema de referencia de \cite{bullinaria2009}.  
+El objetivo es determinar si la propuesta mejora la retención del conocimiento sin comprometer la adaptabilidad ni incrementar significativamente el costo computacional.

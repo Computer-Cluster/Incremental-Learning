@@ -1,11 +1,16 @@
 \section{Objetivos}
+
     \subsection{Objetivo General}
-        Diseñar una red neuronal artificial para aprendizaje incremental basada en el principio de la memoria a corto y largo plazo, buscando usar más de dos capas de pesos duplicados para el reconocimiento de dígitos, y con una menor p\'erdida de información de trabajos previos.
+        Diseñar e implementar una \textbf{red neuronal artificial de aprendizaje incremental} inspirada en el principio de \textbf{memoria a corto y largo plazo}, utilizando más de dos capas con pesos duplicados para el reconocimiento de dígitos. 
+        El modelo buscará reducir la \textbf{pérdida de información} asociada al olvido catastrófico, mejorando la retención del conocimiento previo en comparación con trabajos previos reportados en la literatura.
+
     \subsection{Objetivos Particulares}
         \begin{enumerate}
-            \item Implementar el algoritmo mostrado en \cite{bullinaria2009} para el reconocimiento de dígitos con aprendizaje a corto y largo plazo con los parámetros que ahí se indican.
-            \item Obtener el conjunto de datos de Optical Digits, limpiar los datos y prepararlos según lo indicado con \cite{bullinaria2009}.
-            \item Separar el conjunto de entrenamiento y de prueba de acuerdo a lo que se explica en el artículo \cite{bullinaria2009} y probar el primer código implementado en miras de comprobar los resultados previamente mostrados en \cite{bullinaria2009}.
-            \item Tomar como base el algoritmo implementado, y extenderlo para permitir mas de dos pesos duplicados, aplicando el conjunto de datos previamente mostrado.
-            \item Comparar ambas implementaciones en busca de una reducción significativa de las tasas de aprendizaje con respecto a trabajos previos en la literatura.
+            \item \textbf{Reproducir} el algoritmo propuesto por \cite{bullinaria2009} para el reconocimiento de dígitos mediante aprendizaje con memoria a corto y largo plazo, utilizando los parámetros y configuraciones originales descritos por el autor.
+            
+            \item \textbf{Organizar} el conjunto de datos en particiones de entrenamiento y prueba conforme a la metodología establecida en \cite{bullinaria2009}, y \textbf{validar} los resultados iniciales del modelo base mediante métricas de rendimiento comparables.
+            
+            \item \textbf{Extender} el algoritmo de referencia para incorporar más de dos capas de pesos duplicados, evaluando su impacto en la estabilidad y plasticidad del aprendizaje incremental sobre el mismo conjunto de datos.
+            
+            \item \textbf{Comparar} cuantitativamente ambas implementaciones (modelo original y modelo extendido) con base en las tasas de aprendizaje, precisión y pérdida, buscando evidenciar una \textbf{reducción significativa en el olvido catastrófico} respecto a los trabajos previos.
         \end{enumerate}

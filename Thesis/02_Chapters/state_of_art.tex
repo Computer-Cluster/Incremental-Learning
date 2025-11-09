@@ -5,7 +5,7 @@ Para la elaboración del presente estado del arte se adoptó la metodología PRI
 
 El objetivo fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental, el aprendizaje continuo y las estrategias para mitigar el \textit{catastrophic forgetting} en redes neuronales artificiales.  
 
-La búsqueda bibliográfica se realizó desde el año \textbf{2010 hasta 2025}, con el propósito de abarcar tanto los trabajos fundacionales —como los propuestos por Bullinaria y otros autores en la década de 2010— como los avances más recientes en la materia.  
+La búsqueda bibliográfica se realizó desde el año 2010 hasta 2025, con el propósito de abarcar tanto los trabajos fundacionales —como los propuestos por Bullinaria y otros autores en la década de 2010— como los avances más recientes en la materia.  
 El periodo se seleccionó considerando que a partir de 2010 comenzó a consolidarse el interés científico en los mecanismos de retención y olvido dentro del aprendizaje automático.  
 
 El proceso de búsqueda se llevó a cabo entre 2010 y 2025 en las siguientes bases de datos académicas:
@@ -101,7 +101,7 @@ El análisis comparativo permitió identificar seis líneas temáticas principal
     Estos hallazgos respaldan la idea de mantener mecanismos de memoria dual, donde una parte del sistema consolida experiencias estables mientras otra se ajusta a las nuevas entradas.
 
     \item \textbf{Visión por computadora y reconocimiento de patrones:}  
-    En esta línea, se observa un amplio uso de redes convolucionales (\textit{CNNs}) con mecanismos de aprendizaje continuo aplicados a la \textbf{clasificación de imágenes, segmentación semántica y conducción autónoma}.  
+    En esta línea, se observa un amplio uso de redes convolucionales (\textit{CNNs}) con mecanismos de aprendizaje continuo aplicados a la clasificación de imágenes, segmentación semántica y conducción autónoma.  
     Wei et al. \cite{WEI2020} muestran que la combinación de estrategias de \textit{replay} con regularización selectiva mejora la retención de características visuales.  
     Sin embargo, estos métodos suelen depender del almacenamiento de muestras anteriores, lo que implica un mayor costo computacional y de memoria. 
     En este contexto, modelos biológicamente inspirados como el de \cite{bullinaria2009} ofrecen una alternativa más ligera al no requerir memoria explícita.
@@ -125,6 +125,48 @@ El análisis comparativo permitió identificar seis líneas temáticas principal
     No obstante, la mayoría de estas aproximaciones requieren gestión explícita de memoria o expansión arquitectónica, lo cual incrementa la complejidad.  
     Por ello, se recomienda explorar alternativas de consolidación interna de pesos como las propuestas por Bullinaria, que equilibran eficiencia y estabilidad con un costo computacional mínimo.
 \end{itemize}
+\subsubsection{Comparativa de Modelos y Tendencias Recientes}
+
+A continuación, se presenta una síntesis comparativa de los principales enfoques identificados en la literatura, organizada en dos bloques: modelos clásicos (2009–2019), que sentaron las bases del aprendizaje incremental, y modelos recientes (2020–2025), que reflejan las tendencias actuales en estabilidad, plasticidad y consolidación de la memoria.
+
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Comparativa resumida de enfoques clásicos y recientes en aprendizaje incremental.}
+\label{tab:state_art_summary}
+\begin{tabularx}{\textwidth}{
+  >{\raggedright\arraybackslash}p{3.5cm}
+  >{\raggedright\arraybackslash}p{2.8cm}
+  >{\raggedright\arraybackslash}p{2.8cm}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Autor (Año)} & \textbf{Modelo / Técnica} & \textbf{Familia} & \textbf{Aporte principal} & \textbf{Limitación} \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{Modelos Clásicos (2009–2019)}}\\[0.25em]
+Bullinaria (2009) \cite{bullinaria2009} & Dual Weights & Consolidación interna & Mitiga el olvido sin \textit{replay}. & No escalable (>2 memorias). \\
+Kirkpatrick et al. (2017) \cite{kirkpatrick2017overcoming} & EWC & Regularización & Preserva pesos críticos (Fisher). & Alto costo computacional. \\
+Zenke et al. (2017) \cite{zenke2017continual} & Synaptic Intelligence & Regularización & Actualización \mbox{on-line} eficiente. & Sensible a hiperparámetros. \\
+Li \& Hoiem (2016) \cite{li2016lwf} & LwF & Distillation & Evita almacenar datos previos. & Depende de salidas antiguas. \\
+Rusu et al. (2016) \cite{rusu2016pnn} & Progressive NN & Aislamiento & Evita interferencia entre tareas. & Crece indefinidamente. \\
+Rebuffi et al. (2017) \cite{rebuffi2017icarl} & iCaRL & Replay + Distillation & Alta retención por clase. & Requiere memoria de ejemplos. \\
+De Lange et al. (2021) \cite{de2021continual} & Survey & Taxonomía & Clasifica métodos (Replay, Reg., Isolation). & No propone modelo propio. \\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{Modelos Recientes (2020–2025)}}\\[0.25em]
+Wei et al. (2020) \cite{WEI2020} & Multi-Domain Adaptation & Replay + Reg. & Mejora retención visual. & Requiere memoria parcial. \\
+Lillicrap et al. (2020) \cite{lillicrap2020} & Backpropagation and the Brain & Insp. biológica & Relaciona aprendizaje biológico y ANN. & Teórico, no incremental directo. \\
+Lippi et al. (2021) \cite{lippi2021} & Gait Phase ID & Aplicación robótica & Incremental en control adaptativo. & Caso específico. \\
+Cerasuolo et al. (2024) \cite{CERASUOLO2024} & MEMENTO & Consolidación de pesos & Incremental sin \textit{replay}; estabilidad temporal. & Dominio limitado. \\
+Hacohen \& Tuytelaars (2023) \cite{hacohenforgetting} & Forgetting Order & Dinámica del olvido & Analiza patrón LIFO del olvido. & Resultados preliminares. \\
+Sarkar (2025) \cite{sarkar2025adaptive} & EVCL+ & Reg. variacional & Estabilidad adaptativa. & Complejidad de implementación. \\
+Liu et al. (2025) \cite{liu2025continual} & CL for VLMs & Survey & Taxonomía moderna (modelos grandes). & Enfoque en LLMs/VLMs. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 
 \subsubsection{Conclusión del Estado del Arte}
 

@@ -16,5 +16,110 @@ Este trabajo se divide en tres etapas principales: la recreación del modelo bas
     Los resultados permitirán evaluar si las modificaciones introducidas en la arquitectura de la red neuronal mejoran significativamente su desempeño en comparación con la implementación original.
 \end{enumerate}
 
+\subsection{Diseño Experimental}
+
+El diseño experimental de la presente investigación se fundamenta en el modelo de Bullinaria (2009), el cual plantea una arquitectura de redes neuronales con pesos duplicados (\textit{Dual Weights}) como mecanismo de consolidación de memoria para mitigar el \textit{olvido catastrófico}.  
+El objetivo central consiste en extender dicho enfoque hacia una arquitectura con múltiples duplicaciones de pesos, a fin de analizar cómo la cantidad de memorias intermedias influye en la retención del conocimiento, la estabilidad del aprendizaje y el costo computacional asociado.
+
+El experimento se desarrollará bajo un esquema de aprendizaje incremental controlado, en el cual el modelo neuronal será expuesto progresivamente a distintos subconjuntos del conjunto de datos óptico de dígitos (\textit{OptDigits}).  
+Cada subconjunto, denominado bloque incremental, representa una etapa de aprendizaje que introduce nueva información sin volver a presentar explícitamente los datos de etapas anteriores.
+
+\paragraph{Objetivo del diseño experimental}
+Evaluar el impacto del número de memorias duplicadas sobre el desempeño de una red neuronal incremental, comparando la versión base de Bullinaria (dos memorias) con arquitecturas extendidas de cuatro y seis memorias.
+
+\paragraph{Variables del experimento}
+\begin{itemize}
+    \item \textbf{Variable independiente:} número de memorias duplicadas (\(n = 2, 4, 6\)).
+    \item \textbf{Variables dependientes:} precisión incremental promedio (IA), tasa de olvido (F), retención de memoria (RM) y costo computacional (CC).
+\end{itemize}
+
+\paragraph{Metodología general}
+El experimento se estructurará en seis bloques incrementales (\(B_1, B_2, \ldots, B_6\)), que representan diferentes etapas del proceso de aprendizaje.  
+Cada bloque contendrá subconjuntos disjuntos del conjunto de entrenamiento y se aplicará de forma secuencial.  
+Después de entrenar cada bloque, se evaluará el desempeño del modelo sobre:
+\begin{enumerate}
+    \item Los datos recién aprendidos (plasticidad),
+    \item Los datos de bloques previos (estabilidad), y
+    \item El conjunto total acumulado (retención global).
+\end{enumerate}
+
+El flujo experimental se ilustra en la Figura~\ref{fig:exp_flow}, donde cada iteración incremental implica entrenamiento, evaluación, registro de métricas y transferencia de pesos hacia las memorias superiores para su consolidación.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{metodology/flow_incremental.png}
+    \caption{Flujo general del diseño experimental incremental propuesto.}
+    \label{fig:exp_flow}
+\end{figure}
+
+El procedimiento general seguido por el modelo propuesto se describe en el Algoritmo~\ref{alg:incremental}, donde se ilustra el flujo de entrenamiento y consolidación del conocimiento en cada bloque incremental.
+Este proceso se repite secuencialmente hasta completar los seis bloques de aprendizaje, registrando las métricas definidas en la Sección~\ref{sec:criterios_eval}.
+
+\begin{algorithm}[H]
+\caption{Procedimiento general del aprendizaje incremental}
+\label{alg:incremental}
+\begin{algorithmic}[1]
+\For{cada bloque incremental $B_i$}
+    \State Entrenar red con $B_i$
+    \State Evaluar rendimiento en $B_1, \ldots, B_i$
+    \State Consolidar pesos hacia memorias superiores
+    \State Guardar métricas (IA, F, RM, CC)
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+El flujo presentado establece la base operativa del experimento, en el que se repite un ciclo controlado de entrenamiento y consolidación por cada bloque incremental.
+Con este esquema se busca comprobar la validez de la hipótesis planteada respecto al impacto del número de memorias duplicadas en la retención del conocimiento.
+
+Con el propósito de garantizar la reproducibilidad del experimento, la Tabla~\ref{tab:config} presenta la configuración técnica utilizada en la implementación del modelo propuesto.
+Se detallan los parámetros de la red neuronal, las características del conjunto de datos y el entorno de ejecución empleado en los experimentos realizados sobre arquitectura Apple Silicon.
+
+\begin{table}[H]
+\centering
+\caption{Configuración experimental del modelo incremental propuesto.}
+\label{tab:config}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+\textbf{Parámetro} & \textbf{Valor} \\
+\midrule
+Dataset & OptDigits (3823 muestras de entrenamiento / 1797 de prueba, 10 clases) \\
+Arquitectura base & 64–32–10 (capas densas totalmente conectadas) \\
+Función de activación & Sigmoid \\
+Función de pérdida & Cross Entropy Loss \\
+Optimizador & Adam (\(\eta = 0.001\)) \\
+Número de bloques incrementales & 6 \\
+Memorias duplicadas & 2, 4 y 6 \\
+Métricas & IA (precisión incremental), F (tasa de olvido), RM (retención de memoria), CC (costo computacional) \\
+Entorno de ejecución & macOS Sonoma, Apple M2 (8 CPU + 10 GPU), 16 GB RAM, PyTorch 2.3.1, Python 3.12 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Hipótesis de contraste}
+Se espera que las arquitecturas con cuatro y seis memorias presenten una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) en comparación con el modelo dual original, sin un incremento significativo en el tiempo de entrenamiento.
+
+\paragraph{Métricas de análisis}
+Las métricas cuantitativas empleadas serán las definidas en la Sección~\ref{sec:criterios_eval}, con el propósito de asegurar consistencia metodológica.  
+Los resultados obtenidos se compararán mediante análisis estadístico descriptivo y visualización de curvas de desempeño por bloque.
+
+\paragraph{Configuración experimental}
+El modelo se implementará en Python utilizando TensorFlow y Keras.  
+El entorno de ejecución será una estación con procesador Intel Core i5, 32 GB de RAM y macOS, garantizando condiciones reproducibles.  
+Cada arquitectura será inicializada con los mismos pesos y parámetros para mantener equidad experimental.
+
+\paragraph{Resumen del diseño}
+El diseño experimental busca validar la hipótesis propuesta al cuantificar la relación entre el número de memorias duplicadas y la estabilidad-plasticidad del modelo.  
+De confirmarse la hipótesis, los resultados evidenciarán que la consolidación distribuida basada en múltiples memorias constituye una alternativa eficiente y biológicamente inspirada para el aprendizaje incremental.
+
+\subsection{Resultados Esperados}
+
+Se espera que las arquitecturas con cuatro y seis memorias duplicadas presenten una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) en comparación con el modelo dual original de Bullinaria.  
+Asimismo, se anticipa que el costo computacional (\(CC\)) permanezca dentro de un margen aceptable, sin superar un incremento del 15\% respecto al modelo base, manteniendo un equilibrio adecuado entre estabilidad y plasticidad.
+
+En términos cualitativos, se prevé que el modelo extendido muestre una transición más gradual entre las fases de adquisición y consolidación del aprendizaje, reduciendo la pérdida de información entre bloques consecutivos.  
+De confirmarse estas tendencias, los resultados respaldarían la hipótesis de que la duplicación progresiva de pesos sinápticos constituye un mecanismo eficiente de consolidación interna de la memoria dentro del aprendizaje incremental.
+
+Finalmente, los resultados obtenidos servirán como referencia para contrastar la eficacia del enfoque propuesto frente a otros métodos contemporáneos de mitigación del \textit{catastrophic forgetting}, tales como EWC, MAS o \textit{Replay-based Learning}.
+
 
 

@@ -6,8 +6,8 @@
         Su propósito original fue proporcionar un terreno de pruebas sencillo, reproducible y balanceado para comparar modelos de aprendizaje supervisado sin el costo computacional de imágenes de alta resolución. 
         En otras palabras, es un \textit{benchmark} ligero pero suficientemente expresivo para estudiar la capacidad de generalización de distintos enfoques.
 
-        Su representación consiste en \textbf{imágenes en escala de grises de \(8\times8\) píxeles} (como se muestra en la Figura~\ref{fig:optical_digit}); cada imagen codifica un dígito en el rango \(0\)–\(9\). 
-        El conjunto contiene un total de \textbf{5{,}620 imágenes} y mantiene un \textbf{balance de clases}: cada dígito cuenta con la misma cantidad de muestras. 
+        Su representación consiste en imágenes en escala de grises de \(8\times8\) píxeles (como se muestra en la Figura~\ref{fig:optical_digit}); cada imagen codifica un dígito en el rango \(0\)–\(9\). 
+        El conjunto contiene un total de 5{,}620 imágenes y mantiene un balance de clases: cada dígito cuenta con la misma cantidad de muestras. 
         Este detalle no es menor: al evitar sesgos de frecuencia por clase, las métricas (accuracy, F1, etc.) reflejan de forma más justa las diferencias entre modelos y \textit{pipelines} de preprocesamiento.
 
         \begin{figure}[H]
@@ -20,13 +20,13 @@
         Gracias a su equilibrio entre simplicidad y utilidad, \textit{Optical Digit} se emplea en múltiples líneas de trabajo de inteligencia artificial, tales como:
         
         \begin{enumerate}
-            \item Clasificación de \textbf{dígitos} \cite{pechuan2015}. 
+            \item Clasificación de dígitos \cite{pechuan2015}. 
             \item Reconocimiento de patrones \cite{huerta2009}.
             \item Comparación y \textit{benchmarking} de modelos \cite{mercado2015}. 
-            \item Entrenamiento y docencia en \textbf{aprendizaje supervisado} \cite{jacznik2016}.
+            \item Entrenamiento y docencia en aprendizaje supervisado \cite{jacznik2016}.
         \end{enumerate}
 
-        Entre sus ventajas destacan: (\textit{i}) curvas de entrenamiento y validación muy rápidas (ideal para iterar hiperparámetros y arquitecturas), (\textit{ii}) facilidad para reproducir experimentos (pocas transformaciones y preprocesos), y (\textit{iii}) utilidad como \textit{caso de estudio} para metodologías como el \textbf{aprendizaje incremental}, donde interesa observar el efecto de introducir bloques de datos en secuencia sin que el costo de cómputo se dispare.
+        Entre sus ventajas destacan: (\textit{i}) curvas de entrenamiento y validación muy rápidas (ideal para iterar hiperparámetros y arquitecturas), (\textit{ii}) facilidad para reproducir experimentos (pocas transformaciones y preprocesos), y (\textit{iii}) utilidad como \textit{caso de estudio} para metodologías como el aprendizaje incremental, donde interesa observar el efecto de introducir bloques de datos en secuencia sin que el costo de cómputo se dispare.
 
     \subsection{Redes Neuronales Artificiales}
 
@@ -105,7 +105,7 @@ Las puertas lógicas binarias permiten ilustrar la relación entre separabilidad
     \label{fig:xor_logic_gate}
 \end{figure}
 
-Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando los datos no son separables por un hiperplano, una red multicapa con funciones de activación adecuadas puede componer fronteras lineales en formas no lineales y, con ello, representar correctamente el problema (véase Sección\ref{sec:redes_mlp}).
+Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando los datos no son separables por un hiperplano, una red multicapa con funciones de activación adecuadas puede componer fronteras lineales en formas no lineales y, con ello, representar correctamente el problema (véase Sección \ref{sec:redes_mlp}).
 
 
         % Una sola neurona puede resolver tareas como AND u OR, pero no problemas \textbf{no lineales} (por ejemplo, XOR). 
@@ -140,9 +140,9 @@ Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando 
 
         \subsubsection{Función de Activación} \label{sec:activation}
 
-        Las funciones de activación son el componente que convierte a una red apilada de transformaciones lineales en un \textbf{modelo no lineal}. 
+        Las funciones de activación son el componente que convierte a una red apilada de transformaciones lineales en un modelo no lineal. 
         Sin ellas, incluso varias capas equivaldrían a una sola transformación lineal. 
-        En problemas donde la relación entrada–salida es intrínsecamente no lineal (como ocurre en la mayoría de los fenómenos reales), las activaciones permiten \textbf{curvar} la frontera de decisión y estabilizar el flujo de gradientes durante el entrenamiento \cite{renganathan2019}.
+        En problemas donde la relación entrada–salida es intrínsecamente no lineal (como ocurre en la mayoría de los fenómenos reales), las activaciones permiten curvar la frontera de decisión y estabilizar el flujo de gradientes durante el entrenamiento \cite{renganathan2019}.
 
         Entre las funciones más habituales se encuentran:
 
@@ -163,7 +163,7 @@ Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando 
                 \]
             
             \item \textbf{Función Sigmoide:} \\
-                Produce salidas en \([0,1]\) y admite \textbf{interpretación probabilística} (p.\,ej., 0.8 \(\Rightarrow\) 80\%). Además, suaviza la decisión y facilita el cálculo de gradientes:
+                Produce salidas en \([0,1]\) y admite interpretación probabilística (p.\,ej., 0.8 \(\Rightarrow\) 80\%). Además, suaviza la decisión y facilita el cálculo de gradientes:
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=5cm]{activation_functions/sigmoid.png}
@@ -173,10 +173,10 @@ Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando 
                 \[
                 f(x) = \sigma(x) =  \frac{1}{1 + e^{-x}}.
                 \]
-                Sus parámetros se ajustan con \textbf{retropropagación} (Sección~\ref{sec:backpropagation}).
+                Sus parámetros se ajustan con retropropagación (Sección~\ref{sec:backpropagation}).
             
             \item \textbf{Función de Unidad Rectificada Lineal (ReLU):} \\
-                Estándar de facto en redes profundas por su \textbf{eficiencia} y por atenuar el \textit{desvanecimiento del gradiente}. 
+                Estándar de facto en redes profundas por su eficiencia y por atenuar el \textit{desvanecimiento del gradiente}. 
                 Activa proporcionalmente valores positivos y anula los negativos, lo que acelera la convergencia:
                 \begin{itemize}
                     \item \textit{Desvanecimiento del gradiente:} fenómeno donde los gradientes se vuelven muy pequeños y capas tempranas dejan de actualizarse de forma efectiva.
@@ -195,7 +195,7 @@ Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando 
                 \]
             
             \item \textbf{Función Softmax:} \\
-                Se utiliza en la \textbf{capa de salida} para clasificación multiclase, traduciendo activaciones en probabilidades que suman 1:
+                Se utiliza en la capa de salida para clasificación multiclase, traduciendo activaciones en probabilidades que suman 1:
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=6cm]{activation_functions/softmax.png}
@@ -219,9 +219,9 @@ Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando 
                 \]
         
         \end{itemize}
-        
-        En síntesis, las RNA permiten atacar \textbf{relaciones no lineales}, aprender \textbf{mapeos complejos} entrada–salida y obtener modelos más \textbf{robustos al ruido}. 
-        Entre las arquitecturas más extendidas se encuentran las \textbf{redes de perceptrón multicapa} y las \textbf{redes convolucionales}, descritas a continuación.
+       
+        En síntesis, las RNA permiten atacar relaciones no lineales, aprender mapeos complejos entrada–salida y obtener modelos más robustos al ruido. 
+        Entre las arquitecturas más extendidas se encuentran las redes de perceptrón multicapa y las redes convolucionales, descritas a continuación.
 
     \subsection{Redes Neuronales de Perceptrón Multicapa} \label{sec:redes_mlp}
 
@@ -325,7 +325,7 @@ Para cumplir con esta función, un algoritmo incremental debe satisfacer los sig
     \label{fig:incremental_learning_algorithm}
 \end{figure}
 
-Como se observa en la \textbf{Figura~\ref{fig:incremental_learning_algorithm}}, existen dos enfoques históricos fundamentales del aprendizaje incremental:
+Como se observa en la Figura~\ref{fig:incremental_learning_algorithm}, existen dos enfoques históricos fundamentales del aprendizaje incremental:
 
 \begin{itemize}
     \item \textbf{Enfoque acumulativo o secuencial:} 
@@ -342,7 +342,7 @@ En ambos casos, la principal ventaja práctica del enfoque incremental radica en
 Desde un punto de vista formal, dada una secuencia de ejemplos de entrenamiento \(e_1, e_2, \dots, e_s\), un algoritmo incremental genera una serie de hipótesis \(h_0, h_1, \dots, h_n\) tales que cada hipótesis \(h_{i+1}\) depende únicamente de la hipótesis anterior \(h_i\) y del ejemplo actual \(e\) \cite{GiraudCarrier2000}. 
 Este principio permite un aprendizaje adaptativo y continuo, donde el modelo “evoluciona” con cada interacción.
 
-Un ejemplo clásico de aprendizaje incremental es el modelo \textbf{COBWEB} \cite{fisher1987}, que realiza una categorización probabilística jerárquica. 
+Un ejemplo clásico de aprendizaje incremental es el modelo COBWEB \cite{fisher1987}, que realiza una categorización probabilística jerárquica. 
 COBWEB analiza cada instancia entrante y decide si debe crear una nueva categoría, actualizar una existente o reorganizar la jerarquía, basándose en una medida de utilidad global. 
 De esta manera, el sistema construye un árbol de conocimiento que se actualiza conforme se reciben nuevos datos, sin necesidad de reiniciar el proceso de aprendizaje.
 

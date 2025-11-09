@@ -15,6 +15,9 @@
 \usepackage{tikz}
 \usepackage[hidelinks]{hyperref}
 \usepackage{makeidx}
+\usepackage{algorithm}       
+\usepackage{algpseudocode} 
+\usepackage{ragged2e}
 
 \definecolor{shadecolor}{RGB}{224,238,238}
 \usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,calc}
@@ -36,27 +39,40 @@
 
 \makeindex
 
-\title{Desarrollo de un Modelo de Aprendizaje Incremental de Redes Neuronales Artificiales Aplicado al Conjunto de Datos Optdigit}
+\renewenvironment{abstract}{
+  \begin{center}
+    \bfseries \abstractname 
+  \end{center}
+  \begin{quote}
+  \justifying
+}{
+  \end{quote}
+}
+
+\title{Modelado de un Esquema de Aprendizaje Incremental con Memoria Distribuida en Redes Neuronales Artificiales}
 
 \begin{document}
     \includepdf[pages=-,pagecommand={},fitpaper=true]{../02_Chapters/portada.pdf}
 
     \tableofcontents
     \listoffigures
+    \listoftables
 
     \maketitle
 
-    \begin{abstract}
-        Una red neuronal artificial es un modelo de Aprendizaje Automático inspirado en el funcionamiento de las redes neuronales biológicas. Está compuesta por neuronas artificiales (o nodos) organizadas en capas (entrada, oculta y salida), donde la información se procesa mediante transformaciones matemáticas no lineales.
+\begin{abstract}
+\justifying
+El aprendizaje incremental constituye un reto fundamental en el campo de las redes neuronales artificiales, debido al fenómeno del \textit{catastrophic forgetting}, que provoca la pérdida de conocimiento previamente adquirido al incorporar nueva información.  
+En este trabajo se propone un modelo biológicamente inspirado basado en la extensión del enfoque de \cite{bullinaria2009}, mediante la duplicación progresiva de pesos sinápticos como mecanismo de consolidación distribuida de memoria.  
+La investigación se desarrollará utilizando el conjunto de datos \textit{OptDigits} bajo un esquema incremental de seis bloques, evaluando distintas configuraciones con dos, cuatro y seis memorias duplicadas.  
+Se espera que el modelo extendido logre una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) respecto al modelo dual original, manteniendo un costo computacional estable.  
+Los resultados previstos contribuirán a la comprensión del equilibrio estabilidad–plasticidad en redes neuronales y abrirán nuevas posibilidades para el desarrollo de sistemas de aprendizaje continuo más eficientes y sostenibles.
 
-        El aprendizaje de estos modelos se realiza a través de un proceso de entrenamiento, en el cual los datos atraviesan la red capa por capa. En cada neurona se calcula una función de activación, se estima la pérdida comparando la salida con el valor real, y luego se aplica el algoritmo de retropropagación para ajustar los pesos y sesgos con el objetivo de minimizar dicha pérdida. Este proceso se repite hasta que la pérdida converge.
+\vspace{1em}
+\noindent\textbf{Palabras clave:} Aprendizaje incremental; Olvido catastrófico; Redes neuronales artificiales; Memoria distribuida; Aprendizaje continuo; PyTorch.
+\end{abstract}
 
-        En el enfoque tradicional, el modelo se entrena con un conjunto inicial de datos y, ante la llegada de nueva información, debe reentrenarse desde cero utilizando todos los datos disponibles. Este proceso puede resultar ineficiente y costoso computacionalmente, especialmente con grandes volúmenes de datos.
-
-        El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos  \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
-    \end{abstract}
-
-    \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
+  
 
     \input{../02_Chapters/introduction}
     \input{../02_Chapters/approach}
@@ -70,7 +86,7 @@
     \input{../02_Chapters/methodology}
     \input{../02_Chapters/capitulated}
     \input{../02_Chapters/gantt_chart}
-    \input{../02_Chapters/results}
+    %\input{../02_Chapters/results}
 
     \bibliographystyle{plain}
     \bibliography{dataset}
