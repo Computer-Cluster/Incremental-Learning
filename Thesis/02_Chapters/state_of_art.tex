@@ -1,14 +1,14 @@
-\section{Estado del Arte}
+\section{State of the Art}
 
-\subsection{Estrategia de Búsqueda}
-Para la elaboración del presente estado del arte se adoptó la metodología PRISMA 2020 (Preferred Reporting Items for Systematic Reviews and Meta-Analyses), la cual proporciona un marco estandarizado para realizar revisiones sistemáticas de literatura científica de forma transparente, rigurosa y reproducible.  
+\subsection{Search Strategy}
+To prepare the present state of the art, the PRISMA 2020 methodology (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) was adopted, which provides a standardised framework for conducting systematic reviews of scientific literature in a transparent, rigorous, and reproducible manner.  
 
-El objetivo fue identificar y analizar investigaciones relevantes relacionadas con el aprendizaje incremental, el aprendizaje continuo y las estrategias para mitigar el \textit{catastrophic forgetting} en redes neuronales artificiales.  
+The aim was to identify and analyse relevant research related to incremental learning, continual learning, and strategies to mitigate \textit{catastrophic forgetting} in artificial neural networks.  
 
-La búsqueda bibliográfica se realizó desde el año 2010 hasta 2025, con el propósito de abarcar tanto los trabajos fundacionales —como los propuestos por Bullinaria y otros autores en la década de 2010— como los avances más recientes en la materia.  
-El periodo se seleccionó considerando que a partir de 2010 comenzó a consolidarse el interés científico en los mecanismos de retención y olvido dentro del aprendizaje automático.  
+The literature search covered the period from 2010 to 2025, in order to encompass both foundational works—such as those proposed by Bullinaria and other authors in the 2010s—and the most recent advances in the field.  
+This period was selected on the grounds that, from 2010 onwards, scientific interest in retention and forgetting mechanisms within machine learning became consolidated.  
 
-El proceso de búsqueda se llevó a cabo entre 2010 y 2025 en las siguientes bases de datos académicas:
+The search process was carried out between 2010 and 2025 in the following academic databases:
 \begin{itemize}
     \item IEEE Xplore
     \item ScienceDirect
@@ -16,53 +16,53 @@ El proceso de búsqueda se llevó a cabo entre 2010 y 2025 en las siguientes bas
     \item Scopus
     \item Google Scholar
     \item Advancing Computing as a Science \& Profession
-    \item ArXiv (Cornell University)
+    \item arXiv (Cornell University)
 \end{itemize}
 
-Se emplearon combinaciones booleanas de palabras clave en inglés y español, entre las cuales se incluyeron: 
-\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} y \textit{``artificial intelligence''}.  
-Los términos se adaptaron a las opciones de búsqueda de cada base de datos con el fin de maximizar la cobertura y recuperar los estudios más relevantes y actualizados.
+Boolean combinations of keywords in English and Spanish were employed, including: 
+\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} and \textit{``artificial intelligence''}.  
+The terms were adapted to the search options of each database in order to maximise coverage and retrieve the most relevant and up-to-date studies.
 
-\subsection{Criterios de Inclusión y Exclusión}
-Con el propósito de garantizar la pertinencia y calidad metodológica de los estudios seleccionados, se establecieron los siguientes criterios:
+\subsection{Inclusion and Exclusion Criteria}
+With the purpose of ensuring the relevance and methodological quality of the selected studies, the following criteria were established:
 
-\textbf{Criterios de inclusión:}
+\textbf{Inclusion criteria:}
 \begin{itemize}
-    \item Publicaciones comprendidas entre 2010 y 2025.
-    \item Artículos que aborden explícitamente el aprendizaje incremental o continuo en redes neuronales artificiales.
-    \item Investigaciones que analicen el fenómeno del \textit{catastrophic forgetting} o propongan soluciones asociadas.
-    \item Estudios con aplicaciones en áreas como robótica, visión por computadora, ciberseguridad o sistemas adaptativos.
+    \item Publications between 2010 and 2025.
+    \item Articles that explicitly address incremental or continual learning in artificial neural networks.
+    \item Research that analyses the phenomenon of \textit{catastrophic forgetting} or proposes associated solutions.
+    \item Studies with applications in areas such as robotics, computer vision, cybersecurity, or adaptive systems.
 \end{itemize}
 
-\textbf{Criterios de exclusión:}
+\textbf{Exclusion criteria:}
 \begin{itemize}
-    \item Artículos de revisión sin evidencia empírica.
-    \item Trabajos sin acceso a texto completo o con resultados preliminares.
-    \item Publicaciones duplicadas o con sesgos metodológicos evidentes.
+    \item Review articles without empirical evidence.
+    \item Works without full-text access or with preliminary results.
+    \item Duplicated publications or those with evident methodological bias.
 \end{itemize}
 
-\subsection{Proceso de Selección}
-La búsqueda inicial arrojó un total de 1,246 registros. Tras la eliminación de 312 duplicados, se conservaron 934 artículos únicos.  
-Durante la fase de cribado (revisión de títulos y resúmenes), se descartaron 886 estudios por no cumplir los criterios de inclusión.  
-Los 48 artículos restantes fueron evaluados a texto completo, y finalmente, 18 cumplieron con los estándares metodológicos y temáticos requeridos para la síntesis cualitativa.  
+\subsection{Selection Process}
+The initial search yielded a total of 1,246 records. After removing 312 duplicates, 934 unique articles were retained.  
+During the screening phase (title and abstract review), 886 studies were excluded for not meeting the inclusion criteria.  
+The remaining 48 articles were assessed in full text, and, ultimately, 18 met the methodological and thematic standards required for qualitative synthesis.  
 
-El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama de flujo PRISMA mostrado en la Figura~\ref{fig:prisma}.
+The selection process is summarised in Table~\ref{tab:prisma} and in the PRISMA flow diagram shown in Figure~\ref{fig:prisma}.
 
 \begin{table}[H]
     \centering
-    \caption{Resumen del proceso de selección de artículos según PRISMA 2020.}
+    \caption{Summary of the article selection process according to PRISMA 2020.}
     \label{tab:prisma}
     \begin{tabularx}{\textwidth}{l c}
         \toprule
-        \textbf{Etapa} & \textbf{Número de estudios (n)} \\
+        \textbf{Stage} & \textbf{Number of studies (n)} \\
         \midrule
-        Registros identificados en bases de datos & 60 \\
-        Duplicados eliminados & 15 \\
-        Registros tras eliminación de duplicados & 45 \\
-        Registros excluidos tras revisión de título/resumen & 30 \\
-        Artículos evaluados a texto completo & 28 \\
-        Artículos excluidos por falta de resultados aplicables & 2 \\
-        \textbf{Estudios incluidos en la síntesis cualitativa} & \textbf{18} \\
+        Records identified in databases & 60 \\
+        Duplicates removed & 15 \\
+        Records after duplicate removal & 45 \\
+        Records excluded after title/abstract screening & 30 \\
+        Articles assessed in full text & 28 \\
+        Articles excluded for lack of applicable results & 2 \\
+        \textbf{Studies included in the qualitative synthesis} & \textbf{18} \\
         \bottomrule
     \end{tabularx}
 \end{table}
@@ -70,13 +70,13 @@ El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[node distance=1.1cm, every node/.style={align=center, font=\small, fill=gray!5, rounded corners}]
-        \node (id) [rectangle, draw, text width=9cm] {Identificación: \\ Registros identificados en bases de datos (n = 60)};
-        \node (dup) [rectangle, draw, below of=id, text width=9cm] {Eliminación de duplicados (n = 15)};
-        \node (scr) [rectangle, draw, below of=dup, text width=9cm] {Cribado: \\ Registros evaluados por título y resumen (n = 45)};
-        \node (exc1) [rectangle, draw, below of=scr, text width=9cm] {Registros excluidos por no cumplir criterios (n = 30)};
-        \node (full) [rectangle, draw, below of=exc1, text width=9cm] {Elegibilidad: \\ Artículos evaluados a texto completo (n = 28)};
-        \node (exc2) [rectangle, draw, below of=full, text width=9cm] {Excluidos por falta de resultados aplicables (n = 2)};
-        \node (incl) [rectangle, draw, below of=exc2, text width=9cm] {Incluidos: \\ Estudios considerados en la síntesis cualitativa (n = 18)};
+        \node (id) [rectangle, draw, text width=9cm] {Identification: \\ Records identified in databases (n = 60)};
+        \node (dup) [rectangle, draw, below of=id, text width=9cm] {Duplicate removal (n = 15)};
+        \node (scr) [rectangle, draw, below of=dup, text width=9cm] {Screening: \\ Records assessed by title and abstract (n = 45)};
+        \node (exc1) [rectangle, draw, below of=scr, text width=9cm] {Records excluded for not meeting criteria (n = 30)};
+        \node (full) [rectangle, draw, below of=exc1, text width=9cm] {Eligibility: \\ Articles assessed in full text (n = 28)};
+        \node (exc2) [rectangle, draw, below of=full, text width=9cm] {Excluded for lack of applicable results (n = 2)};
+        \node (incl) [rectangle, draw, below of=exc2, text width=9cm] {Included: \\ Studies considered in the qualitative synthesis (n = 18)};
         
         \draw[->] (id) -- (dup);
         \draw[->] (dup) -- (scr);
@@ -85,49 +85,50 @@ El proceso de selección se resume en la Tabla~\ref{tab:prisma} y en el diagrama
         \draw[->] (full) -- (exc2);
         \draw[->] (exc2) -- (incl);
     \end{tikzpicture}
-    \caption{Diagrama de flujo PRISMA 2020 para la selección de estudios.}
+    \caption{PRISMA flow diagram for study selection.}
     \label{fig:prisma}
 \end{figure}
 
-\subsubsection{Síntesis de Resultados}
+\subsubsection{Synthesis of Results}
 
-Los 18 estudios analizados ofrecen una panorámica completa del aprendizaje incremental en redes neuronales artificiales, abordando diferentes dominios, arquitecturas y estrategias de mitigación del olvido catastrófico. 
-El análisis comparativo permitió identificar seis líneas temáticas principales, que reflejan tanto la evolución conceptual como las aplicaciones prácticas más relevantes del área:
+The 18 studies analysed offer a comprehensive overview of incremental learning in artificial neural networks, addressing different domains, architectures, and strategies to mitigate catastrophic forgetting. 
+The comparative analysis made it possible to identify six main thematic strands, reflecting both conceptual evolution and the most relevant practical applications in the area:
 
 \begin{itemize}
-    \item \textbf{Robótica y control adaptativo:}  
-    En este campo, el aprendizaje incremental se aplica principalmente al control de prótesis inteligentes, exoesqueletos y robots autónomos, donde los sistemas deben adaptarse continuamente a condiciones cambiantes del entorno o del usuario. 
-    Lippi et al. \cite{lippi2021} destacan que los modelos incrementales permiten una recalibración dinámica sin necesidad de reentrenamiento global, favoreciendo respuestas más precisas y energéticamente eficientes.  
-    Estos hallazgos respaldan la idea de mantener mecanismos de memoria dual, donde una parte del sistema consolida experiencias estables mientras otra se ajusta a las nuevas entradas.
+    \item \textbf{Robotics and adaptive control:}  
+    In this field, incremental learning is applied mainly to the control of intelligent prostheses, exoskeletons, and autonomous robots, where systems must continuously adapt to changing environmental or user conditions. 
+    Lippi et al. \cite{lippi2021} highlight that incremental models allow dynamic recalibration without the need for global retraining, enabling more precise and energy-efficient responses.  
+    These findings support the idea of maintaining dual-memory mechanisms, where one part of the system consolidates stable experiences whilst another adjusts to new inputs.
 
-    \item \textbf{Visión por computadora y reconocimiento de patrones:}  
-    En esta línea, se observa un amplio uso de redes convolucionales (\textit{CNNs}) con mecanismos de aprendizaje continuo aplicados a la clasificación de imágenes, segmentación semántica y conducción autónoma.  
-    Wei et al. \cite{WEI2020} muestran que la combinación de estrategias de \textit{replay} con regularización selectiva mejora la retención de características visuales.  
-    Sin embargo, estos métodos suelen depender del almacenamiento de muestras anteriores, lo que implica un mayor costo computacional y de memoria. 
-    En este contexto, modelos biológicamente inspirados como el de \cite{bullinaria2009} ofrecen una alternativa más ligera al no requerir memoria explícita.
+    \item \textbf{Computer vision and pattern recognition:}  
+    In this line, there is extensive use of convolutional neural networks (\textit{CNNs}) with continual learning mechanisms applied to image classification, semantic segmentation, and autonomous driving.  
+    Wei et al. \cite{WEI2020} show that combining \textit{replay} strategies with selective regularisation improves the retention of visual features.  
+    However, such methods often rely on storing previous samples, which implies a higher computational and memory cost. 
+    In this context, biologically inspired models such as \cite{bullinaria2009} offer a lighter alternative by not requiring explicit memory.
 
-    \item \textbf{Ciberseguridad y análisis de tráfico:}  
-    Cerasuolo et al. \cite{CERASUOLO2024} implementan el modelo \textit{MEMENTO} para la clasificación incremental de tráfico cifrado, demostrando la aplicabilidad del aprendizaje continuo en escenarios de detección de anomalías.  
-    Su enfoque combina estrategias de consolidación de pesos con métricas de estabilidad temporal, lo que refuerza la relevancia del manejo jerárquico de la memoria en sistemas que deben responder en tiempo real.
+    \item \textbf{Cybersecurity and traffic analysis:}  
+    Cerasuolo et al. \cite{CERASUOLO2024} implement the \textit{MEMENTO} model for incremental classification of encrypted traffic, demonstrating the applicability of continual learning in anomaly detection scenarios.  
+    Their approach combines weight consolidation strategies with temporal stability metrics, reinforcing the relevance of hierarchical memory management in systems that must respond in real time.
 
-    \item \textbf{Métodos generales y enfoques teóricos:}  
-    Entre los avances más influyentes destacan los métodos de regularización elástica propuestos por Kirkpatrick et al. \cite{kirkpatrick2017overcoming}, los mecanismos de memoria episódica como \textit{iCaRL} \cite{rebuffi2017icarl}, y las arquitecturas con expansión neuronal progresiva descritas por \cite{bullinaria2009}.  
-    Estas propuestas reflejan distintas aproximaciones al dilema estabilidad-plasticidad: mientras EWC y MAS priorizan la preservación del conocimiento, los modelos progresivos fomentan la flexibilidad estructural y la adaptación sostenida.
+    \item \textbf{General methods and theoretical approaches:}  
+    Among the most influential advances are elastic regularisation methods proposed by Kirkpatrick et al. \cite{kirkpatrick2017overcoming}, episodic memory mechanisms such as \textit{iCaRL} \cite{rebuffi2017icarl}, and architectures with progressive neuronal expansion described by \cite{bullinaria2009}.  
+    These proposals reflect different approaches to the stability–plasticity dilemma: whilst EWC and MAS prioritise the preservation of knowledge, progressive models promote structural flexibility and sustained adaptation.
 
-    \item \textbf{Tendencias emergentes (2024–2025):}  
-    Investigaciones recientes como las de Hacohen et al. \cite{hacohenforgetting} evidencian patrones \textit{LIFO} (\textit{Last In, First Out}) en el aprendizaje continuo, donde los ejemplos aprendidos más rápidamente tienden a conservarse mejor, mientras que los más difíciles se olvidan con mayor facilidad.  
-    Por su parte, Sarkar et al. \cite{sarkar2025adaptive} proponen \textit{EVCL+} (\textit{Elastic Variational Continual Learning Plus}), una metodología que combina regularización de Fisher con aprendizaje variacional para proteger los parámetros más significativos.  
-    Estas tendencias reflejan un interés creciente por la optimización adaptativa del espacio de pesos, alineándose con la filosofía de Bullinaria, que propone ajustar los pesos mediante duplicidades controladas en lugar de recurrir a memorias externas.
+    \item \textbf{Emerging trends (2024–2025):}  
+    Recent research such as that of Hacohen et al. \cite{hacohenforgetting} evidences \textit{LIFO} (Last In, First Out) patterns in continual learning, where examples learned more quickly tend to be better retained, whilst more difficult ones are forgotten more easily.  
+    For their part, Sarkar et al. \cite{sarkar2025adaptive} propose \textit{EVCL+} (Elastic Variational Continual Learning Plus), a methodology that combines Fisher regularisation with variational learning to protect the most significant parameters.  
+    These trends reflect growing interest in adaptive optimisation of weight space, aligning with Bullinaria’s philosophy of adjusting weights via controlled duplication rather than resorting to external memories.
 
-    \item \textbf{Taxonomías y comparativas recientes:}  
-    De Lange et al. \cite{de2021continual} establecen una clasificación estructurada de los métodos de aprendizaje continuo en tres grandes familias: Replay, Regularization-based y Parameter Isolation.  
-    Sus resultados demuestran que modelos como \textit{PackNet} e \textit{iCaRL} logran mayor retención de conocimiento, mientras que \textit{Memory Aware Synapses (MAS)} presenta una mayor robustez frente a la variación de hiperparámetros.  
-    No obstante, la mayoría de estas aproximaciones requieren gestión explícita de memoria o expansión arquitectónica, lo cual incrementa la complejidad.  
-    Por ello, se recomienda explorar alternativas de consolidación interna de pesos como las propuestas por Bullinaria, que equilibran eficiencia y estabilidad con un costo computacional mínimo.
+    \item \textbf{Recent taxonomies and comparisons:}  
+    De Lange et al. \cite{de2021continual} establish a structured classification of continual learning methods into three major families: Replay, Regularisation-based, and Parameter Isolation.  
+    Their results show that models such as \textit{PackNet} and \textit{iCaRL} achieve greater knowledge retention, while \textit{Memory Aware Synapses (MAS)} exhibits greater robustness to hyperparameter variation.  
+    Nonetheless, most of these approaches require explicit memory management or architectural expansion, which increases complexity.  
+    Therefore, it is advisable to explore alternatives based on internal weight consolidation, such as those proposed by Bullinaria, which balance efficiency and stability with minimal computational cost.
 \end{itemize}
-\subsubsection{Comparativa de Modelos y Tendencias Recientes}
 
-A continuación, se presenta una síntesis comparativa de los principales enfoques identificados en la literatura, organizada en dos bloques: modelos clásicos (2009–2019), que sentaron las bases del aprendizaje incremental, y modelos recientes (2020–2025), que reflejan las tendencias actuales en estabilidad, plasticidad y consolidación de la memoria.
+\subsubsection{Model Comparison and Recent Trends}
+
+Below is a concise comparison of the main approaches identified in the literature, organised into two blocks: classic models (2009–2019), which laid the foundations of incremental learning, and recent models (2020–2025), which reflect current trends in stability, plasticity, and memory consolidation.
 
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.15}
@@ -135,7 +136,7 @@ A continuación, se presenta una síntesis comparativa de los principales enfoqu
 \begin{table}[H]
 \centering
 \small
-\caption{Comparativa resumida de enfoques clásicos y recientes en aprendizaje incremental.}
+\caption{Concise comparison of classic and recent approaches in incremental learning.}
 \label{tab:state_art_summary}
 \begin{tabularx}{\textwidth}{
   >{\raggedright\arraybackslash}p{3.5cm}
@@ -144,54 +145,53 @@ A continuación, se presenta una síntesis comparativa de los principales enfoqu
   >{\raggedright\arraybackslash}X
   >{\raggedright\arraybackslash}X}
 \toprule
-\textbf{Autor (Año)} & \textbf{Modelo / Técnica} & \textbf{Familia} & \textbf{Aporte principal} & \textbf{Limitación} \\
+\textbf{Author (Year)} & \textbf{Model / Technique} & \textbf{Family} & \textbf{Main contribution} & \textbf{Limitation} \\
 \midrule
-\multicolumn{5}{@{}l}{\textbf{Modelos Clásicos (2009–2019)}}\\[0.25em]
-Bullinaria (2009) \cite{bullinaria2009} & Dual Weights & Consolidación interna & Mitiga el olvido sin \textit{replay}. & No escalable (>2 memorias). \\
-Kirkpatrick et al. (2017) \cite{kirkpatrick2017overcoming} & EWC & Regularización & Preserva pesos críticos (Fisher). & Alto costo computacional. \\
-Zenke et al. (2017) \cite{zenke2017continual} & Synaptic Intelligence & Regularización & Actualización \mbox{on-line} eficiente. & Sensible a hiperparámetros. \\
-Li \& Hoiem (2016) \cite{li2016lwf} & LwF & Distillation & Evita almacenar datos previos. & Depende de salidas antiguas. \\
-Rusu et al. (2016) \cite{rusu2016pnn} & Progressive NN & Aislamiento & Evita interferencia entre tareas. & Crece indefinidamente. \\
-Rebuffi et al. (2017) \cite{rebuffi2017icarl} & iCaRL & Replay + Distillation & Alta retención por clase. & Requiere memoria de ejemplos. \\
-De Lange et al. (2021) \cite{de2021continual} & Survey & Taxonomía & Clasifica métodos (Replay, Reg., Isolation). & No propone modelo propio. \\
+\multicolumn{5}{@{}l}{\textbf{Classic Models (2009–2019)}}\\[0.25em]
+Bullinaria (2009) \cite{bullinaria2009} & Dual Weights & Internal consolidation & Mitigates forgetting without \textit{replay}. & Not scalable (>2 memories). \\
+Kirkpatrick et al. (2017) \cite{kirkpatrick2017overcoming} & EWC & Regularisation & Preserves critical weights (Fisher). & High computational cost. \\
+Zenke et al. (2017) \cite{zenke2017continual} & Synaptic Intelligence & Regularisation & Efficient on-line update. & Sensitive to hyperparameters. \\
+Li \& Hoiem (2016) \cite{li2016lwf} & LwF & Distillation & Avoids storing past data. & Depends on old outputs. \\
+Rusu et al. (2016) \cite{rusu2016pnn} & Progressive NN & Isolation & Avoids task interference. & Grows indefinitely. \\
+Rebuffi et al. (2017) \cite{rebuffi2017icarl} & iCaRL & Replay + Distillation & High per-class retention. & Requires exemplar memory. \\
+De Lange et al. (2021) \cite{de2021continual} & Survey & Taxonomy & Classifies methods (Replay, Reg., Isolation). & Does not propose a model. \\
 \midrule
-\multicolumn{5}{@{}l}{\textbf{Modelos Recientes (2020–2025)}}\\[0.25em]
-Wei et al. (2020) \cite{WEI2020} & Multi-Domain Adaptation & Replay + Reg. & Mejora retención visual. & Requiere memoria parcial. \\
-Lillicrap et al. (2020) \cite{lillicrap2020} & Backpropagation and the Brain & Insp. biológica & Relaciona aprendizaje biológico y ANN. & Teórico, no incremental directo. \\
-Lippi et al. (2021) \cite{lippi2021} & Gait Phase ID & Aplicación robótica & Incremental en control adaptativo. & Caso específico. \\
-Cerasuolo et al. (2024) \cite{CERASUOLO2024} & MEMENTO & Consolidación de pesos & Incremental sin \textit{replay}; estabilidad temporal. & Dominio limitado. \\
-Hacohen \& Tuytelaars (2023) \cite{hacohenforgetting} & Forgetting Order & Dinámica del olvido & Analiza patrón LIFO del olvido. & Resultados preliminares. \\
-Sarkar (2025) \cite{sarkar2025adaptive} & EVCL+ & Reg. variacional & Estabilidad adaptativa. & Complejidad de implementación. \\
-Liu et al. (2025) \cite{liu2025continual} & CL for VLMs & Survey & Taxonomía moderna (modelos grandes). & Enfoque en LLMs/VLMs. \\
+\multicolumn{5}{@{}l}{\textbf{Recent Models (2020–2025)}}\\[0.25em]
+Wei et al. (2020) \cite{WEI2020} & Multi-Domain Adaptation & Replay + Reg. & Improves visual retention. & Requires partial memory. \\
+Lillicrap et al. (2020) \cite{lillicrap2020} & Backpropagation and the Brain & Biological insp. & Relates biological and ANN learning. & Theoretical, not directly incremental. \\
+Lippi et al. (2021) \cite{lippi2021} & Gait Phase ID & Robotic application & Incremental in adaptive control. & Task-specific. \\
+Cerasuolo et al. (2024) \cite{CERASUOLO2024} & MEMENTO & Weight consolidation & Incremental without \textit{replay}; temporal stability. & Limited domain. \\
+Hacohen \& Tuytelaars (2023) \cite{hacohenforgetting} & Forgetting Order & Forgetting dynamics & Analyses LIFO forgetting pattern. & Preliminary results. \\
+Sarkar (2025) \cite{sarkar2025adaptive} & EVCL+ & Variational reg. & Adaptive stability. & Implementation complexity. \\
+Liu et al. (2025) \cite{liu2025continual} & CL for VLMs & Survey & Modern taxonomy (large models). & Focus on LLMs/VLMs. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
+\subsubsection{Conclusion of the State of the Art}
 
-\subsubsection{Conclusión del Estado del Arte}
+The analysis of the state of the art reveals significant progress in the development of incremental learning models applied to various domains, from robotics and computer vision to cybersecurity and natural language processing. 
+This progress has enabled artificial intelligence systems to gradually adapt to new environments without requiring complete retraining, demonstrating that the ability to learn continuously is essential to achieving truly intelligent and autonomous behaviour.
 
-El análisis del estado del arte revela un progreso significativo en el desarrollo de modelos de aprendizaje incremental aplicados a diversos dominios, desde la robótica y la visión por computadora hasta la ciberseguridad y el procesamiento del lenguaje natural. 
-Este avance ha permitido a los sistemas de inteligencia artificial adaptarse gradualmente a nuevos entornos sin requerir un reentrenamiento completo, demostrando que la capacidad de aprender de forma continua es esencial para alcanzar comportamientos verdaderamente inteligentes y autónomos.
+Nevertheless, despite the achievements, the reviewed literature shows that incremental learning still faces fundamental challenges related to stability, plasticity, and computational efficiency. 
+In particular, current models tend to fall into one of the two extremes of the stability–plasticity dilemma: either they retain too much prior knowledge, hindering the incorporation of new information, or they adapt rapidly to recent data at the cost of forgetting what has already been learned. 
+This balance remains one of the main barriers to achieving genuinely continual learning.
 
-No obstante, a pesar de los logros obtenidos, la literatura revisada pone de manifiesto que el aprendizaje incremental aún enfrenta desafíos fundamentales relacionados con la estabilidad, la plasticidad y la eficiencia computacional. 
-En particular, los modelos actuales tienden a caer en alguno de los dos extremos del dilema estabilidad–plasticidad: o bien conservan demasiado conocimiento previo, dificultando la incorporación de nueva información, o bien se adaptan rápidamente a datos recientes, a costa de olvidar lo ya aprendido. 
-Este balance sigue siendo una de las principales barreras para la consolidación de un aprendizaje verdaderamente continuo.
+Contemporary strategies to mitigate \textit{catastrophic forgetting}—such as regularisation methods, \textit{replay}, and parameter isolation—have shown partial effectiveness but present limitations that affect their scalability and practical applicability. 
+Regularisation methods (such as EWC or MAS) require estimates of parameter importance, which implies high computational cost; \textit{replay}-based methods depend on storing or generating old data, affecting privacy and performance; and parameter isolation methods (such as \textit{PackNet} or \textit{Progressive Networks}) tend to increase network size indefinitely, compromising efficiency in prolonged learning contexts. 
 
-Las estrategias contemporáneas para mitigar el \textit{olvido catastrófico} —tales como los métodos de regularización, \textit{replay} y aislamiento de parámetros— han demostrado efectividad parcial, pero presentan limitaciones que afectan su escalabilidad y aplicabilidad práctica. 
-Los métodos de regularización (como EWC o MAS) requieren estimaciones de importancia de los parámetros, lo que implica un alto costo computacional; los métodos de repetición (\textit{replay}) dependen del almacenamiento o generación de datos antiguos, afectando la privacidad y el rendimiento; y los métodos de aislamiento de parámetros (como \textit{PackNet} o \textit{Progressive Networks}) tienden a incrementar el tamaño de la red de forma indefinida, comprometiendo su eficiencia en contextos de aprendizaje prolongado. 
+These limitations underscore the need to explore alternatives that integrate the benefits of such strategies without increasing model complexity or relying on explicit memories. 
+In this context, biologically inspired approaches gain relevance, as they offer mechanisms that emulate the brain's memory consolidation—particularly the interaction between the hippocampus (short-term memory) and the neocortex (long-term memory)—thus allowing gradual and efficient knowledge retention.  
 
-Estas limitaciones evidencian la necesidad de explorar alternativas que integren los beneficios de dichas estrategias sin incrementar la complejidad del modelo ni depender de memorias explícitas. 
-En este contexto, los enfoques biológicamente inspirados cobran relevancia, al ofrecer mecanismos que emulan la consolidación de memoria del cerebro humano -particularmente la interacción entre el hipocampo (memoria a corto plazo) y la neocorteza (memoria a largo plazo)—, lo que permite mantener una retención gradual y eficiente del conocimiento.  
+Within this line, the model proposed by \cite{bullinaria2009} is a key contribution, introducing a dual-memory system based on the duplication of synaptic weights. 
+This design allows one part of the network to process recent information dynamically (short-term memory), while another part consolidates stable knowledge (long-term memory). 
+Such an approach offers a viable alternative to architectures that depend on external memories or structural expansion, providing a simpler and more efficient solution with solid neurocomputational underpinnings.
 
-Dentro de esta línea, el modelo propuesto por \cite{bullinaria2009} constituye una contribución clave al introducir un sistema de memoria dual basado en la duplicación de pesos sinápticos. 
-Este diseño permite que una parte de la red procese la información reciente de manera dinámica (memoria de corto plazo), mientras otra parte consolida el conocimiento estable (memoria de largo plazo). 
-Dicho enfoque ofrece una alternativa viable frente a las arquitecturas que dependen de memorias externas o expansiones estructurales, proporcionando una solución más simple, eficiente y con fundamentos neurocomputacionales sólidos.
+However, the reviewed studies also indicate that Bullinaria’s model, although conceptually robust, has been little explored and lacks extensions that analyse its behaviour with different memory configurations or variations in weight duplication. 
+Most investigations have been limited to replicating the original implementation without assessing its potential to optimise the stability–plasticity trade-off in more complex or prolonged incremental learning scenarios.
 
-Sin embargo, los estudios revisados también indican que el modelo de Bullinaria, aunque conceptualmente robusto, ha sido poco explorado y carece de extensiones que analicen su comportamiento con diferentes configuraciones de memoria o variaciones en la duplicación de pesos. 
-La mayoría de las investigaciones se han limitado a replicar su implementación original sin evaluar su potencial para optimizar la estabilidad–plasticidad en escenarios más complejos o prolongados de aprendizaje incremental.
+Therefore, the present research is formulated as a direct extension of that work, with the aim of evaluating and expanding the dual-memory model towards an architecture with multiple weight duplications, analysing its impact on knowledge retention, forgetting rate, and training efficiency. 
+Through this proposal, the objective is to determine whether increasing the number of intermediate memories can favour a more gradual transition between acquisition and consolidation, thereby reducing catastrophic forgetting without significantly increasing computational cost.
 
-Por ello, la presente investigación se plantea como una extensión directa de dicho trabajo, con el propósito de evaluar y ampliar el modelo de memoria dual hacia una arquitectura de múltiples duplicaciones de pesos, analizando su impacto en la retención de conocimiento, la tasa de olvido y la eficiencia del entrenamiento. 
-A través de esta propuesta, se busca determinar si el incremento en el número de memorias intermedias puede favorecer una transición más gradual entre la adquisición y la consolidación del aprendizaje, reduciendo así el olvido catastrófico sin incrementar significativamente el costo computacional.
-
-En síntesis, mientras las estrategias modernas se centran en la complejidad arquitectónica o el uso intensivo de recursos, el enfoque propuesto retoma un principio fundamental: la simplicidad biológicamente inspirada como base de la estabilidad del aprendizaje. 
-De comprobarse su efectividad, este modelo podría representar un paso intermedio entre las aproximaciones tradicionales y los sistemas verdaderamente adaptativos, aportando una alternativa más sostenible, interpretable y eficiente dentro del campo del aprendizaje incremental en redes neuronales artificiales.
+In summary, whilst modern strategies focus on architectural complexity or intensive use of resources, the proposed approach returns to a fundamental principle: biologically inspired simplicity as the basis for learning stability. 
+If proven effective, this model could represent an intermediate step between traditional approaches and truly adaptive systems, providing a more sustainable, interpretable, and efficient alternative within the field of incremental learning in artificial neural networks.

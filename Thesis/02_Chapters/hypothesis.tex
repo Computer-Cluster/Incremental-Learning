@@ -1,40 +1,40 @@
-\section{Hipótesis y Criterios de Evaluación}
+\section{Hypothesis and Evaluation Criteria}
 
-\subsection{Hipótesis de Investigación}
+\subsection{Research Hypothesis}
 
-El aprendizaje incremental en redes neuronales artificiales enfrenta el desafío de equilibrar la estabilidad del conocimiento adquirido con la plasticidad necesaria para incorporar nueva información. Bajo este contexto, se plantea la siguiente hipótesis de investigación:
+Incremental learning in artificial neural networks faces the challenge of balancing the stability of previously acquired knowledge with the plasticity required to incorporate new information. Within this context, the following research hypothesis is proposed:
 
 \begin{quote}
-    \textbf{Hipótesis general:} 
-    La incorporación de memorias duplicadas adicionales en una arquitectura neuronal basada en el modelo de \cite{bullinaria2009} incrementará la retención del conocimiento previo en al menos un 10--15\% respecto al modelo original, manteniendo un costo computacional comparable y sin requerir mecanismos explícitos de \textit{replay}.
+    \textbf{General Hypothesis:} 
+    The incorporation of additional duplicated memories in a neural architecture based on the model of \cite{bullinaria2009} will increase the retention of previously acquired knowledge by at least 10--15\% compared with the original model, while maintaining a comparable computational cost and without requiring explicit replay mechanisms.
 \end{quote}
 
-Esta hipótesis parte de la premisa de que la duplicación de pesos sinápticos actúa como un mecanismo de consolidación distribuida, análogo a los procesos de transferencia de memoria de corto a largo plazo observados en sistemas biológicos.  
-De esta forma, se busca demostrar que el uso de múltiples memorias intermedias puede mitigar el \textit{olvido catastrófico} y favorecer una transición más gradual entre las fases de aprendizaje incremental.
+This hypothesis is based on the premise that the duplication of synaptic weights acts as a distributed consolidation mechanism, analogous to the transfer processes from short- to long-term memory observed in biological systems.  
+Thus, the aim is to demonstrate that the inclusion of multiple intermediate memories can mitigate catastrophic forgetting and promote a smoother transition between incremental learning phases.
 
-\subsection{Criterios de Evaluación} \label{sec:criterios_eval}
+\subsection{Evaluation Criteria} \label{sec:criterios_eval}
 
-Para validar la hipótesis propuesta, se consideran los siguientes criterios de evaluación cuantitativos y cualitativos, aplicados a cada bloque incremental del experimento:
+To validate the proposed hypothesis, the following quantitative and qualitative evaluation criteria are considered, applied to each incremental block of the experiment:
 
 \begin{itemize}
-    \item \textbf{Exactitud incremental promedio (IA):} medida del desempeño global del modelo considerando la acumulación progresiva de conocimiento a través de los bloques de entrenamiento.
+    \item \textbf{Average Incremental Accuracy (IA):} a measure of the overall performance of the model, considering the progressive accumulation of knowledge throughout the training blocks.
     
-    \item \textbf{Tasa de olvido (F):} porcentaje de pérdida de precisión en los conjuntos de datos anteriores tras el aprendizaje de un nuevo bloque, calculado como:
+    \item \textbf{Forgetting Rate (F):} the percentage loss of accuracy on previous datasets after learning a new block, calculated as:
     \[
     F = \frac{A_{i-1} - A_{i}}{A_{i-1}} \times 100
     \]
-    donde $A_{i}$ representa la precisión obtenida en el conjunto anterior tras entrenar el bloque $i$.
+    where $A_{i}$ represents the accuracy obtained on the previous dataset after training block $i$.
     
-    \item \textbf{Retención de memoria (RM):} proporción del conocimiento conservado al finalizar el entrenamiento incremental, comparando el rendimiento final con el inicial:
+    \item \textbf{Memory Retention (RM):} the proportion of knowledge preserved at the end of incremental training, comparing the final performance with the initial one:
     \[
     RM = \frac{A_{f}}{A_{0}} \times 100
     \]
-    donde $A_{f}$ es la precisión final y $A_{0}$ la inicial.
+    where $A_{f}$ is the final accuracy and $A_{0}$ the initial accuracy.
     
-    \item \textbf{Costo computacional (CC):} tiempo promedio de entrenamiento por bloque y uso de recursos, con el objetivo de determinar la eficiencia de la arquitectura propuesta frente al modelo base.
+    \item \textbf{Computational Cost (CC):} the average training time per block and resource usage, aiming to determine the efficiency of the proposed architecture compared with the baseline model.
     
-    \item \textbf{Estabilidad-plasticidad (EP):} análisis cualitativo del equilibrio entre la preservación del conocimiento anterior y la capacidad de adaptación del modelo ante nuevas tareas.
+    \item \textbf{Stability–Plasticity (EP):} qualitative analysis of the balance between the preservation of prior knowledge and the model’s adaptability to new tasks.
 \end{itemize}
 
-Los resultados obtenidos para cada métrica serán analizados de manera comparativa entre las variantes del modelo (con diferente número de memorias duplicadas) y con el esquema de referencia de \cite{bullinaria2009}.  
-El objetivo es determinar si la propuesta mejora la retención del conocimiento sin comprometer la adaptabilidad ni incrementar significativamente el costo computacional.
+The results obtained for each metric will be analysed comparatively among the model variants (with different numbers of duplicated memories) and against the reference scheme proposed by \cite{bullinaria2009}.  
+The objective is to determine whether the proposed approach improves knowledge retention without compromising adaptability or significantly increasing computational cost.

@@ -1,7 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,mexico]{babel}
 \usepackage{amsmath} 
 \usepackage{amssymb} 
 \usepackage{newtxtext,newtxmath}
@@ -49,7 +48,7 @@
   \end{quote}
 }
 
-\title{Modelado de un Esquema de Aprendizaje Incremental con Memoria Distribuida en Redes Neuronales Artificiales}
+\title{Modeling an Incremental Learning Scheme with Distributed Memory in Artificial Nerural Networks}
 
 \begin{document}
     \includepdf[pages=-,pagecommand={},fitpaper=true]{../02_Chapters/portada.pdf}
@@ -62,15 +61,16 @@
 
 \begin{abstract}
 \justifying
-El aprendizaje incremental constituye un reto fundamental en el campo de las redes neuronales artificiales, debido al fenómeno del \textit{catastrophic forgetting}, que provoca la pérdida de conocimiento previamente adquirido al incorporar nueva información.  
-En este trabajo se propone un modelo biológicamente inspirado basado en la extensión del enfoque de \cite{bullinaria2009}, mediante la duplicación progresiva de pesos sinápticos como mecanismo de consolidación distribuida de memoria.  
-La investigación se desarrollará utilizando el conjunto de datos \textit{OptDigits} bajo un esquema incremental de seis bloques, evaluando distintas configuraciones con dos, cuatro y seis memorias duplicadas.  
-Se espera que el modelo extendido logre una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) respecto al modelo dual original, manteniendo un costo computacional estable.  
-Los resultados previstos contribuirán a la comprensión del equilibrio estabilidad–plasticidad en redes neuronales y abrirán nuevas posibilidades para el desarrollo de sistemas de aprendizaje continuo más eficientes y sostenibles.
+Incremental learning represents a fundamental challenge in the field of artificial neural networks, mainly due to the phenomenon of catastrophic forgetting, which leads to the loss of previously acquired knowledge when new information is introduced.  
+This work proposes a biologically inspired model based on the extension of the approach by \cite{bullinaria2009}, through the progressive duplication of synaptic weights as a mechanism for distributed memory consolidation.  
+The research will be conducted using the OptDigits dataset under an incremental six-block scheme, evaluating different configurations with two, four, and six duplicated memory layers.  
+It is expected that the extended model will achieve higher knowledge retention (\(RM \geq 90\%\)) and a lower forgetting rate (\(F \leq 10\%\)) compared to the original dual-weight model, while maintaining a stable computational cost.  
+The anticipated results aim to contribute to a deeper understanding of the stability–plasticity balance in neural networks and to open new possibilities for the development of more efficient and sustainable continual learning systems.
 
 \vspace{1em}
-\noindent\textbf{Palabras clave:} Aprendizaje incremental; Olvido catastrófico; Redes neuronales artificiales; Memoria distribuida; Aprendizaje continuo; PyTorch.
+\noindent\textbf{Keywords:} Incremental learning; Catastrophic forgetting; Artificial neural networks; Distributed memory; Continual learning.
 \end{abstract}
+
 
   
 
@@ -92,7 +92,7 @@ Los resultados previstos contribuirán a la comprensión del equilibrio estabili
     \bibliography{dataset}
 
     \appendix
-    \section{Fases de la Retropropagación} \label{ap:backprop}
+    \section{Phases of the Backpropagation Process} \label{ap:backprop}
     \input{../02_Chapters/appendices/backpropagation}
 
  

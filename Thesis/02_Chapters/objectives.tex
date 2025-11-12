@@ -1,16 +1,16 @@
-\section{Objetivos}
+\section{Objectives}
 
-    \subsection{Objetivo General}
-        Diseñar e implementar una \textbf{red neuronal artificial de aprendizaje incremental} inspirada en el principio de \textbf{memoria a corto y largo plazo}, utilizando más de dos capas con pesos duplicados para el reconocimiento de dígitos. 
-        El modelo buscará reducir la \textbf{pérdida de información} asociada al olvido catastrófico, mejorando la retención del conocimiento previo en comparación con trabajos previos reportados en la literatura.
+    \subsection{General Objective}
+        To design and implement an artificial neural network for incremental learning inspired by the principle of short- and long-term memory, using more than two layers with duplicated weights for digit recognition. 
+        The model aims to reduce the information loss associated with catastrophic forgetting, improving the retention of previously acquired knowledge in comparison with prior works reported in the literature.
 
-    \subsection{Objetivos Particulares}
+    \subsection{Specific Objectives}
         \begin{enumerate}
-            \item \textbf{Reproducir} el algoritmo propuesto por \cite{bullinaria2009} para el reconocimiento de dígitos mediante aprendizaje con memoria a corto y largo plazo, utilizando los parámetros y configuraciones originales descritos por el autor.
+            \item \textbf{Reproduce} the algorithm proposed by \cite{bullinaria2009} for digit recognition through learning with short- and long-term memory, using the original parameters and configurations described by the author.
             
-            \item \textbf{Organizar} el conjunto de datos en particiones de entrenamiento y prueba conforme a la metodología establecida en \cite{bullinaria2009}, y \textbf{validar} los resultados iniciales del modelo base mediante métricas de rendimiento comparables.
+            \item \textbf{Organise} the dataset into training and testing partitions according to the methodology established in \cite{bullinaria2009}, and validate the initial results of the baseline model using comparable performance metrics.
             
-            \item \textbf{Extender} el algoritmo de referencia para incorporar más de dos capas de pesos duplicados, evaluando su impacto en la estabilidad y plasticidad del aprendizaje incremental sobre el mismo conjunto de datos.
+            \item \textbf{Extend} the reference algorithm to incorporate more than two layers of duplicated weights, evaluating its impact on the stability and plasticity of incremental learning using the same dataset.
             
-            \item \textbf{Comparar} cuantitativamente ambas implementaciones (modelo original y modelo extendido) con base en las tasas de aprendizaje, precisión y pérdida, buscando evidenciar una \textbf{reducción significativa en el olvido catastrófico} respecto a los trabajos previos.
+            \item \textbf{Compare} both implementations quantitatively (original model and extended model) based on learning rates, accuracy, and loss, aiming to demonstrate a significant reduction in catastrophic forgetting compared with previous works.
         \end{enumerate}

@@ -1,27 +1,27 @@
-\section{Justificación}
+\section{Justification}
 
-Las redes neuronales artificiales (RNAs) representan una de las herramientas más relevantes dentro del campo de la inteligencia artificial, debido a su capacidad para aprender de los datos y resolver problemas complejos de clasificación, predicción y reconocimiento de patrones. 
-Sin embargo, los métodos tradicionales de aprendizaje automático presentan una limitación crítica: cuando se incorporan nuevos bloques de datos, el modelo tiende a deteriorar su rendimiento y a olvidar parte de la información previamente adquirida, fenómeno conocido como \textit{olvido catastrófico} \cite{bullinaria2009}.
+Artificial Neural Networks (ANNs) represent one of the most relevant tools within the field of artificial intelligence due to their ability to learn from data and solve complex problems of classification, prediction, and pattern recognition.  
+However, traditional machine learning methods present a critical limitation: when new data blocks are incorporated, the model tends to deteriorate in performance and forget part of the information previously acquired—a phenomenon known as catastrophic forgetting \cite{bullinaria2009}.
 
-A pesar de los avances recientes en arquitecturas profundas y en técnicas de regularización, las redes neuronales aún carecen de mecanismos de memoria duradera que les permitan retener información a largo plazo sin degradar su desempeño. 
-En contraste, los seres humanos poseen la capacidad de aprender nuevas tareas sin eliminar de manera significativa el conocimiento previo, integrando la nueva información de forma progresiva. 
-Si bien esta propiedad está asociada a la estructura biológica del cerebro, particularmente a procesos como la consolidación sináptica, desde el punto de vista computacional resulta viable explorar estrategias que emulen dicho comportamiento, optimizando el almacenamiento y la actualización del conocimiento en los modelos artificiales.
+Despite recent advances in deep architectures and regularisation techniques, neural networks still lack enduring memory mechanisms that allow them to retain information over the long term without degrading their performance.  
+In contrast, human beings have the ability to learn new tasks without significantly erasing previous knowledge, integrating new information progressively.  
+Although this property is associated with the biological structure of the brain—particularly with processes such as synaptic consolidation—from a computational standpoint it is feasible to explore strategies that emulate this behaviour, optimising the storage and updating of knowledge in artificial models.
 
-Desde una perspectiva técnica, no existen limitaciones teóricas que impidan experimentar con nuevas arquitecturas neuronales, funciones de pérdida o esquemas de entrenamiento que favorezcan el aprendizaje progresivo. 
-El desafío radica en conseguir que la red asimile nuevos datos sin sobrescribir el conocimiento previamente adquirido, equilibrando la estabilidad y la plasticidad del sistema. 
-Superar este reto permitiría el desarrollo de modelos más robustos y adaptativos, capaces de operar de forma continua en entornos dinámicos, como los sistemas de monitoreo inteligente, la robótica o las aplicaciones en tiempo real donde los datos se actualizan constantemente.
+From a technical perspective, there are no theoretical limitations that prevent experimentation with new neural architectures, loss functions, or training schemes that promote progressive learning.  
+The challenge lies in enabling the network to assimilate new data without overwriting previously acquired knowledge, thereby achieving a balance between the stability and plasticity of the system.  
+Overcoming this challenge would enable the development of more robust and adaptive models capable of operating continuously in dynamic environments such as intelligent monitoring systems, robotics, or real-time applications where data are constantly updated.
 
-En entornos donde no se emplea aprendizaje incremental, cada incorporación de datos exige reentrenar completamente el modelo con toda la información disponible. 
-Este proceso resulta costoso tanto en tiempo de cómputo como en consumo energético y de hardware. 
-Por el contrario, un enfoque incremental permite que el modelo procese únicamente los nuevos datos, actualizando su conocimiento sin necesidad de repetir todo el entrenamiento. 
-Además de optimizar recursos, esta característica podría representar una ventaja económica y tecnológica frente a otros métodos, al reducir el costo computacional, el tiempo de desarrollo y la complejidad algorítmica en aplicaciones de aprendizaje continuo.
+In environments where incremental learning is not employed, each data incorporation requires retraining the entire model with all the available information.  
+This process is costly in terms of computational time, energy consumption, and hardware requirements.  
+Conversely, an incremental approach allows the model to process only the new data, updating its knowledge without repeating the entire training process.  
+In addition to optimising resources, this characteristic can provide both economic and technological advantages over other methods, by reducing computational cost, development time, and algorithmic complexity in continuous learning applications.
 
-Actualmente existen diversas herramientas que facilitan la construcción y el entrenamiento de redes neuronales. 
-Para el desarrollo experimental de esta investigación se utilizará principalmente el entorno de trabajo Google Colab, que ofrece una infraestructura gratuita basada en unidades de procesamiento gráfico (GPU), integración completa con el lenguaje Python y un entorno interactivo que favorece la experimentación rápida y reproducible.
+There are currently various tools that facilitate the construction and training of neural networks.  
+For the experimental development of this research, the Google Colab environment will be primarily employed, as it offers free infrastructure based on Graphics Processing Units (GPU), full integration with the Python programming language, and an interactive environment that supports fast and reproducible experimentation.
 
-Asimismo, la implementación del modelo se llevará a cabo empleando la librería PyTorch, ampliamente reconocida por su flexibilidad y dinamismo en el manejo de grafos computacionales. 
-PyTorch permite definir, modificar y depurar arquitecturas de redes de manera intuitiva durante la ejecución, gracias a su diseño orientado a tensores dinámicos y a su sintaxis cercana a Python puro. 
-Estas características facilitan la exploración de distintos esquemas de entrenamiento, la personalización de funciones de pérdida y la integración con librerías científicas como NumPy y Matplotlib. 
+Likewise, the model implementation will be carried out using the PyTorch library, which is widely recognised for its flexibility and dynamism in handling computational graphs.  
+PyTorch allows defining, modifying, and debugging network architectures intuitively during execution, thanks to its design based on dynamic tensors and its syntax closely aligned with pure Python.  
+These characteristics facilitate the exploration of different training schemes, the customisation of loss functions, and the integration with scientific libraries such as NumPy and Matplotlib.
 
-En este sentido, PyTorch se considera una herramienta adecuada para el desarrollo y evaluación de modelos de aprendizaje incremental, ya que proporciona un entorno flexible que facilita tanto la experimentación como el análisis del rendimiento bajo escenarios progresivos de incorporación de datos. 
-Su uso permitirá validar el efecto del aprendizaje incremental en la mitigación del olvido catastrófico, contribuyendo al diseño de arquitecturas neuronales más eficientes, sostenibles y cercanas al aprendizaje humano.
+In this sense, PyTorch is considered a suitable tool for the development and evaluation of incremental learning models, as it provides a flexible environment that supports both experimentation and performance analysis under progressive data incorporation scenarios.  
+Its use will allow the validation of the effects of incremental learning in mitigating catastrophic forgetting, contributing to the design of more efficient, sustainable, and human-like neural network architectures.

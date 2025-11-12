@@ -1,125 +1,122 @@
-\section{Metodología}
+\section{Methodology}
 
-Este trabajo se divide en tres etapas principales: la recreación del modelo base, la implementación de una extensión al modelo, y la comparación de los resultados obtenidos. A continuación, se describen cada una de estas etapas en detalle:
+This research is divided into three main stages: the recreation of the base model, the implementation of an extended version of the model, and the comparison of the obtained results. Each of these stages is described in detail below:
 
 \begin{enumerate}
-    \item \textbf{Recreación del código base} \\
-    Como primer paso, se recreará el código presentado en \cite{bullinaria2009}, que describe la implementación de una red neuronal multicapa utilizando el algoritmo de entrenamiento \textit{backpropagation} en el lenguaje de programación Python. Este código servirá como base para las siguientes etapas. \\
-    Además, se empleará el conjunto de datos \textit{Optical Digits}, el cual será sometido a un proceso de preprocesamiento para eliminar registros inválidos y garantizar la calidad de los datos utilizados en el entrenamiento y validación del modelo.
+    \item \textbf{Recreation of the base code} \\
+    As a first step, the code presented in \cite{bullinaria2009} will be recreated. It describes the implementation of a multilayer neural network using the backpropagation training algorithm in the Python programming language. This code will serve as the foundation for the following stages. \\
+    Additionally, the Optical Digits dataset will be used and pre-processed to remove invalid records and ensure the quality of the data employed for training and validating the model.
 
-    \item \textbf{Extensión del modelo base} \\
-    Posteriormente, se desarrollará una extensión al modelo base, con el objetivo de experimentar con configuraciones más complejas de la red neuronal. Específicamente, se agregarán más de dos capas de pesos duplicados, lo cual se espera que mejore la retención de información al emplear el aprendizaje incremental. \\
-    Para este propósito, se realizarán experimentos incrementando gradualmente el número de capas de pesos duplicados, con el fin de analizar el impacto de esta configuración en la capacidad de aprendizaje de la red.
+    \item \textbf{Extension of the base model} \\
+    Subsequently, an extension of the base model will be developed with the aim of experimenting with more complex neural network configurations. Specifically, more than two layers of duplicated weights will be added, which is expected to improve information retention when applying incremental learning. \\
+    To achieve this, experiments will be conducted by gradually increasing the number of duplicated weight layers in order to analyse how this configuration affects the learning capability of the network.
 
-    \item \textbf{Comparación y análisis de resultados} \\
-    Una vez obtenidos los resultados de las simulaciones, se realizará una comparación entre el rendimiento del modelo base y el modelo extendido. Este análisis incluirá métricas clave, como la precisión del modelo, la tasa de olvido de información y el desempeño en el aprendizaje incremental. \\
-    Los resultados permitirán evaluar si las modificaciones introducidas en la arquitectura de la red neuronal mejoran significativamente su desempeño en comparación con la implementación original.
+    \item \textbf{Comparison and analysis of results} \\
+    Once the simulation results are obtained, a comparison will be made between the performance of the base model and that of the extended model. This analysis will include key metrics such as model accuracy, forgetting rate, and performance in incremental learning. \\
+    The results will allow for evaluating whether the modifications introduced into the neural network architecture significantly improve its performance compared to the original implementation.
 \end{enumerate}
 
-\subsection{Diseño Experimental}
+\subsection{Experimental Design}
 
-El diseño experimental de la presente investigación se fundamenta en el modelo de Bullinaria (2009), el cual plantea una arquitectura de redes neuronales con pesos duplicados (\textit{Dual Weights}) como mecanismo de consolidación de memoria para mitigar el \textit{olvido catastrófico}.  
-El objetivo central consiste en extender dicho enfoque hacia una arquitectura con múltiples duplicaciones de pesos, a fin de analizar cómo la cantidad de memorias intermedias influye en la retención del conocimiento, la estabilidad del aprendizaje y el costo computacional asociado.
+The experimental design of this research is based on the model proposed by Bullinaria (2009), which outlines a neural network architecture with duplicated weights (Dual Weights) as a memory consolidation mechanism to mitigate catastrophic forgetting.  
+The main objective is to extend this approach towards an architecture with multiple duplicated weights, in order to analyse how the number of intermediate memories affects knowledge retention, learning stability, and the associated computational cost.
 
-El experimento se desarrollará bajo un esquema de aprendizaje incremental controlado, en el cual el modelo neuronal será expuesto progresivamente a distintos subconjuntos del conjunto de datos óptico de dígitos (\textit{OptDigits}).  
-Cada subconjunto, denominado bloque incremental, representa una etapa de aprendizaje que introduce nueva información sin volver a presentar explícitamente los datos de etapas anteriores.
+The experiment will be conducted under a controlled incremental learning scheme, where the neural model will be progressively exposed to different subsets of the Optical Digits dataset (OptDigits).  
+Each subset, referred to as an incremental block, represents a learning stage that introduces new information without explicitly revisiting data from previous stages.
 
-\paragraph{Objetivo del diseño experimental}
-Evaluar el impacto del número de memorias duplicadas sobre el desempeño de una red neuronal incremental, comparando la versión base de Bullinaria (dos memorias) con arquitecturas extendidas de cuatro y seis memorias.
+\paragraph{Objective of the experimental design}
+To evaluate the impact of the number of duplicated memories on the performance of an incremental neural network, comparing Bullinaria’s baseline version (two memories) with extended architectures of four and six memories.
 
-\paragraph{Variables del experimento}
+\paragraph{Experimental variables}
 \begin{itemize}
-    \item \textbf{Variable independiente:} número de memorias duplicadas (\(n = 2, 4, 6\)).
-    \item \textbf{Variables dependientes:} precisión incremental promedio (IA), tasa de olvido (F), retención de memoria (RM) y costo computacional (CC).
+    \item \textbf{Independent variable:} number of duplicated memories (\(n = 2, 4, 6\)).
+    \item \textbf{Dependent variables:} incremental accuracy (IA), forgetting rate (F), memory retention (RM), and computational cost (CC).
 \end{itemize}
 
-\paragraph{Metodología general}
-El experimento se estructurará en seis bloques incrementales (\(B_1, B_2, \ldots, B_6\)), que representan diferentes etapas del proceso de aprendizaje.  
-Cada bloque contendrá subconjuntos disjuntos del conjunto de entrenamiento y se aplicará de forma secuencial.  
-Después de entrenar cada bloque, se evaluará el desempeño del modelo sobre:
+\paragraph{General methodology}
+The experiment will be structured in six incremental blocks (\(B_1, B_2, \ldots, B_6\)), representing different stages of the learning process.  
+Each block will contain disjoint subsets of the training set and will be applied sequentially.  
+After training each block, the model will be evaluated on:
 \begin{enumerate}
-    \item Los datos recién aprendidos (plasticidad),
-    \item Los datos de bloques previos (estabilidad), y
-    \item El conjunto total acumulado (retención global).
+    \item Newly learned data (plasticity),
+    \item Data from previous blocks (stability), and
+    \item The cumulative dataset (global retention).
 \end{enumerate}
 
-El flujo experimental se ilustra en la Figura~\ref{fig:exp_flow}, donde cada iteración incremental implica entrenamiento, evaluación, registro de métricas y transferencia de pesos hacia las memorias superiores para su consolidación.
+The experimental flow is illustrated in Figure~\ref{fig:exp_flow}, where each incremental iteration involves training, evaluation, metric recording, and the transfer of weights to higher-level memories for consolidation.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{metodology/flow_incremental.png}
-    \caption{Flujo general del diseño experimental incremental propuesto.}
+    \includegraphics[width=0.5\textwidth]{metodology/flow_incremental.png}
+    \caption{General flow of the proposed incremental experimental design.}
     \label{fig:exp_flow}
 \end{figure}
 
-El procedimiento general seguido por el modelo propuesto se describe en el Algoritmo~\ref{alg:incremental}, donde se ilustra el flujo de entrenamiento y consolidación del conocimiento en cada bloque incremental.
-Este proceso se repite secuencialmente hasta completar los seis bloques de aprendizaje, registrando las métricas definidas en la Sección~\ref{sec:criterios_eval}.
+The general procedure followed by the proposed model is described in Algorithm~\ref{alg:incremental}, which illustrates the flow of training and knowledge consolidation in each incremental block.  
+This process is repeated sequentially until all six learning blocks are completed, while recording the metrics defined in Section~\ref{sec:criterios_eval}.
 
 \begin{algorithm}[H]
-\caption{Procedimiento general del aprendizaje incremental}
+\caption{General procedure of incremental learning}
 \label{alg:incremental}
 \begin{algorithmic}[1]
-\For{cada bloque incremental $B_i$}
-    \State Entrenar red con $B_i$
-    \State Evaluar rendimiento en $B_1, \ldots, B_i$
-    \State Consolidar pesos hacia memorias superiores
-    \State Guardar métricas (IA, F, RM, CC)
+\For{each incremental block $B_i$}
+    \State Train network with $B_i$
+    \State Evaluate performance on $B_1, \ldots, B_i$
+    \State Consolidate weights towards higher memories
+    \State Record metrics (IA, F, RM, CC)
 \EndFor
 \end{algorithmic}
 \end{algorithm}
 
-El flujo presentado establece la base operativa del experimento, en el que se repite un ciclo controlado de entrenamiento y consolidación por cada bloque incremental.
-Con este esquema se busca comprobar la validez de la hipótesis planteada respecto al impacto del número de memorias duplicadas en la retención del conocimiento.
+The presented flow establishes the operational basis of the experiment, where a controlled training–consolidation cycle is repeated for each incremental block.  
+This scheme aims to verify the validity of the hypothesis concerning the effect of the number of duplicated memories on knowledge retention.
 
-Con el propósito de garantizar la reproducibilidad del experimento, la Tabla~\ref{tab:config} presenta la configuración técnica utilizada en la implementación del modelo propuesto.
-Se detallan los parámetros de la red neuronal, las características del conjunto de datos y el entorno de ejecución empleado en los experimentos realizados sobre arquitectura Apple Silicon.
+To ensure the reproducibility of the experiment, Table~\ref{tab:config} presents the technical configuration used in the implementation of the proposed model.  
+It details the neural network parameters, dataset characteristics, and execution environment employed in the experiments conducted on Apple Silicon architecture.
 
 \begin{table}[H]
 \centering
-\caption{Configuración experimental del modelo incremental propuesto.}
+\caption{Experimental configuration of the proposed incremental model.}
 \label{tab:config}
 \begin{tabularx}{\textwidth}{l X}
 \toprule
-\textbf{Parámetro} & \textbf{Valor} \\
+\textbf{Parameter} & \textbf{Value} \\
 \midrule
-Dataset & OptDigits (3823 muestras de entrenamiento / 1797 de prueba, 10 clases) \\
-Arquitectura base & 64–32–10 (capas densas totalmente conectadas) \\
-Función de activación & Sigmoid \\
-Función de pérdida & Cross Entropy Loss \\
-Optimizador & Adam (\(\eta = 0.001\)) \\
-Número de bloques incrementales & 6 \\
-Memorias duplicadas & 2, 4 y 6 \\
-Métricas & IA (precisión incremental), F (tasa de olvido), RM (retención de memoria), CC (costo computacional) \\
-Entorno de ejecución & macOS Sonoma, Apple M2 (8 CPU + 10 GPU), 16 GB RAM, PyTorch 2.3.1, Python 3.12 \\
+Dataset & OptDigits (3,823 training samples / 1,797 test samples, 10 classes) \\
+Base architecture & 64–32–10 (fully connected dense layers) \\
+Activation function & Sigmoid \\
+Loss function & Cross Entropy Loss \\
+Optimiser & Adam (\(\eta = 0.001\)) \\
+Number of incremental blocks & 6 \\
+Duplicated memories & 2, 4, and 6 \\
+Metrics & IA (incremental accuracy), F (forgetting rate), RM (memory retention), CC (computational cost) \\
+Execution environment & macOS Sonoma, Apple M2 (8 CPU + 10 GPU), 16 GB RAM, PyTorch 2.3.1, Python 3.12 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\paragraph{Hipótesis de contraste}
-Se espera que las arquitecturas con cuatro y seis memorias presenten una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) en comparación con el modelo dual original, sin un incremento significativo en el tiempo de entrenamiento.
+\paragraph{Contrast hypothesis}
+It is expected that the architectures with four and six memories will show greater knowledge retention (\(RM \geq 90\%\)) and a lower forgetting rate (\(F \leq 10\%\)) compared to the original dual model, without a significant increase in training time.
 
-\paragraph{Métricas de análisis}
-Las métricas cuantitativas empleadas serán las definidas en la Sección~\ref{sec:criterios_eval}, con el propósito de asegurar consistencia metodológica.  
-Los resultados obtenidos se compararán mediante análisis estadístico descriptivo y visualización de curvas de desempeño por bloque.
+\paragraph{Analysis metrics}
+The quantitative metrics used will be those defined in Section~\ref{sec:criterios_eval}, ensuring methodological consistency.  
+The results will be compared using descriptive statistical analysis and performance curve visualisation per block.
 
-\paragraph{Configuración experimental}
-El modelo se implementará en Python utilizando TensorFlow y Keras.  
-El entorno de ejecución será una estación con procesador Intel Core i5, 32 GB de RAM y macOS, garantizando condiciones reproducibles.  
-Cada arquitectura será inicializada con los mismos pesos y parámetros para mantener equidad experimental.
+\paragraph{Experimental setup}
+The model will be implemented in Python using TensorFlow and Keras.  
+The execution environment will consist of a workstation equipped with an Intel Core i5 processor, 32 GB of RAM, and macOS, ensuring reproducible conditions.  
+Each architecture will be initialised with the same weights and parameters to maintain experimental fairness.
 
-\paragraph{Resumen del diseño}
-El diseño experimental busca validar la hipótesis propuesta al cuantificar la relación entre el número de memorias duplicadas y la estabilidad-plasticidad del modelo.  
-De confirmarse la hipótesis, los resultados evidenciarán que la consolidación distribuida basada en múltiples memorias constituye una alternativa eficiente y biológicamente inspirada para el aprendizaje incremental.
+\paragraph{Design summary}
+The experimental design aims to validate the proposed hypothesis by quantifying the relationship between the number of duplicated memories and the model’s stability–plasticity balance.  
+If the hypothesis is confirmed, the results will demonstrate that distributed consolidation based on multiple memories constitutes an efficient and biologically inspired mechanism for incremental learning.
 
-\subsection{Resultados Esperados}
+\subsection{Expected Results}
 
-Se espera que las arquitecturas con cuatro y seis memorias duplicadas presenten una mayor retención del conocimiento (\(RM \geq 90\%\)) y una menor tasa de olvido (\(F \leq 10\%\)) en comparación con el modelo dual original de Bullinaria.  
-Asimismo, se anticipa que el costo computacional (\(CC\)) permanezca dentro de un margen aceptable, sin superar un incremento del 15\% respecto al modelo base, manteniendo un equilibrio adecuado entre estabilidad y plasticidad.
+It is expected that the architectures with four and six duplicated memories will exhibit higher knowledge retention (\(RM \geq 90\%\)) and a lower forgetting rate (\(F \leq 10\%\)) compared to Bullinaria’s original dual model.  
+Similarly, the computational cost (\(CC\)) is anticipated to remain within an acceptable margin, not exceeding a 15\% increase relative to the base model, while maintaining an adequate balance between stability and plasticity.
 
-En términos cualitativos, se prevé que el modelo extendido muestre una transición más gradual entre las fases de adquisición y consolidación del aprendizaje, reduciendo la pérdida de información entre bloques consecutivos.  
-De confirmarse estas tendencias, los resultados respaldarían la hipótesis de que la duplicación progresiva de pesos sinápticos constituye un mecanismo eficiente de consolidación interna de la memoria dentro del aprendizaje incremental.
+Qualitatively, the extended model is expected to display a smoother transition between the acquisition and consolidation phases of learning, reducing information loss between consecutive blocks.  
+If these trends are confirmed, the results would support the hypothesis that progressive duplication of synaptic weights serves as an efficient internal mechanism for memory consolidation in incremental learning.
 
-Finalmente, los resultados obtenidos servirán como referencia para contrastar la eficacia del enfoque propuesto frente a otros métodos contemporáneos de mitigación del \textit{catastrophic forgetting}, tales como EWC, MAS o \textit{Replay-based Learning}.
-
-
-
+Finally, the results obtained will serve as a reference to contrast the effectiveness of the proposed approach with other contemporary methods for mitigating catastrophic forgetting, such as EWC, MAS, or Replay-based Learning.
