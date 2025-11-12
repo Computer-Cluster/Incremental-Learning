@@ -61,16 +61,6 @@ Ai-Jun Li.
 \newblock An improved algorithm for incremental learning learn++.
 \newblock In {\em 2008 International Conference on Wavelet Analysis and Pattern Recognition}, volume~1, pages 310--315. IEEE, 2008.
 
-\bibitem{li2016lwf}
-Derek Li, Zhizhong y~Hoiem.
-\newblock Learning without forgetting.
-\newblock {\em arXiv:1606.09282}, 2016.
-
-\bibitem{lillicrap2020}
-Timothy~P Lillicrap, Adam Santoro, Luke Marris, Colin~J Akerman, and Geoffrey Hinton.
-\newblock Backpropagation and the brain.
-\newblock {\em Nature Reviews Neuroscience}, 21(6):335--346, 2020.
-
 \bibitem{lippi2021}
 Vittorio Lippi, Cristian Camardella, Alessandro Filippeschi, and Francesco Porcini.
 \newblock Identification of gait phases with neural networks for smooth transparent control of a lower limb exoskeleton, 2021.
@@ -79,11 +69,6 @@ Vittorio Lippi, Cristian Camardella, Alessandro Filippeschi, and Francesco Porci
 Yuan Liu.
 \newblock Incremental learning in deep neural networks, 2015.
 \newblock Unpublished manuscript.
-
-\bibitem{liu2025continual}
-Yuyang Liu, Qiuhe Hong, Linlan Huang, Alexandra Gomez-Villa, Dipam Goswami, Xialei Liu, Joost van~de Weijer, and Yonghong Tian.
-\newblock Continual learning for vlms: A survey and taxonomy beyond forgetting.
-\newblock {\em arXiv preprint arXiv:2508.04227}, 2025.
 
 \bibitem{pechuan2015}
 Luis~Miralles Pechu{\'a}n, Dafne~A. Rosso-Pelayo, and Jorge Brieva.
@@ -114,11 +99,6 @@ Ra{\'u}l Rojas.
 Paloma Royo.
 \newblock {Qué son las redes neuronales y cuál es su aplicación en el marketing}, 2021.
 
-\bibitem{rusu2016pnn}
-Andrei~A Rusu, Neil~C Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu, and Raia Hadsell.
-\newblock Progressive neural networks.
-\newblock {\em arXiv preprint arXiv:1606.04671}, 2016.
-
 \bibitem{salazar2013}
 Luis A~Cruz Salazar, David J~Mu{\~n}oz Aldana, and Juan A~Contreras Montes.
 \newblock Implementaci{\'o}n de redes neuronales y l{\'o}gica difusa para la clasificaci{\'o}n de patrones obtenidos por un s{\'o}nar.
@@ -133,11 +113,6 @@ Krisanu Sarkar.
 Xing Wei, Shaofan Liu, Yaoci Xiang, Zhangling Duan, Chong Zhao, and Yang Lu.
 \newblock Incremental learning based multi-domain adaptation for object detection.
 \newblock {\em Knowledge-Based Systems}, 210:106420, 2020.
-
-\bibitem{zenke2017continual}
-Friedemann Zenke, Ben Poole, and Surya Ganguli.
-\newblock Continual learning through synaptic intelligence.
-\newblock In {\em Proceedings of the 34th International Conference on Machine Learning (ICML)}, pages 3987--3995. PMLR, 2017.
 
 \bibitem{zhao2022}
 Beibei Zhao, Tairan Wu, Fang Fang, Lin Wang, Wenzhang Ren, Xu~Yang, Zhangjing Ruan, and Xuejin Kou.

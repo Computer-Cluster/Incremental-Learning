@@ -1,63 +1,63 @@
-\subsection{Propagación hacia adelante} \label{ap:feed_forward}
-En la siguiente fase los valores de entrada se introducen a la red, se hace el calculo de la salida y no existe el ajuste de pesos, ya que solo se hace el calculo del valor de activación.
+\subsection{Forward Propagation} \label{ap:feed_forward}
 
-Esto se logra gracias a la multiplicación matricial, donde cada neurona recibe la salida de las neuronas de la capa anterior multiplicadas por sus respectivos pesos, por medio de la siguiente ecuación:
+In this phase, the input values are introduced into the network, the output is computed, and no weight adjustment occurs, as only the activation value is calculated.
+
+This is achieved through matrix multiplication, where each neuron receives the output of the neurons from the previous layer multiplied by their respective weights, according to the following equation:
 
 \[
 z_j = \sum_{i} (w_{ji} \cdot x_i) + b_j
 \]
 
-Donde:
+Where:
 
 \begin{itemize}
-    \item $w_{ji}$ = peso de la conexión entre la neurona $i$ de la capa anterior y la neurona $j$ de la capa actual.
-    
-    \item $x_i$ = salida de la neurona $i$ de la capa anterior.
-    
-    \item $b_j$ = sesgo (bias) de la neurona $j$.
+    \item $w_{ji}$ = weight of the connection between neuron $i$ in the previous layer and neuron $j$ in the current layer.
+    \item $x_i$ = output of neuron $i$ from the previous layer.
+    \item $b_j$ = bias of neuron $j$.
 \end{itemize}
 
-\subsection{Propagación hacia atrás} \label{ap:back_propagation}
-  En este caso se ajusta los pesos de la red propagando el error desde la salida hacia atrás (capas ocultas), usando el gradiente descendente.
-  Para conseguirlo se debe de calcular el error, se debe calcular la pérdida de la siguiente manera: $L = \frac{1}{2}(y - \hat{y})^2$.
-  Ya con estos datos se calcula la propagación hacia atrás, usando la regla de la cadena del cálculo diferencial. Aqui se divide en dos, el cálculo de la capa de salida y de las capas ocultas.
-  \begin{itemize}
-    \item Capa de Salida $j$:
+\subsection{Backward Propagation} \label{ap:back_propagation}
+
+In this case, the network weights are adjusted by propagating the error backward (from the output towards the hidden layers) using gradient descent.
+To achieve this, the error must first be calculated, and the loss is computed as follows: $L = \frac{1}{2}(y - \hat{y})^2$.
+With these values, backpropagation is performed using the chain rule of differential calculus. This process is divided into two parts: the calculation for the output layer and for the hidden layers.
+
+\begin{itemize}
+    \item \textbf{Output Layer} $j$:
 
       \[
       \frac{\partial L}{\partial z_j} = \frac{\partial L}{\partial \hat{y}_j} \cdot \frac{\partial \hat{y}_j}{\partial z_j}
       \]
 
-      Donde:
+      Where:
       \begin{itemize}
-          \item $\frac{\partial L}{\partial \hat{y}_j} = (\hat{y}_j - y_j)$ (derivada de la pérdida).
+          \item $\frac{\partial L}{\partial \hat{y}_j} = (\hat{y}_j - y_j)$ (derivative of the loss).
           
-          \item $\frac{\partial \hat{y}_j}{\partial z_j}$ depende de la función de activación. Por ejemplo, si es sigmoide:
+          \item $\frac{\partial \hat{y}_j}{\partial z_j}$ depends on the activation function. For example, if it is sigmoid:
           \[
           \sigma'(z_j) = \sigma(z_j)(1 - \sigma(z_j))
           \]
       \end{itemize}
     
-    \item Capas ocultas:
+    \item \textbf{Hidden Layers:}
             \[
               \frac{\partial L}{\partial z_j} = \sum_{k} \left( \frac{\partial L}{\partial z_k} \cdot w_{kj} \cdot \sigma'(z_j) \right)
             \]
 
-            Aquí, $w_{kj}$ son los pesos de la capa siguiente.
+            Here, $w_{kj}$ represents the weights of the next layer.
 
-  \end{itemize}
+\end{itemize}
 
-  Con los pesos ($w_{ji}$) y biases ($b_j$) se puede actualizar usando el gradiente y una tasa de aprendizaje ($\eta$):
+The weights ($w_{ji}$) and biases ($b_j$) can then be updated using the gradient and a learning rate ($\eta$):
 
-  \[
-  w_{ji} \leftarrow w_{ji} - \eta \cdot \frac{\partial L}{\partial w_{ji}}
-  \]
-  \[
-  b_j \leftarrow b_j - \eta \cdot \frac{\partial L}{\partial b_j}
-  \]
+\[
+w_{ji} \leftarrow w_{ji} - \eta \cdot \frac{\partial L}{\partial w_{ji}}
+\]
+\[
+b_j \leftarrow b_j - \eta \cdot \frac{\partial L}{\partial b_j}
+\]
   
-  Donde:
-  \[
-  \frac{\partial L}{\partial w_{ji}} = \frac{\partial L}{\partial z_j} \cdot x_i \quad \text{y} \quad \frac{\partial L}{\partial b_j} = \frac{\partial L}{\partial z_j}
-  \]
-
+Where:
+\[
+\frac{\partial L}{\partial w_{ji}} = \frac{\partial L}{\partial z_j} \cdot x_i \quad \text{and} \quad \frac{\partial L}{\partial b_j} = \frac{\partial L}{\partial z_j}
+\]

@@ -1,418 +1,384 @@
-\section{Marco Teórico}
+\section{Theoretical Framework}
 
     \subsection{Optical Digit}
 
-        El conjunto de datos \textit{Optical Digit} es un referente clásico en reconocimiento de patrones y evaluación de algoritmos de clasificación, especialmente en el contexto de \textit{OCR} (reconocimiento óptico de caracteres). 
-        Su propósito original fue proporcionar un terreno de pruebas sencillo, reproducible y balanceado para comparar modelos de aprendizaje supervisado sin el costo computacional de imágenes de alta resolución. 
-        En otras palabras, es un \textit{benchmark} ligero pero suficientemente expresivo para estudiar la capacidad de generalización de distintos enfoques.
+        The \textit{Optical Digit} dataset is a classical benchmark in pattern recognition and classification algorithm evaluation, especially in the context of \textit{OCR} (Optical Character Recognition). 
+        Its original purpose was to provide a simple, reproducible, and balanced testbed for comparing supervised learning models without the computational cost of high-resolution images. 
+        In other words, it is a lightweight yet expressive \textit{benchmark} for studying the generalisation capacity of different approaches.
 
-        Su representación consiste en \textbf{imágenes en escala de grises de \(8\times8\) píxeles} (como se muestra en la Figura~\ref{fig:optical_digit}); cada imagen codifica un dígito en el rango \(0\)–\(9\). 
-        El conjunto contiene un total de \textbf{5{,}620 imágenes} y mantiene un \textbf{balance de clases}: cada dígito cuenta con la misma cantidad de muestras. 
-        Este detalle no es menor: al evitar sesgos de frecuencia por clase, las métricas (accuracy, F1, etc.) reflejan de forma más justa las diferencias entre modelos y \textit{pipelines} de preprocesamiento.
+        It consists of 8×8-pixel greyscale images (as shown in Figure~\ref{fig:optical_digit}); each image represents a digit in the range \(0\)–\(9\). 
+        The dataset contains a total of 5,620 images and maintains a class balance: each digit has the same number of samples. 
+        This is a relevant feature, as avoiding class-frequency bias allows metrics (accuracy, F1, etc.) to more fairly reflect differences between models and preprocessing \textit{pipelines}.
 
         \begin{figure}[H]
             \centering
             \includegraphics[width=5cm]{optical_digit/four_optical_digit.png}
-            \caption{Conjunto de Datos Optical Digit}
+            \caption{Optical Digit Dataset}
             \label{fig:optical_digit}
         \end{figure}
 
-        Gracias a su equilibrio entre simplicidad y utilidad, \textit{Optical Digit} se emplea en múltiples líneas de trabajo de inteligencia artificial, tales como:
+        Thanks to its balance between simplicity and usefulness, \textit{Optical Digit} is employed in various areas of artificial intelligence, such as:
         
         \begin{enumerate}
-            \item Clasificación de \textbf{dígitos} \cite{pechuan2015}. 
-            \item Reconocimiento de patrones \cite{huerta2009}.
-            \item Comparación y \textit{benchmarking} de modelos \cite{mercado2015}. 
-            \item Entrenamiento y docencia en \textbf{aprendizaje supervisado} \cite{jacznik2016}.
+            \item Digit classification \cite{pechuan2015}. 
+            \item Pattern recognition \cite{huerta2009}.
+            \item Model comparison and benchmarking \cite{mercado2015}. 
+            \item Training and teaching in supervised learning \cite{jacznik2016}.
         \end{enumerate}
 
-        Entre sus ventajas destacan: (\textit{i}) curvas de entrenamiento y validación muy rápidas (ideal para iterar hiperparámetros y arquitecturas), (\textit{ii}) facilidad para reproducir experimentos (pocas transformaciones y preprocesos), y (\textit{iii}) utilidad como \textit{caso de estudio} para metodologías como el \textbf{aprendizaje incremental}, donde interesa observar el efecto de introducir bloques de datos en secuencia sin que el costo de cómputo se dispare.
+        Its advantages include: (\textit{i}) very fast training and validation curves (ideal for iterating hyperparameters and architectures), (\textit{ii}) ease of experiment reproduction (minimal transformations and preprocessing), and (\textit{iii}) usefulness as a \textit{case study} for methodologies such as incremental learning, where it is relevant to observe the effect of introducing sequential data blocks without excessive computational cost.
 
-    \subsection{Redes Neuronales Artificiales}
+    \subsection{Artificial Neural Networks}
 
-      Las redes neuronales artificiales (RNA) son modelos computacionales inspirados en el funcionamiento del cerebro humano, diseñados para procesar información de forma paralela y distribuida. 
-Cada red está compuesta por un conjunto de unidades de procesamiento simples denominadas \textit{neuronas artificiales}, interconectadas mediante enlaces ponderados llamados \textit{pesos sinápticos}. 
-Estos pesos representan la fuerza de conexión entre neuronas y determinan la influencia que ejerce una entrada sobre otra dentro de la red. 
-En este sentido, el aprendizaje de una RNA consiste esencialmente en el ajuste progresivo de dichos pesos, buscando minimizar el error entre la salida generada y la esperada. 
+        Artificial Neural Networks (ANNs) are computational models inspired by the functioning of the human brain, designed to process information in a parallel and distributed manner. 
+Each network consists of a set of simple processing units called \textit{artificial neurons}, interconnected through weighted links known as \textit{synaptic weights}. 
+These weights represent the strength of the connection between neurons and determine the influence that one input exerts over another within the network. 
+In this sense, the learning of an ANN essentially consists of the progressive adjustment of these weights to minimise the error between the generated and expected outputs. 
 
-De forma análoga a la neurofisiología, donde las conexiones sinápticas se fortalecen o debilitan en función de la experiencia, las RNAs aprenden modificando las ponderaciones numéricas de sus conexiones a través de algoritmos de entrenamiento. 
-Esta capacidad de adaptación confiere a las redes neuronales la habilidad de reconocer patrones, clasificar información, realizar predicciones y aproximar funciones complejas sin necesidad de una programación explícita.
+Analogous to neurophysiology, where synaptic connections are strengthened or weakened based on experience, ANNs learn by modifying the numerical weights of their connections through training algorithms. 
+This adaptive capability gives neural networks the ability to recognise patterns, classify information, make predictions, and approximate complex functions without explicit programming.
 
-El modelo de neurona más simple —conocido como \textit{perceptrón}— constituye la unidad fundamental de las RNAs. 
-Introducido por Rosenblatt en 1958, el perceptrón busca emular el comportamiento de una neurona biológica mediante la combinación ponderada de sus entradas, seguida de la aplicación de una función de activación que determina su salida. 
-Matemáticamente, este modelo permite resolver problemas \textit{linealmente separables}, en los cuales los datos pueden dividirse mediante una frontera lineal en el espacio de entrada.
+The simplest neuron model—known as the \textit{perceptron}—is the fundamental unit of ANNs. 
+Introduced by Rosenblatt in 1958, the perceptron aims to emulate the behaviour of a biological neuron by performing a weighted combination of its inputs, followed by an activation function that determines its output. 
+Mathematically, this model can solve \textit{linearly separable} problems, in which data can be divided by a linear boundary in the input space.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=8cm]{neural_networks/multilayer_perceptron/ANN.jpg}
-    \caption{Esquema de una red neuronal artificial básica.}
+    \caption{Diagram of a basic artificial neural network.}
     \label{fig:nerural_network}
 \end{figure}
 
-En la Figura~\ref{fig:nerural_network}, el símbolo \(\Sigma\) representa el operador sumador. 
-Sean \(x_1, x_2, \dots, x_n\) las variables de entrada y \(w_1, w_2, \dots, w_n\) los pesos asociados a cada conexión sináptica. 
-La neurona calcula primero una combinación lineal de las entradas, ponderada por sus pesos, y añade un término adicional conocido como \textit{sesgo} (\(b\)), que permite desplazar la frontera de decisión respecto al origen. 
-El modelo matemático de la neurona puede expresarse como:
+In Figure~\ref{fig:nerural_network}, the symbol \(\Sigma\) represents the summation operator. 
+Let \(x_1, x_2, \dots, x_n\) be the input variables and \(w_1, w_2, \dots, w_n\) the weights associated with each synaptic connection. 
+The neuron first computes a linear combination of the inputs weighted by their respective weights and adds an additional term known as the \textit{bias} (\(b\)), which allows shifting the decision boundary with respect to the origin. 
+The mathematical model of the neuron can be expressed as:
 
 \[
     y = \sum_{i=1}^{n} w_i x_i + b,
 \]
 
-donde \(y\) representa la salida de la neurona. 
-El sesgo cumple un papel esencial, pues introduce flexibilidad al modelo, permitiendo ajustar la posición de la frontera de decisión sin modificar los valores de los pesos. 
-De este modo, una sola neurona actúa como un clasificador lineal, separando los datos de entrada mediante un hiperplano en el espacio de características. 
+where \(y\) represents the output of the neuron. 
+The bias plays an essential role as it introduces flexibility to the model, allowing the adjustment of the decision boundary position without altering the weight values. 
+Thus, a single neuron acts as a linear classifier, separating the input data through a hyperplane in the feature space. 
 
-Sin embargo, las limitaciones del perceptrón se hacen evidentes al enfrentar problemas no lineales, en los cuales una única frontera no es suficiente para dividir correctamente las clases. 
-Esta restricción dio lugar al desarrollo de arquitecturas con múltiples capas de neuronas y funciones de activación no lineales, conocidas como \textit{redes neuronales multicapa} (MLP), que permiten modelar relaciones más complejas entre las variables de entrada y salida.
+However, the limitations of the perceptron become evident when dealing with non-linear problems, where a single boundary is insufficient for correctly separating the classes. 
+This restriction led to the development of architectures with multiple layers of neurons and non-linear activation functions, known as \textit{multilayer neural networks} (MLPs), which allow modelling more complex relationships between input and output variables.
 
+A single neuron can solve tasks such as AND or OR, but not non-linear problems (for example, XOR). 
+In these cases, architectures with multiple layers are required, supported by activation functions that introduce the necessary non-linearity to model complex decision surfaces.
 
-       Una sola neurona puede resolver tareas como AND u OR, pero no problemas no lineales (por ejemplo, XOR). 
-Para estos casos se requieren arquitecturas con múltiples capas que, apoyadas en funciones de activación, introduzcan la no linealidad necesaria para modelar superficies de decisión complejas.
-
-\paragraph{Puertas lógicas y separabilidad lineal en RNAs.}
-Las puertas lógicas binarias permiten ilustrar la relación entre separabilidad lineal y capacidad de representación de una red neuronal artificial.
+\paragraph{Logic gates and linear separability in ANNs.}
+Binary logic gates illustrate the relationship between linear separability and the representational capacity of an artificial neural network.
 
 \begin{itemize}
-    \item AND: produce 1 solo cuando ambas entradas son 1. Es linealmente separable; un perceptrón puede implementarla, por ejemplo, con \(w_1 = w_2 = 1\) y \(b = -1.5\). La frontera \(x_1 + x_2 - 1.5 = 0\) separa correctamente el único caso positivo \((1,1)\).
+    \item AND: produces 1 only when both inputs are 1. It is linearly separable; a perceptron can implement it, for example, with \(w_1 = w_2 = 1\) and \(b = -1.5\). The boundary \(x_1 + x_2 - 1.5 = 0\) correctly separates the only positive case \((1,1)\).
 \end{itemize}
 
 \begin{figure}[H]
     \centering 
     \includegraphics[width=0.38\linewidth]{logic_gates/and.png}
-    \caption{Puerta lógica AND en el plano de entradas.}
+    \caption{AND logic gate in the input plane.}
     \label{fig:logic_gate_and}
 \end{figure}
 
 \begin{itemize}
-    \item OR: produce 1 cuando al menos una entrada es 1. También es linealmente separable; un perceptrón puede implementarla con \(w_1 = w_2 = 1\) y \(b = -0.5\). La frontera \(x_1 + x_2 - 0.5 = 0\) separa los tres casos positivos \((1,0), (0,1), (1,1)\) del negativo \((0,0)\).
+    \item OR: produces 1 when at least one input is 1. It is also linearly separable; a perceptron can implement it with \(w_1 = w_2 = 1\) and \(b = -0.5\). The boundary \(x_1 + x_2 - 0.5 = 0\) separates the three positive cases \((1,0), (0,1), (1,1)\) from the negative one \((0,0)\).
 \end{itemize}
 
 \begin{figure}[H]
     \centering 
     \includegraphics[width=0.38\linewidth]{logic_gates/or.png}
-    \caption{Puerta lógica OR en el plano de entradas.}
+    \caption{OR logic gate in the input plane.}
     \label{fig:logic_gate_or}
 \end{figure}
 
 \begin{itemize}
-    \item XOR: produce 1 cuando exactamente una de las entradas es 1. No es linealmente separable, ya que no existe una recta que divida simultáneamente los positivos \((1,0), (0,1)\) de los negativos \((0,0), (1,1)\). Para resolver XOR se requiere, como mínimo, una red con una capa oculta (MLP) que combine varias fronteras lineales en una superficie de decisión no lineal.
+    \item XOR: produces 1 when exactly one of the inputs is 1. It is not linearly separable, as no line can simultaneously divide the positive cases \((1,0), (0,1)\) from the negative ones \((0,0), (1,1)\). To solve XOR, at least one hidden layer (MLP) is required, combining multiple linear boundaries into a non-linear decision surface.
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=4cm]{logic_gates/xor.png} 
-    \caption{Puerta lógica XOR: ejemplo no linealmente separable.}
+    \caption{XOR logic gate: example of a non-linearly separable problem.}
     \label{fig:xor_logic_gate}
 \end{figure}
 
-Esta relación es fundamental en el diseño de arquitecturas neuronales: cuando los datos no son separables por un hiperplano, una red multicapa con funciones de activación adecuadas puede componer fronteras lineales en formas no lineales y, con ello, representar correctamente el problema (véase Sección\ref{sec:redes_mlp}).
+This relationship is fundamental in neural architecture design: when data are not separable by a hyperplane, a multilayer network with suitable activation functions can compose linear boundaries into non-linear shapes, thus correctly representing the problem (see Section~\ref{sec:redes_mlp}).
 
+\subsubsection{Activation Function} \label{sec:activation}
 
-        % Una sola neurona puede resolver tareas como AND u OR, pero no problemas \textbf{no lineales} (por ejemplo, XOR). 
-        % Para estos casos se requieren arquitecturas con \textbf{múltiples capas} que, apoyadas en funciones de activación, introduzcan la no linealidad necesaria para modelar superficies de decisión complejas.
+Activation functions are the component that transforms a stacked set of linear transformations into a non-linear model. 
+Without them, even multiple layers would be equivalent to a single linear transformation. 
+In problems where the input–output relationship is inherently non-linear (as in most real-world phenomena), activation functions enable the curvature of the decision boundary and stabilise gradient flow during training \cite{renganathan2019}.
 
-        % \begin{figure}[H]
-        %     \begin{subfigure}[H]{0.49\textwidth}
-        %         \centering 
-        %         \includegraphics[width=0.5\linewidth]{logic_gates/and.png}
-        %         \caption{Puerta Lógica AND}
-        %         \label{fig:and_logic_gate}
-        %     \end{subfigure}
-        %     \hfill
-        %     \begin{subfigure}[H]{0.49\textwidth}
-        %         \centering 
-        %         \includegraphics[width=0.5\linewidth]{logic_gates/or.png}
-        %         \caption{Puerta Lógica OR}
-        %         \label{fig:or_logic_gate}
-        %     \end{subfigure}
-        %     \caption{Puertas Lógicas}
-        %     \label{fig:logic_gates}
-        % \end{figure}
-
-        % \begin{figure}[H]
-        %     \centering
-        %     \includegraphics[width=4cm]{logic_gates/xor.png} 
-        %     \caption{Puerta Lógica XOR}
-        %     \label{fig:xor_logic_gate}
-        % \end{figure}
-
-        % Además de añadir \textbf{dos o más capas}, es indispensable usar una \textbf{función de activación} (Sección~\ref{sec:activation}) que limite o transforme la salida de cada neurona y aporte la no linealidad que hace posible la representación de patrones complejos.
-
-        \subsubsection{Función de Activación} \label{sec:activation}
-
-        Las funciones de activación son el componente que convierte a una red apilada de transformaciones lineales en un \textbf{modelo no lineal}. 
-        Sin ellas, incluso varias capas equivaldrían a una sola transformación lineal. 
-        En problemas donde la relación entrada–salida es intrínsecamente no lineal (como ocurre en la mayoría de los fenómenos reales), las activaciones permiten \textbf{curvar} la frontera de decisión y estabilizar el flujo de gradientes durante el entrenamiento \cite{renganathan2019}.
-
-        Entre las funciones más habituales se encuentran:
-
-        \begin{itemize}
-            \item \textbf{Función Escalonada:} \\
-                Apropiada para decisiones binarias simples (0/1). Su uso moderno es didáctico, pues su no diferenciabilidad dificulta el entrenamiento por gradiente:
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=5cm]{activation_functions/staggered.png}
-                    \caption{Función Escalonada}
-                    \label{fig:step_function}
-                \end{figure}
-                \[
-                f(x) = \left\{ \begin{array}{lr} 
-                0 & : x < 0 \\
-                1 & : x \ge 0 
-                \end{array} \right.
-                \]
-            
-            \item \textbf{Función Sigmoide:} \\
-                Produce salidas en \([0,1]\) y admite \textbf{interpretación probabilística} (p.\,ej., 0.8 \(\Rightarrow\) 80\%). Además, suaviza la decisión y facilita el cálculo de gradientes:
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=5cm]{activation_functions/sigmoid.png}
-                    \caption{Función Sigmoide}
-                    \label{fig:sigmoid_function}
-                \end{figure}
-                \[
-                f(x) = \sigma(x) =  \frac{1}{1 + e^{-x}}.
-                \]
-                Sus parámetros se ajustan con \textbf{retropropagación} (Sección~\ref{sec:backpropagation}).
-            
-            \item \textbf{Función de Unidad Rectificada Lineal (ReLU):} \\
-                Estándar de facto en redes profundas por su \textbf{eficiencia} y por atenuar el \textit{desvanecimiento del gradiente}. 
-                Activa proporcionalmente valores positivos y anula los negativos, lo que acelera la convergencia:
-                \begin{itemize}
-                    \item \textit{Desvanecimiento del gradiente:} fenómeno donde los gradientes se vuelven muy pequeños y capas tempranas dejan de actualizarse de forma efectiva.
-                \end{itemize}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=6cm]{activation_functions/relu.png}
-                    \caption{Función ReLU}
-                    \label{fig:relu_function}
-                \end{figure}
-                \[
-                f(x) = \left\{ \begin{array}{lr} 
-                0 & : x < 0 \\
-                x & : x \ge 0 
-                \end{array} \right.
-                \]
-            
-            \item \textbf{Función Softmax:} \\
-                Se utiliza en la \textbf{capa de salida} para clasificación multiclase, traduciendo activaciones en probabilidades que suman 1:
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=6cm]{activation_functions/softmax.png}
-                    \caption{Función Softmax}
-                    \label{fig:softmax_function}
-                \end{figure}
-                \[
-                f(z)_j = \frac{e^{z_j}}{\sum_{k=1}^{K} e^{z_k}}.
-                \]
-            
-            \item \textbf{Función Tangente Hiperbólica:} \\
-                Similar a la sigmoide pero con rango \([-1,1]\), útil para centrar datos alrededor de cero; en redes muy profundas puede padecer del mismo desvanecimiento:
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=6cm]{activation_functions/tanh.png}
-                    \caption{Función Tangente Hiperbólica}
-                    \label{fig:tanh_function}
-                \end{figure}
-                \[
-                f(x) = \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
-                \]
-        
-        \end{itemize}
-        
-        En síntesis, las RNA permiten atacar \textbf{relaciones no lineales}, aprender \textbf{mapeos complejos} entrada–salida y obtener modelos más \textbf{robustos al ruido}. 
-        Entre las arquitecturas más extendidas se encuentran las \textbf{redes de perceptrón multicapa} y las \textbf{redes convolucionales}, descritas a continuación.
-
-    \subsection{Redes Neuronales de Perceptrón Multicapa} \label{sec:redes_mlp}
-
-    Las Redes Neuronales de Perceptrón Multicapa (MLP) constan de una capa de entrada, una o más capas ocultas y una capa de salida. 
-    Las capas ocultas alojan neuronas con funciones de activación (véase Sección~\ref{sec:activation}), responsables de romper la linealidad y construir superficies de decisión en espacios de mayor dimensión. 
-    Así, problemas que una sola neurona no puede resolver (como XOR) se vuelven tratables al combinar múltiples capas y activaciones.
-
-        En la Figura~\ref{fig:multilayer_perceptron} se ilustra una MLP de 4 capas: una de entrada, dos ocultas y una de salida. 
-        La capa de entrada inyecta las variables; el procesamiento no lineal ocurre en las capas ocultas (y en ciertos diseños, también en la salida). 
-        Esta estructura modular facilita añadir profundidad o anchura según la complejidad del problema.
-
-        \begin{figure}[H]
-            \centering
-            \includegraphics[width=8cm]{neural_networks/multilayer_perceptron/multipercep.jpg}
-            \caption{Red Neuronal Multicapa}
-            \label{fig:multilayer_perceptron}
-        \end{figure}
-
-    \subsection{Algoritmo de Retropropagación} \label{sec:backpropagation}
-
-        El algoritmo de retropropagación (\textit{backpropagation}) permite ajustar los parámetros (pesos y sesgos) de la red con base en el gradiente de una función de error. 
-        Fue clave para extender la capacidad del perceptrón simple a redes profundas capaces de resolver problemas no lineales.
-
-        En términos operativos, la red realiza primero una propagación hacia adelante (\textit{feed-forward}) para calcular la salida y el error; luego, ese error se propaga hacia atrás (\textit{backpropagation}) aplicando la regla de la cadena para obtener las derivadas parciales respecto a cada parámetro. 
-        Con dichas derivadas se actualizan pesos y sesgos mediante un optimizador (descenso de gradiente u otros). 
-        El proceso requiere funciones de activación diferenciables y una función de pérdida adecuada \cite{Rojas1996}. 
-
-        El flujo se resume en dos fases:
-
-\begin{enumerate}
-    \item \textbf{Feed-forward}: Propagación de entradas hacia adelante para obtener salidas e identificar el error.
-    \item \textbf{Backpropagation}: Propagación del error hacia atrás y actualización de parámetros capa por capa.
-\end{enumerate}
-
-Para una descripción detallada, véase el Apéndice \ref{ap:backprop} (Secciones \ref{ap:feed_forward} a \ref{ap:back_propagation}).
-
-    \subsection{Redes Neuronales Convolucionales}
-
-        Las Redes Neuronales Convolucionales (CNN, por sus siglas en inglés) son arquitecturas profundas especializadas en datos con estructura espacial (imágenes, secuencias visuales, patrones locales). 
-        Su éxito radica en tres tipos de capas complementarias:
-        \begin{itemize}
-            \item \textbf{Convolucionales}: aplican filtros locales que detectan bordes, texturas y formas; permiten invariancia traslacional parcial.
-            \item \textbf{De agrupación} (\textit{pooling}): reducen dimensionalidad y costo computacional, preservando características salientes.
-            \item \textbf{Totalmente conectadas}: integran la información extraída y realizan la clasificación.
-        \end{itemize}
-        Este diseño ha probado su eficacia en visión por computadora, diagnóstico médico por imagen, robótica y reconocimiento de voz, entre otros.
-
-  \subsection{Aprendizaje Incremental}
-
-El incremento constante en la cantidad de datos disponibles y la demanda de sistemas capaces de aprender de forma continua han impulsado el desarrollo del aprendizaje incremental (\textit{Incremental Learning}). 
-En este enfoque, los ejemplos de entrenamiento se presentan de manera secuencial, y el modelo debe adaptarse a la nueva información sin olvidar el conocimiento previamente adquirido. 
-A diferencia de los esquemas tradicionales de aprendizaje supervisado —donde todo el conjunto de datos se procesa simultáneamente—, en el aprendizaje incremental el modelo se entrena de forma progresiva, integrando paulatinamente los nuevos patrones o tareas \cite{GiraudCarrier2000}.
-
-Esta característica resulta esencial en entornos dinámicos o no estacionarios, donde los datos cambian a lo largo del tiempo y no es viable realizar un reentrenamiento completo en cada actualización. 
-En campos como la robótica, los sistemas deben adaptarse constantemente a nuevos escenarios, condiciones de iluminación, texturas o comportamientos humanos, sin que esto implique olvidar la información previa. 
-De manera similar, en aplicaciones como la ciberseguridad, el procesamiento de imágenes, el reconocimiento de voz o los sistemas de recomendación, el flujo continuo de datos requiere modelos capaces de ajustar su conocimiento en tiempo real sin degradar su desempeño histórico.
-
-El aprendizaje incremental se inspira directamente en la forma en que los seres humanos aprenden: las personas son capaces de incorporar nuevos conocimientos a lo largo del tiempo mientras retienen información relevante de experiencias pasadas. 
-En el caso de las redes neuronales, replicar este tipo de aprendizaje implica equilibrar dos propiedades clave: la plasticidad, que permite adaptarse a nuevos datos, y la estabilidad, que preserva lo aprendido anteriormente. 
-Este equilibrio, conocido como el \textit{dilema estabilidad–plasticidad}, constituye uno de los principales desafíos del aprendizaje incremental.
-
-Sin embargo, las redes neuronales convencionales presentan un fenómeno denominado olvido catastrófico (\textit{catastrophic forgetting}), en el cual la incorporación de nuevas tareas o clases provoca la pérdida de la información previamente aprendida. 
-Esto ocurre porque el proceso de optimización ajusta los pesos de la red para adaptarse a los nuevos datos, sobrescribiendo el conocimiento anterior. 
-Como resultado, el modelo “olvida” tareas pasadas al enfrentarse a nuevos conjuntos de entrenamiento \cite{liu2015}.
-
-Para mitigar este problema, se han propuesto diversas estrategias dentro del aprendizaje incremental, entre las cuales destacan:
+Common activation functions include:
 
 \begin{itemize}
-    \item \textbf{Métodos basados en regularización:} imponen restricciones sobre los pesos más importantes para tareas anteriores, evitando que se modifiquen drásticamente durante el aprendizaje de nuevas tareas. Ejemplo de ello son los métodos \textit{Elastic Weight Consolidation (EWC)} o \textit{Synaptic Intelligence (SI)}.
+    \item \textbf{Step Function:} \\
+        Suitable for simple binary decisions (0/1). Its modern use is educational, as its non-differentiability complicates gradient-based training:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=5cm]{activation_functions/staggered.png}
+            \caption{Step Function}
+            \label{fig:step_function}
+        \end{figure}
+        \[
+        f(x) = \left\{ \begin{array}{lr} 
+        0 & : x < 0 \\
+        1 & : x \ge 0 
+        \end{array} \right.
+        \]
     
-    \item \textbf{Métodos de repetición o \textit{replay}:} almacenan una pequeña cantidad de ejemplos representativos o generan datos sintéticos para recordar conocimientos previos mientras se aprenden nuevas tareas.
+    \item \textbf{Sigmoid Function:} \\
+        Produces outputs in \([0,1]\) and allows a probabilistic interpretation (e.g., 0.8 \(\Rightarrow\) 80\%). It also smooths decisions and facilitates gradient computation:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=5cm]{activation_functions/sigmoid.png}
+            \caption{Sigmoid Function}
+            \label{fig:sigmoid_function}
+        \end{figure}
+        \[
+        f(x) = \sigma(x) =  \frac{1}{1 + e^{-x}}.
+        \]
+        Its parameters are adjusted through backpropagation (see Section~\ref{sec:backpropagation}).
     
-    \item \textbf{Métodos de aislamiento de parámetros:} reservan subconjuntos de neuronas o capas específicas para cada tarea, evitando interferencia directa entre ellas.
+    \item \textbf{Rectified Linear Unit (ReLU):} \\
+        The de facto standard in deep networks due to its efficiency and ability to mitigate the \textit{vanishing gradient} problem. 
+        It activates positive values proportionally and nullifies negative ones, accelerating convergence:
+        \begin{itemize}
+            \item \textit{Vanishing gradient:} phenomenon where gradients become very small and early layers stop updating effectively.
+        \end{itemize}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6cm]{activation_functions/relu.png}
+            \caption{ReLU Function}
+            \label{fig:relu_function}
+        \end{figure}
+        \[
+        f(x) = \left\{ \begin{array}{lr} 
+        0 & : x < 0 \\
+        x & : x \ge 0 
+        \end{array} \right.
+        \]
+    
+    \item \textbf{Softmax Function:} \\
+        Used in the output layer for multi-class classification, converting activations into probabilities that sum to 1:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6cm]{activation_functions/softmax.png}
+            \caption{Softmax Function}
+            \label{fig:softmax_function}
+        \end{figure}
+        \[
+        f(z)_j = \frac{e^{z_j}}{\sum_{k=1}^{K} e^{z_k}}.
+        \]
+    
+    \item \textbf{Hyperbolic Tangent Function:} \\
+        Similar to the sigmoid function but with range \([-1,1]\), useful for centring data around zero; in very deep networks, it may still suffer from vanishing gradients:
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=6cm]{activation_functions/tanh.png}
+            \caption{Hyperbolic Tangent Function}
+            \label{fig:tanh_function}
+        \end{figure}
+        \[
+        f(x) = \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}.
+        \]
 \end{itemize}
 
-El objetivo general de estas técnicas es mantener la capacidad de aprender de forma continua sin necesidad de reentrenar el modelo desde cero ni disponer permanentemente de los datos anteriores. 
-De esta manera, el aprendizaje incremental se consolida como un paradigma central del aprendizaje continuo (\textit{Continual Learning}), permitiendo el desarrollo de sistemas inteligentes más eficientes, adaptativos y autónomos. 
-En síntesis, busca acercar a las redes neuronales artificiales al comportamiento cognitivo humano, donde el conocimiento se construye progresivamente y se conserva a lo largo del tiempo.
+In summary, ANNs enable tackling non-linear relationships, learning complex input–output mappings, and obtaining models that are more robust to noise. 
+Among the most widespread architectures are multilayer perceptrons and convolutional networks, described below.
 
+\subsection{Multilayer Perceptron Neural Networks} \label{sec:redes_mlp}
 
-        \subsubsection{Algoritmos de Aprendizaje Incremental}
+Multilayer Perceptron (MLP) Neural Networks consist of an input layer, one or more hidden layers, and an output layer. 
+The hidden layers contain neurons with activation functions (see Section~\ref{sec:activation}), responsible for breaking linearity and building decision surfaces in higher-dimensional spaces. 
+Thus, problems that a single neuron cannot solve (such as XOR) become tractable by combining multiple layers and activations.
 
-En términos generales, un algoritmo de aprendizaje incremental busca mantener la capacidad de aprender de manera continua sin necesidad de reentrenar el modelo completo desde cero. 
-Estos algoritmos se diseñan para operar bajo la premisa de que los datos no se presentan de forma estática ni simultánea, sino como una secuencia de experiencias o bloques de información que deben ser procesados conforme llegan. 
-El reto central consiste en actualizar los parámetros del modelo sin comprometer el conocimiento previamente adquirido, evitando el fenómeno de \textit{olvido catastrófico}.
+Figure~\ref{fig:multilayer_perceptron} illustrates a 4-layer MLP: one input, two hidden, and one output. 
+The input layer injects the variables; non-linear processing occurs in the hidden layers (and, in certain designs, also in the output). 
+This modular structure facilitates adding depth or width according to the problem’s complexity.
 
-Para cumplir con esta función, un algoritmo incremental debe satisfacer los siguientes criterios esenciales \cite{Deshmukh2013}:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8cm]{neural_networks/multilayer_perceptron/multipercep.jpg}
+    \caption{Multilayer Neural Network}
+    \label{fig:multilayer_perceptron}
+\end{figure}
+
+\subsection{Backpropagation Algorithm} \label{sec:backpropagation}
+
+The backpropagation algorithm allows the adjustment of the network parameters (weights and biases) based on the gradient of a loss function. 
+It was key to extending the capability of the simple perceptron to deep networks capable of solving non-linear problems.
+
+Operationally, the network first performs a forward propagation to compute the output and the error; the error is then propagated backwards (backpropagation) by applying the chain rule to obtain the partial derivatives with respect to each parameter. 
+With these derivatives, weights and biases are updated through an optimiser (gradient descent or others). 
+The process requires differentiable activation functions and an appropriate loss function \cite{Rojas1996}. 
+
+The flow is summarised in two phases:
 
 \begin{enumerate}
-    \item Aprender y actualizarse con cada nuevo dato, etiquetado o no etiquetado, sin requerir un proceso de reentrenamiento global.
-    \item Conservar el conocimiento adquirido previamente, integrando la nueva información sin degradar la anterior.
-    \item Evitar la dependencia del acceso permanente a los datos originales (aprendizaje sin almacenamiento total de ejemplos pasados).
-    \item Detectar y crear nuevas clases o \textit{clusters} cuando los datos introducen patrones previamente no observados, así como dividir o fusionar \textit{clusters} existentes en función del entorno.
-    \item Mantener una naturaleza dinámica y adaptativa frente a cambios conceptuales o de distribución en los datos (\textit{concept drift}).
+    \item \textbf{Feed-forward}: Propagation of inputs forwards to obtain outputs and identify the error.
+    \item \textbf{Backpropagation}: Backward propagation of the error and parameter updates layer by layer.
+\end{enumerate}
+
+For a detailed description, see Appendix \ref{ap:backprop} (Sections \ref{ap:feed_forward} to \ref{ap:back_propagation}).
+
+\subsection{Convolutional Neural Networks}
+
+Convolutional Neural Networks (CNNs) are deep architectures specialised in data with spatial structure (images, visual sequences, local patterns). 
+Their success relies on three complementary types of layers:
+\begin{itemize}
+    \item \textbf{Convolutional}: apply local filters that detect edges, textures, and shapes; they allow partial translational invariance.
+    \item \textbf{Pooling}: reduce dimensionality and computational cost while preserving salient features.
+    \item \textbf{Fully connected}: integrate the extracted information and perform classification.
+\end{itemize}
+This design has proven effective in computer vision, medical image diagnosis, robotics, and speech recognition, among other fields.
+
+\subsection{Incremental Learning}
+
+The constant increase in the amount of available data and the demand for systems capable of learning continuously have driven the development of Incremental Learning. 
+In this approach, training examples are presented sequentially, and the model must adapt to new information without forgetting previously acquired knowledge. 
+Unlike traditional supervised learning schemes—in which the entire dataset is processed simultaneously—incremental learning trains the model progressively, gradually integrating new patterns or tasks \cite{GiraudCarrier2000}.
+
+This feature is essential in dynamic or non-stationary environments, where data change over time and it is not feasible to carry out full retraining at each update. 
+In fields such as robotics, systems must constantly adapt to new scenarios, lighting conditions, textures, or human behaviours without forgetting prior information. 
+Similarly, in applications such as cybersecurity, image processing, speech recognition, or recommender systems, the continuous data flow requires models capable of adjusting their knowledge in real time without degrading historical performance.
+
+Incremental learning is directly inspired by the way human beings learn: people are able to incorporate new knowledge over time while retaining relevant information from past experiences. 
+For neural networks, replicating this type of learning involves balancing two key properties: plasticity, which allows adaptation to new data, and stability, which preserves previously learned knowledge. 
+This balance, known as the stability–plasticity dilemma, is one of the main challenges of incremental learning.
+
+However, conventional neural networks exhibit a phenomenon called catastrophic forgetting, in which the incorporation of new tasks or classes leads to the loss of previously learned information. 
+This occurs because the optimisation process adjusts the network’s weights to adapt to the new data, overwriting previous knowledge. 
+As a result, the model “forgets” past tasks when faced with new training sets \cite{liu2015}.
+
+To mitigate this problem, various strategies have been proposed within incremental learning, including:
+
+\begin{itemize}
+    \item \textbf{Regularisation-based methods:} impose constraints on the weights most important for previous tasks, preventing them from changing drastically during the learning of new tasks. Examples include Elastic Weight Consolidation (EWC) and Synaptic Intelligence (SI).
+    
+    \item \textbf{Replay methods:} store a small number of representative examples or generate synthetic data to recall prior knowledge while learning new tasks.
+    
+    \item \textbf{Parameter isolation methods:} reserve subsets of neurons or specific layers for each task, preventing direct interference between them.
+\end{itemize}
+
+The general objective of these techniques is to maintain the ability to learn continuously without retraining the model from scratch or permanently storing previous data. 
+In this way, incremental learning is consolidated as a central paradigm of Continual Learning, enabling the development of more efficient, adaptive, and autonomous intelligent systems. 
+In short, it seeks to bring artificial neural networks closer to human cognitive behaviour, where knowledge is built progressively and preserved over time.
+
+\subsubsection{Incremental Learning Algorithms}
+
+In general terms, an incremental learning algorithm seeks to maintain the ability to learn continuously without retraining the entire model from scratch. 
+These algorithms are designed to operate under the premise that data are not presented statically or simultaneously, but as a sequence of experiences or information blocks that must be processed as they arrive. 
+The central challenge is to update the model parameters without compromising previously acquired knowledge, avoiding catastrophic forgetting.
+
+To fulfil this role, an incremental algorithm must meet the following essential criteria \cite{Deshmukh2013}:
+
+\begin{enumerate}
+    \item Learn and update with each new datum, labelled or unlabelled, without requiring a global retraining process.
+    \item Preserve previously acquired knowledge, integrating new information without degrading prior learning.
+    \item Avoid dependence on permanent access to the original data (learning without full storage of past examples).
+    \item Detect and create new classes or clusters when the data introduce previously unseen patterns, as well as split or merge existing clusters according to the environment.
+    \item Maintain a dynamic and adaptive nature in the face of conceptual or distributional changes in the data (concept drift).
 \end{enumerate}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\columnwidth]{incremental_learning/incremental_learning_methods.png}
-    \caption{Dos enfoques tradicionales del aprendizaje incremental.}
+    \caption{Two traditional approaches to incremental learning.}
     \label{fig:incremental_learning_algorithm}
 \end{figure}
 
-Como se observa en la \textbf{Figura~\ref{fig:incremental_learning_algorithm}}, existen dos enfoques históricos fundamentales del aprendizaje incremental:
+As shown in Figure~\ref{fig:incremental_learning_algorithm}, there are two fundamental historical approaches to incremental learning:
 
 \begin{itemize}
-    \item \textbf{Enfoque acumulativo o secuencial:} 
-    cada vez que llega un nuevo bloque de datos \(D_j\), el modelo descarta la hipótesis previa \(h_{j-1}\) y entrena una nueva hipótesis \(h_j\) utilizando todos los datos disponibles. 
-    Aunque mejora la precisión global, este método es computacionalmente costoso y no representa un aprendizaje verdaderamente continuo.
+    \item \textbf{Cumulative or sequential approach:} 
+    each time a new data block \(D_j\) arrives, the model discards the previous hypothesis \(h_{j-1}\) and trains a new hypothesis \(h_j\) using all available data. 
+    Although global accuracy improves, this method is computationally expensive and does not represent truly continuous learning.
     
-    \item \textbf{Enfoque puramente incremental:} 
-    el modelo recibe \(D_j\) y actualiza directamente los parámetros de la hipótesis existente \(h_{j-1}\), basándose únicamente en la nueva información. 
-    En algunos casos, se emplean mecanismos de votación o combinación de hipótesis para integrar de manera estable los cambios entre iteraciones sucesivas.
+    \item \textbf{Purely incremental approach:} 
+    the model receives \(D_j\) and directly updates the parameters of the existing hypothesis \(h_{j-1}\), relying solely on the new information. 
+    In some cases, voting mechanisms or hypothesis combinations are used to integrate changes stably between successive iterations.
 \end{itemize}
 
-En ambos casos, la principal ventaja práctica del enfoque incremental radica en que el conocimiento adquirido no se almacena como ejemplos individuales, sino que se codifica en los parámetros del modelo (pesos, sesgos o probabilidades), lo que permite evitar el almacenamiento de grandes volúmenes de datos históricos.
+In both cases, the main practical advantage of the incremental approach lies in the fact that the acquired knowledge is not stored as individual examples, but is encoded in the model parameters (weights, biases, or probabilities), thereby avoiding the storage of large volumes of historical data.
 
-Desde un punto de vista formal, dada una secuencia de ejemplos de entrenamiento \(e_1, e_2, \dots, e_s\), un algoritmo incremental genera una serie de hipótesis \(h_0, h_1, \dots, h_n\) tales que cada hipótesis \(h_{i+1}\) depende únicamente de la hipótesis anterior \(h_i\) y del ejemplo actual \(e\) \cite{GiraudCarrier2000}. 
-Este principio permite un aprendizaje adaptativo y continuo, donde el modelo “evoluciona” con cada interacción.
+From a formal point of view, given a sequence of training examples \(e_1, e_2, \dots, e_s\), an incremental algorithm generates a series of hypotheses \(h_0, h_1, \dots, h_n\) such that each hypothesis \(h_{i+1}\) depends only on the previous hypothesis \(h_i\) and the current example \(e\) \cite{GiraudCarrier2000}. 
+This principle enables adaptive and continuous learning, where the model “evolves” with each interaction.
 
-Un ejemplo clásico de aprendizaje incremental es el modelo \textbf{COBWEB} \cite{fisher1987}, que realiza una categorización probabilística jerárquica. 
-COBWEB analiza cada instancia entrante y decide si debe crear una nueva categoría, actualizar una existente o reorganizar la jerarquía, basándose en una medida de utilidad global. 
-De esta manera, el sistema construye un árbol de conocimiento que se actualiza conforme se reciben nuevos datos, sin necesidad de reiniciar el proceso de aprendizaje.
+A classic example of incremental learning is the COBWEB model \cite{fisher1987}, which performs hierarchical probabilistic categorisation. 
+COBWEB analyses each incoming instance and decides whether to create a new category, update an existing one, or reorganise the hierarchy, based on a global utility measure. 
+In this way, the system builds a knowledge tree that is updated as new data are received, without the need to restart the learning process.
 
-Con el avance del campo, se han propuesto diversas familias de algoritmos incrementales, clasificadas según su estrategia principal:
+As the field has advanced, various families of incremental algorithms have been proposed, classified according to their main strategy:
 
 \begin{itemize}
-    \item \textbf{Métodos de regularización:} restringen los cambios sobre los parámetros más relevantes para tareas previas, como en \textit{Elastic Weight Consolidation (EWC)}, \textit{Synaptic Intelligence (SI)} o \textit{Memory Aware Synapses (MAS)}.
-    \item \textbf{Métodos de repetición (\textit{replay}):} emplean una pequeña memoria de ejemplos o modelos generativos para recordar tareas anteriores durante el entrenamiento de nuevas. Ejemplos: \textit{iCaRL} y \textit{Generative Replay}.
-    \item \textbf{Métodos de aislamiento de parámetros:} asignan subconjuntos de neuronas o capas específicas a diferentes tareas, reduciendo la interferencia entre conocimientos (\textit{Progressive Neural Networks}, \textit{PackNet}).
-    \item \textbf{Métodos híbridos:} combinan regularización, repetición y expansión dinámica para equilibrar estabilidad y plasticidad en contextos no estacionarios.
+    \item \textbf{Regularisation methods:} restrict changes to parameters most relevant to previous tasks, as in Elastic Weight Consolidation (EWC), Synaptic Intelligence (SI), or Memory Aware Synapses (MAS).
+    \item \textbf{Replay methods:} employ a small memory of examples or generative models to recall previous tasks during the training of new ones. Examples include iCaRL and Generative Replay.
+    \item \textbf{Parameter isolation methods:} assign subsets of neurons or specific layers to different tasks, reducing interference between knowledge (Progressive Neural Networks, PackNet).
+    \item \textbf{Hybrid methods:} combine regularisation, replay, and dynamic expansion to balance stability and plasticity in non-stationary contexts.
 \end{itemize}
 
-Dentro de esta línea de investigación, el trabajo de \cite{bullinaria2009} representa un punto de referencia importante, pues introduce un enfoque alternativo basado en memoria dual: una memoria a corto plazo encargada de almacenar y consolidar la información reciente, y una memoria a largo plazo que preserva el conocimiento ya estabilizado. 
-Este mecanismo se implementa mediante una duplicidad de pesos sinápticos (dos copias del mismo conjunto de conexiones) que permiten controlar la tasa de olvido y la velocidad de aprendizaje de manera diferenciada.
+Within this line of research, the work of \cite{bullinaria2009} represents an important reference point, as it introduces an alternative approach based on dual memory: a short-term memory responsible for storing and consolidating recent information, and a long-term memory that preserves already stabilised knowledge. 
+This mechanism is implemented through a duplication of synaptic weights (two copies of the same set of connections) that allows differentiated control of forgetting rate and learning speed.
 
-El modelo propuesto por Bullinaria emplea un aprendizaje incremental donde cada bloque de datos actualiza únicamente la red de corto plazo; luego, la información consolidada se transfiere gradualmente hacia la red de largo plazo, evitando así la sobrescritura directa de los pesos principales. 
-Esta estructura emula, de forma simplificada, los procesos de consolidación de memoria observados en el cerebro humano (hipocampo–neocorteza), ofreciendo una alternativa eficiente para mitigar el olvido catastrófico sin recurrir al almacenamiento explícito de datos previos.
+The model proposed by Bullinaria employs incremental learning in which each data block updates only the short-term network; then, the consolidated information is gradually transferred to the long-term network, thus avoiding the direct overwriting of the main weights. 
+This structure emulates, in a simplified manner, the memory consolidation processes observed in the human brain (hippocampus–neocortex), offering an efficient alternative to mitigate catastrophic forgetting without resorting to explicit storage of previous data.
 
-En el presente trabajo se adopta y extiende este principio, explorando la posibilidad de utilizar más de dos conjuntos de pesos duplicados para analizar si un mayor grado de partición en la memoria sináptica puede ofrecer una mejor estabilidad y retención del conocimiento a lo largo del proceso de aprendizaje incremental.
+In the present work, this principle is adopted and extended, exploring the possibility of using more than two sets of duplicated weights to analyse whether a higher degree of partitioning in synaptic memory can offer better stability and knowledge retention throughout the incremental learning process.
 
-\subsubsection{Mecanismos de Memoria en el Aprendizaje Incremental}
+\subsubsection{Memory Mechanisms in Incremental Learning}
 
-El proceso de aprendizaje humano combina múltiples niveles de memoria que interactúan de manera jerárquica. 
-Inspirado en este principio, el aprendizaje incremental en redes neuronales busca emular la distinción entre memoria a corto plazo (información reciente y volátil) y memoria a largo plazo (conocimiento consolidado y estable). 
+The human learning process combines multiple levels of memory that interact hierarchically. 
+Inspired by this principle, incremental learning in neural networks seeks to emulate the distinction between short-term memory (recent and volatile information) and long-term memory (consolidated and stable knowledge). 
 
-En el contexto computacional, estos mecanismos se representan mediante diferentes estructuras de almacenamiento o duplicidad de pesos sinápticos. 
-Modelos como el propuesto por \cite{bullinaria2009} utilizan dos conjuntos de pesos: uno de actualización rápida (similar al hipocampo) y otro de consolidación lenta (análogo a la neocorteza). 
-Esta arquitectura permite mantener la plasticidad durante el aprendizaje de nuevos patrones sin comprometer la estabilidad del conocimiento previamente adquirido.
+In the computational context, these mechanisms are represented by different storage structures or duplication of synaptic weights. 
+Models such as that proposed by \cite{bullinaria2009} use two sets of weights: one for rapid updating (similar to the hippocampus) and another for slow consolidation (analogous to the neocortex). 
+This architecture allows plasticity to be maintained during the learning of new patterns without compromising the stability of previously acquired knowledge.
 
-El estudio de estas interacciones constituye la base del diseño del presente trabajo, donde se plantea extender el enfoque de memoria dual hacia un esquema de múltiples niveles de retención, con el fin de evaluar su impacto sobre la pérdida de información y la eficiencia de aprendizaje incremental.
+The study of these interactions forms the basis for the design of the present work, which proposes extending the dual-memory approach towards a scheme of multiple retention levels, in order to evaluate its impact on information loss and the efficiency of incremental learning.
 
-\subsubsection{Estrategias para Mitigar el Olvido Catastrófico}
+\subsubsection{Strategies to Mitigate Catastrophic Forgetting}
 
-Uno de los mayores desafíos en el aprendizaje incremental es el olvido catastrófico, fenómeno que ocurre cuando una red neuronal pierde parte o la totalidad del conocimiento previamente adquirido al aprender nuevas tareas o incorporar datos recientes. 
-Este problema se origina porque el proceso de optimización ajusta los pesos de la red para adaptarse a la nueva información, sobrescribiendo aquellos parámetros que anteriormente representaban el conocimiento previo. 
-En consecuencia, el modelo puede presentar un excelente rendimiento en la tarea más reciente, pero un desempeño deficiente en las anteriores.
+One of the greatest challenges in incremental learning is catastrophic forgetting, a phenomenon that occurs when a neural network loses part or all of the knowledge previously acquired when learning new tasks or incorporating recent data. 
+This problem arises because the optimisation process adjusts the network’s weights to fit the new information, overwriting parameters that previously represented prior knowledge. 
+Consequently, the model may show excellent performance on the most recent task but poor performance on earlier ones.
 
-Para mitigar este problema, la literatura propone diferentes enfoques que buscan equilibrar dos principios fundamentales: la plasticidad (capacidad de adaptación a nuevas tareas) y la estabilidad (capacidad de retener conocimientos anteriores), comúnmente denominado el dilema estabilidad-plasticidad. 
-A continuación se describen las principales estrategias utilizadas para contrarrestar el olvido catastrófico en el aprendizaje incremental:
+To mitigate this problem, the literature proposes different approaches that seek to balance two fundamental principles: plasticity (ability to adapt to new tasks) and stability (ability to retain previous knowledge), commonly referred to as the stability–plasticity dilemma. 
+The main strategies used to counteract catastrophic forgetting in incremental learning are described below:
 
 \begin{enumerate}
-    \item \textbf{Métodos basados en regularización:} \\
-    Estos métodos añaden restricciones al proceso de actualización de los pesos, evitando que aquellos que resultaron importantes para tareas previas cambien drásticamente durante el aprendizaje de nuevas. 
-    Un ejemplo clásico es el método \textit{Elastic Weight Consolidation (EWC)}, que calcula una matriz de importancia de parámetros y penaliza las modificaciones sobre ellos  \cite{kirkpatrick2017overcoming}.
-    Variantes modernas, como \textit{Synaptic Intelligence (SI)} o \textit{Memory Aware Synapses (MAS)}, siguen un principio similar: mantener una “memoria sináptica” de los parámetros más relevantes para tareas previas, reforzando su conservación.
+    \item \textbf{Regularisation-based methods:} \\
+    These methods add constraints to the weight update process, preventing those that proved important for previous tasks from changing drastically during the learning of new ones. 
+    A classic example is Elastic Weight Consolidation (EWC), which computes a parameter-importance matrix and penalises modifications to them \cite{kirkpatrick2017overcoming}.
+    Modern variants such as Synaptic Intelligence (SI) or Memory Aware Synapses (MAS) follow a similar principle: they maintain a “synaptic memory” of the parameters most relevant to previous tasks, reinforcing their preservation.
 
-    \item \textbf{Métodos de repetición o \textit{replay}:} \\
-    Estos enfoques conservan una pequeña memoria con ejemplos representativos del pasado o utilizan modelos generativos para recrear datos sintéticos. 
-    Durante el entrenamiento de nuevas tareas, la red revisita periódicamente esta memoria para mantener viva la información anterior. 
-    Ejemplos de este tipo de técnicas incluyen \textit{Incremental Classifier and Representation Learning (iCaRL)} y el \textit{Generative Replay} basado en redes generativas adversariales (GANs) o autoencoders variacionales (VAEs).
+    \item \textbf{Replay methods:} \\
+    These approaches preserve a small memory with representative examples from the past or use generative models to recreate synthetic data. 
+    During the training of new tasks, the network periodically revisits this memory to keep previous information active. 
+    Examples of such techniques include Incremental Classifier and Representation Learning (iCaRL) and Generative Replay based on Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs).
 
-    \item \textbf{Métodos de aislamiento o partición de parámetros:} \\
-    En lugar de reutilizar los mismos pesos para todas las tareas, estos métodos asignan subconjuntos de neuronas o capas específicas a cada nueva tarea, reduciendo la interferencia entre ellas. 
-    Modelos como las \textit{Progressive Neural Networks} o \textit{PackNet} amplían gradualmente la arquitectura, preservando las conexiones aprendidas y agregando nuevas capacidades sin modificar las existentes. 
-    Este enfoque resulta útil en contextos donde el número de tareas es limitado o conocido de antemano.
+    \item \textbf{Parameter isolation or partitioning methods:} \\
+    Instead of reusing the same weights for all tasks, these methods assign subsets of neurons or specific layers to each new task, reducing interference between them. 
+    Models such as Progressive Neural Networks or PackNet gradually expand the architecture, preserving learned connections and adding new capacity without modifying existing ones. 
+    This approach is useful in contexts where the number of tasks is limited or known in advance.
 
-    \item \textbf{Métodos de distillation y transferencia de conocimiento:} \\
-    Inspirados en la técnica de \textit{Knowledge Distillation}, estos modelos transfieren información desde una red entrenada (“maestro”) hacia una nueva red (“estudiante”), intentando conservar las representaciones internas aprendidas. 
-    Durante el aprendizaje incremental, la red estudiante aprende las nuevas tareas mientras intenta replicar las predicciones de la red maestra para las tareas anteriores, reduciendo el grado de olvido.
+    \item \textbf{Distillation and knowledge transfer methods:} \\
+    Inspired by Knowledge Distillation, these models transfer information from a trained network (“teacher”) to a new network (“student”), seeking to preserve learned internal representations. 
+    During incremental learning, the student network learns the new tasks while attempting to replicate the teacher’s predictions for previous tasks, thus reducing the degree of forgetting.
 
-    \item \textbf{Métodos híbridos o multi-estrategia:} \\
-    En los sistemas más recientes se combinan las estrategias anteriores para lograr un balance más eficiente entre estabilidad y plasticidad. 
-    Estos modelos integran regularización, repetición selectiva y expansión dinámica de la arquitectura, adaptando su comportamiento según la naturaleza de los datos o las tareas. 
-    Ejemplo de ello son los modelos \textit{Dynamic Architecture Networks} o los esquemas de \textit{Meta-Learning Incremental}, donde el sistema aprende a ajustar su propio mecanismo de consolidación.
+    \item \textbf{Hybrid or multi-strategy methods:} \\
+    In the most recent systems, the above strategies are combined to achieve a more efficient balance between stability and plasticity. 
+    These models integrate regularisation, selective replay, and dynamic architectural expansion, adapting their behaviour according to the nature of the data or tasks. 
+    Examples include Dynamic Architecture Networks or Meta-Incremental Learning schemes, where the system learns to adjust its own consolidation mechanism.
 \end{enumerate}
 
-Cada uno de estos enfoques busca emular, en cierto grado, los procesos cognitivos humanos de aprendizaje y retención. 
-Sin embargo, la mayoría de ellos requieren un control manual de la complejidad del modelo o un almacenamiento parcial de datos antiguos, lo que limita su escalabilidad en entornos reales. 
+Each of these approaches seeks, to some extent, to emulate human cognitive processes of learning and retention. 
+However, most require manual control of model complexity or partial storage of old data, which limits their scalability in real-world environments. 
 
-En este contexto, el modelo propuesto por \cite{bullinaria2009} representa una alternativa biológicamente inspirada que evita el uso de memorias explícitas o estructuras externas, implementando en cambio un sistema de memoria dual mediante duplicación de pesos sinápticos. 
-De esta forma, el conocimiento nuevo se consolida gradualmente, reproduciendo el proceso de transferencia de información del hipocampo a la neocorteza en el cerebro humano. 
+In this context, the model proposed by \cite{bullinaria2009} represents a biologically inspired alternative that avoids the use of explicit memories or external structures, instead implementing a dual-memory system through duplication of synaptic weights. 
+In this way, new knowledge is gradually consolidated, reproducing the process of information transfer from the hippocampus to the neocortex in the human brain. 
 
-El presente trabajo retoma esta idea y plantea su extensión, evaluando si el uso de múltiples duplicaciones de pesos y distintos niveles de consolidación pueden ofrecer una solución más robusta y escalable al olvido catastrófico en el aprendizaje incremental.
+The present work takes up this idea and proposes its extension, assessing whether the use of multiple weight duplications and different levels of consolidation can offer a more robust and scalable solution to catastrophic forgetting in incremental learning.

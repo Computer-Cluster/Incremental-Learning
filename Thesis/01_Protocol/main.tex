@@ -1,7 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,mexico]{babel}
 \usepackage{amsmath} 
 \usepackage{amssymb} 
 \usepackage{newtxtext,newtxmath}
@@ -46,15 +45,16 @@
 
     \maketitle
 
-    \begin{abstract}
-        Una red neuronal artificial es un modelo de Aprendizaje Automático inspirado en el funcionamiento de las redes neuronales biológicas. Está compuesta por neuronas artificiales (o nodos) organizadas en capas (entrada, oculta y salida), donde la información se procesa mediante transformaciones matemáticas no lineales.
+   \begin{abstract}
+An artificial neural network is a Machine Learning model inspired by the functioning of biological neural networks. It is composed of artificial neurons (or nodes) organised into layers (input, hidden, and output), where information is processed through non-linear mathematical transformations.
 
-        El aprendizaje de estos modelos se realiza a través de un proceso de entrenamiento, en el cual los datos atraviesan la red capa por capa. En cada neurona se calcula una función de activación, se estima la pérdida comparando la salida con el valor real, y luego se aplica el algoritmo de retropropagación para ajustar los pesos y sesgos con el objetivo de minimizar dicha pérdida. Este proceso se repite hasta que la pérdida converge.
+The learning process of these models is carried out through training, during which data pass through the network layer by layer. In each neuron, an activation function is computed, the loss is estimated by comparing the output with the actual value, and then the backpropagation algorithm is applied to adjust the weights and biases in order to minimise this loss. This process is repeated until the loss converges.
 
-        En el enfoque tradicional, el modelo se entrena con un conjunto inicial de datos y, ante la llegada de nueva información, debe reentrenarse desde cero utilizando todos los datos disponibles. Este proceso puede resultar ineficiente y costoso computacionalmente, especialmente con grandes volúmenes de datos.
+In the traditional approach, the model is trained with an initial dataset and, upon the arrival of new information, it must be retrained from scratch using all available data. This process can be inefficient and computationally expensive, especially with large data volumes.
 
-        El aprendizaje incremental, una rama de la Inteligencia Artificial, permite actualizar el conocimiento del modelo sin necesidad de reentrenarlo completamente con los datos históricos  \cite{bullinaria2009}. En este trabajo se emplearán Redes Neuronales Artificiales enfocadas en la clasificación de dígitos manuscritos, utilizando el algoritmo de backpropagation en redes Multicapa Perceptron. Se explorará una estrategia de duplicación de pesos para simular mecanismos de memoria a corto y largo plazo, con el objetivo de mejorar los resultados presentados en \cite{bullinaria2009}.
-    \end{abstract}
+Incremental learning, a branch of Artificial Intelligence, allows updating the model’s knowledge without the need to retrain it completely with historical data \cite{bullinaria2009}. In this work, Artificial Neural Networks focused on handwritten digit classification will be used, employing the backpropagation algorithm in Multilayer Perceptron networks. A weight duplication strategy will be explored to simulate short- and long-term memory mechanisms, aiming to improve upon the results presented in \cite{bullinaria2009}.
+\end{abstract}
+
 
     \textbf{Palabras clave:} Aprendizaje incremental, Redes Neuronales Artificiales, Clasificación de dígitos.
 
@@ -70,7 +70,7 @@
     \input{../02_Chapters/methodology}
     \input{../02_Chapters/capitulated}
     \input{../02_Chapters/gantt_chart}
-    \input{../02_Chapters/results}
+    %\input{../02_Chapters/results}
 
     \bibliographystyle{plain}
     \bibliography{dataset}

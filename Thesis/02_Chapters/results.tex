@@ -1,14 +1,14 @@
-\section{Resultados}
+\section{Results}
 
-En esta sección se presentan y analizan los resultados obtenidos a partir de las tres configuraciones de entrenamiento incremental implementadas. Dichas configuraciones fueron diseñadas con el propósito de evaluar la capacidad del modelo para retener conocimiento previo, adaptarse a nuevas tareas y mitigar los efectos del \textit{olvido catastrófico}, fenómeno común en los escenarios de aprendizaje continuo.
+This section presents and analyses the results obtained from the three implemented incremental training configurations. These configurations were designed to evaluate the model’s ability to retain prior knowledge, adapt to new tasks, and mitigate the effects of \textit{catastrophic forgetting}, a common phenomenon in continual learning scenarios.
 
 \begin{itemize}
-  \item \textbf{Baseline:} modelo de referencia sin mecanismos de memoria o retención.
-  \item \textbf{Dual-Bullinaria:} implementación del enfoque propuesto por Bullinaria (2009), con duplicación parcial de pesos.
-  \item \textbf{Dual-Bullinaria ×2:} versión extendida del modelo Dual con duplicación reforzada para aumentar la estabilidad del aprendizaje.
+  \item \textbf{Baseline:} reference model without memory or retention mechanisms.
+  \item \textbf{Dual-Bullinaria:} implementation of the approach proposed by Bullinaria (2009), with partial weight duplication.
+  \item \textbf{Dual-Bullinaria ×2:} extended version of the Dual model with reinforced duplication to increase learning stability.
 \end{itemize}
 
-Cada una de estas variantes presenta una arquitectura particular y un enfoque distinto hacia la conservación del conocimiento adquirido. La Tabla~\ref{tab:perfiles_incrementales} resume sus principales características y propósitos experimentales.
+Each of these variants presents a particular architecture and a distinct approach to preserving acquired knowledge. Table~\ref{tab:perfiles_incrementales} summarises their main characteristics and experimental purposes.
 
 \begin{table}[H]
   \centering
@@ -16,32 +16,32 @@ Cada una de estas variantes presenta una arquitectura particular y un enfoque di
   \setlength{\tabcolsep}{6pt}
   \begin{tabular}{|p{3cm}|p{7cm}|p{5cm}|}
     \hline
-    \textbf{Perfil} & \textbf{Descripción} & \textbf{Propósito} \\ \hline
-    \textbf{Baseline} & Entrenamiento incremental simple, sin mecanismos explícitos de memoria o retención. & Servir como punto de referencia del comportamiento estándar del modelo. \\ \hline
-    \textbf{Dual-Bullinaria} & Recreación del protocolo de Bullinaria (2009), que introduce duplicación parcial de pesos para conservar información aprendida en etapas previas. & Evaluar la efectividad del mecanismo de duplicación en la reducción del olvido catastrófico. \\ \hline
-    \textbf{Dual-Bullinaria ×2} & Extensión del perfil Dual con duplicación reforzada de pesos por bloque de entrenamiento, emulando una memoria de mayor capacidad. & Incrementar la retención de conocimiento y la estabilidad a lo largo del aprendizaje incremental. \\ \hline
+    \textbf{Profile} & \textbf{Description} & \textbf{Purpose} \\ \hline
+    \textbf{Baseline} & Simple incremental training without explicit memory or retention mechanisms. & Serve as a reference point for the model’s standard behaviour. \\ \hline
+    \textbf{Dual-Bullinaria} & Recreation of Bullinaria’s (2009) protocol, introducing partial weight duplication to preserve information learned in previous stages. & Evaluate the effectiveness of the duplication mechanism in reducing catastrophic forgetting. \\ \hline
+    \textbf{Dual-Bullinaria ×2} & Extension of the Dual profile with reinforced weight duplication per training block, emulating a higher-capacity memory. & Increase knowledge retention and stability throughout incremental learning. \\ \hline
   \end{tabular}
-  \caption{Descripción de los perfiles de entrenamiento incremental.}
+  \caption{Description of the incremental training profiles.}
   \label{tab:perfiles_incrementales}
 \end{table}
 
-\subsection{Análisis de desempeño}
+\subsection{Performance Analysis}
 
-En la Figura~\ref{fig:catastrophic_forgetting} se ilustran las curvas de desempeño obtenidas durante las fases de entrenamiento y evaluación. Dichas curvas reflejan el comportamiento de cada modelo ante la llegada progresiva de nuevos bloques de información, evidenciando en qué medida logran preservar lo aprendido con anterioridad.
+Figure~\ref{fig:catastrophic_forgetting} illustrates the performance curves obtained during the training and evaluation phases. These curves reflect the behaviour of each model as new information blocks are progressively introduced, showing to what extent they manage to preserve previously learned knowledge.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.85\textwidth]{results/catastrophic_forgetting}
-  \caption{Evidencia del olvido catastrófico en los distintos perfiles.}
+  \caption{Evidence of catastrophic forgetting across the evaluated profiles.}
   \label{fig:catastrophic_forgetting}
 \end{figure}
 
-De acuerdo con los resultados experimentales, se identifican las siguientes tendencias generales:
+According to the experimental results, the following general trends were identified:
 
 \begin{enumerate}
-  \item \textbf{Baseline:} muestra una disminución gradual de la precisión a medida que se incorporan nuevas tareas, reflejando la ausencia de mecanismos de memoria y, por tanto, un olvido progresivo del conocimiento previo.
-  \item \textbf{Dual-Bullinaria:} mantiene una curva de rendimiento más estable, evidenciando una reducción considerable del olvido y una mejor conservación de la información aprendida.
-  \item \textbf{Dual-Bullinaria ×2:} refuerza la retención de conocimiento, aunque con ligeras fluctuaciones iniciales asociadas al ajuste de pesos duplicados en etapas tempranas del entrenamiento.
+  \item \textbf{Baseline:} shows a gradual decrease in accuracy as new tasks are incorporated, reflecting the absence of memory mechanisms and, consequently, a progressive loss of prior knowledge.
+  \item \textbf{Dual-Bullinaria:} maintains a more stable performance curve, showing a considerable reduction in forgetting and better preservation of learned information.
+  \item \textbf{Dual-Bullinaria ×2:} reinforces knowledge retention, although slight initial fluctuations are observed due to the adjustment of duplicated weights during the early stages of training.
 \end{enumerate}
 
 \begin{table}[H]
@@ -50,32 +50,32 @@ De acuerdo con los resultados experimentales, se identifican las siguientes tend
   \setlength{\tabcolsep}{6pt}
   \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|}
     \hline
-    \textbf{Perfil} & \textbf{Retención} & \textbf{Observación principal} \\ \hline
-    \textbf{Baseline} & Leve caída de precisión (olvido moderado). & No implementa mecanismos de memoria, lo que genera pérdida acumulativa de información. \\ \hline
-    \textbf{Dual-Bullinaria} & Estabilidad a lo largo de las tareas. & Logra un equilibrio entre la incorporación de nueva información y la preservación del conocimiento anterior. \\ \hline
-    \textbf{Dual-Bullinaria ×2} & Fluctuaciones iniciales, seguidas de una mayor estabilidad. & Fortalece la memoria a largo plazo, aunque disminuye ligeramente la adaptabilidad del modelo. \\ \hline
+    \textbf{Profile} & \textbf{Retention} & \textbf{Main Observation} \\ \hline
+    \textbf{Baseline} & Slight drop in accuracy (moderate forgetting). & Lacks memory mechanisms, leading to cumulative information loss. \\ \hline
+    \textbf{Dual-Bullinaria} & Stability across tasks. & Achieves a balance between incorporating new information and preserving previous knowledge. \\ \hline
+    \textbf{Dual-Bullinaria ×2} & Initial fluctuations followed by greater stability. & Strengthens long-term memory, although slightly reducing model adaptability. \\ \hline
   \end{tabular}
-  \caption{Resumen de observaciones experimentales.}
+  \caption{Summary of experimental observations.}
   \label{tab:observaciones_perfiles}
 \end{table}
 
-\subsection{Comparativa general de perfiles}
+\subsection{General Profile Comparison}
 
-La Figura~\ref{fig:perfil_comparation} presenta una visión comparativa de los tres enfoques, destacando las diferencias en precisión, retención y estabilidad entre los perfiles. Se observa una mejora progresiva en la capacidad de memoria conforme se incorporan estrategias de duplicación de pesos, aunque a costa de un incremento en el costo computacional.
+Figure~\ref{fig:perfil_comparation} presents a comparative view of the three approaches, highlighting differences in accuracy, retention, and stability among the profiles. A progressive improvement in memory capacity is observed as weight duplication strategies are incorporated, albeit at the cost of increased computational expense.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.85\textwidth]{results/perfil_comparation}
-  \caption{Comparativa general entre los perfiles evaluados.}
+  \caption{General comparison between the evaluated profiles.}
   \label{fig:perfil_comparation}
 \end{figure}
 
-De manera general, las observaciones pueden sintetizarse de la siguiente forma:
+In general terms, the observations can be summarised as follows:
 
 \begin{itemize}
-  \item \textbf{Baseline:} modelo más simple, propenso al olvido y con menor estabilidad en tareas secuenciales.
-  \item \textbf{Dual-Bullinaria:} logra un balance adecuado entre memoria y precisión, mostrando una mejora significativa en la retención sin comprometer la eficiencia.
-  \item \textbf{Dual-Bullinaria ×2:} incrementa notablemente la capacidad de memoria, pero su adaptabilidad disminuye, probablemente debido al sobreajuste en fases iniciales.
+  \item \textbf{Baseline:} simplest model, prone to forgetting and with low stability in sequential tasks.
+  \item \textbf{Dual-Bullinaria:} achieves a proper balance between memory and accuracy, showing a significant improvement in retention without compromising efficiency.
+  \item \textbf{Dual-Bullinaria ×2:} greatly increases memory capacity, though its adaptability decreases, likely due to overfitting in the early training phases.
 \end{itemize}
 
 \begin{table}[H]
@@ -83,19 +83,19 @@ De manera general, las observaciones pueden sintetizarse de la siguiente forma:
   \renewcommand{\arraystretch}{1.25}
   \begin{tabularx}{\textwidth}{p{2.6cm} X X p{3.2cm}}
     \toprule
-    \textbf{Perfil} & \textbf{Descripción} & \textbf{Comportamiento observado} & \textbf{Conclusión} \\
+    \textbf{Profile} & \textbf{Description} & \textbf{Observed Behaviour} & \textbf{Conclusion} \\
     \midrule
-    \textbf{Baseline} & Entrenamiento incremental sin mecanismos de retención. & Presenta un buen desempeño inicial, pero sufre pérdida significativa de conocimiento conforme se añaden nuevas tareas. & Se establece como línea base para comparar la efectividad de las demás estrategias. \\
-    \textbf{Dual-Bullinaria} & Duplicación parcial de pesos para preservar conocimiento previo. & Mantiene una curva estable en ``Prev Accuracy'' y un rendimiento sostenido en ``Test Accuracy''. & Representa el mejor equilibrio entre memoria, estabilidad y capacidad de aprendizaje continuo. \\
-    \textbf{Dual-Bullinaria $\times$ 2} & Duplicación extendida que refuerza la preservación de pesos. & Exhibe una mayor retención de conocimiento con leves variaciones iniciales. & Favorece la estabilidad a largo plazo, aunque requiere mayor ajuste y recursos computacionales. \\
+    \textbf{Baseline} & Incremental training without retention mechanisms. & Shows good initial performance but suffers significant knowledge loss as new tasks are added. & Serves as a baseline for comparing the effectiveness of the other strategies. \\
+    \textbf{Dual-Bullinaria} & Partial weight duplication to preserve prior knowledge. & Maintains a stable curve in ``Prev Accuracy'' and sustained performance in ``Test Accuracy''. & Represents the best balance between memory, stability, and continual learning capability. \\
+    \textbf{Dual-Bullinaria $\times$ 2} & Extended duplication reinforcing weight preservation. & Exhibits greater knowledge retention with slight initial variations. & Enhances long-term stability, although it requires greater adjustment and computational resources. \\
     \bottomrule
   \end{tabularx}
-  \caption{Comparativa general de perfiles de aprendizaje incremental.}
+  \caption{General comparison of incremental learning profiles.}
   \label{tab:perfiles_comparation}
 \end{table}
 
-\subsection{Conclusiones}
+\subsection{Conclusions}
 
-Los resultados experimentales demuestran que la introducción de mecanismos de duplicación de pesos constituye una estrategia efectiva para mitigar el \textit{olvido catastrófico}, favoreciendo una mayor estabilidad y retención del conocimiento a lo largo del aprendizaje incremental. No obstante, dicha mejora implica un aumento en la complejidad del modelo, tanto en el ajuste de hiperparámetros como en el consumo de recursos computacionales.
+The experimental results demonstrate that introducing weight duplication mechanisms is an effective strategy to mitigate \textit{catastrophic forgetting}, promoting greater stability and knowledge retention throughout incremental learning. However, this improvement entails an increase in model complexity, both in hyperparameter tuning and in computational resource consumption.
 
-En síntesis, los perfiles \textbf{Dual-Bullinaria} y \textbf{Dual-Bullinaria ×2} validan la eficacia de las estrategias basadas en memoria estructurada. El primero ofrece un equilibrio óptimo entre retención y adaptabilidad, mientras que el segundo alcanza una retención superior, aunque a costa de una menor flexibilidad frente a la incorporación de nuevos patrones.
+In summary, the \textbf{Dual-Bullinaria} and \textbf{Dual-Bullinaria ×2} profiles validate the effectiveness of structured-memory-based strategies. The former provides an optimal balance between retention and adaptability, whereas the latter achieves superior retention at the expense of reduced flexibility in incorporating new patterns.
