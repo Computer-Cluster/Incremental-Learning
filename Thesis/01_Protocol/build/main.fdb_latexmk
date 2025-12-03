@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex build/main"] 1764739435.62975 "build/main.aux" "build/main.bbl" "build/main" 1764739437.35687 0
+["bibtex build/main"] 1764739593.02088 "build/main.aux" "build/main.bbl" "build/main" 1764739594.73702 0
   "./dataset.bib" 1762653554.80824 16750 cc4a9303c52b1a8f3726399a76cb11a3 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/main.aux" 1764739437.05998 14846 bbf0c58ef842954bf74ae5c81002a5e5 "pdflatex"
+  "build/main.aux" 1764739594.45845 14866 d2ffa11134203b98be010bc30a08ece4 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
   (rewritten before read)
-["makeindex build/main.idx"] 1764739365.08637 "build/main.idx" "build/main.ind" "build/main" 1764739437.35677 0
-  "build/main.idx" 1764739436.23916 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex build/main.idx"] 1764739591.13087 "build/main.idx" "build/main.ind" "build/main" 1764739594.73692 0
+  "build/main.idx" 1764739593.62873 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "build/main.ilg"
   "build/main.ind"
   (rewritten before read)
-["pdflatex"] 1764739435.72445 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1764739437.35698 0
+["pdflatex"] 1764739593.11599 "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" "build/main.pdf" "main" 1764739594.73712 0
   "../02_Chapters/appendices/backpropagation.tex" 1764394285.28887 2620 64398bcdb80f177916a93670916ce298 ""
   "../02_Chapters/approach.tex" 1764394285.28952 4482 bd98d5e189ce5ded575769f0dad1866a ""
   "../02_Chapters/capitulated.tex" 1764394285.2904 1482 968ec792504813469f4884e8d6cbf143 ""
@@ -45,7 +45,7 @@
   "../04_Images/neural_networks/multilayer_perceptron/ANN.jpg" 1762650627.64125 20797 479f8bba9c35b1f5c10da4fb9b5cce40 ""
   "../04_Images/neural_networks/multilayer_perceptron/MLP.jpg" 1762650627.64162 16435 27696a247d485c9d6ad4f4e2a220391f ""
   "../04_Images/optical_digit/four_optical_digit.png" 1762650627.64318 21907 80606af7fb6366107d2233652e80fb9c ""
-  "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" 1764739431.95577 3747 20300b0ffdb6d4f09a784ede3e43199b ""
+  "/Users/usuario/Library/CloudStorage/Dropbox/LuisAngelGH/Incremental Learning/Incremental-Learning/Thesis/01_Protocol/main.tex" 1764739575.89048 3747 ce288630a7501598a990c00ec2b4aa88 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1698694482 2914 fdbc4a54b9bc76f4551b5303f2737d33 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -289,14 +289,14 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758440188 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "build/main.aux" 1764739437.05998 14846 bbf0c58ef842954bf74ae5c81002a5e5 "pdflatex"
-  "build/main.bbl" 1764739435.71895 7094 43d0603ab596296db2c2228f9dd99f21 "bibtex build/main"
-  "build/main.ind" 1764739365.17173 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
-  "build/main.lof" 1764739437.06157 1959 776db8c18e69b7fb862f424029d63a9a "pdflatex"
-  "build/main.lot" 1764739437.06159 437 3a853138bb0a2d0f4ba09bfbcf54c23c "pdflatex"
-  "build/main.out" 1764739437.06127 6765 63761ae2621c5ae5fdc0615d88af323c "pdflatex"
-  "build/main.toc" 1764739437.06154 4038 3329588f489007945e6b9d697f1ae5ec "pdflatex"
-  "main.tex" 1764739431.95577 3747 20300b0ffdb6d4f09a784ede3e43199b ""
+  "build/main.aux" 1764739594.45845 14866 d2ffa11134203b98be010bc30a08ece4 "pdflatex"
+  "build/main.bbl" 1764739593.11032 7094 43d0603ab596296db2c2228f9dd99f21 "bibtex build/main"
+  "build/main.ind" 1764739591.21501 0 d41d8cd98f00b204e9800998ecf8427e "makeindex build/main.idx"
+  "build/main.lof" 1764739594.46013 1962 2d5978f3725337a606f739f533debed5 "pdflatex"
+  "build/main.lot" 1764739594.46016 433 ba3690447b035a39765ee3c86641130a "pdflatex"
+  "build/main.out" 1764739594.4598 6773 2bf935ce4f2535f1a24a13f71257bce3 "pdflatex"
+  "build/main.toc" 1764739594.46009 4052 279013504eead9bd25a2b9e9d6b40a02 "pdflatex"
+  "main.tex" 1764739575.89048 3747 ce288630a7501598a990c00ec2b4aa88 ""
   (generated)
   "build/main.aux"
   "build/main.idx"
