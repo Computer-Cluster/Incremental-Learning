@@ -61,18 +61,33 @@
 
 \begin{abstract}
 \justifying
-Incremental learning represents a fundamental challenge in the field of artificial neural networks, mainly due to the phenomenon of catastrophic forgetting, which leads to the loss of previously acquired knowledge when new information is introduced.  
-This work proposes a biologically inspired model based on the extension of the approach by \cite{bullinaria2009}, through the progressive duplication of synaptic weights as a mechanism for distributed memory consolidation.  
-The research will be conducted using the OptDigits dataset under an incremental six-block scheme, evaluating different configurations with two, four, and six duplicated memory layers.  
-It is expected that the extended model will achieve higher knowledge retention (\(RM \geq 90\%\)) and a lower forgetting rate (\(F \leq 10\%\)) compared to the original dual-weight model, while maintaining a stable computational cost.  
-The anticipated results aim to contribute to a deeper understanding of the stability–plasticity balance in neural networks and to open new possibilities for the development of more efficient and sustainable continual learning systems.
+Incremental learning represents a fundamental challenge in the field of artificial neural networks,
+mainly due to the phenomenon of catastrophic forgetting, which leads to the loss of previously
+acquired knowledge when new information is introduced.
+Although several strategies have been proposed to address this challenge---including
+regularisation-based methods, replay mechanisms, and parameter isolation---most suffer from
+limitations in scalability, dependence on stored data, or excessive growth in model complexity,
+leaving room for more efficient and biologically grounded alternatives.
+This work proposes a biologically inspired model based on the extension of the approach by
+\cite{bullinaria2009}, whose dual-weight architecture, while effective in mitigating forgetting
+through short- and long-term memory interaction, has not been explored beyond two memory layers
+and shows progressive knowledge loss when the number of incremental training stages increases
+significantly.
+The proposed extension introduces multiple duplicated weight layers through the progressive
+duplication of synaptic weights as a mechanism for distributed memory consolidation.
+The research will be conducted using the OptDigits dataset under an incremental six-block scheme,
+evaluating different configurations with two, four, and six duplicated memory layers.
+It is expected that the extended model will achieve higher knowledge retention (\(RM \geq 90\%\))
+and a lower forgetting rate (\(F \leq 10\%\)) compared to the original dual-weight model, while
+maintaining a stable computational cost.
+The anticipated results aim to contribute to a deeper understanding of the stability--plasticity
+balance in neural networks and to open new possibilities for the development of more efficient
+and sustainable continual learning systems.
 
 \vspace{1em}
-\noindent\textbf{Keywords:} Incremental learning; Catastrophic forgetting; Artificial neural networks; Distributed memory; Continual learning.
+\noindent\textbf{Keywords:} Incremental learning; Catastrophic forgetting; Artificial neural
+networks; Distributed memory; Continual learning.
 \end{abstract}
-
-
-  
 
     \input{../02_Chapters/introduction}
     \input{../02_Chapters/approach}

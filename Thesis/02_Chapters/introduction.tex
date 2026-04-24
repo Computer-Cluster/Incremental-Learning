@@ -6,8 +6,51 @@ A subfield of AI is Machine Learning (ML), which studies algorithms capable of a
 
 ANNs are composed of artificial neurons that simulate biological ones. In this context, the chemical processes that occur in the brain are computationally mimicked through signals that travel between artificial neurons, which will hereafter be referred to as “neurons”. This distributed and parallel structure grants ANNs a remarkable learning capacity \cite{liu2015}. \\
 
-In the context of machine learning, when a technique such as ANNs focuses on learning a specific task, it is considered a \textit{linear algorithm without memory}. Since their inception, this has been one of the most widely used approaches in ANNs \cite{GiraudCarrier2000}. However, when it becomes necessary to incorporate new information without retraining the entire model, the concept of Incremental Learning arises, which seeks to include new data without training the model from scratch. \\
+In the context of machine learning, when a technique such as ANNs focuses on learning a 
+specific task from a fixed dataset, it is considered a \textit{single-task algorithm without 
+memory}, as the model is trained once and does not update its knowledge over time. Since their 
+inception, this has been one of the most widely used approaches in ANNs \cite{GiraudCarrier2000}. 
+However, real-world scenarios often require models to continuously incorporate new information---
+whether in the form of new samples, new classes, or entirely new tasks---without retraining the 
+entire model from scratch. This necessity gives rise to the concept of Incremental Learning, 
+which seeks to update the model's knowledge progressively as new information becomes available, 
+while preserving what has already been learned.\\
 
-A concept derived from incremental learning is that of memory in AI, which explores how a learning algorithm may forget previously acquired information when incorporating new data. This issue, analogous to human memory loss, poses challenges for both machines and humans. In response, various approaches have been designed to mitigate this phenomenon. One example is the work by \cite{bullinaria2009}, which proposes the use of ANNs with dual weights, where the first layer of weights behaves as short-term memory and the second as long-term memory. The experiments conducted by \cite{bullinaria2009} demonstrate an improvement in incremental learning tasks, reducing information loss compared with previous implementations such as the Learn++ algorithm \cite{li2008, Elwell2011}. \\
+A concept derived from incremental learning is that of memory in AI, which explores how a 
+learning algorithm may forget previously acquired information when incorporating new data. 
+This issue, analogous to human memory loss, poses challenges for both machines and humans. 
+Closely related to this, the field of Continual Learning (CL) has emerged as a prominent 
+research direction, extending incremental learning to deep learning architectures and 
+focusing on the ability of models to learn from a continuous stream of data without 
+forgetting previously acquired knowledge \cite{de2021continual, PARISI201954}. Despite 
+significant progress, current approaches in this field---including regularisation-based 
+methods such as EWC \cite{kirkpatrick2017overcoming}, replay-based strategies such as 
+iCaRL \cite{rebuffi2017icarl}, and parameter isolation techniques such as Progressive 
+Neural Networks \cite{rusu2016pnn}---still face limitations in scalability, dependence on 
+stored data, or unbounded growth in model complexity, making them unsuitable for 
+resource-constrained scenarios \cite{de2021continual}.
+
+In this context, Multilayer Perceptrons (MLPs) remain a relevant architecture, particularly 
+in the emerging field of TinyML, where machine learning models must operate on devices with 
+severely limited memory and computational resources. Deep learning approaches are often too 
+heavy for such scenarios, making lightweight architectures such as MLPs a practical and 
+actively explored alternative \cite{GiraudCarrier2000}. Investigating incremental learning 
+in MLPs is therefore not only theoretically meaningful, but also practically motivated by 
+real-world deployment constraints.
+
+In response to these challenges, various approaches have been designed to mitigate catastrophic 
+forgetting. One example is the work by \cite{bullinaria2009}, which proposes the use of ANNs 
+with dual weights, where the first set of weights behaves as short-term memory and the second 
+as long-term memory, emulating the hippocampus--neocortex interaction observed in biological 
+systems. The experiments conducted by \cite{bullinaria2009} demonstrate an improvement in 
+incremental learning tasks, reducing information loss compared with previous implementations 
+such as the Learn++ algorithm \cite{li2008, Elwell2011}. However, a key limitation of this 
+approach is that, as the number of incremental training stages grows, the knowledge acquired 
+from earlier datasets is progressively lost, reducing its effectiveness in prolonged learning 
+scenarios. Furthermore, the dual-weight configuration has not been explored beyond two memory 
+layers, leaving open the question of whether additional intermediate memories could provide a 
+more gradual and stable consolidation process. This research aims to address this gap directly, 
+extending Bullinaria's model towards a multi-level memory architecture and evaluating its 
+impact on knowledge retention, forgetting rate, and computational efficiency.\\
 
 This research aims to explore new configurations of duplicated weights, extending and expanding the results obtained in \cite{bullinaria2009}.

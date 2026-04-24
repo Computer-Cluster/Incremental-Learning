@@ -1,1 +1,92 @@
 \section{Problem Formulation}
+\label{sec:problem_formulation}
+
+This work addresses the \textbf{class-incremental learning} problem 
+\cite{de2021continual, van2019three}, where a neural network must learn to recognise 
+new classes over time while retaining knowledge of previously learned ones, without 
+access to past training data during subsequent learning stages.
+
+\subsection*{Formal Definition}
+
+Let $\mathcal{D} = \{D_1, D_2, \ldots, D_T\}$ be a sequence of $T$ training blocks, 
+where each block $D_i = \{(\mathbf{x}_j, y_j)\}_{j=1}^{n_i}$ consists of $n_i$ 
+labelled examples. Each input $\mathbf{x}_j \in \mathbb{R}^d$ is a feature vector 
+of dimension $d$, and $y_j \in \mathcal{Y}_i$ is the corresponding class label, 
+where $\mathcal{Y}_i$ denotes the set of classes introduced in block $D_i$. The 
+class sets are disjoint across blocks, i.e.:
+\[
+\mathcal{Y}_i \cap \mathcal{Y}_j = \emptyset, \quad \forall\, i \neq j
+\]
+such that new classes are introduced at each learning stage. The cumulative set of 
+classes after training on block $D_i$ is defined as:
+\[
+\mathcal{Y}_{1:i} = \bigcup_{k=1}^{i} \mathcal{Y}_k
+\]
+
+Learning is performed \textbf{chunk-by-chunk}: at each stage $i$, the model receives 
+the entire block $D_i$ and updates its parameters accordingly. Crucially, the model 
+does \textbf{not} have access to data from previous blocks $D_1, \ldots, D_{i-1}$ 
+during training on $D_i$, which is the defining constraint of the incremental 
+learning setting \cite{de2021continual, rebuffi2017icarl}.
+
+\subsection*{Learning Objective}
+
+At each stage $i$, the model is parameterised by a set of weight matrices 
+$\boldsymbol{\Theta}_i = \{\mathbf{W}_1^{(i)}, \mathbf{W}_2^{(i)}, \ldots, 
+\mathbf{W}_n^{(i)}\}$, where $n$ denotes the number of duplicated weight sets. 
+The learning objective at stage $i$ is to minimise the cross-entropy loss over 
+the current block:
+\[
+\mathcal{L}_i(\boldsymbol{\Theta}) = -\frac{1}{n_i} \sum_{j=1}^{n_i} 
+\sum_{c \in \mathcal{Y}_{1:i}} \mathbf{1}[y_j = c] \log \hat{p}(c \mid 
+\mathbf{x}_j; \boldsymbol{\Theta})
+\]
+where $\hat{p}(c \mid \mathbf{x}_j; \boldsymbol{\Theta})$ is the predicted 
+probability for class $c$ given input $\mathbf{x}_j$, and $\mathbf{1}[\cdot]$ 
+is the indicator function.
+
+\subsection*{The Stability--Plasticity Trade-off}
+
+The central challenge in this setting is to simultaneously satisfy two competing 
+objectives \cite{de2021continual, PARISI201954}:
+
+\begin{itemize}
+    \item \textbf{Plasticity:} the model must adapt its parameters to correctly 
+    classify examples from the new block $D_i$, i.e., minimise $\mathcal{L}_i$.
+    
+    \item \textbf{Stability:} the model must retain its ability to correctly 
+    classify examples from all previous blocks $D_1, \ldots, D_{i-1}$, i.e., 
+    avoid \textit{catastrophic forgetting} \cite{goodfellow2013catastrophic, 
+    kirkpatrick2017overcoming}.
+\end{itemize}
+
+Formally, after training on block $D_i$, the ideal model should minimise the 
+following global objective:
+\[
+\mathcal{L}_{\text{global}}(\boldsymbol{\Theta}) = \sum_{k=1}^{i} 
+\mathcal{L}_k(\boldsymbol{\Theta})
+\]
+However, since data from past blocks is not available, directly minimising 
+$\mathcal{L}_{\text{global}}$ is infeasible. This is the fundamental constraint 
+that motivates the development of incremental learning strategies.
+
+\subsection*{Proposed Approach}
+
+This work proposes to address this trade-off through the \textbf{progressive 
+duplication of synaptic weight sets}, inspired by the dual-weight architecture 
+of \cite{bullinaria2009}. Given $n$ duplicated weight sets 
+$\{\mathbf{W}_1, \mathbf{W}_2, \ldots, \mathbf{W}_n\}$, each set $\mathbf{W}_k$ 
+is associated with a distinct learning rate $\eta_k$, such that:
+\[
+\eta_1 > \eta_2 > \cdots > \eta_n
+\]
+where $\mathbf{W}_1$ acts as \textit{short-term memory} (high plasticity) and 
+$\mathbf{W}_n$ acts as \textit{long-term memory} (high stability). The final 
+prediction is derived from a combination of all weight sets:
+\[
+\hat{p}(c \mid \mathbf{x}; \boldsymbol{\Theta}) = f\left(\mathbf{W}_1, 
+\mathbf{W}_2, \ldots, \mathbf{W}_n, \mathbf{x}\right)
+\]
+where $f(\cdot)$ denotes the combination function, whose specific form 
+(simple average, weighted average, or learned combination) will be investigated 
+as part of the experimental design (see Section~\ref{sec:methodology}).

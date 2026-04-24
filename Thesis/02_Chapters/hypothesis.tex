@@ -17,13 +17,35 @@ Thus, the aim is to demonstrate that the inclusion of multiple intermediate memo
 To validate the proposed hypothesis, the following quantitative and qualitative evaluation criteria are considered, applied to each incremental block of the experiment:
 
 \begin{itemize}
-    \item \textbf{Average Incremental Accuracy (IA):} a measure of the overall performance of the model, considering the progressive accumulation of knowledge throughout the training blocks.
-    
-    \item \textbf{Forgetting Rate (F):} the percentage loss of accuracy on previous datasets after learning a new block, calculated as:
+     \item \textbf{Average Incremental Accuracy (IA):} a measure of the overall performance 
+    of the model, considering the progressive accumulation of knowledge throughout the 
+    training blocks. After training on block $B_i$, the model is evaluated on all 
+    previously seen blocks $B_1, B_2, \ldots, B_i$ using their respective held-out test 
+    sets. The average incremental accuracy after block $i$ is computed as:
     \[
-    F = \frac{A_{i-1} - A_{i}}{A_{i-1}} \times 100
+    IA_i = \frac{1}{i} \sum_{j=1}^{i} A_{i,j}
     \]
-    where $A_{i}$ represents the accuracy obtained on the previous dataset after training block $i$.
+    where $A_{i,j}$ denotes the accuracy measured on the test set of block $B_j$ after 
+    the model has been trained up to block $B_i$. This formulation follows the evaluation 
+    protocol adopted in recent continual learning literature 
+    \cite{de2021continual, rebuffi2017icarl}.
+
+    \item \textbf{Forgetting Rate (F):} the percentage loss of accuracy on a previously 
+    learned block after incorporating new information. Specifically, after training on 
+    block $B_i$, the forgetting rate with respect to block $B_j$ ($j < i$) is calculated 
+    as:
+    \[
+    F_{i,j} = \frac{A_{j,j} - A_{i,j}}{A_{j,j}} \times 100
+    \]
+    where $A_{j,j}$ is the accuracy on block $B_j$ immediately after training on it, 
+    and $A_{i,j}$ is the accuracy on the same block after subsequently training on blocks 
+    $B_{j+1}, \ldots, B_i$. The overall forgetting rate $F$ is then averaged across all 
+    previous blocks:
+    \[
+    F_i = \frac{1}{i-1} \sum_{j=1}^{i-1} F_{i,j}
+    \]
+    This metric is consistent with the backward transfer measure adopted in 
+    \cite{de2021continual, kirkpatrick2017overcoming, lopez2017gradient}.
     
     \item \textbf{Memory Retention (RM):} the proportion of knowledge preserved at the end of incremental training, comparing the final performance with the initial one:
     \[

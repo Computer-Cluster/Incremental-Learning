@@ -5,6 +5,11 @@ RR~Ade and PR~Deshmukh.
 \newblock Methods for incremental learning: a survey.
 \newblock {\em International Journal of Data Mining \& Knowledge Management Process}, 3(4):119, 2013.
 
+\bibitem{aljundi2018mas}
+Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach, and Tinne Tuytelaars.
+\newblock Memory aware synapses: Learning what (not) to forget.
+\newblock In {\em Proceedings of the European Conference on Computer Vision (ECCV)}, pages 139--154, 2018.
+
 \bibitem{bullinaria2009}
 John~A Bullinaria.
 \newblock Evolved dual weight neural architectures to facilitate incremental learning.
@@ -35,6 +40,16 @@ Christophe~G. Giraud-Carrier.
 \newblock A note on the utility of incremental learning.
 \newblock {\em AI Commun.}, 13:215--224, 2000.
 
+\bibitem{gomes2017survey}
+Heitor~Murilo Gomes, Jean~Paul Barddal, Fabr{\'\i}cio Enembreck, and Albert Bifet.
+\newblock A survey on ensemble learning for data stream classification.
+\newblock {\em ACM Computing Surveys}, 2017.
+
+\bibitem{goodfellow2013catastrophic}
+Ian~J Goodfellow, Mehdi Mirza, Da~Xiao, Aaron Courville, and Yoshua Bengio.
+\newblock An empirical investigation of catastrophic forgetting in gradient-based neural networks.
+\newblock {\em arXiv:1312.6211}, 2013.
+
 \bibitem{hacohenforgetting}
 Guy Hacohen and Tinne Tuytelaars.
 \newblock Forgetting order of continual learning: What is learned first is forgotten last.
@@ -51,10 +66,25 @@ Rodrigo Jacznik, Mariano Tassara, Iv{\'a}n D'Uva, Guillermo Baldino, Roxana~Silv
 \newblock Integrando modelo de aprendizaje supervisado al an{\'a}lisis del desempe{\~n}o de alumnos en cursos virtuales sobre plataformas moodle.
 \newblock In {\em XXII Congreso Argentino de Ciencias de la Computaci{\'o}n (CACIC 2016)}, 2016.
 
+\bibitem{kingma2014adam}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980}, 2014.
+
 \bibitem{kirkpatrick2017overcoming}
 James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei~A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, et~al.
 \newblock Overcoming catastrophic forgetting in neural networks.
 \newblock {\em Proceedings of the National Academy of Sciences}, 114(13):3521--3526, 2017.
+
+\bibitem{krawczyk2017ensemble}
+Bartosz Krawczyk, Leandro~L. Minku, Jo{\~a}o Gama, Jerzy Stefanowski, and Micha{\l} Wo{\'z}niak.
+\newblock Ensemble learning for data stream analysis: A survey.
+\newblock {\em Information Fusion}, 37:132--156, 2017.
+
+\bibitem{lecun1998mnist}
+Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, 86(11):2278--2324, 1998.
 
 \bibitem{li2008}
 Ai-Jun Li.
@@ -85,10 +115,30 @@ Yuyang Liu, Qiuhe Hong, Linlan Huang, Alexandra Gomez-Villa, Dipam Goswami, Xial
 \newblock Continual learning for vlms: A survey and taxonomy beyond forgetting.
 \newblock {\em arXiv preprint arXiv:2508.04227}, 2025.
 
+\bibitem{lopez2017gradient}
+David Lopez-Paz and Marc'Aurelio Ranzato.
+\newblock Gradient episodic memory for continual learning.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, pages 6467--6476, 2017.
+
+\bibitem{mallya2018packnet}
+Arun Mallya and Svetlana Lazebnik.
+\newblock {PackNet}: Adding multiple tasks to a single network by iterative pruning.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 7765--7773, 2018.
+
+\bibitem{PARISI201954}
+German~I. Parisi, Ronald Kemker, Jose~L. Part, Christopher Kanan, and Stefan Wermter.
+\newblock Continual lifelong learning with neural networks: A review.
+\newblock {\em Neural Networks}, 113:54--71, 2019.
+
 \bibitem{pechuan2015}
 Luis~Miralles Pechu{\'a}n, Dafne~A. Rosso-Pelayo, and Jorge Brieva.
 \newblock Reconocimiento de d{\'\i}gitos escritos a mano mediante m{\'e}todos de tratamiento de imagen y modelos de clasificaci{\'o}n.
 \newblock {\em Res. Comput. Sci.}, 93:83--94, 2015.
+
+\bibitem{polikar2001learn++}
+Robi Polikar, Lalita Upda, Satish~S. Upda, and Vasant Honavar.
+\newblock {Learn++}: An incremental learning algorithm for supervised neural networks.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics}, 31:497--508, 2001.
 
 \bibitem{mercado2015}
 Darwin~Mercado Polo, Luis~Pedraza Caballero, and Edinson~Martínez Gómez.
@@ -110,6 +160,11 @@ Ra{\'u}l Rojas.
 \newblock {\em The Backpropagation Algorithm}, pages 149--182.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1996.
 
+\bibitem{rolnick2019experience}
+David Rolnick, Arun Ahuja, Jonathan Schwartz, Timothy Lillicrap, and Gregory Wayne.
+\newblock Experience replay for continual learning.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, pages 350--360, 2019.
+
 \bibitem{royo2021}
 Paloma Royo.
 \newblock {Qué son las redes neuronales y cuál es su aplicación en el marketing}, 2021.
@@ -129,10 +184,45 @@ Krisanu Sarkar.
 \newblock Adaptive variance-penalized continual learning with fisher regularization.
 \newblock {\em arXiv preprint arXiv:2508.16632}, 2025.
 
+\bibitem{shi2024continual}
+Haizhou Shi, Zihao Xu, Hengyi Wang, Weiyi Qin, Wenyuan Wang, Yibin Wang, Zifeng Wang, Sayna Ebrahimi, and Hao Wang.
+\newblock Continual learning of large language models: A comprehensive survey.
+\newblock {\em ACM Computing Surveys}, 2024.
+
+\bibitem{shin2017continual}
+Hanul Shin, Jung~Kwon Lee, Jaehong Kim, and Jiwon Kim.
+\newblock Continual learning with deep generative replay.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)}, pages 2990--2999, 2017.
+
+\bibitem{van2019three}
+Gido~M. van~de Ven and Andreas~S. Tolias.
+\newblock Three scenarios for continual learning.
+\newblock {\em arXiv preprint arXiv:1904.07734}, 2019.
+
+\bibitem{wang2024comprehensive}
+Liyuan Wang, Xingxing Zhang, Hang Su, and Jun Zhu.
+\newblock A comprehensive study of catastrophic forgetting in language models.
+\newblock {\em arXiv preprint arXiv:2402.07786}, 2024.
+
+\bibitem{warden2018speech}
+Pete Warden.
+\newblock Speech commands: A dataset for limited-vocabulary speech recognition, 2018.
+\newblock arXiv preprint arXiv:1804.03209.
+
+\bibitem{warden2019tinyml}
+Pete Warden and Daniel Situnayake.
+\newblock {\em {TinyML}: Machine Learning with {TensorFlow Lite} on {Arduino} and Ultra-Low-Power Microcontrollers}.
+\newblock O'Reilly Media, 2019.
+
 \bibitem{WEI2020}
 Xing Wei, Shaofan Liu, Yaoci Xiang, Zhangling Duan, Chong Zhao, and Yang Lu.
 \newblock Incremental learning based multi-domain adaptation for object detection.
 \newblock {\em Knowledge-Based Systems}, 210:106420, 2020.
+
+\bibitem{xiao2017fashionmnist}
+Han Xiao, Kashif Rasul, and Roland Vollgraf.
+\newblock Fashion-{MNIST}: a novel image dataset for benchmarking machine learning algorithms.
+\newblock {\em arXiv preprint arXiv:1708.07747}, 2017.
 
 \bibitem{zenke2017continual}
 Friedemann Zenke, Ben Poole, and Surya Ganguli.

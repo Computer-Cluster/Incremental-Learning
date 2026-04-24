@@ -11,7 +11,13 @@ From a technical perspective, there are no theoretical limitations that prevent 
 The challenge lies in enabling the network to assimilate new data without overwriting previously acquired knowledge, thereby achieving a balance between the stability and plasticity of the system.  
 Overcoming this challenge would enable the development of more robust and adaptive models capable of operating continuously in dynamic environments such as intelligent monitoring systems, robotics, or real-time applications where data are constantly updated.
 
-In environments where incremental learning is not employed, each data incorporation requires retraining the entire model with all the available information.  
+In environments where neither incremental nor continual learning is employed, each data 
+incorporation requires retraining the entire model with all the available information. 
+While recent continual learning approaches have partially addressed this by retraining 
+only on a selected subset of the most relevant past data \cite{rebuffi2017icarl, 
+krawczyk2017ensemble}, this still implies storing and managing historical data, which 
+raises concerns regarding memory consumption, scalability, and data privacy in 
+resource-constrained or sensitive deployment scenarios \cite{de2021continual}.  
 This process is costly in terms of computational time, energy consumption, and hardware requirements.  
 Conversely, an incremental approach allows the model to process only the new data, updating its knowledge without repeating the entire training process.  
 In addition to optimising resources, this characteristic can provide both economic and technological advantages over other methods, by reducing computational cost, development time, and algorithmic complexity in continuous learning applications.

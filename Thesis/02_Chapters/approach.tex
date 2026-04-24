@@ -2,16 +2,58 @@
 
 Artificial Neural Networks (ANNs), particularly Multilayer Perceptrons (MLP), possess the ability to learn tasks and solve prediction and classification problems. By using learning algorithms such as Backpropagation, it is possible to adjust the weights of an ANN so that it can address a specific task. MLPs are a common form of ANN, composed of multiple layers of neurons, where the input layer receives the data and the output layer provides the predictions. The intermediate layers, also known as hidden layers, perform non-linear transformations that allow the network to learn complex representations of the data. However, many real-world tasks generate additional information over time. An example of this can be seen in financial time series behaviour or weather forecasting in a specific region. In this context, incremental learning emerges as a relatively unexplored approach that allows the model to learn new information without the need to retrain the entire model with both old and new data.
 
-In current machine learning models, when a dataset is used to train a specific model, that model is functional only for that dataset and the information it represents. However, when it becomes necessary to incorporate new information into the model, this new data must be collected, added to the existing dataset, and the entire model must then be retrained to integrate the new data.
+In current machine learning models, when a dataset is used to train a specific model, that 
+model is functional only for that dataset and the information it represents. However, when 
+it becomes necessary to incorporate new information into the model, this new data must be 
+collected, added to the existing dataset, and the entire model must then be retrained to 
+integrate the new data. This means that, in practice, retraining requires combining all 
+available data---both old and new---into a single dataset, which can be computationally 
+expensive and impractical when data arrives continuously over time.
 
-In this scenario, if a network trained with an initial dataset \(d_1\) needs to be trained with a second dataset \(d_2\), the knowledge acquired from \(d_1\) will be lost in the process. If an incremental learning model is not used, both \(d_1\) and \(d_2\) must be combined into a single dataset and the ANN retrained to include the new knowledge (\(d_2\)). In contrast, when incremental learning is employed, the ANN is first trained with \(d_1\) and then with \(d_2\), maintaining minimal information loss from \(d_1\). If additional information (\(d_3\)) becomes available in the future, the ANN can be trained incrementally with \(d_3\), minimising the loss of data from \(d_1\) and \(d_2\).
+In this scenario, if a network trained with an initial dataset \(d_1\) needs to incorporate 
+knowledge from a second dataset \(d_2\), one of two situations arises: either the model is 
+retrained from scratch using the combined dataset \(d_1 \cup d_2\), preserving prior 
+knowledge at a high computational cost, or \(d_2\) is used on its own to update the model, 
+in which case the knowledge acquired from \(d_1\) will be lost in the process due to 
+catastrophic forgetting. If an incremental learning model is not used, both \(d_1\) and 
+\(d_2\) must be combined into a single dataset and the ANN retrained to include the new 
+knowledge (\(d_2\)). In contrast, when incremental learning is employed, the ANN is first 
+trained with \(d_1\) and then with \(d_2\), maintaining minimal information loss from 
+\(d_1\). If additional information (\(d_3\)) becomes available in the future, the ANN can 
+be trained incrementally with \(d_3\), minimising the loss of data from \(d_1\) and 
+\(d_2\).\\
 
-This work is based on the research conducted by \cite{bullinaria2009}, which uses a duplicated-weight configuration in ANNs. In this configuration, the network’s weights are duplicated and assigned different learning rates to the layers. The first layer, associated with a high learning rate, simulates short-term memory by quickly learning new tasks. This approach, proposed by \cite{bullinaria2009}, aims to enhance the incremental learning capability of ANNs by introducing weight duplication. In this approach, each connection in the network has two versions of its weights: one simulating short-term memory and the other representing long-term memory.
+This work is based on the research conducted by \cite{bullinaria2009}, which uses a duplicated-weight configuration in ANNs. In this configuration, the network’s weights are duplicated and assigned different learning rates to the layers. The first set of weights, associated with a high learning rate, simulates short-term memory 
+by quicklyThe first set of weights, associated with a high learning rate, simulates short-term memory by quickly learning new tasks. This approach, proposed by \cite{bullinaria2009}, aims to enhance the incremental learning capability of ANNs by introducing weight duplication. In this approach, each connection in the network has two versions of its weights: one simulating short-term memory and the other representing long-term memory.
 
 Short-term memory employs a high learning rate, allowing rapid adaptation to new information, but it is also more prone to forgetting previously learned knowledge. Conversely, long-term memory is trained with a lower learning rate, learning more slowly but retaining previously acquired information more effectively.
 
-During training, both sets of weights are updated in parallel according to their respective learning rates. When making predictions, the outputs are derived from a combination of both weight sets. This strategy enables the neural network to integrate both recent and accumulated knowledge, emulating the complementary functioning of biological memory systems. The second layer, with a lower learning rate, represents long-term memory, learning more slowly and forgetting less of the previous information. By integrating both layers, the ANN weights the output to consider both newly acquired and retained information from each set of weights.
+During training, both sets of weights are updated in parallel according to their respective 
+learning rates. When making predictions, the outputs are derived from a combination of both 
+weight sets. This combination mechanism bears conceptual similarities to ensemble learning, 
+where multiple models contribute to a final prediction \cite{krawczyk2017ensemble, 
+gomes2017survey}. However, unlike traditional ensembles that maintain entirely separate 
+networks, the approach by \cite{bullinaria2009} integrates both weight sets within a single 
+architecture, using their interaction to balance short-term adaptation and long-term 
+knowledge retention. It is worth noting that ensemble methods have also been explored in 
+the context of incremental and data stream learning \cite{krawczyk2017ensemble, 
+gomes2017survey}, representing a complementary line of research that will be further 
+discussed in the state of the art.
 
-The main issue identified in the incremental learning approach by \cite{bullinaria2009} is that as new datasets are incorporated, the knowledge acquired from the earlier datasets is progressively lost, which becomes less effective if ten or twenty incremental training stages are carried out with new data.
+The main issue identified in the incremental learning approach by \cite{bullinaria2009} is that as new datasets are incorporated, the knowledge acquired from the earlier datasets is progressively lost, which becomes less effective if ten or twenty incremental training stages are carried out 
+with new data. This limitation is not exclusive to \cite{bullinaria2009}: more broadly, 
+existing approaches to mitigate catastrophic forgetting still struggle to maintain 
+knowledge retention over long sequences of incremental updates without incurring high 
+computational costs, requiring access to previously seen data, or expanding the model 
+architecture indefinitely \cite{de2021continual, kirkpatrick2017overcoming, 
+rebuffi2017icarl, rusu2016pnn}. Regularisation-based methods such as EWC 
+\cite{kirkpatrick2017overcoming} impose constraints on weight updates but require 
+estimating parameter importance matrices, which becomes increasingly costly over many 
+tasks. Replay-based methods such as iCaRL \cite{rebuffi2017icarl} depend on storing or 
+regenerating past data, raising privacy and scalability concerns. Parameter isolation 
+methods such as Progressive Neural Networks \cite{rusu2016pnn} avoid interference between 
+tasks but grow unboundedly with each new stage. Therefore, it is crucial to explore 
+lightweight, memory-efficient alternatives that can sustain knowledge retention across 
+a large number of incremental stages without these drawbacks.
 
 Therefore, it is crucial to explore new ANN configurations that enhance current methods to reduce the amount of forgotten information as new data arrive. As in previous research, this work is based on the concepts of short- and long-term memory. However, instead of merely duplicating the weights and using two learning rates, the idea proposed here is to create multiple copies of the weights, each with a distinct learning rate.

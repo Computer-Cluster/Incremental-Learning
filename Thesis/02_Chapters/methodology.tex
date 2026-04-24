@@ -1,4 +1,4 @@
-\section{Methodology}
+\section{Methodology} \ref{sec:methodology}
 
 This research is divided into three main stages: the recreation of the base model, the implementation of an extended version of the model, and the comparison of the obtained results. Each of these stages is described in detail below:
 
@@ -8,12 +8,80 @@ This research is divided into three main stages: the recreation of the base mode
     Additionally, the Optical Digits dataset will be used and pre-processed to remove invalid records and ensure the quality of the data employed for training and validating the model.
 
     \item \textbf{Extension of the base model} \\
-    Subsequently, an extension of the base model will be developed with the aim of experimenting with more complex neural network configurations. Specifically, more than two layers of duplicated weights will be added, which is expected to improve information retention when applying incremental learning. \\
-    To achieve this, experiments will be conducted by gradually increasing the number of duplicated weight layers in order to analyse how this configuration affects the learning capability of the network.
+    Subsequently, an extension of the base model will be developed with the aim of 
+    experimenting with more complex neural network configurations. Specifically, more 
+    than two sets of duplicated weights will be added, which is expected to improve 
+    information retention when applying incremental learning. \\
+    To achieve this, experiments will be conducted by gradually increasing the number 
+    of duplicated weight sets in order to analyse how this configuration affects the 
+    learning capability of the network. In addition, different strategies to combine 
+    the outputs of the multiple weight sets will be investigated, as the aggregation 
+    mechanism may have a significant impact on the stability--plasticity balance. 
+    The combination strategies to be explored include:
+    \begin{itemize}
+        \item \textbf{Simple average:} the outputs of all weight sets are averaged 
+        with equal contribution, following the baseline approach of 
+        \cite{bullinaria2009}.
+        \item \textbf{Weighted average:} each weight set contributes proportionally 
+        to its associated learning rate, assigning greater influence to more stable 
+        (slower) memories.
+        \item \textbf{Learned combination:} a trainable scalar parameter is assigned 
+        to each weight set, allowing the model to adaptively determine the 
+        contribution of each memory level during training, inspired by ensemble 
+        weighting strategies \cite{krawczyk2017ensemble}.
+        \item \textbf{Recency-weighted combination:} more recently trained weight 
+        sets receive higher contribution, prioritising plasticity over stability, 
+        which may be beneficial in non-stationary data stream scenarios 
+        \cite{gomes2017survey}.
+    \end{itemize}
+    The impact of each combination strategy will be evaluated using the metrics 
+    defined in Section~\ref{sec:criterios_eval}, and the most effective configuration 
+    will be identified for each incremental learning scenario.
 
     \item \textbf{Comparison and analysis of results} \\
-    Once the simulation results are obtained, a comparison will be made between the performance of the base model and that of the extended model. This analysis will include key metrics such as model accuracy, forgetting rate, and performance in incremental learning. \\
-    The results will allow for evaluating whether the modifications introduced into the neural network architecture significantly improve its performance compared to the original implementation.
+    Once the simulation results are obtained, a comparison will be made between the 
+    performance of the base model and that of the extended model. This analysis will 
+    include key metrics such as incremental accuracy (IA), forgetting rate (F), memory 
+    retention (RM), and computational cost (CC), as defined in 
+    Section~\ref{sec:criterios_eval}. \\
+    The results will allow for evaluating whether the modifications introduced into the 
+    neural network architecture significantly improve its performance compared to the 
+    original implementation \cite{bullinaria2009}. \\
+    Crucially, the proposed model will also be compared against representative existing 
+    approaches from each major category of continual learning methods, selected on the 
+    basis of their recency, relevance, and availability of open-source implementations 
+    compatible with MLP-based architectures. The planned baselines include:
+    \begin{itemize}
+        \item \textbf{Regularisation-based:} Elastic Weight Consolidation (EWC) 
+        \cite{kirkpatrick2017overcoming} and Synaptic Intelligence (SI) 
+        \cite{zenke2017continual}, both of which have well-established open-source 
+        implementations and are directly applicable to MLP architectures.
+
+        \item \textbf{Replay-based:} Experience Replay (ER) \cite{rolnick2019experience} 
+        using a fixed-size memory buffer, and the MEMENTO approach 
+        \cite{CERASUOLO2024}, which represents one of the most recent replay-based 
+        methods with available code and demonstrated applicability in 
+        resource-constrained scenarios.
+
+        \item \textbf{Ensemble-based:} Learn++ \cite{polikar2001learn++} as a 
+        classical ensemble baseline, and a data stream ensemble variant following 
+        the strategies surveyed in \cite{krawczyk2017ensemble, gomes2017survey}.
+
+        \item \textbf{Recent hybrid approaches (2024--2025):} EVCL+ 
+        \cite{sarkar2025adaptive}, which combines Fisher regularisation with 
+        variational learning and represents one of the most recent approaches in 
+        the field. Where full implementations are not publicly available, the core 
+        strategies described in the original papers will be reimplemented as MLP 
+        variants to ensure a fair and reproducible comparison.
+    \end{itemize}
+    For each baseline, the same incremental training protocol, dataset partitioning, 
+    and evaluation metrics will be applied to ensure experimental fairness. Statistical 
+    analysis will be conducted to determine whether observed differences in performance 
+    are significant. This comparative evaluation is essential to position the proposed 
+    approach within the current state of the art and to demonstrate its practical 
+    advantages, particularly in terms of computational efficiency and suitability for 
+    resource-constrained environments consistent with the TinyML paradigm 
+    \cite{warden2019tinyml}.
 \end{enumerate}
 
 \subsection{Experimental Design}
@@ -29,9 +97,41 @@ To evaluate the impact of the number of duplicated memories on the performance o
 
 \paragraph{Experimental variables}
 \begin{itemize}
-    \item \textbf{Independent variable:} number of duplicated memories (\(n = 2, 4, 6\)).
-    \item \textbf{Dependent variables:} incremental accuracy (IA), forgetting rate (F), memory retention (RM), and computational cost (CC).
+    \item \textbf{Independent variable:} number of duplicated weight sets 
+    (\(n = 2, 4, 6\)).
+    \item \textbf{Dependent variables:} incremental accuracy (IA), forgetting rate (F), 
+    memory retention (RM), and computational cost (CC).
 \end{itemize}
+
+\paragraph{Dataset partitioning strategy}
+The OptDigits dataset contains 10 classes (digits 0--9), with a total of 3,823 training 
+samples and 1,797 test samples distributed uniformly across classes. The dataset will be 
+partitioned into six incremental blocks ($B_1, B_2, \ldots, B_6$) following a 
+\textbf{class-incremental learning} scheme \cite{de2021continual}, where each block 
+introduces a disjoint subset of classes that were not present in previous blocks. 
+Specifically, the partition will be organised as follows:
+
+\begin{itemize}
+    \item $B_1$: digits \{0, 1\}
+    \item $B_2$: digits \{2, 3\}
+    \item $B_3$: digits \{4, 5\}
+    \item $B_4$: digits \{6, 7\}
+    \item $B_5$: digits \{8, 9\}
+    \item $B_6$: all digits \{0--9\} (full dataset, used as a final global 
+    retention evaluation block)
+\end{itemize}
+
+This partitioning strategy is consistent with the class-incremental setting, which is 
+considered one of the most challenging scenarios in continual learning, as the model 
+must recognise all previously seen classes at inference time without access to past 
+training data \cite{de2021continual, rebuffi2017icarl}. Each block will use its 
+corresponding held-out test set for evaluation, and after training on each block, the 
+model will also be evaluated on the test sets of all previous blocks to measure 
+stability and forgetting. For the additional datasets introduced in the extended 
+evaluation (MNIST \cite{lecun1998mnist}, Fashion-MNIST \cite{xiao2017fashionmnist}, 
+and Speech Commands \cite{warden2018speech}), an equivalent class-incremental 
+partitioning strategy will be applied, adapting the number of blocks according to 
+the total number of classes available in each dataset.
 
 \paragraph{General methodology}
 The experiment will be structured in six incremental blocks (\(B_1, B_2, \ldots, B_6\)), representing different stages of the learning process.  
@@ -83,17 +183,70 @@ It details the neural network parameters, dataset characteristics, and execution
 \textbf{Parameter} & \textbf{Value} \\
 \midrule
 Dataset & OptDigits (3,823 training samples / 1,797 test samples, 10 classes) \\
-Base architecture & 64–32–10 (fully connected dense layers) \\
+Base architecture & 64--32--10 (fully connected dense layers) \\
 Activation function & Sigmoid \\
 Loss function & Cross Entropy Loss \\
 Optimiser & Adam (\(\eta = 0.001\)) \\
 Number of incremental blocks & 6 \\
-Duplicated memories & 2, 4, and 6 \\
-Metrics & IA (incremental accuracy), F (forgetting rate), RM (memory retention), CC (computational cost) \\
-Execution environment & macOS Sonoma, Apple M2 (8 CPU + 10 GPU), 16 GB RAM, PyTorch 2.3.1, Python 3.12 \\
+Duplicated weight sets & 2, 4, and 6 \\
+Metrics & IA (incremental accuracy), F (forgetting rate), RM (memory retention), 
+CC (computational cost) \\
+Execution environment & macOS Sonoma, Apple M2 (8 CPU + 10 GPU), 16 GB RAM, 
+PyTorch 2.3.1, Python 3.12 \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+\paragraph{Justification of hyperparameter choices}
+The hyperparameter values presented in Table~\ref{tab:config} were selected based on 
+a combination of reproducibility requirements, alignment with prior work, and 
+preliminary considerations regarding the OptDigits dataset characteristics:
+
+\begin{itemize}
+    \item \textbf{Base architecture (64--32--10):} The input dimensionality of the 
+    OptDigits dataset is 64 features (corresponding to an $8 \times 8$ pixel 
+    flattened image), which directly determines the input layer size. The hidden 
+    layer size of 32 neurons and the output layer of 10 neurons (one per digit 
+    class) follow the configuration reported in \cite{bullinaria2009}, ensuring 
+    reproducibility of the baseline model before extension.
+
+    \item \textbf{Activation function (Sigmoid):} The sigmoid function was chosen 
+    to maintain consistency with the original implementation of \cite{bullinaria2009}, 
+    which is the baseline this work seeks to reproduce and extend. This also 
+    facilitates a direct and fair comparison between the original and extended models.
+
+    \item \textbf{Loss function (Cross Entropy Loss):} Cross Entropy Loss is the 
+    standard choice for multi-class classification tasks \cite{de2021continual}, 
+    as it directly optimises the probability distribution over the 10 digit classes.
+
+    \item \textbf{Optimiser (Adam, \(\eta = 0.001\)):} The Adam optimiser was 
+    selected due to its well-documented efficiency in training MLPs, particularly 
+    its adaptive learning rate adjustment per parameter, which improves convergence 
+    stability in incremental settings \cite{kingma2014adam}. The learning rate of 
+    0.001 is the widely adopted default value reported in the original Adam paper 
+    and commonly used in continual learning benchmarks 
+    \cite{kirkpatrick2017overcoming, zenke2017continual}.
+
+    \item \textbf{Number of incremental blocks (6):} Six blocks were chosen to 
+    match the class-incremental partitioning strategy defined in the dataset 
+    partitioning section, where each block introduces a pair of new digit classes, 
+    covering all 10 classes across five active learning blocks plus one final 
+    global evaluation block.
+
+    \item \textbf{Duplicated weight sets (2, 4, 6):} The value of 2 corresponds 
+    to the original dual-weight configuration of \cite{bullinaria2009} and serves 
+    as the baseline. The values of 4 and 6 were selected to systematically 
+    investigate the effect of increasing the number of intermediate memory levels, 
+    following a controlled incremental progression that allows identifying whether 
+    a clear trend exists between the number of weight sets and knowledge retention 
+    performance.
+\end{itemize}
+
+\noindent It is worth noting that a more exhaustive hyperparameter search (e.g., 
+using grid search or Bayesian optimisation) is left as future work, as the primary 
+goal of this study is to evaluate the effect of the number of duplicated weight sets 
+under controlled and reproducible conditions consistent with the baseline of 
+\cite{bullinaria2009}.
 
 \paragraph{Contrast hypothesis}
 It is expected that the architectures with four and six memories will show greater knowledge retention (\(RM \geq 90\%\)) and a lower forgetting rate (\(F \leq 10\%\)) compared to the original dual model, without a significant increase in training time.

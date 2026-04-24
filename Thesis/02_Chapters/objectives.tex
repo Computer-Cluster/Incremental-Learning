@@ -12,5 +12,19 @@
             
             \item \textbf{Extend} the reference algorithm to incorporate more than two layers of duplicated weights, evaluating its impact on the stability and plasticity of incremental learning using the same dataset.
             
-            \item \textbf{Compare} both implementations quantitatively (original model and extended model) based on learning rates, accuracy, and loss, aiming to demonstrate a significant reduction in catastrophic forgetting compared with previous works.
+            \item \textbf{Compare} both implementations quantitatively (original model and extended 
+model) based on incremental accuracy, forgetting rate, and memory retention, aiming to 
+demonstrate a significant reduction in catastrophic forgetting compared with previous 
+works \cite{de2021continual, kirkpatrick2017overcoming}. The evaluation will be conducted 
+across multiple datasets to assess the generalisation of the proposed approach, including 
+OptDigits, MNIST \cite{lecun1998mnist}, Fashion-MNIST \cite{xiao2017fashionmnist}, and 
+the Speech Commands dataset \cite{warden2018speech}. For image-based datasets, a 
+lightweight pre-trained encoder will be explored as a preprocessing step to extract compact 
+feature representations suitable for MLP input, following the constraints of 
+resource-limited deployment scenarios consistent with the TinyML paradigm 
+\cite{warden2019tinyml}.
+            \item \textbf{Explore} the use of lightweight pre-trained encoders as a preprocessing 
+step for image-based datasets, evaluating their compatibility with the proposed 
+incremental architecture under resource-constrained conditions consistent with the 
+TinyML paradigm \cite{warden2019tinyml}.
         \end{enumerate}

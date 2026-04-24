@@ -368,8 +368,16 @@ As illustrated in Figure~\ref{fig:incremental_learning_algorithm}, there are two
     In some cases, ensemble or voting mechanisms are used to stabilise changes between successive iterations.
 \end{itemize}
 
-In both cases, the key practical advantage of incremental learning lies in the fact that the acquired knowledge is stored within the model’s parameters (weights, biases, or probabilities), rather than as individual examples.  
-This allows the system to avoid storing large volumes of historical data, achieving scalability and efficiency.
+In both cases, the key practical advantage of incremental learning lies in the fact that 
+the acquired knowledge is stored within the model's parameters (weights, biases, or 
+probabilities), rather than as individual examples. This allows the system to avoid 
+storing large volumes of historical data, achieving scalability and efficiency. This 
+property is particularly relevant in the context of TinyML \cite{warden2019tinyml}, where 
+devices operate under severe memory and storage constraints, making parameter-based 
+knowledge retention a critical advantage over approaches that depend on maintaining 
+historical data buffers. In such scenarios, the ability to consolidate knowledge directly 
+into the model's weights --- without requiring access to past examples --- becomes not 
+only desirable but essential for practical deployment.
 
 Formally, given a sequence of training examples \(e_1, e_2, \dots, e_s\), an incremental learning algorithm generates a series of hypotheses \(h_0, h_1, \dots, h_n\) such that each hypothesis \(h_{i+1}\) depends only on the previous hypothesis \(h_i\) and the current example \(e_i\) \cite{GiraudCarrier2000}.  
 This principle enables adaptive and continuous learning, where the model “evolves” through interaction with data over time.
@@ -383,7 +391,9 @@ With the advancement of the field, several families of incremental algorithms ha
 \begin{itemize}
     \item \textbf{Regularisation-based methods:}  
     Restrict parameter updates for weights considered critical to previous tasks.  
-    Examples include Elastic Weight Consolidation (EWC), Synaptic Intelligence (SI), and Memory Aware Synapses (MAS).
+    Examples include Elastic Weight Consolidation (EWC) \cite{kirkpatrick2017overcoming}, 
+    Synaptic Intelligence (SI) \cite{zenke2017continual}, and Memory Aware Synapses 
+    (MAS) \cite{aljundi2018mas}.
 
     \item \textbf{Replay-based methods:}  
     Use a small buffer of representative samples or generative models to recall past knowledge during training.  
@@ -448,9 +458,17 @@ Below are the main strategies currently used to counteract catastrophic forgetti
     Modern variants such as Synaptic Intelligence (SI) and Memory Aware Synapses (MAS) follow a similar principle, maintaining a “synaptic memory” of relevant parameters to reinforce their preservation.
 
     \item \textbf{Rehearsal or replay-based methods:} \\
-    These techniques retain a small memory buffer of representative past examples or employ generative models to recreate synthetic samples.  
-    During the training of new tasks, the network periodically revisits this memory to maintain awareness of prior knowledge.  
-    Prominent examples include Incremental Classifier and Representation Learning (iCaRL) and Generative Replay, which uses generative adversarial networks (GANs) or variational autoencoders (VAEs) to simulate previous data distributions.
+    These techniques retain a small memory buffer of representative past examples or 
+    employ generative models to recreate synthetic samples \cite{rebuffi2017icarl, 
+    rolnick2019experience}. During the training of new tasks, the network periodically 
+    revisits this memory to maintain awareness of prior knowledge. Prominent examples 
+    include Incremental Classifier and Representation Learning (iCaRL) 
+    \cite{rebuffi2017icarl} and Generative Replay, which uses generative adversarial 
+    networks (GANs) or variational autoencoders (VAEs) to simulate previous data 
+    distributions \cite{shin2017continual}. More recent approaches have extended these 
+    ideas by combining replay with transformer-based architectures \cite{wang2024comprehensive} 
+    and by proposing more efficient buffer selection strategies to reduce memory overhead 
+    while maintaining knowledge retention \cite{sarkar2025adaptive, CERASUOLO2024}.
 
     \item \textbf{Parameter-isolation or partitioning methods:} \\
     Instead of reusing the same weights across all tasks, these approaches allocate subsets of neurons or layers exclusively to specific tasks, reducing interference between them.  
@@ -462,9 +480,37 @@ Below are the main strategies currently used to counteract catastrophic forgetti
     During incremental training, the student network learns new tasks while replicating the teacher’s predictions for previous ones, thus maintaining previously acquired representations and reducing forgetting.
 
     \item \textbf{Hybrid or multi-strategy methods:} \\
-    The most recent approaches combine several of the aforementioned techniques to achieve a more efficient balance between stability and plasticity.  
-    These hybrid models integrate regularisation, selective replay, and dynamic architecture expansion, adapting their behaviour according to data characteristics or task complexity.  
-    Examples include Dynamic Architecture Networks and Meta-Learning Incremental frameworks, where the system learns to adjust its own consolidation mechanisms.
+    The most recent approaches combine several of the aforementioned techniques to achieve 
+    a more efficient balance between stability and plasticity. These hybrid models integrate 
+    regularisation, selective replay, and dynamic architecture expansion, adapting their 
+    behaviour according to data characteristics or task complexity 
+    \cite{de2021continual, sarkar2025adaptive}.
+
+\item \textbf{Ensemble-based methods:} \\
+    Ensemble approaches maintain multiple models or weight sets that contribute jointly to 
+    predictions, offering a natural mechanism to balance stability and plasticity 
+    \cite{krawczyk2017ensemble, gomes2017survey}. Some approaches train a separate model 
+    for each batch of incoming data \cite{polikar2001learn++}, which provides flexibility 
+    but introduces challenges related to batch size selection and the management of an 
+    ever-growing number of models. Strategies to prune or delete past models are therefore 
+    required to keep the ensemble size manageable \cite{krawczyk2017ensemble}. Other 
+    ensemble methods maintain different models to capture different concepts, sometimes 
+    employing concept drift detection to decide when to retire an old model and start 
+    training a new one, preserving prior knowledge in the archived model for later 
+    retrieval \cite{gomes2017survey}. However, these approaches are not necessarily 
+    designed for class incremental learning scenarios, where new classes must be 
+    recognised alongside previously learned ones --- which is the setting targeted in 
+    this work.
+
+    Notably, the dual-weight architecture proposed by \cite{bullinaria2009} can itself 
+    be interpreted as a form of ensemble, where two sets of weights --- each trained with 
+    a different learning rate --- contribute jointly to the final prediction. Unlike 
+    traditional ensemble methods that maintain entirely separate networks, this approach 
+    integrates both weight sets within a single architecture, avoiding the overhead of 
+    managing multiple independent models. The present work extends this idea by 
+    introducing additional weight sets, further enriching the ensemble-like consolidation 
+    mechanism while remaining lightweight and suitable for resource-constrained 
+    environments consistent with the TinyML paradigm \cite{warden2019tinyml}.
 \end{enumerate}
 
 Each of these strategies aims, to varying degrees, to emulate the cognitive processes of human learning and memory consolidation.  

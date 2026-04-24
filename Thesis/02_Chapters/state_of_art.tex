@@ -20,8 +20,40 @@ The search process was carried out between 2010 and 2025 in the following academ
 \end{itemize}
 
 Boolean combinations of keywords in English and Spanish were employed, including: 
-\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} and \textit{``artificial intelligence''}.  
-The terms were adapted to the search options of each database in order to maximise coverage and retrieve the most relevant and up-to-date studies.
+\textit{``incremental learning''}, \textit{``lifelong learning''}, \textit{``continual 
+learning''}, \textit{``catastrophic forgetting''}, \textit{``artificial neural networks''} 
+and \textit{``artificial intelligence''}. The terms were adapted to the search options of 
+each database in order to maximise coverage and retrieve the most relevant and up-to-date 
+studies. The main search queries used were the following:
+
+\begin{itemize}
+    \item \texttt{(``incremental learning'' OR ``continual learning'' OR ``lifelong 
+    learning'') AND ``artificial neural networks''}
+    
+    \item \texttt{(``catastrophic forgetting'' OR ``knowledge retention'') AND 
+    (``neural networks'' OR ``deep learning'')}
+    
+    \item \texttt{(``incremental learning'' OR ``continual learning'') AND 
+    (``stability-plasticity'' OR ``catastrophic forgetting'') AND 
+    (``regularisation'' OR ``replay'' OR ``parameter isolation'')}
+    
+    \item \texttt{(``aprendizaje incremental'' OR ``aprendizaje continuo'') AND 
+    (``redes neuronales artificiales'' OR ``olvido catastr\'ofico'')}
+    
+    \item \texttt{(``continual learning'' OR ``incremental learning'') AND 
+    (``TinyML'' OR ``resource-constrained'' OR ``embedded systems'')}
+    
+    \item \texttt{(``dual weights'' OR ``synaptic duplication'' OR ``distributed 
+    memory'') AND (``incremental learning'' OR ``neural networks'')}
+    
+    \item \texttt{(``ensemble learning'' OR ``data stream'') AND 
+    (``incremental learning'' OR ``concept drift'')}
+\end{itemize}
+
+\noindent These queries were adapted syntactically to the search interface of each 
+database, preserving their semantic structure. Searches were conducted both with and 
+without truncation operators where supported, and results were filtered by publication 
+date (2010--2025) to ensure relevance and recency.
 
 \subsection{Inclusion and Exclusion Criteria}
 With the purpose of ensuring the relevance and methodological quality of the selected studies, the following criteria were established:
@@ -31,7 +63,15 @@ With the purpose of ensuring the relevance and methodological quality of the sel
     \item Publications between 2010 and 2025.
     \item Articles that explicitly address incremental or continual learning in artificial neural networks.
     \item Research that analyses the phenomenon of \textit{catastrophic forgetting} or proposes associated solutions.
-    \item Studies with applications in areas such as robotics, computer vision, cybersecurity, or adaptive systems.
+    \item Studies with applications in areas such as robotics, computer vision, cybersecurity, 
+or adaptive systems, as well as works that evaluate incremental or continual learning 
+methods on benchmark datasets without focusing on a specific application domain. This 
+includes articles that use standard datasets (e.g., MNIST, CIFAR, or similar benchmarks) 
+primarily for algorithmic evaluation and comparison purposes, provided that the main 
+contribution addresses incremental learning, catastrophic forgetting, or knowledge 
+retention in artificial neural networks. Articles were not excluded on the basis of 
+their application domain alone, but rather on whether their methodological contribution 
+was relevant to the research questions addressed in this work.
 \end{itemize}
 
 \textbf{Exclusion criteria:}
@@ -42,29 +82,42 @@ With the purpose of ensuring the relevance and methodological quality of the sel
 \end{itemize}
 
 \subsection{Selection Process}
-The initial search yielded a total of 1,246 records. After removing 312 duplicates, 934 unique articles were retained.  
-During the screening phase (title and abstract review), 886 studies were excluded for not meeting the inclusion criteria.  
-The remaining 48 articles were assessed in full text, and, ultimately, 18 met the methodological and thematic standards required for qualitative synthesis.  
+The initial search yielded a total of 1,246 records across the seven databases consulted. 
+After removing 312 duplicates, 934 unique articles were retained. During the screening 
+phase (title and abstract review), 886 studies were excluded for not meeting the inclusion 
+criteria. The most frequent reasons for exclusion were: (i) focus on deep learning 
+architectures such as CNNs, RNNs, or Transformers, outside the MLP-based scope of this 
+work; (ii) continual learning applied to large language models or vision-language models 
+\cite{liu2025continual, shi2024continual}; (iii) replay-based or parameter isolation 
+methods dependent on stored data or architectural expansion; or (iv) absence of empirical 
+evaluation on lightweight benchmark datasets. The remaining 48 articles were assessed in 
+full text, and, ultimately, 18 met the methodological and thematic standards required for 
+qualitative synthesis. It is worth noting that the relatively small number of retained 
+articles reflects the strict application of the inclusion and exclusion criteria defined 
+in Section~3.2, rather than a scarcity of relevant work in the field. A broader overview 
+of the continual learning landscape can be found in 
+\cite{de2021continual, PARISI201954, liu2025continual}.
 
-The selection process is summarised in Table~\ref{tab:prisma} and in the PRISMA flow diagram shown in Figure~\ref{fig:prisma}.
+The selection process is summarised in Table~\ref{tab:prisma} and in the PRISMA flow 
+diagram shown in Figure~\ref{fig:prisma}.
 
-\begin{table}[H]
-    \centering
-    \caption{Summary of the article selection process according to PRISMA 2020.}
-    \label{tab:prisma}
-    \begin{tabularx}{\textwidth}{l c}
-        \toprule
-        \textbf{Stage} & \textbf{Number of studies (n)} \\
-        \midrule
-        Records identified in databases & 60 \\
-        Duplicates removed & 15 \\
-        Records after duplicate removal & 45 \\
-        Records excluded after title/abstract screening & 30 \\
-        Articles assessed in full text & 28 \\
-        Articles excluded for lack of applicable results & 2 \\
-        \textbf{Studies included in the qualitative synthesis} & \textbf{18} \\
-        \bottomrule
-    \end{tabularx}
+\begin{table}[h]
+\centering
+\caption{Summary of the article selection process according to PRISMA 2020.}
+\label{tab:prisma}
+\begin{tabular}{lc}
+\hline
+\textbf{Stage} & \textbf{Number of studies ($n$)} \\
+\hline
+Records identified in databases     & 1,246 \\
+Duplicates removed                  & 312   \\
+Records after duplicate removal     & 934   \\
+Records excluded after title/abstract screening & 886 \\
+Articles assessed in full text      & 48    \\
+Articles excluded for lack of applicable results & 30 \\
+Studies included in qualitative synthesis & 18  \\
+\hline
+\end{tabular}
 \end{table}
 
 \begin{figure}[H]
@@ -177,8 +230,23 @@ Nevertheless, despite the achievements, the reviewed literature shows that incre
 In particular, current models tend to fall into one of the two extremes of the stability–plasticity dilemma: either they retain too much prior knowledge, hindering the incorporation of new information, or they adapt rapidly to recent data at the cost of forgetting what has already been learned. 
 This balance remains one of the main barriers to achieving genuinely continual learning.
 
-Contemporary strategies to mitigate \textit{catastrophic forgetting}—such as regularisation methods, \textit{replay}, and parameter isolation—have shown partial effectiveness but present limitations that affect their scalability and practical applicability. 
-Regularisation methods (such as EWC or MAS) require estimates of parameter importance, which implies high computational cost; \textit{replay}-based methods depend on storing or generating old data, affecting privacy and performance; and parameter isolation methods (such as \textit{PackNet} or \textit{Progressive Networks}) tend to increase network size indefinitely, compromising efficiency in prolonged learning contexts. 
+Contemporary strategies to mitigate \textit{catastrophic forgetting}---such as 
+regularisation methods, \textit{replay}, and parameter isolation---have shown partial 
+effectiveness but present limitations that affect their scalability and practical 
+applicability. Regularisation methods (such as EWC \cite{kirkpatrick2017overcoming} or 
+MAS \cite{aljundi2018mas}) require estimates of parameter importance, which implies high 
+computational cost; \textit{replay}-based methods \cite{rebuffi2017icarl, 
+rolnick2019experience} depend on storing or generating old data, affecting privacy and 
+performance; and parameter isolation methods (such as \textit{PackNet} 
+\cite{mallya2018packnet} or \textit{Progressive Networks} \cite{rusu2016pnn}) tend to 
+increase network size indefinitely, compromising efficiency in prolonged learning 
+contexts. These limitations are particularly critical in the context of TinyML 
+\cite{warden2019tinyml}, where devices operate under severe constraints in terms of 
+computational power, memory, and storage capacity. In such scenarios, methods that depend 
+on importance matrix estimation, data buffers, or unbounded architectural growth become 
+impractical or entirely infeasible, reinforcing the need for lightweight, 
+parameter-efficient alternatives that can consolidate knowledge internally without 
+relying on external memory or structural expansion. 
 
 These limitations underscore the need to explore alternatives that integrate the benefits of such strategies without increasing model complexity or relying on explicit memories. 
 In this context, biologically inspired approaches gain relevance, as they offer mechanisms that emulate the brain's memory consolidation—particularly the interaction between the hippocampus (short-term memory) and the neocortex (long-term memory)—thus allowing gradual and efficient knowledge retention.  
